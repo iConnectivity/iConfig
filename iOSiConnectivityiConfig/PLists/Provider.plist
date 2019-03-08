@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MainMenu</key>
+	<dict>
+		<key>buttonColors</key>
+		<array>
+			<string>78ad00</string>
+			<string>0078ad</string>
+			<string>00557A</string>
+			<string>0078ad</string>
+			<string>00557A</string>
+			<string>0078ad</string>
+			<string>00557A</string>
+			<string>0078ad</string>
+			<string>00557A</string>
+			<string>0078ad</string>
+			<string>00557A</string>
+			<string>d40091</string>
+			<string>84005a</string>
+		</array>
+		<key>selectedButtonColors</key>
+		<array>
+			<string>4C1D9C</string>
+			<string>D71638</string>
+			<string>49C514</string>
+			<string>453069</string>
+			<string>903949</string>
+			<string>4C8434</string>
+		</array>
+		<key>title</key>
+		<string>Main Menu</string>
+		<key>titleBackgroundColor</key>
+		<string>004361</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>18b9ff</string>
+		<key>standardSelectionColor</key>
+		<string>65d0ff</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+	</dict>
+	<key>PortRoutingPortSelection</key>
+	<dict>
+		<key>title</key>
+		<string>Port Routing</string>
+		<key>titleBackgroundColor</key>
+		<string>00557a</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00557a</string>
+		<key>standardSelectionColor</key>
+		<string>00557a</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>alternativeColor</key>
+		<string>ad4e24</string>
+		<key>alternativeSelectionColor</key>
+		<string>ad4e24</string>
+	</dict>
+	<key>PortRoutingRouteSelection</key>
+	<dict>
+		<key>title</key>
+		<string>From </string>
+		<key>titleBackgroundColor</key>
+		<string>0078ad</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>859399</string>
+		<key>standardSelectionColor</key>
+		<string>0078ad</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>alternativeColor</key>
+		<string>997f73</string>
+		<key>alternativeSelectionColor</key>
+		<string>ad3500</string>
+	</dict>
+	<key>PortFiltersInputPortSelection</key>
+	<dict>
+		<key>title</key>
+		<string>Input Port Filters</string>
+		<key>titleBackgroundColor</key>
+		<string>00557a</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00557a</string>
+		<key>standardSelectionColor</key>
+		<string>00557a</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>alternativeColor</key>
+		<string>ad4e24</string>
+		<key>alternativeSelectionColor</key>
+		<string>ad4e24</string>
+	</dict>
+	<key>PortFiltersInputFilterSelection</key>
+	<dict>
+		<key>title</key>
+		<string></string>
+		<key>buttonColors</key>
+		<array>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>ad3500</string>
+			<string>ad3500</string>
+			<string>ad3500</string>
+			<string>ad3500</string>
+			<string>ad3500</string>
+			<string>ad3500</string>
+			<string>ad3500</string>
+			<string>ad3500</string>
+		</array>
+		<key>selectedButtonColors</key>
+		<array>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>997f73</string>
+			<string>997f73</string>
+			<string>997f73</string>
+			<string>997f73</string>
+			<string>997f73</string>
+			<string>997f73</string>
+			<string>997f73</string>
+			<string>997f73</string>
+		</array>
+		<key>titleBackgroundColor</key>
+		<string>0078ad</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>859399</string>
+		<key>standardSelectionColor</key>
+		<string>997f73</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>buttonNames</key>
+		<array>
+			<string>Pitch Bend</string>
+			<string>Channel Pressure</string>
+			<string>Program Change</string>
+			<string>Control Change (CC)</string>
+			<string>Poly Key Pressure</string>
+			<string>Note On/Off</string>
+			<string>Reset</string>
+			<string>Active Sensing</string>
+			<string>Realtime</string>
+			<string>Tune Request</string>
+			<string>Song Select</string>
+			<string>Song Position Pointer</string>
+			<string>Time Code (MTC)</string>
+			<string>System Exclusive</string>
+		</array>
+	</dict>
+	<key>PortFiltersOutputPortSelection</key>
+	<dict>
+		<key>title</key>
+		<string>Output Port Filters</string>
+		<key>titleBackgroundColor</key>
+		<string>00557a</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00557a</string>
+		<key>standardSelectionColor</key>
+		<string>00557a</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>alternativeColor</key>
+		<string>ad4e24</string>
+		<key>alternativeSelectionColor</key>
+		<string>ad4e24</string>
+	</dict>
+	<key>PortFiltersOutputFilterSelection</key>
+	<dict>
+		<key>title</key>
+		<string></string>
+		<key>buttonColors</key>
+		<array>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>ad3500</string>
+			<string>ad3500</string>
+			<string>ad3500</string>
+			<string>ad3500</string>
+			<string>ad3500</string>
+			<string>ad3500</string>
+			<string>ad3500</string>
+			<string>ad3500</string>
+		</array>
+		<key>selectedButtonColors</key>
+		<array>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>997f73</string>
+			<string>997f73</string>
+			<string>997f73</string>
+			<string>997f73</string>
+			<string>997f73</string>
+			<string>997f73</string>
+			<string>997f73</string>
+			<string>997f73</string>
+		</array>
+		<key>titleBackgroundColor</key>
+		<string>0078ad</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>859399</string>
+		<key>standardSelectionColor</key>
+		<string>997f73</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>buttonNames</key>
+		<array>
+			<string>Pitch Bend</string>
+			<string>Channel Pressure</string>
+			<string>Program Change</string>
+			<string>Control Change (CC)</string>
+			<string>Poly Key Pressure</string>
+			<string>Note On/Off</string>
+			<string>Reset</string>
+			<string>Active Sensing</string>
+			<string>Realtime</string>
+			<string>Tune Request</string>
+			<string>Song Select</string>
+			<string>Song Position Pointer</string>
+			<string>Time Code (MTC)</string>
+			<string>System Exclusive</string>
+		</array>
+	</dict>
+	<key>PortFiltersChannelFilterSelection</key>
+	<dict>
+		<key>title</key>
+		<string>Channels</string>
+		<key>titleBackgroundColor</key>
+		<string>00adfa</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00adfa</string>
+		<key>standardSelectionColor</key>
+		<string>818d92</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>buttonNames</key>
+		<array>
+			<string>Channel 1</string>
+			<string>Channel 2</string>
+			<string>Channel 3</string>
+			<string>Channel 4</string>
+			<string>Channel 5</string>
+			<string>Channel 6</string>
+			<string>Channel 7</string>
+			<string>Channel 8</string>
+			<string>Channel 9</string>
+			<string>Channel 10</string>
+			<string>Channel 11</string>
+			<string>Channel 12</string>
+			<string>Channel 13</string>
+			<string>Channel 14</string>
+			<string>Channel 15</string>
+			<string>Channel 16</string>
+		</array>
+	</dict>
+	<key>ChannelRemapInputPortSelection</key>
+	<dict>
+		<key>title</key>
+		<string>Channel Input Remap</string>
+		<key>titleBackgroundColor</key>
+		<string>00557a</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00557a</string>
+		<key>standardSelectionColor</key>
+		<string>00557a</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>alternativeColor</key>
+		<string>ad4e24</string>
+		<key>alternativeSelectionColor</key>
+		<string>ad4e24</string>
+	</dict>
+	<key>ChannelRemapInputChannelSelection</key>
+	<dict>
+		<key>title</key>
+		<string></string>
+		<key>titleBackgroundColor</key>
+		<string>0078ad</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>0078ad</string>
+		<key>standardSelectionColor</key>
+		<string>0078ad</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>buttonNames</key>
+		<array>
+			<string>Channel 1</string>
+			<string>Channel 2</string>
+			<string>Channel 3</string>
+			<string>Channel 4</string>
+			<string>Channel 5</string>
+			<string>Channel 6</string>
+			<string>Channel 7</string>
+			<string>Channel 8</string>
+			<string>Channel 9</string>
+			<string>Channel 10</string>
+			<string>Channel 11</string>
+			<string>Channel 12</string>
+			<string>Channel 13</string>
+			<string>Channel 14</string>
+			<string>Channel 15</string>
+			<string>Channel 16</string>
+		</array>
+	</dict>
+	<key>ChannelRemapInputSetup</key>
+	<dict>
+		<key>title</key>
+		<string>For </string>
+		<key>buttonColors</key>
+		<array>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>493931</string>
+			<string>493931</string>
+			<string>493931</string>
+			<string>493931</string>
+			<string>493931</string>
+			<string>493931</string>
+		</array>
+		<key>selectedButtonColors</key>
+		<array>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>fa4d00</string>
+			<string>fa4d00</string>
+			<string>fa4d00</string>
+			<string>fa4d00</string>
+			<string>fa4d00</string>
+			<string>fa4d00</string>
+		</array>
+		<key>titleBackgroundColor</key>
+		<string>00adfa</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>818d92</string>
+		<key>standardSelectionColor</key>
+		<string>00adfa</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>buttonNames</key>
+		<array>
+			<string>Channel 1</string>
+			<string>Channel 2</string>
+			<string>Channel 3</string>
+			<string>Channel 4</string>
+			<string>Channel 5</string>
+			<string>Channel 6</string>
+			<string>Channel 7</string>
+			<string>Channel 8</string>
+			<string>Channel 9</string>
+			<string>Channel 10</string>
+			<string>Channel 11</string>
+			<string>Channel 12</string>
+			<string>Channel 13</string>
+			<string>Channel 14</string>
+			<string>Channel 15</string>
+			<string>Channel 16</string>
+			<string>Pitch Bend</string>
+			<string>Channel Pressure</string>
+			<string>Program Change</string>
+			<string>Control Change</string>
+			<string>Poly Key Pressure</string>
+			<string>Note On/Off</string>
+		</array>
+	</dict>
+	<key>ChannelRemapOutputPortSelection</key>
+	<dict>
+		<key>title</key>
+		<string>Channel Output Remap</string>
+		<key>titleBackgroundColor</key>
+		<string>00557a</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00557a</string>
+		<key>standardSelectionColor</key>
+		<string>00557a</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>alternativeColor</key>
+		<string>ad4e24</string>
+		<key>alternativeSelectionColor</key>
+		<string>ad4e24</string>
+	</dict>
+	<key>ChannelRemapOutputChannelSelection</key>
+	<dict>
+		<key>title</key>
+		<string></string>
+		<key>titleBackgroundColor</key>
+		<string>0078ad</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>0078ad</string>
+		<key>standardSelectionColor</key>
+		<string>0078ad</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>buttonNames</key>
+		<array>
+			<string>Channel 1</string>
+			<string>Channel 2</string>
+			<string>Channel 3</string>
+			<string>Channel 4</string>
+			<string>Channel 5</string>
+			<string>Channel 6</string>
+			<string>Channel 7</string>
+			<string>Channel 8</string>
+			<string>Channel 9</string>
+			<string>Channel 10</string>
+			<string>Channel 11</string>
+			<string>Channel 12</string>
+			<string>Channel 13</string>
+			<string>Channel 14</string>
+			<string>Channel 15</string>
+			<string>Channel 16</string>
+		</array>
+	</dict>
+	<key>ChannelRemapOutputSetup</key>
+	<dict>
+		<key>title</key>
+		<string>For </string>
+		<key>buttonColors</key>
+		<array>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>818d92</string>
+			<string>493931</string>
+			<string>493931</string>
+			<string>493931</string>
+			<string>493931</string>
+			<string>493931</string>
+			<string>493931</string>
+		</array>
+		<key>selectedButtonColors</key>
+		<array>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>fa4d00</string>
+			<string>fa4d00</string>
+			<string>fa4d00</string>
+			<string>fa4d00</string>
+			<string>fa4d00</string>
+			<string>fa4d00</string>
+		</array>
+		<key>titleBackgroundColor</key>
+		<string>00adfa</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>818d92</string>
+		<key>standardSelectionColor</key>
+		<string>00adfa</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>buttonNames</key>
+		<array>
+			<string>Channel 1</string>
+			<string>Channel 2</string>
+			<string>Channel 3</string>
+			<string>Channel 4</string>
+			<string>Channel 5</string>
+			<string>Channel 6</string>
+			<string>Channel 7</string>
+			<string>Channel 8</string>
+			<string>Channel 9</string>
+			<string>Channel 10</string>
+			<string>Channel 11</string>
+			<string>Channel 12</string>
+			<string>Channel 13</string>
+			<string>Channel 14</string>
+			<string>Channel 15</string>
+			<string>Channel 16</string>
+			<string>Pitch Bend</string>
+			<string>Channel Pressure</string>
+			<string>Program Change</string>
+			<string>Control Change</string>
+			<string>Poly Key Pressure</string>
+			<string>Note On/Off</string>
+		</array>
+	</dict>
+	<key>ControllerFiltersInputPortSelection</key>
+	<dict>
+		<key>title</key>
+		<string>Controller Input Filters</string>
+		<key>titleBackgroundColor</key>
+		<string>00557a</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00557a</string>
+		<key>standardSelectionColor</key>
+		<string>00557a</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>alternativeColor</key>
+		<string>ad4e24</string>
+		<key>alternativeSelectionColor</key>
+		<string>ad4e24</string>
+	</dict>
+	<key>ControllerFiltersOutputPortSelection</key>
+	<dict>
+		<key>title</key>
+		<string>Controller Output Filters</string>
+		<key>titleBackgroundColor</key>
+		<string>00557a</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00557a</string>
+		<key>standardSelectionColor</key>
+		<string>00557a</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>alternativeColor</key>
+		<string>ad4e24</string>
+		<key>alternativeSelectionColor</key>
+		<string>ad4e24</string>
+	</dict>
+	<key>ControllerFiltersInputIDSelection</key>
+	<dict>
+		<key>title</key>
+		<string></string>
+		<key>titleBackgroundColor</key>
+		<string>0078ad</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>0078ad</string>
+		<key>standardSelectionColor</key>
+		<string>0078ad</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+	</dict>
+	<key>ControllerFiltersOutputIDSelection</key>
+	<dict>
+		<key>title</key>
+		<string></string>
+		<key>titleBackgroundColor</key>
+		<string>0078ad</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>0078ad</string>
+		<key>standardSelectionColor</key>
+		<string>0078ad</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+	</dict>
+	<key>ControllerFiltersInputSetup</key>
+	<dict>
+		<key>title</key>
+		<string>Controller Input Filters</string>
+		<key>titleBackgroundColor</key>
+		<string>00adfa</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00adfa</string>
+		<key>standardSelectionColor</key>
+		<string>818d92</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+	</dict>
+	<key>ControllerFiltersOutputSetup</key>
+	<dict>
+		<key>title</key>
+		<string>Controller Output Filters</string>
+		<key>titleBackgroundColor</key>
+		<string>00adfa</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00adfa</string>
+		<key>standardSelectionColor</key>
+		<string>818d92</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+	</dict>
+	<key>ControllerFiltersInputControllerSelection</key>
+	<dict>
+		<key>title</key>
+		<string>Input Filter</string>
+		<key>buttonColors</key>
+		<array>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>fa4d00</string>
+		</array>
+		<key>titleBackgroundColor</key>
+		<string>00adfa</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00adfa</string>
+		<key>standardSelectionColor</key>
+		<string>818d92</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+	</dict>
+	<key>ControllerFiltersOutputControllerSelection</key>
+	<dict>
+		<key>title</key>
+		<string>Output Filter</string>
+		<key>buttonColors</key>
+		<array>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>fa4d00</string>
+		</array>
+		<key>titleBackgroundColor</key>
+		<string>00adfa</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00adfa</string>
+		<key>standardSelectionColor</key>
+		<string>818d92</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+	</dict>
+	<key>ControllerRemapInputPortSelection</key>
+	<dict>
+		<key>title</key>
+		<string>Controller Input Remap</string>
+		<key>titleBackgroundColor</key>
+		<string>00557a</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00557a</string>
+		<key>standardSelectionColor</key>
+		<string>00557a</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>alternativeColor</key>
+		<string>ad4e24</string>
+		<key>alternativeSelectionColor</key>
+		<string>ad4e24</string>
+	</dict>
+	<key>ControllerRemapOutputPortSelection</key>
+	<dict>
+		<key>title</key>
+		<string>Controller Output Remap</string>
+		<key>titleBackgroundColor</key>
+		<string>00557a</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00557a</string>
+		<key>standardSelectionColor</key>
+		<string>00557a</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>alternativeColor</key>
+		<string>ad4e24</string>
+		<key>alternativeSelectionColor</key>
+		<string>ad4e24</string>
+	</dict>
+	<key>ControllerRemapInputIDSelection</key>
+	<dict>
+		<key>title</key>
+		<string></string>
+		<key>titleBackgroundColor</key>
+		<string>0078ad</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>0078ad</string>
+		<key>standardSelectionColor</key>
+		<string>0078ad</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+	</dict>
+	<key>ControllerRemapOutputIDSelection</key>
+	<dict>
+		<key>title</key>
+		<string></string>
+		<key>titleBackgroundColor</key>
+		<string>0078ad</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>0078ad</string>
+		<key>standardSelectionColor</key>
+		<string>0078ad</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+	</dict>
+	<key>ControllerRemapInputSetup</key>
+	<dict>
+		<key>title</key>
+		<string>Remap Input</string>
+		<key>buttonColors</key>
+		<array>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>fa4d00</string>
+			<string>fa4d00</string>
+		</array>
+		<key>titleBackgroundColor</key>
+		<string>00adfa</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00adfa</string>
+		<key>standardSelectionColor</key>
+		<string>818d92</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+	</dict>
+	<key>ControllerRemapOutputSetup</key>
+	<dict>
+		<key>title</key>
+		<string>Remap Output</string>
+		<key>buttonColors</key>
+		<array>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>00adfa</string>
+			<string>fa4d00</string>
+			<string>fa4d00</string>
+		</array>
+		<key>titleBackgroundColor</key>
+		<string>00adfa</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00adfa</string>
+		<key>standardSelectionColor</key>
+		<string>818d92</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+	</dict>
+	<key>ControllerRemapInputControllerSelection</key>
+	<dict>
+		<key>buttonColors</key>
+		<array>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>ad3500</string>
+		</array>
+		<key>titleBackgroundColor</key>
+		<string>00adfa</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>818d92</string>
+		<key>standardSelectionColor</key>
+		<string>818d92</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+	</dict>
+	<key>ControllerRemapOutputControllerSelection</key>
+	<dict>
+		<key>buttonColors</key>
+		<array>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>0078ad</string>
+			<string>ad3500</string>
+		</array>
+		<key>titleBackgroundColor</key>
+		<string>00adfa</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>818d92</string>
+		<key>standardSelectionColor</key>
+		<string>818d92</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+	</dict>
+	<key>AudioPatchbayOutputSelection</key>
+	<dict>
+		<key>title</key>
+		<string></string>
+		<key>titleBackgroundColor</key>
+		<string>00adfa</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>818d92</string>
+		<key>standardSelectionColor</key>
+		<string>00adfa</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+	</dict>
+	<key>AudioPatchbayInput</key>
+	<dict>
+		<key>title</key>
+		<string>Audio Patchbay Input</string>
+		<key>titleBackgroundColor</key>
+		<string>00557a</string>
+		<key>titleBorderColor</key>
+		<string>001620</string>
+		<key>standardColor</key>
+		<string>00557a</string>
+		<key>standardSelectionColor</key>
+		<string>00557a</string>
+		<key>standardBorderColor</key>
+		<string>001620</string>
+		<key>alternativeColor</key>
+		<string>ad4e24</string>
+		<key>alternativeSelectionColor</key>
+		<string>ad4e24</string>
+	</dict>
+</dict>
+</plist>
