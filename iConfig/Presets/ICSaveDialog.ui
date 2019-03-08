@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ICSaveDialog</class>
+ <widget class="QDialog" name="ICSaveDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Save Preset</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>350</y>
+     <width>291</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkDeviceInfo">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>681</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Device Info</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkMidi">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>681</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MIDI</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkMidiInfo">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>170</y>
+     <width>661</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MIDI Info</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkMidiPortRouting">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>190</y>
+     <width>661</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MIDI Port Routing</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>What to save?</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkMidiFilters">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>210</y>
+     <width>661</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MIDI Port/Controller Filters</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkMidiRemap">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>230</y>
+     <width>661</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MIDI Channel/Controller Remap</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkAudio">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>681</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AUDIO</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkAudioInfo">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>661</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Audio Info (Requires Reboot)</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkAudioConnections">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>290</y>
+     <width>661</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Audio Connections (Patchbay and Mixer Connections)</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkAudioMixer">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>661</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Audio Mixer Settings (Gains, Mute, Stereo Links, Balance, Solo, Inverts, PFLs, Mix Names)</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkAnalog">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>330</y>
+     <width>661</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Analog In/Out Settings (Phantom Power, Hi-Z, Gains, Mute, Stereo Links, Trim, Balance)</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkAll">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>681</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Check All</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>681</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Description:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Preset Name:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="textEditFileName"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="textEditDescription"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="buttonExportAsMidi">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>350</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Export as MIDI</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>textEditFileName</tabstop>
+  <tabstop>textEditDescription</tabstop>
+  <tabstop>checkAll</tabstop>
+  <tabstop>checkDeviceInfo</tabstop>
+  <tabstop>checkMidi</tabstop>
+  <tabstop>checkMidiInfo</tabstop>
+  <tabstop>checkMidiPortRouting</tabstop>
+  <tabstop>checkMidiFilters</tabstop>
+  <tabstop>checkMidiRemap</tabstop>
+  <tabstop>checkAudio</tabstop>
+  <tabstop>checkAudioInfo</tabstop>
+  <tabstop>checkAudioConnections</tabstop>
+  <tabstop>checkAudioMixer</tabstop>
+  <tabstop>checkAnalog</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ICSaveDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>638</x>
+     <y>380</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ICSaveDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>690</x>
+     <y>380</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonExportAsMidi</sender>
+   <signal>clicked()</signal>
+   <receiver>ICSaveDialog</receiver>
+   <slot>buttonExportAsMidi_triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>365</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>221</x>
+     <y>365</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>buttonExportAsMidi_triggered()</slot>
+ </slots>
+</ui>
