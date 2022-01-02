@@ -73,7 +73,7 @@ void MIDIPortInfo::parse(BytesIter &begin, BytesIter &end) {
 #else
     copy(begin, begin + sizeof(PortInfo), &m_portInfo.raw[0]);
 #endif
-    advance(begin, sizeof(PortInfo));
+    std::advance(begin, sizeof(PortInfo));
     maxPortName = nextROByte(begin, end);
     m_portMIDIFlags = nextMidiByte(begin, end);
     portName = rwString(string(begin, end));

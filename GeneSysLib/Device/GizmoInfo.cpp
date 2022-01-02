@@ -58,7 +58,7 @@ void GizmoInfo::parse(BytesIter &beginIter, BytesIter &endIter) {
     midiPortID = roWord(nextMidiWord(beginIter, endIter));
     pid = roWord(nextMidiWord(beginIter, endIter));
 
-    if ((size_t)distance(beginIter, endIter) >= (size_t)serialNumber().size()) {
+    if ((size_t)std::distance(beginIter, endIter) >= (size_t)serialNumber().size()) {
       SerialNumber sn;
       copy(beginIter, (beginIter + sn.size()), sn.begin());
       serialNumber = roSerialNumber(sn);

@@ -79,7 +79,7 @@ void AudioPortInfo::parse(BytesIter &beginIter, BytesIter &endIter) {
 #else
     copy(beginIter, beginIter + sizeof(PortInfo), &m_portInfo.raw[0]);
 #endif
-    advance(beginIter, sizeof(PortInfo));
+    std::advance(beginIter, sizeof(PortInfo));
 
     maxPortName = roByte(nextMidiByte(beginIter, endIter));
 
