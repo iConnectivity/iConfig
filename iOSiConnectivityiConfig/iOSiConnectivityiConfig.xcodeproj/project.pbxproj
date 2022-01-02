@@ -74,6 +74,11 @@
 		28285F322781C1D500030E2C /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EE62781C1D500030E2C /* stdafx.cpp */; };
 		28285F332781C1D500030E2C /* Lookup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EE92781C1D500030E2C /* Lookup.cpp */; };
 		28285F362781C4B500030E2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28285F352781C4B500030E2C /* AppDelegate.m */; };
+		28285F382781D58E00030E2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28285E392781C13F00030E2C /* main.m */; };
+		28285F3B2781D65600030E2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28285F3A2781D65600030E2C /* CoreGraphics.framework */; };
+		28285F3D2781D66400030E2C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28285F3C2781D66400030E2C /* CoreMIDI.framework */; };
+		28285F3F2781D67900030E2C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28285F3E2781D67900030E2C /* QuartzCore.framework */; };
+		28285F412781D68000030E2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28285F402781D68000030E2C /* UIKit.framework */; };
 		2856E81C2781B325005C6D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2856E81A2781B325005C6D16 /* Main.storyboard */; };
 		2856E81E2781B325005C6D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2856E81D2781B325005C6D16 /* Assets.xcassets */; };
 		2856E8212781B325005C6D16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2856E81F2781B325005C6D16 /* LaunchScreen.storyboard */; };
@@ -240,11 +245,14 @@
 		28285EEA2781C1D500030E2C /* Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Generator.h; sourceTree = "<group>"; };
 		28285F342781C48700030E2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28285F352781C4B500030E2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		28285F3A2781D65600030E2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28285F3C2781D66400030E2C /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		28285F3E2781D67900030E2C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		28285F402781D68000030E2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2856E80E2781B325005C6D16 /* iOSiConnectivityiConfig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSiConnectivityiConfig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2856E81B2781B325005C6D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2856E81D2781B325005C6D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2856E8202781B325005C6D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2856E8222781B325005C6D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +260,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28285F3D2781D66400030E2C /* CoreMIDI.framework in Frameworks */,
+				28285F412781D68000030E2C /* UIKit.framework in Frameworks */,
+				28285F3B2781D65600030E2C /* CoreGraphics.framework in Frameworks */,
+				28285F3F2781D67900030E2C /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +497,17 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		28285F392781D65600030E2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28285F402781D68000030E2C /* UIKit.framework */,
+				28285F3E2781D67900030E2C /* QuartzCore.framework */,
+				28285F3C2781D66400030E2C /* CoreMIDI.framework */,
+				28285F3A2781D65600030E2C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2856E8052781B325005C6D16 = {
 			isa = PBXGroup;
 			children = (
@@ -492,6 +515,7 @@
 				2856E81D2781B325005C6D16 /* Assets.xcassets */,
 				2856E8102781B325005C6D16 /* Source */,
 				2856E80F2781B325005C6D16 /* Products */,
+				28285F392781D65600030E2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -511,7 +535,6 @@
 				28285E392781C13F00030E2C /* main.m */,
 				2856E81A2781B325005C6D16 /* Main.storyboard */,
 				2856E81F2781B325005C6D16 /* LaunchScreen.storyboard */,
-				2856E8222781B325005C6D16 /* Info.plist */,
 				28285F342781C48700030E2C /* AppDelegate.h */,
 				28285F352781C4B500030E2C /* AppDelegate.m */,
 			);
@@ -612,6 +635,7 @@
 				28285F262781C1D500030E2C /* Generator.cpp in Sources */,
 				28285F132781C1D500030E2C /* AudioDeviceParm.cpp in Sources */,
 				28285F2A2781C1D500030E2C /* ACK.cpp in Sources */,
+				28285F382781D58E00030E2C /* main.m in Sources */,
 				28285F0E2781C1D500030E2C /* MixerOutputControl.cpp in Sources */,
 				28285F332781C1D500030E2C /* Lookup.cpp in Sources */,
 				28285F1C2781C1D500030E2C /* AudioControlDetail.cpp in Sources */,
@@ -807,7 +831,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H28D8P2T32;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iOSiConnectivityiConfig/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -834,7 +858,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H28D8P2T32;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iOSiConnectivityiConfig/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
