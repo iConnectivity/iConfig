@@ -5,6 +5,8 @@
 ;	https://opensource.org/licenses/gpl-3.0.html
 */
 
+#import <UIKit/UIKit.h>
+
 #import "ICSubnetMaskTextEditCellDelegate.h"
 #import "EthernetPortInfo.h"
 #import "MyConverters.h"
