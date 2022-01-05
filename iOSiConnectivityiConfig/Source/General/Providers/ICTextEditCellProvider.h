@@ -6,6 +6,8 @@
 */
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 #import "ICTextEditCellDelegate.h"
 
 typedef NSString * (^TextEditCellGetBlock)(void);

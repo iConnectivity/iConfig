@@ -1,0 +1,1986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28285EF22781C1D500030E2C /* MIDIPortRoute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E492781C1D500030E2C /* MIDIPortRoute.cpp */; };
+		28285EF32781C1D500030E2C /* MIDIPortRemap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E4A2781C1D500030E2C /* MIDIPortRemap.cpp */; };
+		28285EF42781C1D500030E2C /* RTPMIDIConnectionDetail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E4F2781C1D500030E2C /* RTPMIDIConnectionDetail.cpp */; };
+		28285EF52781C1D500030E2C /* MIDIEndPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 28285E512781C1D500030E2C /* MIDIEndPoint.m */; };
+		28285EF62781C1D500030E2C /* MIDIInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E552781C1D500030E2C /* MIDIInfo.cpp */; };
+		28285EF72781C1D500030E2C /* MIDIPortFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E592781C1D500030E2C /* MIDIPortFilter.cpp */; };
+		28285EF82781C1D500030E2C /* MIDIPortDetailTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E5A2781C1D500030E2C /* MIDIPortDetailTypes.cpp */; };
+		28285EF92781C1D500030E2C /* MIDIPortDetail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E5C2781C1D500030E2C /* MIDIPortDetail.cpp */; };
+		28285EFA2781C1D500030E2C /* MIDIPortInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E5F2781C1D500030E2C /* MIDIPortInfo.cpp */; };
+		28285EFB2781C1D500030E2C /* USBHostMIDIDeviceDetail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E602781C1D500030E2C /* USBHostMIDIDeviceDetail.cpp */; };
+		28285EFC2781C1D500030E2C /* GeneSysLib(qt4_8_6).pro in Resources */ = {isa = PBXBuildFile; fileRef = 28285E622781C1D500030E2C /* GeneSysLib(qt4_8_6).pro */; };
+		28285EFD2781C1D500030E2C /* GeneSysLib.pro in Resources */ = {isa = PBXBuildFile; fileRef = 28285E632781C1D500030E2C /* GeneSysLib.pro */; };
+		28285EFE2781C1D500030E2C /* BitDepthCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E672781C1D500030E2C /* BitDepthCode.cpp */; };
+		28285EFF2781C1D500030E2C /* AudioPortPatchbay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E6A2781C1D500030E2C /* AudioPortPatchbay.cpp */; };
+		28285F002781C1D500030E2C /* AudioPortInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E6C2781C1D500030E2C /* AudioPortInfo.cpp */; };
+		28285F012781C1D500030E2C /* AudioPortCfgInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E6E2781C1D500030E2C /* AudioPortCfgInfo.cpp */; };
+		28285F022781C1D500030E2C /* AudioCfgInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E722781C1D500030E2C /* AudioCfgInfo.cpp */; };
+		28285F032781C1D500030E2C /* AudioInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E742781C1D500030E2C /* AudioInfo.cpp */; };
+		28285F042781C1D500030E2C /* ClockSourceType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E752781C1D500030E2C /* ClockSourceType.cpp */; };
+		28285F052781C1D500030E2C /* AudioClockInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E772781C1D500030E2C /* AudioClockInfo.cpp */; };
+		28285F062781C1D500030E2C /* SampleRateCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E7B2781C1D500030E2C /* SampleRateCode.cpp */; };
+		28285F072781C1D500030E2C /* MixerInputControlValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E812781C1D500030E2C /* MixerInputControlValue.cpp */; };
+		28285F082781C1D500030E2C /* MixerParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E822781C1D500030E2C /* MixerParm.cpp */; };
+		28285F092781C1D500030E2C /* MixerInputParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E832781C1D500030E2C /* MixerInputParm.cpp */; };
+		28285F0A2781C1D500030E2C /* MixerOutputControlValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E862781C1D500030E2C /* MixerOutputControlValue.cpp */; };
+		28285F0B2781C1D500030E2C /* MixerMeterValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E882781C1D500030E2C /* MixerMeterValue.cpp */; };
+		28285F0C2781C1D500030E2C /* MixerInputControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E892781C1D500030E2C /* MixerInputControl.cpp */; };
+		28285F0D2781C1D500030E2C /* MixerPortParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E8A2781C1D500030E2C /* MixerPortParm.cpp */; };
+		28285F0E2781C1D500030E2C /* MixerOutputControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E8B2781C1D500030E2C /* MixerOutputControl.cpp */; };
+		28285F0F2781C1D500030E2C /* MixerOutputParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E8E2781C1D500030E2C /* MixerOutputParm.cpp */; };
+		28285F102781C1D500030E2C /* AudioGlobalParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E912781C1D500030E2C /* AudioGlobalParm.cpp */; };
+		28285F112781C1D500030E2C /* AudioControlDetailValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E922781C1D500030E2C /* AudioControlDetailValue.cpp */; };
+		28285F122781C1D500030E2C /* AudioPortParmTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E962781C1D500030E2C /* AudioPortParmTypes.cpp */; };
+		28285F132781C1D500030E2C /* AudioDeviceParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E982781C1D500030E2C /* AudioDeviceParm.cpp */; };
+		28285F142781C1D500030E2C /* AudioPortParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E992781C1D500030E2C /* AudioPortParm.cpp */; };
+		28285F152781C1D500030E2C /* AudioPatchbayParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285E9F2781C1D500030E2C /* AudioPatchbayParm.cpp */; };
+		28285F162781C1D500030E2C /* AudioDeviceTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EA12781C1D500030E2C /* AudioDeviceTypes.cpp */; };
+		28285F172781C1D500030E2C /* AudioControlParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EA42781C1D500030E2C /* AudioControlParm.cpp */; };
+		28285F182781C1D500030E2C /* AudioControlDetailTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EA62781C1D500030E2C /* AudioControlDetailTypes.cpp */; };
+		28285F192781C1D500030E2C /* AudioControlTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EA72781C1D500030E2C /* AudioControlTypes.cpp */; };
+		28285F1A2781C1D500030E2C /* AudioPortMeterValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EA82781C1D500030E2C /* AudioPortMeterValue.cpp */; };
+		28285F1B2781C1D500030E2C /* AudioControlDetailValueTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EAA2781C1D500030E2C /* AudioControlDetailValueTypes.cpp */; };
+		28285F1C2781C1D500030E2C /* AudioControlDetail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EAB2781C1D500030E2C /* AudioControlDetail.cpp */; };
+		28285F1D2781C1D500030E2C /* AudioClockParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EAC2781C1D500030E2C /* AudioClockParm.cpp */; };
+		28285F1E2781C1D500030E2C /* InfoList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EB02781C1D500030E2C /* InfoList.cpp */; };
+		28285F1F2781C1D500030E2C /* GizmoInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EB22781C1D500030E2C /* GizmoInfo.cpp */; };
+		28285F202781C1D500030E2C /* Device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EB62781C1D500030E2C /* Device.cpp */; };
+		28285F212781C1D500030E2C /* EthernetPortInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EBD2781C1D500030E2C /* EthernetPortInfo.cpp */; };
+		28285F222781C1D500030E2C /* SaveRestoreList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EBF2781C1D500030E2C /* SaveRestoreList.cpp */; };
+		28285F232781C1D500030E2C /* Info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EC12781C1D500030E2C /* Info.cpp */; };
+		28285F242781C1D500030E2C /* DeviceID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EC42781C1D500030E2C /* DeviceID.cpp */; };
+		28285F252781C1D500030E2C /* GizmoCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EC52781C1D500030E2C /* GizmoCount.cpp */; };
+		28285F262781C1D500030E2C /* Generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EC72781C1D500030E2C /* Generator.cpp */; };
+		28285F272781C1D500030E2C /* MyAlgorithms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285ECA2781C1D500030E2C /* MyAlgorithms.cpp */; };
+		28285F282781C1D500030E2C /* CommandList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285ECE2781C1D500030E2C /* CommandList.cpp */; };
+		28285F292781C1D500030E2C /* TimerThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285ED02781C1D500030E2C /* TimerThread.cpp */; };
+		28285F2A2781C1D500030E2C /* ACK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285ED32781C1D500030E2C /* ACK.cpp */; };
+		28285F2B2781C1D500030E2C /* ByteCommandData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285ED72781C1D500030E2C /* ByteCommandData.cpp */; };
+		28285F2C2781C1D500030E2C /* ICRunOnMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 28285ED82781C1D500030E2C /* ICRunOnMain.m */; };
+		28285F2D2781C1D500030E2C /* Communicator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285ED92781C1D500030E2C /* Communicator.cpp */; };
+		28285F2E2781C1D500030E2C /* CommandData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EDA2781C1D500030E2C /* CommandData.cpp */; };
+		28285F2F2781C1D500030E2C /* BytesCommandData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EDB2781C1D500030E2C /* BytesCommandData.cpp */; };
+		28285F302781C1D500030E2C /* SysexParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EE22781C1D500030E2C /* SysexParser.cpp */; };
+		28285F312781C1D500030E2C /* CommandDefines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EE42781C1D500030E2C /* CommandDefines.cpp */; };
+		28285F322781C1D500030E2C /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EE62781C1D500030E2C /* stdafx.cpp */; };
+		28285F332781C1D500030E2C /* Lookup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28285EE92781C1D500030E2C /* Lookup.cpp */; };
+		28285F382781D58E00030E2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28285E392781C13F00030E2C /* main.m */; };
+		28285F3B2781D65600030E2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28285F3A2781D65600030E2C /* CoreGraphics.framework */; };
+		28285F3D2781D66400030E2C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28285F3C2781D66400030E2C /* CoreMIDI.framework */; };
+		28285F3F2781D67900030E2C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28285F3E2781D67900030E2C /* QuartzCore.framework */; };
+		28285F412781D68000030E2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28285F402781D68000030E2C /* UIKit.framework */; };
+		2856E81C2781B325005C6D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2856E81A2781B325005C6D16 /* Main.storyboard */; };
+		2856E81E2781B325005C6D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2856E81D2781B325005C6D16 /* Assets.xcassets */; };
+		2856E8212781B325005C6D16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2856E81F2781B325005C6D16 /* LaunchScreen.storyboard */; };
+		28CC57512781DB57003B9605 /* MainMenuBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC572F2781DB57003B9605 /* MainMenuBack@2x.png */; };
+		28CC57522781DB57003B9605 /* block_icm2plusdevice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57302781DB57003B9605 /* block_icm2plusdevice@2x.png */; };
+		28CC57532781DB57003B9605 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57312781DB57003B9605 /* Default-Portrait@2x~ipad.png */; };
+		28CC57542781DB57003B9605 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57322781DB57003B9605 /* Default-Landscape~ipad.png */; };
+		28CC57552781DB57003B9605 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57332781DB57003B9605 /* Default-Portrait~ipad.png */; };
+		28CC57562781DB57003B9605 /* block_miodevice.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57342781DB57003B9605 /* block_miodevice.png */; };
+		28CC57572781DB57003B9605 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57352781DB57003B9605 /* Default@2x.png */; };
+		28CC57582781DB57003B9605 /* 114x144.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57362781DB57003B9605 /* 114x144.png */; };
+		28CC57592781DB57003B9605 /* ChannelButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57372781DB57003B9605 /* ChannelButton@2x.png */; };
+		28CC575A2781DB57003B9605 /* block_icm1device.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57382781DB57003B9605 /* block_icm1device.png */; };
+		28CC575B2781DB57003B9605 /* Default@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57392781DB57003B9605 /* Default@2x~ipad.png */; };
+		28CC575C2781DB57003B9605 /* ChannelButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC573A2781DB57003B9605 /* ChannelButton.png */; };
+		28CC575D2781DB57003B9605 /* RightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC573B2781DB57003B9605 /* RightArrow.png */; };
+		28CC575E2781DB57003B9605 /* LeftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC573C2781DB57003B9605 /* LeftArrow.png */; };
+		28CC575F2781DB57003B9605 /* block_miodevice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC573D2781DB57003B9605 /* block_miodevice@2x.png */; };
+		28CC57602781DB57003B9605 /* block_icm2plusdevice.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC573E2781DB57003B9605 /* block_icm2plusdevice.png */; };
+		28CC57612781DB57003B9605 /* iPodDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC573F2781DB57003B9605 /* iPodDefault@2x.png */; };
+		28CC57622781DB57003B9605 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57402781DB57003B9605 /* Background.png */; };
+		28CC57632781DB57003B9605 /* 144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57412781DB57003B9605 /* 144x144.png */; };
+		28CC57642781DB57003B9605 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57422781DB57003B9605 /* Default-Landscape@2x~ipad.png */; };
+		28CC57652781DB57003B9605 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57432781DB57003B9605 /* Default-568h@2x.png */; };
+		28CC57662781DB57003B9605 /* 72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57442781DB57003B9605 /* 72x72.png */; };
+		28CC57672781DB57003B9605 /* block_icm1device@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57452781DB57003B9605 /* block_icm1device@2x.png */; };
+		28CC57682781DB57003B9605 /* block_icm4plusdevice.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57462781DB57003B9605 /* block_icm4plusdevice.png */; };
+		28CC57692781DB57003B9605 /* RightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57472781DB57003B9605 /* RightArrow@2x.png */; };
+		28CC576A2781DB57003B9605 /* block_icm4plusdevice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57482781DB57003B9605 /* block_icm4plusdevice@2x.png */; };
+		28CC576B2781DB57003B9605 /* 76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57492781DB57003B9605 /* 76x76.png */; };
+		28CC576C2781DB57003B9605 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC574A2781DB57003B9605 /* Background@2x.png */; };
+		28CC576D2781DB57003B9605 /* MainMenuBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC574B2781DB57003B9605 /* MainMenuBack.png */; };
+		28CC576E2781DB57003B9605 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC574C2781DB57003B9605 /* Default.png */; };
+		28CC576F2781DB57003B9605 /* LeftArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC574D2781DB57003B9605 /* LeftArrow@2x.png */; };
+		28CC57702781DB57003B9605 /* iPod(Not Streatched)Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC574E2781DB57003B9605 /* iPod(Not Streatched)Default@2x.png */; };
+		28CC57712781DB57003B9605 /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC574F2781DB57003B9605 /* Default~ipad.png */; };
+		28CC57722781DB57003B9605 /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57502781DB57003B9605 /* 57x57.png */; };
+		28CC57822781DB74003B9605 /* ICHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57742781DB74003B9605 /* ICHelpViewController.xib */; };
+		28CC57832781DB74003B9605 /* ICRangeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57752781DB74003B9605 /* ICRangeSelectionViewController.xib */; };
+		28CC57842781DB74003B9605 /* ICDeviceInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57762781DB74003B9605 /* ICDeviceInfoViewController.xib */; };
+		28CC57852781DB74003B9605 /* ICViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57772781DB74003B9605 /* ICViewController_iPad.xib */; };
+		28CC57862781DB74003B9605 /* ICFileBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57782781DB74003B9605 /* ICFileBrowserViewController.xib */; };
+		28CC57872781DB74003B9605 /* ICBaseInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57792781DB74003B9605 /* ICBaseInfoViewController.xib */; };
+		28CC57882781DB74003B9605 /* ICDeviceSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC577A2781DB74003B9605 /* ICDeviceSelectionViewController.xib */; };
+		28CC57892781DB74003B9605 /* ICAudioPatchbayV1iPadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC577B2781DB74003B9605 /* ICAudioPatchbayV1iPadCell.xib */; };
+		28CC578A2781DB74003B9605 /* ICViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC577C2781DB74003B9605 /* ICViewController_iPhone.xib */; };
+		28CC578B2781DB74003B9605 /* ICChoiceSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC577D2781DB74003B9605 /* ICChoiceSelectionViewController.xib */; };
+		28CC578C2781DB74003B9605 /* ICAudioPatchbayV1iPhoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC577E2781DB74003B9605 /* ICAudioPatchbayV1iPhoneCell.xib */; };
+		28CC578D2781DB74003B9605 /* ICAudioPatchbayV1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC577F2781DB74003B9605 /* ICAudioPatchbayV1ViewController.xib */; };
+		28CC578E2781DB74003B9605 /* ICAudioPatchbayGrid_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57802781DB74003B9605 /* ICAudioPatchbayGrid_iPad.xib */; };
+		28CC578F2781DB74003B9605 /* ICAudioPortPatchbayV1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC57812781DB74003B9605 /* ICAudioPortPatchbayV1ViewController.xib */; };
+		28CC57942781DC02003B9605 /* ICAudioPatchbayGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57912781DC02003B9605 /* ICAudioPatchbayGridViewController.m */; };
+		28CC57BB2781DC1A003B9605 /* ICAudioPatchbayV1Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57972781DC1A003B9605 /* ICAudioPatchbayV1Delegate.m */; };
+		28CC57BC2781DC1A003B9605 /* ICAudioPatchbayV1OutputSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57992781DC1A003B9605 /* ICAudioPatchbayV1OutputSelection.m */; };
+		28CC57BD2781DC1A003B9605 /* ICAudioPortPatchbayV1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC579A2781DC1A003B9605 /* ICAudioPortPatchbayV1ViewController.m */; };
+		28CC57BE2781DC1A003B9605 /* ICAudioPatchbayV1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC579B2781DC1A003B9605 /* ICAudioPatchbayV1ViewController.m */; };
+		28CC57BF2781DC1A003B9605 /* ICAudioPatchbayV1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC579C2781DC1A003B9605 /* ICAudioPatchbayV1Cell.m */; };
+		28CC57C02781DC1A003B9605 /* ICAudioPatchbayV1InputSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC579E2781DC1A003B9605 /* ICAudioPatchbayV1InputSelection.m */; };
+		28CC57C12781DC1A003B9605 /* ICAudioInfoViewControllerV1.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57A42781DC1A003B9605 /* ICAudioInfoViewControllerV1.m */; };
+		28CC57C22781DC1A003B9605 /* ICAudioInputChannelsV1RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57A62781DC1A003B9605 /* ICAudioInputChannelsV1RangeDelegate.m */; };
+		28CC57C32781DC1A003B9605 /* ICiOSEnabledV1SwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57A92781DC1A003B9605 /* ICiOSEnabledV1SwitchDelegate.m */; };
+		28CC57C42781DC1A003B9605 /* ICMIDIPortNameTextEditDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57AA2781DC1A003B9605 /* ICMIDIPortNameTextEditDelegate.m */; };
+		28CC57C52781DC1A003B9605 /* ICAudioFrameBufferV1RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57AD2781DC1A003B9605 /* ICAudioFrameBufferV1RangeDelegate.m */; };
+		28CC57C62781DC1A003B9605 /* ICAudioClockV1ChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57AE2781DC1A003B9605 /* ICAudioClockV1ChoiceDelegate.m */; };
+		28CC57C72781DC1A003B9605 /* ICAudioSetupV1ChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57B12781DC1A003B9605 /* ICAudioSetupV1ChoiceDelegate.m */; };
+		28CC57C82781DC1A003B9605 /* ICAudioOutputChannelsV1RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57B42781DC1A003B9605 /* ICAudioOutputChannelsV1RangeDelegate.m */; };
+		28CC57C92781DC1A003B9605 /* ICPCEnabledV1SwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57B52781DC1A003B9605 /* ICPCEnabledV1SwitchDelegate.m */; };
+		28CC57CA2781DC1A003B9605 /* ICAudioSyncFactorV1RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57B72781DC1A003B9605 /* ICAudioSyncFactorV1RangeDelegate.m */; };
+		28CC57CB2781DC1A003B9605 /* ICAudioPortNameV1TextEditCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57B92781DC1A003B9605 /* ICAudioPortNameV1TextEditCellDelegate.m */; };
+		28CC57E62781DC30003B9605 /* ICAudioPatchbayV2Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57CF2781DC30003B9605 /* ICAudioPatchbayV2Delegate.m */; };
+		28CC57E72781DC30003B9605 /* ICAudioInfoViewControllerV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57D12781DC30003B9605 /* ICAudioInfoViewControllerV2.m */; };
+		28CC57E82781DC30003B9605 /* ICAudioFrameBufferV2RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57D42781DC30003B9605 /* ICAudioFrameBufferV2RangeDelegate.m */; };
+		28CC57E92781DC30003B9605 /* ICAudioSetupV2ChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57D52781DC30003B9605 /* ICAudioSetupV2ChoiceDelegate.m */; };
+		28CC57EA2781DC30003B9605 /* ICPCEnabledV2SwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57D72781DC30003B9605 /* ICPCEnabledV2SwitchDelegate.m */; };
+		28CC57EB2781DC30003B9605 /* ICAudioPortNameV2TextEditCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57D82781DC30003B9605 /* ICAudioPortNameV2TextEditCellDelegate.m */; };
+		28CC57EC2781DC30003B9605 /* ICAudioInputChannelsV2RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57D92781DC30003B9605 /* ICAudioInputChannelsV2RangeDelegate.m */; };
+		28CC57ED2781DC30003B9605 /* ICAudioSyncFactorV2RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57DD2781DC30003B9605 /* ICAudioSyncFactorV2RangeDelegate.m */; };
+		28CC57EE2781DC30003B9605 /* ICiOSEnabledV2SwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57E02781DC30003B9605 /* ICiOSEnabledV2SwitchDelegate.m */; };
+		28CC57EF2781DC30003B9605 /* ICAudioClockV2ChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57E12781DC30003B9605 /* ICAudioClockV2ChoiceDelegate.m */; };
+		28CC57F02781DC30003B9605 /* ICAudioOutputChannelsV2RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57E42781DC30003B9605 /* ICAudioOutputChannelsV2RangeDelegate.m */; };
+		28CC57F82781DC3E003B9605 /* NSString+RotatedDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57F22781DC3E003B9605 /* NSString+RotatedDraw.m */; };
+		28CC57F92781DC3E003B9605 /* UIImageTintCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57F32781DC3E003B9605 /* UIImageTintCategory.m */; };
+		28CC57FA2781DC3E003B9605 /* NSString+NSStringExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57F72781DC3E003B9605 /* NSString+NSStringExtension.m */; };
+		28CC57FE2781DC49003B9605 /* ICIndicatorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC57FD2781DC49003B9605 /* ICIndicatorButton.m */; };
+		28CC58182781DC5F003B9605 /* ICDeviceSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58022781DC5F003B9605 /* ICDeviceSelectionViewController.m */; };
+		28CC58192781DC5F003B9605 /* ICDeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58032781DC5F003B9605 /* ICDeviceInfoViewController.m */; };
+		28CC581A2781DC5F003B9605 /* ICMacAddressDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58072781DC5F003B9605 /* ICMacAddressDelegate.m */; };
+		28CC581B2781DC5F003B9605 /* ICVendorNameDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC580E2781DC5F003B9605 /* ICVendorNameDelegate.m */; };
+		28CC581C2781DC5F003B9605 /* ICGatewayTextEditCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC580F2781DC5F003B9605 /* ICGatewayTextEditCellDelegate.m */; };
+		28CC581D2781DC5F003B9605 /* ICIPAddressTextEditCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58112781DC5F003B9605 /* ICIPAddressTextEditCellDelegate.m */; };
+		28CC581E2781DC5F003B9605 /* ICIPModeChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58122781DC5F003B9605 /* ICIPModeChoiceDelegate.m */; };
+		28CC581F2781DC5F003B9605 /* ICProductNameDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58132781DC5F003B9605 /* ICProductNameDelegate.m */; };
+		28CC58202781DC5F003B9605 /* ICSubnetMaskTextEditCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58152781DC5F003B9605 /* ICSubnetMaskTextEditCellDelegate.m */; };
+		28CC58212781DC5F003B9605 /* ICInfoTextEditCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58162781DC5F003B9605 /* ICInfoTextEditCellDelegate.m */; };
+		28CC58222781DC5F003B9605 /* DeviceInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58172781DC5F003B9605 /* DeviceInfo.cpp */; };
+		28CC584A2781DC77003B9605 /* ICChoiceCellProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58252781DC76003B9605 /* ICChoiceCellProvider.m */; };
+		28CC584B2781DC77003B9605 /* ICNormalCellProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58272781DC76003B9605 /* ICNormalCellProvider.m */; };
+		28CC584C2781DC77003B9605 /* ICSwitchCellProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58282781DC76003B9605 /* ICSwitchCellProvider.m */; };
+		28CC584D2781DC77003B9605 /* ICDefaultProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC582A2781DC76003B9605 /* ICDefaultProvider.m */; };
+		28CC584E2781DC77003B9605 /* ICMainMenuProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC582D2781DC76003B9605 /* ICMainMenuProvider.m */; };
+		28CC584F2781DC77003B9605 /* ICTextEditCellProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC582E2781DC76003B9605 /* ICTextEditCellProvider.m */; };
+		28CC58502781DC77003B9605 /* ICRangeCellProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58302781DC76003B9605 /* ICRangeCellProvider.m */; };
+		28CC58512781DC77003B9605 /* ICBaseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58352781DC76003B9605 /* ICBaseInfoViewController.m */; };
+		28CC58522781DC77003B9605 /* ICRangeSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58372781DC76003B9605 /* ICRangeSelectionViewController.m */; };
+		28CC58532781DC77003B9605 /* ICChoiceSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58392781DC76003B9605 /* ICChoiceSelectionViewController.m */; };
+		28CC58542781DC77003B9605 /* ICHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC583B2781DC76003B9605 /* ICHelpViewController.m */; };
+		28CC58552781DC77003B9605 /* ICFileBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC583D2781DC77003B9605 /* ICFileBrowserViewController.m */; };
+		28CC58562781DC77003B9605 /* ICViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC583E2781DC77003B9605 /* ICViewController.m */; };
+		28CC58572781DC77003B9605 /* ICControllerChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58412781DC77003B9605 /* ICControllerChoiceDelegate.m */; };
+		28CC58582781DC77003B9605 /* ICNormalBlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58462781DC77003B9605 /* ICNormalBlockDelegate.m */; };
+		28CC589A2781DC89003B9605 /* ICPortFiltersChannelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC585C2781DC89003B9605 /* ICPortFiltersChannelProvider.m */; };
+		28CC589B2781DC89003B9605 /* ICPortFiltersProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC585E2781DC89003B9605 /* ICPortFiltersProvider.m */; };
+		28CC589C2781DC89003B9605 /* ICFilterPortSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58602781DC89003B9605 /* ICFilterPortSelection.m */; };
+		28CC589D2781DC89003B9605 /* ICMIDIIndexTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58632781DC89003B9605 /* ICMIDIIndexTableViewController.m */; };
+		28CC589E2781DC89003B9605 /* ICMIDIInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58662781DC89003B9605 /* ICMIDIInfoViewController.m */; };
+		28CC589F2781DC89003B9605 /* ICMaxPortsRangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58692781DC89003B9605 /* ICMaxPortsRangeDelegate.m */; };
+		28CC58A02781DC89003B9605 /* ICMIDIOutputEnabledSwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC586C2781DC89003B9605 /* ICMIDIOutputEnabledSwitchDelegate.m */; };
+		28CC58A12781DC89003B9605 /* ICMIDIInputEnabledSwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC586D2781DC89003B9605 /* ICMIDIInputEnabledSwitchDelegate.m */; };
+		28CC58A22781DC89003B9605 /* ICRunningStatusSwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC586F2781DC89003B9605 /* ICRunningStatusSwitchDelegate.m */; };
+		28CC58A32781DC89003B9605 /* ICReservedPortChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58702781DC89003B9605 /* ICReservedPortChoiceDelegate.m */; };
+		28CC58A42781DC89003B9605 /* ICMIDIInterPortRoutingSwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58722781DC89003B9605 /* ICMIDIInterPortRoutingSwitchDelegate.m */; };
+		28CC58A52781DC89003B9605 /* ICControllerFilterPortSelectionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58752781DC89003B9605 /* ICControllerFilterPortSelectionProvider.m */; };
+		28CC58A62781DC89003B9605 /* ICControllerFilterProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58762781DC89003B9605 /* ICControllerFilterProvider.m */; };
+		28CC58A72781DC89003B9605 /* ICControllerFilterIDProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC587A2781DC89003B9605 /* ICControllerFilterIDProvider.m */; };
+		28CC58A82781DC89003B9605 /* ICPortSelectionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC587C2781DC89003B9605 /* ICPortSelectionProvider.m */; };
+		28CC58A92781DC89003B9605 /* ICRemapDestinationControllerChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58812781DC89003B9605 /* ICRemapDestinationControllerChoiceDelegate.m */; };
+		28CC58AA2781DC89003B9605 /* ICRemapSourceControllerChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58822781DC89003B9605 /* ICRemapSourceControllerChoiceDelegate.m */; };
+		28CC58AB2781DC89003B9605 /* ICControllerSelectionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58852781DC89003B9605 /* ICControllerSelectionProvider.m */; };
+		28CC58AC2781DC89003B9605 /* ICControllerRemapIDProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58882781DC89003B9605 /* ICControllerRemapIDProvider.m */; };
+		28CC58AD2781DC89003B9605 /* ICControllerRemapProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58892781DC89003B9605 /* ICControllerRemapProvider.m */; };
+		28CC58AE2781DC89003B9605 /* ICControllerRemapPortSelectionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC588B2781DC89003B9605 /* ICControllerRemapPortSelectionProvider.m */; };
+		28CC58AF2781DC89003B9605 /* ICChannelRemapSelectionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58902781DC89003B9605 /* ICChannelRemapSelectionProvider.m */; };
+		28CC58B02781DC89003B9605 /* ICChannelRemapProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58922781DC89003B9605 /* ICChannelRemapProvider.m */; };
+		28CC58B12781DC89003B9605 /* ICChannelRemapPortSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58942781DC89003B9605 /* ICChannelRemapPortSelection.m */; };
+		28CC58B22781DC89003B9605 /* ICPortRoutingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58972781DC89003B9605 /* ICPortRoutingProvider.m */; };
+		28CC58B32781DC89003B9605 /* ICPortRoutingPortSelectionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58982781DC89003B9605 /* ICPortRoutingPortSelectionProvider.m */; };
+		28CC58C42781DC94003B9605 /* MMSideDrawerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58B52781DC93003B9605 /* MMSideDrawerTableViewCell.m */; };
+		28CC58C52781DC94003B9605 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58B62781DC93003B9605 /* MMDrawerBarButtonItem.m */; };
+		28CC58C62781DC94003B9605 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58B92781DC93003B9605 /* UIViewController+MMDrawerController.m */; };
+		28CC58C72781DC94003B9605 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58BA2781DC93003B9605 /* MMDrawerController.m */; };
+		28CC58C82781DC94003B9605 /* MMSideDrawerSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58BD2781DC93003B9605 /* MMSideDrawerSectionHeaderView.m */; };
+		28CC58C92781DC94003B9605 /* MMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58C02781DC93003B9605 /* MMTableViewCell.m */; };
+		28CC58CA2781DC94003B9605 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58C22781DC93003B9605 /* MMDrawerVisualState.m */; };
+		28CC58CE2781DCA2003B9605 /* ICServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58CD2781DCA2003B9605 /* ICServer.m */; };
+		28CC58D42781DCAD003B9605 /* ICPollingTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58D12781DCAD003B9605 /* ICPollingTimer.m */; };
+		28CC58D52781DCAD003B9605 /* MyConverters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28CC58D22781DCAD003B9605 /* MyConverters.cpp */; };
+		28CC58D62781DCE5003B9605 /* ICAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28285E3B2781C15B00030E2C /* ICAppDelegate.m */; };
+		28CC58DA2781DF88003B9605 /* iConnectivityiConfig-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28CC58D82781DF88003B9605 /* iConnectivityiConfig-Info.plist */; };
+		28CC58DB2781DF88003B9605 /* Provider.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28CC58D92781DF88003B9605 /* Provider.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28285E392781C13F00030E2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28285E3A2781C15B00030E2C /* ICAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICAppDelegate.h; sourceTree = "<group>"; };
+		28285E3B2781C15B00030E2C /* ICAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICAppDelegate.m; sourceTree = "<group>"; };
+		28285E492781C1D500030E2C /* MIDIPortRoute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIPortRoute.cpp; sourceTree = "<group>"; };
+		28285E4A2781C1D500030E2C /* MIDIPortRemap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIPortRemap.cpp; sourceTree = "<group>"; };
+		28285E4B2781C1D500030E2C /* MIDIPortDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIPortDetail.h; sourceTree = "<group>"; };
+		28285E4C2781C1D500030E2C /* FilterStatusBit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterStatusBit.h; sourceTree = "<group>"; };
+		28285E4D2781C1D500030E2C /* MIDIEndPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIEndPoint.h; sourceTree = "<group>"; };
+		28285E4E2781C1D500030E2C /* USBHostMIDIDeviceDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBHostMIDIDeviceDetail.h; sourceTree = "<group>"; };
+		28285E4F2781C1D500030E2C /* RTPMIDIConnectionDetail.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTPMIDIConnectionDetail.cpp; sourceTree = "<group>"; };
+		28285E502781C1D500030E2C /* MIDIPortDetailTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIPortDetailTypes.h; sourceTree = "<group>"; };
+		28285E512781C1D500030E2C /* MIDIEndPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIEndPoint.m; sourceTree = "<group>"; };
+		28285E522781C1D500030E2C /* MIDIPortInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIPortInfo.h; sourceTree = "<group>"; };
+		28285E532781C1D500030E2C /* FilterID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterID.h; sourceTree = "<group>"; };
+		28285E542781C1D500030E2C /* PortMIDIFlags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortMIDIFlags.h; sourceTree = "<group>"; };
+		28285E552781C1D500030E2C /* MIDIInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIInfo.cpp; sourceTree = "<group>"; };
+		28285E562781C1D500030E2C /* RemapID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemapID.h; sourceTree = "<group>"; };
+		28285E572781C1D500030E2C /* MIDIInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIInfo.h; sourceTree = "<group>"; };
+		28285E582781C1D500030E2C /* MIDIPortRemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIPortRemap.h; sourceTree = "<group>"; };
+		28285E592781C1D500030E2C /* MIDIPortFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIPortFilter.cpp; sourceTree = "<group>"; };
+		28285E5A2781C1D500030E2C /* MIDIPortDetailTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIPortDetailTypes.cpp; sourceTree = "<group>"; };
+		28285E5B2781C1D500030E2C /* MIDIPortRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIPortRoute.h; sourceTree = "<group>"; };
+		28285E5C2781C1D500030E2C /* MIDIPortDetail.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIPortDetail.cpp; sourceTree = "<group>"; };
+		28285E5D2781C1D500030E2C /* RTPMIDIConnectionDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPMIDIConnectionDetail.h; sourceTree = "<group>"; };
+		28285E5E2781C1D500030E2C /* MIDIPortFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIPortFilter.h; sourceTree = "<group>"; };
+		28285E5F2781C1D500030E2C /* MIDIPortInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIPortInfo.cpp; sourceTree = "<group>"; };
+		28285E602781C1D500030E2C /* USBHostMIDIDeviceDetail.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USBHostMIDIDeviceDetail.cpp; sourceTree = "<group>"; };
+		28285E622781C1D500030E2C /* GeneSysLib(qt4_8_6).pro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GeneSysLib(qt4_8_6).pro"; sourceTree = "<group>"; };
+		28285E632781C1D500030E2C /* GeneSysLib.pro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GeneSysLib.pro; sourceTree = "<group>"; };
+		28285E652781C1D500030E2C /* ChannelFilterStatusBit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelFilterStatusBit.h; sourceTree = "<group>"; };
+		28285E662781C1D500030E2C /* BitDepthCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitDepthCode.h; sourceTree = "<group>"; };
+		28285E672781C1D500030E2C /* BitDepthCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitDepthCode.cpp; sourceTree = "<group>"; };
+		28285E682781C1D500030E2C /* SampleRateCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleRateCode.h; sourceTree = "<group>"; };
+		28285E6A2781C1D500030E2C /* AudioPortPatchbay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPortPatchbay.cpp; sourceTree = "<group>"; };
+		28285E6B2781C1D500030E2C /* AudioPortPatchbay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPortPatchbay.h; sourceTree = "<group>"; };
+		28285E6C2781C1D500030E2C /* AudioPortInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPortInfo.cpp; sourceTree = "<group>"; };
+		28285E6D2781C1D500030E2C /* AudioClockInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioClockInfo.h; sourceTree = "<group>"; };
+		28285E6E2781C1D500030E2C /* AudioPortCfgInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPortCfgInfo.cpp; sourceTree = "<group>"; };
+		28285E6F2781C1D500030E2C /* AudioPortInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPortInfo.h; sourceTree = "<group>"; };
+		28285E702781C1D500030E2C /* AudioInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioInfo.h; sourceTree = "<group>"; };
+		28285E712781C1D500030E2C /* ClockSourceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockSourceType.h; sourceTree = "<group>"; };
+		28285E722781C1D500030E2C /* AudioCfgInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioCfgInfo.cpp; sourceTree = "<group>"; };
+		28285E732781C1D500030E2C /* AudioCfgInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioCfgInfo.h; sourceTree = "<group>"; };
+		28285E742781C1D500030E2C /* AudioInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioInfo.cpp; sourceTree = "<group>"; };
+		28285E752781C1D500030E2C /* ClockSourceType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClockSourceType.cpp; sourceTree = "<group>"; };
+		28285E762781C1D500030E2C /* AudioPortCfgInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPortCfgInfo.h; sourceTree = "<group>"; };
+		28285E772781C1D500030E2C /* AudioClockInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioClockInfo.cpp; sourceTree = "<group>"; };
+		28285E782781C1D500030E2C /* HostType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostType.h; sourceTree = "<group>"; };
+		28285E792781C1D500030E2C /* ChannelBitmapBit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelBitmapBit.h; sourceTree = "<group>"; };
+		28285E7A2781C1D500030E2C /* PortSpecificOptionsBit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortSpecificOptionsBit.h; sourceTree = "<group>"; };
+		28285E7B2781C1D500030E2C /* SampleRateCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleRateCode.cpp; sourceTree = "<group>"; };
+		28285E7D2781C1D500030E2C /* MixerOutputControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerOutputControl.h; sourceTree = "<group>"; };
+		28285E7E2781C1D500030E2C /* MixerInputControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerInputControl.h; sourceTree = "<group>"; };
+		28285E7F2781C1D500030E2C /* MixerMeterValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerMeterValue.h; sourceTree = "<group>"; };
+		28285E802781C1D500030E2C /* MixerOutputParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerOutputParm.h; sourceTree = "<group>"; };
+		28285E812781C1D500030E2C /* MixerInputControlValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerInputControlValue.cpp; sourceTree = "<group>"; };
+		28285E822781C1D500030E2C /* MixerParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerParm.cpp; sourceTree = "<group>"; };
+		28285E832781C1D500030E2C /* MixerInputParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerInputParm.cpp; sourceTree = "<group>"; };
+		28285E842781C1D500030E2C /* MixerInputParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerInputParm.h; sourceTree = "<group>"; };
+		28285E852781C1D500030E2C /* MixerParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerParm.h; sourceTree = "<group>"; };
+		28285E862781C1D500030E2C /* MixerOutputControlValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerOutputControlValue.cpp; sourceTree = "<group>"; };
+		28285E872781C1D500030E2C /* MixerOutputControlValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerOutputControlValue.h; sourceTree = "<group>"; };
+		28285E882781C1D500030E2C /* MixerMeterValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerMeterValue.cpp; sourceTree = "<group>"; };
+		28285E892781C1D500030E2C /* MixerInputControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerInputControl.cpp; sourceTree = "<group>"; };
+		28285E8A2781C1D500030E2C /* MixerPortParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerPortParm.cpp; sourceTree = "<group>"; };
+		28285E8B2781C1D500030E2C /* MixerOutputControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerOutputControl.cpp; sourceTree = "<group>"; };
+		28285E8C2781C1D500030E2C /* MixerInputControlValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerInputControlValue.h; sourceTree = "<group>"; };
+		28285E8D2781C1D500030E2C /* MixerPortParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerPortParm.h; sourceTree = "<group>"; };
+		28285E8E2781C1D500030E2C /* MixerOutputParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerOutputParm.cpp; sourceTree = "<group>"; };
+		28285E902781C1D500030E2C /* ControllerType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerType.h; sourceTree = "<group>"; };
+		28285E912781C1D500030E2C /* AudioGlobalParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioGlobalParm.cpp; sourceTree = "<group>"; };
+		28285E922781C1D500030E2C /* AudioControlDetailValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioControlDetailValue.cpp; sourceTree = "<group>"; };
+		28285E932781C1D500030E2C /* AudioControlParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioControlParm.h; sourceTree = "<group>"; };
+		28285E942781C1D500030E2C /* AudioControlDetailTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioControlDetailTypes.h; sourceTree = "<group>"; };
+		28285E952781C1D500030E2C /* AudioControlDetailValueTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioControlDetailValueTypes.h; sourceTree = "<group>"; };
+		28285E962781C1D500030E2C /* AudioPortParmTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPortParmTypes.cpp; sourceTree = "<group>"; };
+		28285E972781C1D500030E2C /* AudioPortParmTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPortParmTypes.h; sourceTree = "<group>"; };
+		28285E982781C1D500030E2C /* AudioDeviceParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioDeviceParm.cpp; sourceTree = "<group>"; };
+		28285E992781C1D500030E2C /* AudioPortParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPortParm.cpp; sourceTree = "<group>"; };
+		28285E9A2781C1D500030E2C /* AudioPortMeterValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPortMeterValue.h; sourceTree = "<group>"; };
+		28285E9B2781C1D500030E2C /* AudioControlDetailValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioControlDetailValue.h; sourceTree = "<group>"; };
+		28285E9C2781C1D500030E2C /* AudioDeviceParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDeviceParm.h; sourceTree = "<group>"; };
+		28285E9D2781C1D500030E2C /* AudioControlDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioControlDetail.h; sourceTree = "<group>"; };
+		28285E9E2781C1D500030E2C /* AudioControlTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioControlTypes.h; sourceTree = "<group>"; };
+		28285E9F2781C1D500030E2C /* AudioPatchbayParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPatchbayParm.cpp; sourceTree = "<group>"; };
+		28285EA02781C1D500030E2C /* AudioDeviceTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDeviceTypes.h; sourceTree = "<group>"; };
+		28285EA12781C1D500030E2C /* AudioDeviceTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioDeviceTypes.cpp; sourceTree = "<group>"; };
+		28285EA22781C1D500030E2C /* AudioPatchbayParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPatchbayParm.h; sourceTree = "<group>"; };
+		28285EA32781C1D500030E2C /* AudioGlobalParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioGlobalParm.h; sourceTree = "<group>"; };
+		28285EA42781C1D500030E2C /* AudioControlParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioControlParm.cpp; sourceTree = "<group>"; };
+		28285EA52781C1D500030E2C /* AudioPortParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPortParm.h; sourceTree = "<group>"; };
+		28285EA62781C1D500030E2C /* AudioControlDetailTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioControlDetailTypes.cpp; sourceTree = "<group>"; };
+		28285EA72781C1D500030E2C /* AudioControlTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioControlTypes.cpp; sourceTree = "<group>"; };
+		28285EA82781C1D500030E2C /* AudioPortMeterValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPortMeterValue.cpp; sourceTree = "<group>"; };
+		28285EA92781C1D500030E2C /* AudioClockParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioClockParm.h; sourceTree = "<group>"; };
+		28285EAA2781C1D500030E2C /* AudioControlDetailValueTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioControlDetailValueTypes.cpp; sourceTree = "<group>"; };
+		28285EAB2781C1D500030E2C /* AudioControlDetail.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioControlDetail.cpp; sourceTree = "<group>"; };
+		28285EAC2781C1D500030E2C /* AudioClockParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioClockParm.cpp; sourceTree = "<group>"; };
+		28285EAE2781C1D500030E2C /* GizmoCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GizmoCount.h; sourceTree = "<group>"; };
+		28285EAF2781C1D500030E2C /* SaveRestoreList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveRestoreList.h; sourceTree = "<group>"; };
+		28285EB02781C1D500030E2C /* InfoList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InfoList.cpp; sourceTree = "<group>"; };
+		28285EB12781C1D500030E2C /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		28285EB22781C1D500030E2C /* GizmoInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GizmoInfo.cpp; sourceTree = "<group>"; };
+		28285EB32781C1D500030E2C /* SaveRestoreID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveRestoreID.h; sourceTree = "<group>"; };
+		28285EB42781C1D500030E2C /* InfoID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoID.h; sourceTree = "<group>"; };
+		28285EB52781C1D500030E2C /* IPMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPMode.h; sourceTree = "<group>"; };
+		28285EB62781C1D500030E2C /* Device.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Device.cpp; sourceTree = "<group>"; };
+		28285EB72781C1D500030E2C /* BootMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootMode.h; sourceTree = "<group>"; };
+		28285EB82781C1D500030E2C /* DevicePID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicePID.h; sourceTree = "<group>"; };
+		28285EB92781C1D500030E2C /* DeviceID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceID.h; sourceTree = "<group>"; };
+		28285EBA2781C1D500030E2C /* SaveRestore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveRestore.h; sourceTree = "<group>"; };
+		28285EBB2781C1D500030E2C /* ResetList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetList.h; sourceTree = "<group>"; };
+		28285EBC2781C1D500030E2C /* EthernetPortInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EthernetPortInfo.h; sourceTree = "<group>"; };
+		28285EBD2781C1D500030E2C /* EthernetPortInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EthernetPortInfo.cpp; sourceTree = "<group>"; };
+		28285EBE2781C1D500030E2C /* InfoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoList.h; sourceTree = "<group>"; };
+		28285EBF2781C1D500030E2C /* SaveRestoreList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaveRestoreList.cpp; sourceTree = "<group>"; };
+		28285EC02781C1D500030E2C /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
+		28285EC12781C1D500030E2C /* Info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Info.cpp; sourceTree = "<group>"; };
+		28285EC22781C1D500030E2C /* GizmoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GizmoInfo.h; sourceTree = "<group>"; };
+		28285EC32781C1D500030E2C /* Reset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reset.h; sourceTree = "<group>"; };
+		28285EC42781C1D500030E2C /* DeviceID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeviceID.cpp; sourceTree = "<group>"; };
+		28285EC52781C1D500030E2C /* GizmoCount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GizmoCount.cpp; sourceTree = "<group>"; };
+		28285EC72781C1D500030E2C /* Generator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Generator.cpp; sourceTree = "<group>"; };
+		28285EC82781C1D500030E2C /* ErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorCode.h; sourceTree = "<group>"; };
+		28285EC92781C1D500030E2C /* ICRunOnMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRunOnMain.h; sourceTree = "<group>"; };
+		28285ECA2781C1D500030E2C /* MyAlgorithms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyAlgorithms.cpp; sourceTree = "<group>"; };
+		28285ECB2781C1D500030E2C /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		28285ECC2781C1D500030E2C /* TimerThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerThread.h; sourceTree = "<group>"; };
+		28285ECD2781C1D500030E2C /* PortType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortType.h; sourceTree = "<group>"; };
+		28285ECE2781C1D500030E2C /* CommandList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandList.cpp; sourceTree = "<group>"; };
+		28285ECF2781C1D500030E2C /* blockNotFound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blockNotFound.h; sourceTree = "<group>"; };
+		28285ED02781C1D500030E2C /* TimerThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimerThread.cpp; sourceTree = "<group>"; };
+		28285ED12781C1D500030E2C /* CommandData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandData.h; sourceTree = "<group>"; };
+		28285ED22781C1D500030E2C /* MyAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAlgorithms.h; sourceTree = "<group>"; };
+		28285ED32781C1D500030E2C /* ACK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACK.cpp; sourceTree = "<group>"; };
+		28285ED42781C1D500030E2C /* LibTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibTypes.h; sourceTree = "<group>"; };
+		28285ED52781C1D500030E2C /* ByteCommandData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteCommandData.h; sourceTree = "<group>"; };
+		28285ED62781C1D500030E2C /* ACK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACK.h; sourceTree = "<group>"; };
+		28285ED72781C1D500030E2C /* ByteCommandData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ByteCommandData.cpp; sourceTree = "<group>"; };
+		28285ED82781C1D500030E2C /* ICRunOnMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICRunOnMain.m; sourceTree = "<group>"; };
+		28285ED92781C1D500030E2C /* Communicator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Communicator.cpp; sourceTree = "<group>"; };
+		28285EDA2781C1D500030E2C /* CommandData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandData.cpp; sourceTree = "<group>"; };
+		28285EDB2781C1D500030E2C /* BytesCommandData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BytesCommandData.cpp; sourceTree = "<group>"; };
+		28285EDC2781C1D500030E2C /* CommandList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandList.h; sourceTree = "<group>"; };
+		28285EDD2781C1D500030E2C /* StreamHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamHelpers.h; sourceTree = "<group>"; };
+		28285EDE2781C1D500030E2C /* CommandDataKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandDataKey.h; sourceTree = "<group>"; };
+		28285EDF2781C1D500030E2C /* BytesCommandData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BytesCommandData.h; sourceTree = "<group>"; };
+		28285EE02781C1D500030E2C /* Lookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lookup.h; sourceTree = "<group>"; };
+		28285EE12781C1D500030E2C /* SysexCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysexCommand.h; sourceTree = "<group>"; };
+		28285EE22781C1D500030E2C /* SysexParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SysexParser.cpp; sourceTree = "<group>"; };
+		28285EE32781C1D500030E2C /* Communicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Communicator.h; sourceTree = "<group>"; };
+		28285EE42781C1D500030E2C /* CommandDefines.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandDefines.cpp; sourceTree = "<group>"; };
+		28285EE52781C1D500030E2C /* property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = property.h; sourceTree = "<group>"; };
+		28285EE62781C1D500030E2C /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
+		28285EE72781C1D500030E2C /* SysexParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysexParser.h; sourceTree = "<group>"; };
+		28285EE82781C1D500030E2C /* CommandDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandDefines.h; sourceTree = "<group>"; };
+		28285EE92781C1D500030E2C /* Lookup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lookup.cpp; sourceTree = "<group>"; };
+		28285EEA2781C1D500030E2C /* Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Generator.h; sourceTree = "<group>"; };
+		28285F342781C48700030E2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		28285F352781C4B500030E2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		28285F3A2781D65600030E2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28285F3C2781D66400030E2C /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		28285F3E2781D67900030E2C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		28285F402781D68000030E2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2856E80E2781B325005C6D16 /* iOSiConnectivityiConfig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSiConnectivityiConfig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2856E81B2781B325005C6D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2856E81D2781B325005C6D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2856E8202781B325005C6D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28CC572F2781DB57003B9605 /* MainMenuBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainMenuBack@2x.png"; sourceTree = "<group>"; };
+		28CC57302781DB57003B9605 /* block_icm2plusdevice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block_icm2plusdevice@2x.png"; sourceTree = "<group>"; };
+		28CC57312781DB57003B9605 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		28CC57322781DB57003B9605 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		28CC57332781DB57003B9605 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		28CC57342781DB57003B9605 /* block_miodevice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_miodevice.png; sourceTree = "<group>"; };
+		28CC57352781DB57003B9605 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		28CC57362781DB57003B9605 /* 114x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x144.png; sourceTree = "<group>"; };
+		28CC57372781DB57003B9605 /* ChannelButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChannelButton@2x.png"; sourceTree = "<group>"; };
+		28CC57382781DB57003B9605 /* block_icm1device.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_icm1device.png; sourceTree = "<group>"; };
+		28CC57392781DB57003B9605 /* Default@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~ipad.png"; sourceTree = "<group>"; };
+		28CC573A2781DB57003B9605 /* ChannelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChannelButton.png; sourceTree = "<group>"; };
+		28CC573B2781DB57003B9605 /* RightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightArrow.png; sourceTree = "<group>"; };
+		28CC573C2781DB57003B9605 /* LeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftArrow.png; sourceTree = "<group>"; };
+		28CC573D2781DB57003B9605 /* block_miodevice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block_miodevice@2x.png"; sourceTree = "<group>"; };
+		28CC573E2781DB57003B9605 /* block_icm2plusdevice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_icm2plusdevice.png; sourceTree = "<group>"; };
+		28CC573F2781DB57003B9605 /* iPodDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPodDefault@2x.png"; sourceTree = "<group>"; };
+		28CC57402781DB57003B9605 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		28CC57412781DB57003B9605 /* 144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 144x144.png; sourceTree = "<group>"; };
+		28CC57422781DB57003B9605 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		28CC57432781DB57003B9605 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		28CC57442781DB57003B9605 /* 72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72x72.png; sourceTree = "<group>"; };
+		28CC57452781DB57003B9605 /* block_icm1device@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block_icm1device@2x.png"; sourceTree = "<group>"; };
+		28CC57462781DB57003B9605 /* block_icm4plusdevice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_icm4plusdevice.png; sourceTree = "<group>"; };
+		28CC57472781DB57003B9605 /* RightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RightArrow@2x.png"; sourceTree = "<group>"; };
+		28CC57482781DB57003B9605 /* block_icm4plusdevice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block_icm4plusdevice@2x.png"; sourceTree = "<group>"; };
+		28CC57492781DB57003B9605 /* 76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76x76.png; sourceTree = "<group>"; };
+		28CC574A2781DB57003B9605 /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		28CC574B2781DB57003B9605 /* MainMenuBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuBack.png; sourceTree = "<group>"; };
+		28CC574C2781DB57003B9605 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		28CC574D2781DB57003B9605 /* LeftArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LeftArrow@2x.png"; sourceTree = "<group>"; };
+		28CC574E2781DB57003B9605 /* iPod(Not Streatched)Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPod(Not Streatched)Default@2x.png"; sourceTree = "<group>"; };
+		28CC574F2781DB57003B9605 /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
+		28CC57502781DB57003B9605 /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
+		28CC57742781DB74003B9605 /* ICHelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICHelpViewController.xib; sourceTree = "<group>"; };
+		28CC57752781DB74003B9605 /* ICRangeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICRangeSelectionViewController.xib; sourceTree = "<group>"; };
+		28CC57762781DB74003B9605 /* ICDeviceInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICDeviceInfoViewController.xib; sourceTree = "<group>"; };
+		28CC57772781DB74003B9605 /* ICViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICViewController_iPad.xib; sourceTree = "<group>"; };
+		28CC57782781DB74003B9605 /* ICFileBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICFileBrowserViewController.xib; sourceTree = "<group>"; };
+		28CC57792781DB74003B9605 /* ICBaseInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICBaseInfoViewController.xib; sourceTree = "<group>"; };
+		28CC577A2781DB74003B9605 /* ICDeviceSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICDeviceSelectionViewController.xib; sourceTree = "<group>"; };
+		28CC577B2781DB74003B9605 /* ICAudioPatchbayV1iPadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICAudioPatchbayV1iPadCell.xib; sourceTree = "<group>"; };
+		28CC577C2781DB74003B9605 /* ICViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICViewController_iPhone.xib; sourceTree = "<group>"; };
+		28CC577D2781DB74003B9605 /* ICChoiceSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICChoiceSelectionViewController.xib; sourceTree = "<group>"; };
+		28CC577E2781DB74003B9605 /* ICAudioPatchbayV1iPhoneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICAudioPatchbayV1iPhoneCell.xib; sourceTree = "<group>"; };
+		28CC577F2781DB74003B9605 /* ICAudioPatchbayV1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICAudioPatchbayV1ViewController.xib; sourceTree = "<group>"; };
+		28CC57802781DB74003B9605 /* ICAudioPatchbayGrid_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICAudioPatchbayGrid_iPad.xib; sourceTree = "<group>"; };
+		28CC57812781DB74003B9605 /* ICAudioPortPatchbayV1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICAudioPortPatchbayV1ViewController.xib; sourceTree = "<group>"; };
+		28CC57912781DC02003B9605 /* ICAudioPatchbayGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPatchbayGridViewController.m; sourceTree = "<group>"; };
+		28CC57922781DC02003B9605 /* ICAudioPatchbayGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPatchbayGridViewController.h; sourceTree = "<group>"; };
+		28CC57932781DC02003B9605 /* ICPatchbayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPatchbayDelegate.h; sourceTree = "<group>"; };
+		28CC57972781DC1A003B9605 /* ICAudioPatchbayV1Delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPatchbayV1Delegate.m; sourceTree = "<group>"; };
+		28CC57982781DC1A003B9605 /* ICAudioPatchbayV1InputSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPatchbayV1InputSelection.h; sourceTree = "<group>"; };
+		28CC57992781DC1A003B9605 /* ICAudioPatchbayV1OutputSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPatchbayV1OutputSelection.m; sourceTree = "<group>"; };
+		28CC579A2781DC1A003B9605 /* ICAudioPortPatchbayV1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPortPatchbayV1ViewController.m; sourceTree = "<group>"; };
+		28CC579B2781DC1A003B9605 /* ICAudioPatchbayV1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPatchbayV1ViewController.m; sourceTree = "<group>"; };
+		28CC579C2781DC1A003B9605 /* ICAudioPatchbayV1Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPatchbayV1Cell.m; sourceTree = "<group>"; };
+		28CC579D2781DC1A003B9605 /* ICAudioPatchbayV1Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPatchbayV1Delegate.h; sourceTree = "<group>"; };
+		28CC579E2781DC1A003B9605 /* ICAudioPatchbayV1InputSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPatchbayV1InputSelection.m; sourceTree = "<group>"; };
+		28CC579F2781DC1A003B9605 /* ICAudioPatchbayV1Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPatchbayV1Cell.h; sourceTree = "<group>"; };
+		28CC57A02781DC1A003B9605 /* ICAudioPatchbayV1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPatchbayV1ViewController.h; sourceTree = "<group>"; };
+		28CC57A12781DC1A003B9605 /* ICAudioPortPatchbayV1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPortPatchbayV1ViewController.h; sourceTree = "<group>"; };
+		28CC57A22781DC1A003B9605 /* ICAudioPatchbayV1OutputSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPatchbayV1OutputSelection.h; sourceTree = "<group>"; };
+		28CC57A42781DC1A003B9605 /* ICAudioInfoViewControllerV1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioInfoViewControllerV1.m; sourceTree = "<group>"; };
+		28CC57A62781DC1A003B9605 /* ICAudioInputChannelsV1RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioInputChannelsV1RangeDelegate.m; sourceTree = "<group>"; };
+		28CC57A72781DC1A003B9605 /* ICPCEnabledV1SwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPCEnabledV1SwitchDelegate.h; sourceTree = "<group>"; };
+		28CC57A82781DC1A003B9605 /* ICAudioOutputChannelsV1RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioOutputChannelsV1RangeDelegate.h; sourceTree = "<group>"; };
+		28CC57A92781DC1A003B9605 /* ICiOSEnabledV1SwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICiOSEnabledV1SwitchDelegate.m; sourceTree = "<group>"; };
+		28CC57AA2781DC1A003B9605 /* ICMIDIPortNameTextEditDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMIDIPortNameTextEditDelegate.m; sourceTree = "<group>"; };
+		28CC57AB2781DC1A003B9605 /* ICAudioSetupV1ChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioSetupV1ChoiceDelegate.h; sourceTree = "<group>"; };
+		28CC57AC2781DC1A003B9605 /* ICAudioSyncFactorV1RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioSyncFactorV1RangeDelegate.h; sourceTree = "<group>"; };
+		28CC57AD2781DC1A003B9605 /* ICAudioFrameBufferV1RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioFrameBufferV1RangeDelegate.m; sourceTree = "<group>"; };
+		28CC57AE2781DC1A003B9605 /* ICAudioClockV1ChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioClockV1ChoiceDelegate.m; sourceTree = "<group>"; };
+		28CC57AF2781DC1A003B9605 /* ICAudioPortNameV1TextEditCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPortNameV1TextEditCellDelegate.h; sourceTree = "<group>"; };
+		28CC57B02781DC1A003B9605 /* ICAudioInputChannelsV1RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioInputChannelsV1RangeDelegate.h; sourceTree = "<group>"; };
+		28CC57B12781DC1A003B9605 /* ICAudioSetupV1ChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioSetupV1ChoiceDelegate.m; sourceTree = "<group>"; };
+		28CC57B22781DC1A003B9605 /* ICMIDIPortNameTextEditDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMIDIPortNameTextEditDelegate.h; sourceTree = "<group>"; };
+		28CC57B32781DC1A003B9605 /* ICiOSEnabledV1SwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICiOSEnabledV1SwitchDelegate.h; sourceTree = "<group>"; };
+		28CC57B42781DC1A003B9605 /* ICAudioOutputChannelsV1RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioOutputChannelsV1RangeDelegate.m; sourceTree = "<group>"; };
+		28CC57B52781DC1A003B9605 /* ICPCEnabledV1SwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPCEnabledV1SwitchDelegate.m; sourceTree = "<group>"; };
+		28CC57B62781DC1A003B9605 /* ICAudioFrameBufferV1RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioFrameBufferV1RangeDelegate.h; sourceTree = "<group>"; };
+		28CC57B72781DC1A003B9605 /* ICAudioSyncFactorV1RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioSyncFactorV1RangeDelegate.m; sourceTree = "<group>"; };
+		28CC57B82781DC1A003B9605 /* ICAudioClockV1ChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioClockV1ChoiceDelegate.h; sourceTree = "<group>"; };
+		28CC57B92781DC1A003B9605 /* ICAudioPortNameV1TextEditCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPortNameV1TextEditCellDelegate.m; sourceTree = "<group>"; };
+		28CC57BA2781DC1A003B9605 /* ICAudioInfoViewControllerV1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioInfoViewControllerV1.h; sourceTree = "<group>"; };
+		28CC57CE2781DC30003B9605 /* ICAudioPatchbayV2Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPatchbayV2Delegate.h; sourceTree = "<group>"; };
+		28CC57CF2781DC30003B9605 /* ICAudioPatchbayV2Delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPatchbayV2Delegate.m; sourceTree = "<group>"; };
+		28CC57D12781DC30003B9605 /* ICAudioInfoViewControllerV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioInfoViewControllerV2.m; sourceTree = "<group>"; };
+		28CC57D32781DC30003B9605 /* ICiOSEnabledV2SwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICiOSEnabledV2SwitchDelegate.h; sourceTree = "<group>"; };
+		28CC57D42781DC30003B9605 /* ICAudioFrameBufferV2RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioFrameBufferV2RangeDelegate.m; sourceTree = "<group>"; };
+		28CC57D52781DC30003B9605 /* ICAudioSetupV2ChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioSetupV2ChoiceDelegate.m; sourceTree = "<group>"; };
+		28CC57D62781DC30003B9605 /* ICAudioSyncFactorV2RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioSyncFactorV2RangeDelegate.h; sourceTree = "<group>"; };
+		28CC57D72781DC30003B9605 /* ICPCEnabledV2SwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPCEnabledV2SwitchDelegate.m; sourceTree = "<group>"; };
+		28CC57D82781DC30003B9605 /* ICAudioPortNameV2TextEditCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPortNameV2TextEditCellDelegate.m; sourceTree = "<group>"; };
+		28CC57D92781DC30003B9605 /* ICAudioInputChannelsV2RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioInputChannelsV2RangeDelegate.m; sourceTree = "<group>"; };
+		28CC57DA2781DC30003B9605 /* ICAudioClockV2ChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioClockV2ChoiceDelegate.h; sourceTree = "<group>"; };
+		28CC57DB2781DC30003B9605 /* ICAudioOutputChannelsV2RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioOutputChannelsV2RangeDelegate.h; sourceTree = "<group>"; };
+		28CC57DC2781DC30003B9605 /* ICPCEnabledV2SwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPCEnabledV2SwitchDelegate.h; sourceTree = "<group>"; };
+		28CC57DD2781DC30003B9605 /* ICAudioSyncFactorV2RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioSyncFactorV2RangeDelegate.m; sourceTree = "<group>"; };
+		28CC57DE2781DC30003B9605 /* ICAudioSetupV2ChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioSetupV2ChoiceDelegate.h; sourceTree = "<group>"; };
+		28CC57DF2781DC30003B9605 /* ICAudioFrameBufferV2RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioFrameBufferV2RangeDelegate.h; sourceTree = "<group>"; };
+		28CC57E02781DC30003B9605 /* ICiOSEnabledV2SwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICiOSEnabledV2SwitchDelegate.m; sourceTree = "<group>"; };
+		28CC57E12781DC30003B9605 /* ICAudioClockV2ChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioClockV2ChoiceDelegate.m; sourceTree = "<group>"; };
+		28CC57E22781DC30003B9605 /* ICAudioInputChannelsV2RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioInputChannelsV2RangeDelegate.h; sourceTree = "<group>"; };
+		28CC57E32781DC30003B9605 /* ICAudioPortNameV2TextEditCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPortNameV2TextEditCellDelegate.h; sourceTree = "<group>"; };
+		28CC57E42781DC30003B9605 /* ICAudioOutputChannelsV2RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioOutputChannelsV2RangeDelegate.m; sourceTree = "<group>"; };
+		28CC57E52781DC30003B9605 /* ICAudioInfoViewControllerV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioInfoViewControllerV2.h; sourceTree = "<group>"; };
+		28CC57F22781DC3E003B9605 /* NSString+RotatedDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RotatedDraw.m"; sourceTree = "<group>"; };
+		28CC57F32781DC3E003B9605 /* UIImageTintCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageTintCategory.m; sourceTree = "<group>"; };
+		28CC57F42781DC3E003B9605 /* NSString+NSStringExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSStringExtension.h"; sourceTree = "<group>"; };
+		28CC57F52781DC3E003B9605 /* NSString+RotatedDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RotatedDraw.h"; sourceTree = "<group>"; };
+		28CC57F62781DC3E003B9605 /* UIImageTintCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageTintCategory.h; sourceTree = "<group>"; };
+		28CC57F72781DC3E003B9605 /* NSString+NSStringExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSStringExtension.m"; sourceTree = "<group>"; };
+		28CC57FC2781DC49003B9605 /* ICIndicatorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICIndicatorButton.h; sourceTree = "<group>"; };
+		28CC57FD2781DC49003B9605 /* ICIndicatorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICIndicatorButton.m; sourceTree = "<group>"; };
+		28CC58002781DC5F003B9605 /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		28CC58022781DC5F003B9605 /* ICDeviceSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDeviceSelectionViewController.m; sourceTree = "<group>"; };
+		28CC58032781DC5F003B9605 /* ICDeviceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDeviceInfoViewController.m; sourceTree = "<group>"; };
+		28CC58042781DC5F003B9605 /* ICDeviceSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDeviceSelectionViewController.h; sourceTree = "<group>"; };
+		28CC58052781DC5F003B9605 /* ICDeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDeviceInfoViewController.h; sourceTree = "<group>"; };
+		28CC58072781DC5F003B9605 /* ICMacAddressDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMacAddressDelegate.m; sourceTree = "<group>"; };
+		28CC58082781DC5F003B9605 /* ICGatewayTextEditCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICGatewayTextEditCellDelegate.h; sourceTree = "<group>"; };
+		28CC58092781DC5F003B9605 /* ICIPAddressTextEditCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICIPAddressTextEditCellDelegate.h; sourceTree = "<group>"; };
+		28CC580A2781DC5F003B9605 /* ICProductNameDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICProductNameDelegate.h; sourceTree = "<group>"; };
+		28CC580B2781DC5F003B9605 /* ICIPModeChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICIPModeChoiceDelegate.h; sourceTree = "<group>"; };
+		28CC580C2781DC5F003B9605 /* ICInfoTextEditCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICInfoTextEditCellDelegate.h; sourceTree = "<group>"; };
+		28CC580D2781DC5F003B9605 /* ICSubnetMaskTextEditCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSubnetMaskTextEditCellDelegate.h; sourceTree = "<group>"; };
+		28CC580E2781DC5F003B9605 /* ICVendorNameDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICVendorNameDelegate.m; sourceTree = "<group>"; };
+		28CC580F2781DC5F003B9605 /* ICGatewayTextEditCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICGatewayTextEditCellDelegate.m; sourceTree = "<group>"; };
+		28CC58102781DC5F003B9605 /* ICMacAddressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMacAddressDelegate.h; sourceTree = "<group>"; };
+		28CC58112781DC5F003B9605 /* ICIPAddressTextEditCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICIPAddressTextEditCellDelegate.m; sourceTree = "<group>"; };
+		28CC58122781DC5F003B9605 /* ICIPModeChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICIPModeChoiceDelegate.m; sourceTree = "<group>"; };
+		28CC58132781DC5F003B9605 /* ICProductNameDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICProductNameDelegate.m; sourceTree = "<group>"; };
+		28CC58142781DC5F003B9605 /* ICVendorNameDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICVendorNameDelegate.h; sourceTree = "<group>"; };
+		28CC58152781DC5F003B9605 /* ICSubnetMaskTextEditCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSubnetMaskTextEditCellDelegate.m; sourceTree = "<group>"; };
+		28CC58162781DC5F003B9605 /* ICInfoTextEditCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICInfoTextEditCellDelegate.m; sourceTree = "<group>"; };
+		28CC58172781DC5F003B9605 /* DeviceInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeviceInfo.cpp; sourceTree = "<group>"; };
+		28CC58252781DC76003B9605 /* ICChoiceCellProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICChoiceCellProvider.m; sourceTree = "<group>"; };
+		28CC58262781DC76003B9605 /* ICMainMenuProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMainMenuProvider.h; sourceTree = "<group>"; };
+		28CC58272781DC76003B9605 /* ICNormalCellProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICNormalCellProvider.m; sourceTree = "<group>"; };
+		28CC58282781DC76003B9605 /* ICSwitchCellProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSwitchCellProvider.m; sourceTree = "<group>"; };
+		28CC58292781DC76003B9605 /* ICRangeCellProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRangeCellProvider.h; sourceTree = "<group>"; };
+		28CC582A2781DC76003B9605 /* ICDefaultProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDefaultProvider.m; sourceTree = "<group>"; };
+		28CC582B2781DC76003B9605 /* ICTextEditCellProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTextEditCellProvider.h; sourceTree = "<group>"; };
+		28CC582C2781DC76003B9605 /* ICChoiceCellProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICChoiceCellProvider.h; sourceTree = "<group>"; };
+		28CC582D2781DC76003B9605 /* ICMainMenuProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMainMenuProvider.m; sourceTree = "<group>"; };
+		28CC582E2781DC76003B9605 /* ICTextEditCellProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICTextEditCellProvider.m; sourceTree = "<group>"; };
+		28CC582F2781DC76003B9605 /* ICDefaultProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDefaultProvider.h; sourceTree = "<group>"; };
+		28CC58302781DC76003B9605 /* ICRangeCellProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICRangeCellProvider.m; sourceTree = "<group>"; };
+		28CC58312781DC76003B9605 /* ICSwitchCellProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSwitchCellProvider.h; sourceTree = "<group>"; };
+		28CC58322781DC76003B9605 /* ICNormalCellProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICNormalCellProvider.h; sourceTree = "<group>"; };
+		28CC58342781DC76003B9605 /* ICHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHelpViewController.h; sourceTree = "<group>"; };
+		28CC58352781DC76003B9605 /* ICBaseInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBaseInfoViewController.m; sourceTree = "<group>"; };
+		28CC58362781DC76003B9605 /* ICFileBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICFileBrowserViewController.h; sourceTree = "<group>"; };
+		28CC58372781DC76003B9605 /* ICRangeSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICRangeSelectionViewController.m; sourceTree = "<group>"; };
+		28CC58382781DC76003B9605 /* ICViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICViewController.h; sourceTree = "<group>"; };
+		28CC58392781DC76003B9605 /* ICChoiceSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICChoiceSelectionViewController.m; sourceTree = "<group>"; };
+		28CC583A2781DC76003B9605 /* ICBaseInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICBaseInfoViewController.h; sourceTree = "<group>"; };
+		28CC583B2781DC76003B9605 /* ICHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHelpViewController.m; sourceTree = "<group>"; };
+		28CC583C2781DC77003B9605 /* ICRangeSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRangeSelectionViewController.h; sourceTree = "<group>"; };
+		28CC583D2781DC77003B9605 /* ICFileBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICFileBrowserViewController.m; sourceTree = "<group>"; };
+		28CC583E2781DC77003B9605 /* ICViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICViewController.m; sourceTree = "<group>"; };
+		28CC583F2781DC77003B9605 /* ICChoiceSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICChoiceSelectionViewController.h; sourceTree = "<group>"; };
+		28CC58412781DC77003B9605 /* ICControllerChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICControllerChoiceDelegate.m; sourceTree = "<group>"; };
+		28CC58422781DC77003B9605 /* ICNormalBlockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICNormalBlockDelegate.h; sourceTree = "<group>"; };
+		28CC58432781DC77003B9605 /* ICChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICChoiceDelegate.h; sourceTree = "<group>"; };
+		28CC58442781DC77003B9605 /* ICSwitchCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSwitchCellDelegate.h; sourceTree = "<group>"; };
+		28CC58452781DC77003B9605 /* ICControllerChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICControllerChoiceDelegate.h; sourceTree = "<group>"; };
+		28CC58462781DC77003B9605 /* ICNormalBlockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICNormalBlockDelegate.m; sourceTree = "<group>"; };
+		28CC58472781DC77003B9605 /* ICRangeChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRangeChoiceDelegate.h; sourceTree = "<group>"; };
+		28CC58482781DC77003B9605 /* ICTextEditCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTextEditCellDelegate.h; sourceTree = "<group>"; };
+		28CC58492781DC77003B9605 /* Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
+		28CC585B2781DC89003B9605 /* ICFilterPortSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICFilterPortSelection.h; sourceTree = "<group>"; };
+		28CC585C2781DC89003B9605 /* ICPortFiltersChannelProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPortFiltersChannelProvider.m; sourceTree = "<group>"; };
+		28CC585D2781DC89003B9605 /* ICPortFiltersProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPortFiltersProvider.h; sourceTree = "<group>"; };
+		28CC585E2781DC89003B9605 /* ICPortFiltersProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPortFiltersProvider.m; sourceTree = "<group>"; };
+		28CC585F2781DC89003B9605 /* ICPortFiltersChannelProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPortFiltersChannelProvider.h; sourceTree = "<group>"; };
+		28CC58602781DC89003B9605 /* ICFilterPortSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICFilterPortSelection.m; sourceTree = "<group>"; };
+		28CC58632781DC89003B9605 /* ICMIDIIndexTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMIDIIndexTableViewController.m; sourceTree = "<group>"; };
+		28CC58642781DC89003B9605 /* ICMIDIInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMIDIInfoViewController.h; sourceTree = "<group>"; };
+		28CC58652781DC89003B9605 /* ICMIDIIndexTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMIDIIndexTableViewController.h; sourceTree = "<group>"; };
+		28CC58662781DC89003B9605 /* ICMIDIInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMIDIInfoViewController.m; sourceTree = "<group>"; };
+		28CC58682781DC89003B9605 /* ICRunningStatusSwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRunningStatusSwitchDelegate.h; sourceTree = "<group>"; };
+		28CC58692781DC89003B9605 /* ICMaxPortsRangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMaxPortsRangeDelegate.m; sourceTree = "<group>"; };
+		28CC586A2781DC89003B9605 /* ICReservedPortChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICReservedPortChoiceDelegate.h; sourceTree = "<group>"; };
+		28CC586B2781DC89003B9605 /* ICMIDIInterPortRoutingSwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMIDIInterPortRoutingSwitchDelegate.h; sourceTree = "<group>"; };
+		28CC586C2781DC89003B9605 /* ICMIDIOutputEnabledSwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMIDIOutputEnabledSwitchDelegate.m; sourceTree = "<group>"; };
+		28CC586D2781DC89003B9605 /* ICMIDIInputEnabledSwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMIDIInputEnabledSwitchDelegate.m; sourceTree = "<group>"; };
+		28CC586E2781DC89003B9605 /* ICMaxPortsRangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMaxPortsRangeDelegate.h; sourceTree = "<group>"; };
+		28CC586F2781DC89003B9605 /* ICRunningStatusSwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICRunningStatusSwitchDelegate.m; sourceTree = "<group>"; };
+		28CC58702781DC89003B9605 /* ICReservedPortChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICReservedPortChoiceDelegate.m; sourceTree = "<group>"; };
+		28CC58712781DC89003B9605 /* ICMIDIOutputEnabledSwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMIDIOutputEnabledSwitchDelegate.h; sourceTree = "<group>"; };
+		28CC58722781DC89003B9605 /* ICMIDIInterPortRoutingSwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMIDIInterPortRoutingSwitchDelegate.m; sourceTree = "<group>"; };
+		28CC58732781DC89003B9605 /* ICMIDIInputEnabledSwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMIDIInputEnabledSwitchDelegate.h; sourceTree = "<group>"; };
+		28CC58752781DC89003B9605 /* ICControllerFilterPortSelectionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICControllerFilterPortSelectionProvider.m; sourceTree = "<group>"; };
+		28CC58762781DC89003B9605 /* ICControllerFilterProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICControllerFilterProvider.m; sourceTree = "<group>"; };
+		28CC58772781DC89003B9605 /* ICControllerFilterIDProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICControllerFilterIDProvider.h; sourceTree = "<group>"; };
+		28CC58782781DC89003B9605 /* ICControllerFilterPortSelectionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICControllerFilterPortSelectionProvider.h; sourceTree = "<group>"; };
+		28CC58792781DC89003B9605 /* ICControllerFilterProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICControllerFilterProvider.h; sourceTree = "<group>"; };
+		28CC587A2781DC89003B9605 /* ICControllerFilterIDProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICControllerFilterIDProvider.m; sourceTree = "<group>"; };
+		28CC587C2781DC89003B9605 /* ICPortSelectionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPortSelectionProvider.m; sourceTree = "<group>"; };
+		28CC587D2781DC89003B9605 /* ICPortSelectionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPortSelectionProvider.h; sourceTree = "<group>"; };
+		28CC587F2781DC89003B9605 /* ICRemapDestinationControllerChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRemapDestinationControllerChoiceDelegate.h; sourceTree = "<group>"; };
+		28CC58802781DC89003B9605 /* ICRemapSourceControllerChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRemapSourceControllerChoiceDelegate.h; sourceTree = "<group>"; };
+		28CC58812781DC89003B9605 /* ICRemapDestinationControllerChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICRemapDestinationControllerChoiceDelegate.m; sourceTree = "<group>"; };
+		28CC58822781DC89003B9605 /* ICRemapSourceControllerChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICRemapSourceControllerChoiceDelegate.m; sourceTree = "<group>"; };
+		28CC58842781DC89003B9605 /* ICControllerSelectionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICControllerSelectionProvider.h; sourceTree = "<group>"; };
+		28CC58852781DC89003B9605 /* ICControllerSelectionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICControllerSelectionProvider.m; sourceTree = "<group>"; };
+		28CC58872781DC89003B9605 /* ICControllerRemapPortSelectionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICControllerRemapPortSelectionProvider.h; sourceTree = "<group>"; };
+		28CC58882781DC89003B9605 /* ICControllerRemapIDProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICControllerRemapIDProvider.m; sourceTree = "<group>"; };
+		28CC58892781DC89003B9605 /* ICControllerRemapProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICControllerRemapProvider.m; sourceTree = "<group>"; };
+		28CC588A2781DC89003B9605 /* ICControllerRemapIDProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICControllerRemapIDProvider.h; sourceTree = "<group>"; };
+		28CC588B2781DC89003B9605 /* ICControllerRemapPortSelectionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICControllerRemapPortSelectionProvider.m; sourceTree = "<group>"; };
+		28CC588C2781DC89003B9605 /* ICControllerRemapProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICControllerRemapProvider.h; sourceTree = "<group>"; };
+		28CC588E2781DC89003B9605 /* ICChannelRemapPortSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICChannelRemapPortSelection.h; sourceTree = "<group>"; };
+		28CC58902781DC89003B9605 /* ICChannelRemapSelectionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICChannelRemapSelectionProvider.m; sourceTree = "<group>"; };
+		28CC58912781DC89003B9605 /* ICChannelRemapProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICChannelRemapProvider.h; sourceTree = "<group>"; };
+		28CC58922781DC89003B9605 /* ICChannelRemapProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICChannelRemapProvider.m; sourceTree = "<group>"; };
+		28CC58932781DC89003B9605 /* ICChannelRemapSelectionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICChannelRemapSelectionProvider.h; sourceTree = "<group>"; };
+		28CC58942781DC89003B9605 /* ICChannelRemapPortSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICChannelRemapPortSelection.m; sourceTree = "<group>"; };
+		28CC58962781DC89003B9605 /* ICPortRoutingPortSelectionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPortRoutingPortSelectionProvider.h; sourceTree = "<group>"; };
+		28CC58972781DC89003B9605 /* ICPortRoutingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPortRoutingProvider.m; sourceTree = "<group>"; };
+		28CC58982781DC89003B9605 /* ICPortRoutingPortSelectionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPortRoutingPortSelectionProvider.m; sourceTree = "<group>"; };
+		28CC58992781DC89003B9605 /* ICPortRoutingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPortRoutingProvider.h; sourceTree = "<group>"; };
+		28CC58B52781DC93003B9605 /* MMSideDrawerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSideDrawerTableViewCell.m; sourceTree = "<group>"; };
+		28CC58B62781DC93003B9605 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		28CC58B72781DC93003B9605 /* MMSideDrawerSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSideDrawerSectionHeaderView.h; sourceTree = "<group>"; };
+		28CC58B82781DC93003B9605 /* MMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewCell.h; sourceTree = "<group>"; };
+		28CC58B92781DC93003B9605 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		28CC58BA2781DC93003B9605 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		28CC58BB2781DC93003B9605 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		28CC58BC2781DC93003B9605 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		28CC58BD2781DC93003B9605 /* MMSideDrawerSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSideDrawerSectionHeaderView.m; sourceTree = "<group>"; };
+		28CC58BE2781DC93003B9605 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		28CC58BF2781DC93003B9605 /* MMSideDrawerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSideDrawerTableViewCell.h; sourceTree = "<group>"; };
+		28CC58C02781DC93003B9605 /* MMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTableViewCell.m; sourceTree = "<group>"; };
+		28CC58C12781DC93003B9605 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		28CC58C22781DC93003B9605 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		28CC58C32781DC93003B9605 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		28CC58CC2781DCA2003B9605 /* ICServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICServer.h; sourceTree = "<group>"; };
+		28CC58CD2781DCA2003B9605 /* ICServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICServer.m; sourceTree = "<group>"; };
+		28CC58D02781DCAD003B9605 /* MyConverters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConverters.h; sourceTree = "<group>"; };
+		28CC58D12781DCAD003B9605 /* ICPollingTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPollingTimer.m; sourceTree = "<group>"; };
+		28CC58D22781DCAD003B9605 /* MyConverters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyConverters.cpp; sourceTree = "<group>"; };
+		28CC58D32781DCAD003B9605 /* ICPollingTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPollingTimer.h; sourceTree = "<group>"; };
+		28CC58D82781DF88003B9605 /* iConnectivityiConfig-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iConnectivityiConfig-Info.plist"; sourceTree = "<group>"; };
+		28CC58D92781DF88003B9605 /* Provider.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Provider.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2856E80B2781B325005C6D16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28285F3D2781D66400030E2C /* CoreMIDI.framework in Frameworks */,
+				28285F412781D68000030E2C /* UIKit.framework in Frameworks */,
+				28285F3B2781D65600030E2C /* CoreGraphics.framework in Frameworks */,
+				28285F3F2781D67900030E2C /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28285E3C2781C1D500030E2C /* GeneSysLib */ = {
+			isa = PBXGroup;
+			children = (
+				28285E482781C1D500030E2C /* MIDI */,
+				28285E612781C1D500030E2C /* Qt */,
+				28285E642781C1D500030E2C /* Audio */,
+				28285EAD2781C1D500030E2C /* Device */,
+				28285EC62781C1D500030E2C /* Base */,
+			);
+			name = GeneSysLib;
+			path = ../GeneSysLib;
+			sourceTree = "<group>";
+		};
+		28285E482781C1D500030E2C /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				28285E492781C1D500030E2C /* MIDIPortRoute.cpp */,
+				28285E4A2781C1D500030E2C /* MIDIPortRemap.cpp */,
+				28285E4B2781C1D500030E2C /* MIDIPortDetail.h */,
+				28285E4C2781C1D500030E2C /* FilterStatusBit.h */,
+				28285E4D2781C1D500030E2C /* MIDIEndPoint.h */,
+				28285E4E2781C1D500030E2C /* USBHostMIDIDeviceDetail.h */,
+				28285E4F2781C1D500030E2C /* RTPMIDIConnectionDetail.cpp */,
+				28285E502781C1D500030E2C /* MIDIPortDetailTypes.h */,
+				28285E512781C1D500030E2C /* MIDIEndPoint.m */,
+				28285E522781C1D500030E2C /* MIDIPortInfo.h */,
+				28285E532781C1D500030E2C /* FilterID.h */,
+				28285E542781C1D500030E2C /* PortMIDIFlags.h */,
+				28285E552781C1D500030E2C /* MIDIInfo.cpp */,
+				28285E562781C1D500030E2C /* RemapID.h */,
+				28285E572781C1D500030E2C /* MIDIInfo.h */,
+				28285E582781C1D500030E2C /* MIDIPortRemap.h */,
+				28285E592781C1D500030E2C /* MIDIPortFilter.cpp */,
+				28285E5A2781C1D500030E2C /* MIDIPortDetailTypes.cpp */,
+				28285E5B2781C1D500030E2C /* MIDIPortRoute.h */,
+				28285E5C2781C1D500030E2C /* MIDIPortDetail.cpp */,
+				28285E5D2781C1D500030E2C /* RTPMIDIConnectionDetail.h */,
+				28285E5E2781C1D500030E2C /* MIDIPortFilter.h */,
+				28285E5F2781C1D500030E2C /* MIDIPortInfo.cpp */,
+				28285E602781C1D500030E2C /* USBHostMIDIDeviceDetail.cpp */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		28285E612781C1D500030E2C /* Qt */ = {
+			isa = PBXGroup;
+			children = (
+				28285E622781C1D500030E2C /* GeneSysLib(qt4_8_6).pro */,
+				28285E632781C1D500030E2C /* GeneSysLib.pro */,
+			);
+			path = Qt;
+			sourceTree = "<group>";
+		};
+		28285E642781C1D500030E2C /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				28285E652781C1D500030E2C /* ChannelFilterStatusBit.h */,
+				28285E662781C1D500030E2C /* BitDepthCode.h */,
+				28285E672781C1D500030E2C /* BitDepthCode.cpp */,
+				28285E682781C1D500030E2C /* SampleRateCode.h */,
+				28285E692781C1D500030E2C /* AudioV1 */,
+				28285E782781C1D500030E2C /* HostType.h */,
+				28285E792781C1D500030E2C /* ChannelBitmapBit.h */,
+				28285E7A2781C1D500030E2C /* PortSpecificOptionsBit.h */,
+				28285E7B2781C1D500030E2C /* SampleRateCode.cpp */,
+				28285E7C2781C1D500030E2C /* Mixer */,
+				28285E8F2781C1D500030E2C /* AudioV2 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		28285E692781C1D500030E2C /* AudioV1 */ = {
+			isa = PBXGroup;
+			children = (
+				28285E6A2781C1D500030E2C /* AudioPortPatchbay.cpp */,
+				28285E6B2781C1D500030E2C /* AudioPortPatchbay.h */,
+				28285E6C2781C1D500030E2C /* AudioPortInfo.cpp */,
+				28285E6D2781C1D500030E2C /* AudioClockInfo.h */,
+				28285E6E2781C1D500030E2C /* AudioPortCfgInfo.cpp */,
+				28285E6F2781C1D500030E2C /* AudioPortInfo.h */,
+				28285E702781C1D500030E2C /* AudioInfo.h */,
+				28285E712781C1D500030E2C /* ClockSourceType.h */,
+				28285E722781C1D500030E2C /* AudioCfgInfo.cpp */,
+				28285E732781C1D500030E2C /* AudioCfgInfo.h */,
+				28285E742781C1D500030E2C /* AudioInfo.cpp */,
+				28285E752781C1D500030E2C /* ClockSourceType.cpp */,
+				28285E762781C1D500030E2C /* AudioPortCfgInfo.h */,
+				28285E772781C1D500030E2C /* AudioClockInfo.cpp */,
+			);
+			path = AudioV1;
+			sourceTree = "<group>";
+		};
+		28285E7C2781C1D500030E2C /* Mixer */ = {
+			isa = PBXGroup;
+			children = (
+				28285E7D2781C1D500030E2C /* MixerOutputControl.h */,
+				28285E7E2781C1D500030E2C /* MixerInputControl.h */,
+				28285E7F2781C1D500030E2C /* MixerMeterValue.h */,
+				28285E802781C1D500030E2C /* MixerOutputParm.h */,
+				28285E812781C1D500030E2C /* MixerInputControlValue.cpp */,
+				28285E822781C1D500030E2C /* MixerParm.cpp */,
+				28285E832781C1D500030E2C /* MixerInputParm.cpp */,
+				28285E842781C1D500030E2C /* MixerInputParm.h */,
+				28285E852781C1D500030E2C /* MixerParm.h */,
+				28285E862781C1D500030E2C /* MixerOutputControlValue.cpp */,
+				28285E872781C1D500030E2C /* MixerOutputControlValue.h */,
+				28285E882781C1D500030E2C /* MixerMeterValue.cpp */,
+				28285E892781C1D500030E2C /* MixerInputControl.cpp */,
+				28285E8A2781C1D500030E2C /* MixerPortParm.cpp */,
+				28285E8B2781C1D500030E2C /* MixerOutputControl.cpp */,
+				28285E8C2781C1D500030E2C /* MixerInputControlValue.h */,
+				28285E8D2781C1D500030E2C /* MixerPortParm.h */,
+				28285E8E2781C1D500030E2C /* MixerOutputParm.cpp */,
+			);
+			path = Mixer;
+			sourceTree = "<group>";
+		};
+		28285E8F2781C1D500030E2C /* AudioV2 */ = {
+			isa = PBXGroup;
+			children = (
+				28285E902781C1D500030E2C /* ControllerType.h */,
+				28285E912781C1D500030E2C /* AudioGlobalParm.cpp */,
+				28285E922781C1D500030E2C /* AudioControlDetailValue.cpp */,
+				28285E932781C1D500030E2C /* AudioControlParm.h */,
+				28285E942781C1D500030E2C /* AudioControlDetailTypes.h */,
+				28285E952781C1D500030E2C /* AudioControlDetailValueTypes.h */,
+				28285E962781C1D500030E2C /* AudioPortParmTypes.cpp */,
+				28285E972781C1D500030E2C /* AudioPortParmTypes.h */,
+				28285E982781C1D500030E2C /* AudioDeviceParm.cpp */,
+				28285E992781C1D500030E2C /* AudioPortParm.cpp */,
+				28285E9A2781C1D500030E2C /* AudioPortMeterValue.h */,
+				28285E9B2781C1D500030E2C /* AudioControlDetailValue.h */,
+				28285E9C2781C1D500030E2C /* AudioDeviceParm.h */,
+				28285E9D2781C1D500030E2C /* AudioControlDetail.h */,
+				28285E9E2781C1D500030E2C /* AudioControlTypes.h */,
+				28285E9F2781C1D500030E2C /* AudioPatchbayParm.cpp */,
+				28285EA02781C1D500030E2C /* AudioDeviceTypes.h */,
+				28285EA12781C1D500030E2C /* AudioDeviceTypes.cpp */,
+				28285EA22781C1D500030E2C /* AudioPatchbayParm.h */,
+				28285EA32781C1D500030E2C /* AudioGlobalParm.h */,
+				28285EA42781C1D500030E2C /* AudioControlParm.cpp */,
+				28285EA52781C1D500030E2C /* AudioPortParm.h */,
+				28285EA62781C1D500030E2C /* AudioControlDetailTypes.cpp */,
+				28285EA72781C1D500030E2C /* AudioControlTypes.cpp */,
+				28285EA82781C1D500030E2C /* AudioPortMeterValue.cpp */,
+				28285EA92781C1D500030E2C /* AudioClockParm.h */,
+				28285EAA2781C1D500030E2C /* AudioControlDetailValueTypes.cpp */,
+				28285EAB2781C1D500030E2C /* AudioControlDetail.cpp */,
+				28285EAC2781C1D500030E2C /* AudioClockParm.cpp */,
+			);
+			path = AudioV2;
+			sourceTree = "<group>";
+		};
+		28285EAD2781C1D500030E2C /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				28285EAE2781C1D500030E2C /* GizmoCount.h */,
+				28285EAF2781C1D500030E2C /* SaveRestoreList.h */,
+				28285EB02781C1D500030E2C /* InfoList.cpp */,
+				28285EB12781C1D500030E2C /* Device.h */,
+				28285EB22781C1D500030E2C /* GizmoInfo.cpp */,
+				28285EB32781C1D500030E2C /* SaveRestoreID.h */,
+				28285EB42781C1D500030E2C /* InfoID.h */,
+				28285EB52781C1D500030E2C /* IPMode.h */,
+				28285EB62781C1D500030E2C /* Device.cpp */,
+				28285EB72781C1D500030E2C /* BootMode.h */,
+				28285EB82781C1D500030E2C /* DevicePID.h */,
+				28285EB92781C1D500030E2C /* DeviceID.h */,
+				28285EBA2781C1D500030E2C /* SaveRestore.h */,
+				28285EBB2781C1D500030E2C /* ResetList.h */,
+				28285EBC2781C1D500030E2C /* EthernetPortInfo.h */,
+				28285EBD2781C1D500030E2C /* EthernetPortInfo.cpp */,
+				28285EBE2781C1D500030E2C /* InfoList.h */,
+				28285EBF2781C1D500030E2C /* SaveRestoreList.cpp */,
+				28285EC02781C1D500030E2C /* Info.h */,
+				28285EC12781C1D500030E2C /* Info.cpp */,
+				28285EC22781C1D500030E2C /* GizmoInfo.h */,
+				28285EC32781C1D500030E2C /* Reset.h */,
+				28285EC42781C1D500030E2C /* DeviceID.cpp */,
+				28285EC52781C1D500030E2C /* GizmoCount.cpp */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		28285EC62781C1D500030E2C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				28285EC72781C1D500030E2C /* Generator.cpp */,
+				28285EC82781C1D500030E2C /* ErrorCode.h */,
+				28285EC92781C1D500030E2C /* ICRunOnMain.h */,
+				28285ECA2781C1D500030E2C /* MyAlgorithms.cpp */,
+				28285ECB2781C1D500030E2C /* stdafx.h */,
+				28285ECC2781C1D500030E2C /* TimerThread.h */,
+				28285ECD2781C1D500030E2C /* PortType.h */,
+				28285ECE2781C1D500030E2C /* CommandList.cpp */,
+				28285ECF2781C1D500030E2C /* blockNotFound.h */,
+				28285ED02781C1D500030E2C /* TimerThread.cpp */,
+				28285ED12781C1D500030E2C /* CommandData.h */,
+				28285ED22781C1D500030E2C /* MyAlgorithms.h */,
+				28285ED32781C1D500030E2C /* ACK.cpp */,
+				28285ED42781C1D500030E2C /* LibTypes.h */,
+				28285ED52781C1D500030E2C /* ByteCommandData.h */,
+				28285ED62781C1D500030E2C /* ACK.h */,
+				28285ED72781C1D500030E2C /* ByteCommandData.cpp */,
+				28285ED82781C1D500030E2C /* ICRunOnMain.m */,
+				28285ED92781C1D500030E2C /* Communicator.cpp */,
+				28285EDA2781C1D500030E2C /* CommandData.cpp */,
+				28285EDB2781C1D500030E2C /* BytesCommandData.cpp */,
+				28285EDC2781C1D500030E2C /* CommandList.h */,
+				28285EDD2781C1D500030E2C /* StreamHelpers.h */,
+				28285EDE2781C1D500030E2C /* CommandDataKey.h */,
+				28285EDF2781C1D500030E2C /* BytesCommandData.h */,
+				28285EE02781C1D500030E2C /* Lookup.h */,
+				28285EE12781C1D500030E2C /* SysexCommand.h */,
+				28285EE22781C1D500030E2C /* SysexParser.cpp */,
+				28285EE32781C1D500030E2C /* Communicator.h */,
+				28285EE42781C1D500030E2C /* CommandDefines.cpp */,
+				28285EE52781C1D500030E2C /* property.h */,
+				28285EE62781C1D500030E2C /* stdafx.cpp */,
+				28285EE72781C1D500030E2C /* SysexParser.h */,
+				28285EE82781C1D500030E2C /* CommandDefines.h */,
+				28285EE92781C1D500030E2C /* Lookup.cpp */,
+				28285EEA2781C1D500030E2C /* Generator.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		28285F392781D65600030E2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28285F402781D68000030E2C /* UIKit.framework */,
+				28285F3E2781D67900030E2C /* QuartzCore.framework */,
+				28285F3C2781D66400030E2C /* CoreMIDI.framework */,
+				28285F3A2781D65600030E2C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2856E8052781B325005C6D16 = {
+			isa = PBXGroup;
+			children = (
+				28CC58D72781DF88003B9605 /* PLists */,
+				28CC57732781DB74003B9605 /* Nibs */,
+				28CC572E2781DB57003B9605 /* Images */,
+				28285E3C2781C1D500030E2C /* GeneSysLib */,
+				2856E81D2781B325005C6D16 /* Assets.xcassets */,
+				2856E8102781B325005C6D16 /* Source */,
+				2856E80F2781B325005C6D16 /* Products */,
+				28285F392781D65600030E2C /* Frameworks */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			wrapsLines = 0;
+		};
+		2856E80F2781B325005C6D16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2856E80E2781B325005C6D16 /* iOSiConnectivityiConfig.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2856E8102781B325005C6D16 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58CF2781DCAD003B9605 /* Utilities */,
+				28CC58CB2781DCA2003B9605 /* TCPServer */,
+				28CC58B42781DC93003B9605 /* MMDrawerController */,
+				28CC58592781DC89003B9605 /* MIDI */,
+				28CC58232781DC76003B9605 /* General */,
+				28CC57FF2781DC5F003B9605 /* Device */,
+				28CC57FB2781DC49003B9605 /* Custom UI */,
+				28CC57F12781DC3E003B9605 /* Categories */,
+				28CC57CC2781DC30003B9605 /* AudioV2 */,
+				28CC57952781DC1A003B9605 /* AudioV1 */,
+				28CC57902781DC02003B9605 /* AudioCommon */,
+				28285E3A2781C15B00030E2C /* ICAppDelegate.h */,
+				28285E3B2781C15B00030E2C /* ICAppDelegate.m */,
+				28285E392781C13F00030E2C /* main.m */,
+				2856E81A2781B325005C6D16 /* Main.storyboard */,
+				2856E81F2781B325005C6D16 /* LaunchScreen.storyboard */,
+				28285F342781C48700030E2C /* AppDelegate.h */,
+				28285F352781C4B500030E2C /* AppDelegate.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		28CC572E2781DB57003B9605 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				28CC572F2781DB57003B9605 /* MainMenuBack@2x.png */,
+				28CC57302781DB57003B9605 /* block_icm2plusdevice@2x.png */,
+				28CC57312781DB57003B9605 /* Default-Portrait@2x~ipad.png */,
+				28CC57322781DB57003B9605 /* Default-Landscape~ipad.png */,
+				28CC57332781DB57003B9605 /* Default-Portrait~ipad.png */,
+				28CC57342781DB57003B9605 /* block_miodevice.png */,
+				28CC57352781DB57003B9605 /* Default@2x.png */,
+				28CC57362781DB57003B9605 /* 114x144.png */,
+				28CC57372781DB57003B9605 /* ChannelButton@2x.png */,
+				28CC57382781DB57003B9605 /* block_icm1device.png */,
+				28CC57392781DB57003B9605 /* Default@2x~ipad.png */,
+				28CC573A2781DB57003B9605 /* ChannelButton.png */,
+				28CC573B2781DB57003B9605 /* RightArrow.png */,
+				28CC573C2781DB57003B9605 /* LeftArrow.png */,
+				28CC573D2781DB57003B9605 /* block_miodevice@2x.png */,
+				28CC573E2781DB57003B9605 /* block_icm2plusdevice.png */,
+				28CC573F2781DB57003B9605 /* iPodDefault@2x.png */,
+				28CC57402781DB57003B9605 /* Background.png */,
+				28CC57412781DB57003B9605 /* 144x144.png */,
+				28CC57422781DB57003B9605 /* Default-Landscape@2x~ipad.png */,
+				28CC57432781DB57003B9605 /* Default-568h@2x.png */,
+				28CC57442781DB57003B9605 /* 72x72.png */,
+				28CC57452781DB57003B9605 /* block_icm1device@2x.png */,
+				28CC57462781DB57003B9605 /* block_icm4plusdevice.png */,
+				28CC57472781DB57003B9605 /* RightArrow@2x.png */,
+				28CC57482781DB57003B9605 /* block_icm4plusdevice@2x.png */,
+				28CC57492781DB57003B9605 /* 76x76.png */,
+				28CC574A2781DB57003B9605 /* Background@2x.png */,
+				28CC574B2781DB57003B9605 /* MainMenuBack.png */,
+				28CC574C2781DB57003B9605 /* Default.png */,
+				28CC574D2781DB57003B9605 /* LeftArrow@2x.png */,
+				28CC574E2781DB57003B9605 /* iPod(Not Streatched)Default@2x.png */,
+				28CC574F2781DB57003B9605 /* Default~ipad.png */,
+				28CC57502781DB57003B9605 /* 57x57.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		28CC57732781DB74003B9605 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				28CC57742781DB74003B9605 /* ICHelpViewController.xib */,
+				28CC57752781DB74003B9605 /* ICRangeSelectionViewController.xib */,
+				28CC57762781DB74003B9605 /* ICDeviceInfoViewController.xib */,
+				28CC57772781DB74003B9605 /* ICViewController_iPad.xib */,
+				28CC57782781DB74003B9605 /* ICFileBrowserViewController.xib */,
+				28CC57792781DB74003B9605 /* ICBaseInfoViewController.xib */,
+				28CC577A2781DB74003B9605 /* ICDeviceSelectionViewController.xib */,
+				28CC577B2781DB74003B9605 /* ICAudioPatchbayV1iPadCell.xib */,
+				28CC577C2781DB74003B9605 /* ICViewController_iPhone.xib */,
+				28CC577D2781DB74003B9605 /* ICChoiceSelectionViewController.xib */,
+				28CC577E2781DB74003B9605 /* ICAudioPatchbayV1iPhoneCell.xib */,
+				28CC577F2781DB74003B9605 /* ICAudioPatchbayV1ViewController.xib */,
+				28CC57802781DB74003B9605 /* ICAudioPatchbayGrid_iPad.xib */,
+				28CC57812781DB74003B9605 /* ICAudioPortPatchbayV1ViewController.xib */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		28CC57902781DC02003B9605 /* AudioCommon */ = {
+			isa = PBXGroup;
+			children = (
+				28CC57912781DC02003B9605 /* ICAudioPatchbayGridViewController.m */,
+				28CC57922781DC02003B9605 /* ICAudioPatchbayGridViewController.h */,
+				28CC57932781DC02003B9605 /* ICPatchbayDelegate.h */,
+			);
+			path = AudioCommon;
+			sourceTree = "<group>";
+		};
+		28CC57952781DC1A003B9605 /* AudioV1 */ = {
+			isa = PBXGroup;
+			children = (
+				28CC57962781DC1A003B9605 /* AudioPatchbay */,
+				28CC57A32781DC1A003B9605 /* AudioInfo */,
+			);
+			path = AudioV1;
+			sourceTree = "<group>";
+		};
+		28CC57962781DC1A003B9605 /* AudioPatchbay */ = {
+			isa = PBXGroup;
+			children = (
+				28CC57972781DC1A003B9605 /* ICAudioPatchbayV1Delegate.m */,
+				28CC57982781DC1A003B9605 /* ICAudioPatchbayV1InputSelection.h */,
+				28CC57992781DC1A003B9605 /* ICAudioPatchbayV1OutputSelection.m */,
+				28CC579A2781DC1A003B9605 /* ICAudioPortPatchbayV1ViewController.m */,
+				28CC579B2781DC1A003B9605 /* ICAudioPatchbayV1ViewController.m */,
+				28CC579C2781DC1A003B9605 /* ICAudioPatchbayV1Cell.m */,
+				28CC579D2781DC1A003B9605 /* ICAudioPatchbayV1Delegate.h */,
+				28CC579E2781DC1A003B9605 /* ICAudioPatchbayV1InputSelection.m */,
+				28CC579F2781DC1A003B9605 /* ICAudioPatchbayV1Cell.h */,
+				28CC57A02781DC1A003B9605 /* ICAudioPatchbayV1ViewController.h */,
+				28CC57A12781DC1A003B9605 /* ICAudioPortPatchbayV1ViewController.h */,
+				28CC57A22781DC1A003B9605 /* ICAudioPatchbayV1OutputSelection.h */,
+			);
+			path = AudioPatchbay;
+			sourceTree = "<group>";
+		};
+		28CC57A32781DC1A003B9605 /* AudioInfo */ = {
+			isa = PBXGroup;
+			children = (
+				28CC57A42781DC1A003B9605 /* ICAudioInfoViewControllerV1.m */,
+				28CC57A52781DC1A003B9605 /* Delegates */,
+				28CC57BA2781DC1A003B9605 /* ICAudioInfoViewControllerV1.h */,
+			);
+			path = AudioInfo;
+			sourceTree = "<group>";
+		};
+		28CC57A52781DC1A003B9605 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				28CC57A62781DC1A003B9605 /* ICAudioInputChannelsV1RangeDelegate.m */,
+				28CC57A72781DC1A003B9605 /* ICPCEnabledV1SwitchDelegate.h */,
+				28CC57A82781DC1A003B9605 /* ICAudioOutputChannelsV1RangeDelegate.h */,
+				28CC57A92781DC1A003B9605 /* ICiOSEnabledV1SwitchDelegate.m */,
+				28CC57AA2781DC1A003B9605 /* ICMIDIPortNameTextEditDelegate.m */,
+				28CC57AB2781DC1A003B9605 /* ICAudioSetupV1ChoiceDelegate.h */,
+				28CC57AC2781DC1A003B9605 /* ICAudioSyncFactorV1RangeDelegate.h */,
+				28CC57AD2781DC1A003B9605 /* ICAudioFrameBufferV1RangeDelegate.m */,
+				28CC57AE2781DC1A003B9605 /* ICAudioClockV1ChoiceDelegate.m */,
+				28CC57AF2781DC1A003B9605 /* ICAudioPortNameV1TextEditCellDelegate.h */,
+				28CC57B02781DC1A003B9605 /* ICAudioInputChannelsV1RangeDelegate.h */,
+				28CC57B12781DC1A003B9605 /* ICAudioSetupV1ChoiceDelegate.m */,
+				28CC57B22781DC1A003B9605 /* ICMIDIPortNameTextEditDelegate.h */,
+				28CC57B32781DC1A003B9605 /* ICiOSEnabledV1SwitchDelegate.h */,
+				28CC57B42781DC1A003B9605 /* ICAudioOutputChannelsV1RangeDelegate.m */,
+				28CC57B52781DC1A003B9605 /* ICPCEnabledV1SwitchDelegate.m */,
+				28CC57B62781DC1A003B9605 /* ICAudioFrameBufferV1RangeDelegate.h */,
+				28CC57B72781DC1A003B9605 /* ICAudioSyncFactorV1RangeDelegate.m */,
+				28CC57B82781DC1A003B9605 /* ICAudioClockV1ChoiceDelegate.h */,
+				28CC57B92781DC1A003B9605 /* ICAudioPortNameV1TextEditCellDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		28CC57CC2781DC30003B9605 /* AudioV2 */ = {
+			isa = PBXGroup;
+			children = (
+				28CC57CD2781DC30003B9605 /* AudioPatchbay */,
+				28CC57D02781DC30003B9605 /* AudioInfo */,
+			);
+			path = AudioV2;
+			sourceTree = "<group>";
+		};
+		28CC57CD2781DC30003B9605 /* AudioPatchbay */ = {
+			isa = PBXGroup;
+			children = (
+				28CC57CE2781DC30003B9605 /* ICAudioPatchbayV2Delegate.h */,
+				28CC57CF2781DC30003B9605 /* ICAudioPatchbayV2Delegate.m */,
+			);
+			path = AudioPatchbay;
+			sourceTree = "<group>";
+		};
+		28CC57D02781DC30003B9605 /* AudioInfo */ = {
+			isa = PBXGroup;
+			children = (
+				28CC57D12781DC30003B9605 /* ICAudioInfoViewControllerV2.m */,
+				28CC57D22781DC30003B9605 /* Delegate */,
+				28CC57E52781DC30003B9605 /* ICAudioInfoViewControllerV2.h */,
+			);
+			path = AudioInfo;
+			sourceTree = "<group>";
+		};
+		28CC57D22781DC30003B9605 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				28CC57D32781DC30003B9605 /* ICiOSEnabledV2SwitchDelegate.h */,
+				28CC57D42781DC30003B9605 /* ICAudioFrameBufferV2RangeDelegate.m */,
+				28CC57D52781DC30003B9605 /* ICAudioSetupV2ChoiceDelegate.m */,
+				28CC57D62781DC30003B9605 /* ICAudioSyncFactorV2RangeDelegate.h */,
+				28CC57D72781DC30003B9605 /* ICPCEnabledV2SwitchDelegate.m */,
+				28CC57D82781DC30003B9605 /* ICAudioPortNameV2TextEditCellDelegate.m */,
+				28CC57D92781DC30003B9605 /* ICAudioInputChannelsV2RangeDelegate.m */,
+				28CC57DA2781DC30003B9605 /* ICAudioClockV2ChoiceDelegate.h */,
+				28CC57DB2781DC30003B9605 /* ICAudioOutputChannelsV2RangeDelegate.h */,
+				28CC57DC2781DC30003B9605 /* ICPCEnabledV2SwitchDelegate.h */,
+				28CC57DD2781DC30003B9605 /* ICAudioSyncFactorV2RangeDelegate.m */,
+				28CC57DE2781DC30003B9605 /* ICAudioSetupV2ChoiceDelegate.h */,
+				28CC57DF2781DC30003B9605 /* ICAudioFrameBufferV2RangeDelegate.h */,
+				28CC57E02781DC30003B9605 /* ICiOSEnabledV2SwitchDelegate.m */,
+				28CC57E12781DC30003B9605 /* ICAudioClockV2ChoiceDelegate.m */,
+				28CC57E22781DC30003B9605 /* ICAudioInputChannelsV2RangeDelegate.h */,
+				28CC57E32781DC30003B9605 /* ICAudioPortNameV2TextEditCellDelegate.h */,
+				28CC57E42781DC30003B9605 /* ICAudioOutputChannelsV2RangeDelegate.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		28CC57F12781DC3E003B9605 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				28CC57F22781DC3E003B9605 /* NSString+RotatedDraw.m */,
+				28CC57F32781DC3E003B9605 /* UIImageTintCategory.m */,
+				28CC57F42781DC3E003B9605 /* NSString+NSStringExtension.h */,
+				28CC57F52781DC3E003B9605 /* NSString+RotatedDraw.h */,
+				28CC57F62781DC3E003B9605 /* UIImageTintCategory.h */,
+				28CC57F72781DC3E003B9605 /* NSString+NSStringExtension.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		28CC57FB2781DC49003B9605 /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				28CC57FC2781DC49003B9605 /* ICIndicatorButton.h */,
+				28CC57FD2781DC49003B9605 /* ICIndicatorButton.m */,
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
+		28CC57FF2781DC5F003B9605 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58002781DC5F003B9605 /* DeviceInfo.h */,
+				28CC58012781DC5F003B9605 /* ViewControllers */,
+				28CC58062781DC5F003B9605 /* Delegates */,
+				28CC58172781DC5F003B9605 /* DeviceInfo.cpp */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		28CC58012781DC5F003B9605 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58022781DC5F003B9605 /* ICDeviceSelectionViewController.m */,
+				28CC58032781DC5F003B9605 /* ICDeviceInfoViewController.m */,
+				28CC58042781DC5F003B9605 /* ICDeviceSelectionViewController.h */,
+				28CC58052781DC5F003B9605 /* ICDeviceInfoViewController.h */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		28CC58062781DC5F003B9605 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58072781DC5F003B9605 /* ICMacAddressDelegate.m */,
+				28CC58082781DC5F003B9605 /* ICGatewayTextEditCellDelegate.h */,
+				28CC58092781DC5F003B9605 /* ICIPAddressTextEditCellDelegate.h */,
+				28CC580A2781DC5F003B9605 /* ICProductNameDelegate.h */,
+				28CC580B2781DC5F003B9605 /* ICIPModeChoiceDelegate.h */,
+				28CC580C2781DC5F003B9605 /* ICInfoTextEditCellDelegate.h */,
+				28CC580D2781DC5F003B9605 /* ICSubnetMaskTextEditCellDelegate.h */,
+				28CC580E2781DC5F003B9605 /* ICVendorNameDelegate.m */,
+				28CC580F2781DC5F003B9605 /* ICGatewayTextEditCellDelegate.m */,
+				28CC58102781DC5F003B9605 /* ICMacAddressDelegate.h */,
+				28CC58112781DC5F003B9605 /* ICIPAddressTextEditCellDelegate.m */,
+				28CC58122781DC5F003B9605 /* ICIPModeChoiceDelegate.m */,
+				28CC58132781DC5F003B9605 /* ICProductNameDelegate.m */,
+				28CC58142781DC5F003B9605 /* ICVendorNameDelegate.h */,
+				28CC58152781DC5F003B9605 /* ICSubnetMaskTextEditCellDelegate.m */,
+				28CC58162781DC5F003B9605 /* ICInfoTextEditCellDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		28CC58232781DC76003B9605 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58242781DC76003B9605 /* Providers */,
+				28CC58332781DC76003B9605 /* ViewControllers */,
+				28CC58402781DC77003B9605 /* Delegates */,
+				28CC58492781DC77003B9605 /* Screen.h */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		28CC58242781DC76003B9605 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58252781DC76003B9605 /* ICChoiceCellProvider.m */,
+				28CC58262781DC76003B9605 /* ICMainMenuProvider.h */,
+				28CC58272781DC76003B9605 /* ICNormalCellProvider.m */,
+				28CC58282781DC76003B9605 /* ICSwitchCellProvider.m */,
+				28CC58292781DC76003B9605 /* ICRangeCellProvider.h */,
+				28CC582A2781DC76003B9605 /* ICDefaultProvider.m */,
+				28CC582B2781DC76003B9605 /* ICTextEditCellProvider.h */,
+				28CC582C2781DC76003B9605 /* ICChoiceCellProvider.h */,
+				28CC582D2781DC76003B9605 /* ICMainMenuProvider.m */,
+				28CC582E2781DC76003B9605 /* ICTextEditCellProvider.m */,
+				28CC582F2781DC76003B9605 /* ICDefaultProvider.h */,
+				28CC58302781DC76003B9605 /* ICRangeCellProvider.m */,
+				28CC58312781DC76003B9605 /* ICSwitchCellProvider.h */,
+				28CC58322781DC76003B9605 /* ICNormalCellProvider.h */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		28CC58332781DC76003B9605 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58342781DC76003B9605 /* ICHelpViewController.h */,
+				28CC58352781DC76003B9605 /* ICBaseInfoViewController.m */,
+				28CC58362781DC76003B9605 /* ICFileBrowserViewController.h */,
+				28CC58372781DC76003B9605 /* ICRangeSelectionViewController.m */,
+				28CC58382781DC76003B9605 /* ICViewController.h */,
+				28CC58392781DC76003B9605 /* ICChoiceSelectionViewController.m */,
+				28CC583A2781DC76003B9605 /* ICBaseInfoViewController.h */,
+				28CC583B2781DC76003B9605 /* ICHelpViewController.m */,
+				28CC583C2781DC77003B9605 /* ICRangeSelectionViewController.h */,
+				28CC583D2781DC77003B9605 /* ICFileBrowserViewController.m */,
+				28CC583E2781DC77003B9605 /* ICViewController.m */,
+				28CC583F2781DC77003B9605 /* ICChoiceSelectionViewController.h */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		28CC58402781DC77003B9605 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58412781DC77003B9605 /* ICControllerChoiceDelegate.m */,
+				28CC58422781DC77003B9605 /* ICNormalBlockDelegate.h */,
+				28CC58432781DC77003B9605 /* ICChoiceDelegate.h */,
+				28CC58442781DC77003B9605 /* ICSwitchCellDelegate.h */,
+				28CC58452781DC77003B9605 /* ICControllerChoiceDelegate.h */,
+				28CC58462781DC77003B9605 /* ICNormalBlockDelegate.m */,
+				28CC58472781DC77003B9605 /* ICRangeChoiceDelegate.h */,
+				28CC58482781DC77003B9605 /* ICTextEditCellDelegate.h */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		28CC58592781DC89003B9605 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				28CC585A2781DC89003B9605 /* Filters */,
+				28CC58612781DC89003B9605 /* MIDIInfo */,
+				28CC58742781DC89003B9605 /* ControllerFilters */,
+				28CC587B2781DC89003B9605 /* General */,
+				28CC587E2781DC89003B9605 /* RemapGeneral */,
+				28CC58832781DC89003B9605 /* ControllerGeneral */,
+				28CC58862781DC89003B9605 /* ControllerRemap */,
+				28CC588D2781DC89003B9605 /* ChannelRemap */,
+				28CC58952781DC89003B9605 /* PortRouting */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		28CC585A2781DC89003B9605 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				28CC585B2781DC89003B9605 /* ICFilterPortSelection.h */,
+				28CC585C2781DC89003B9605 /* ICPortFiltersChannelProvider.m */,
+				28CC585D2781DC89003B9605 /* ICPortFiltersProvider.h */,
+				28CC585E2781DC89003B9605 /* ICPortFiltersProvider.m */,
+				28CC585F2781DC89003B9605 /* ICPortFiltersChannelProvider.h */,
+				28CC58602781DC89003B9605 /* ICFilterPortSelection.m */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		28CC58612781DC89003B9605 /* MIDIInfo */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58622781DC89003B9605 /* ViewControllers */,
+				28CC58672781DC89003B9605 /* Delegates */,
+			);
+			path = MIDIInfo;
+			sourceTree = "<group>";
+		};
+		28CC58622781DC89003B9605 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58632781DC89003B9605 /* ICMIDIIndexTableViewController.m */,
+				28CC58642781DC89003B9605 /* ICMIDIInfoViewController.h */,
+				28CC58652781DC89003B9605 /* ICMIDIIndexTableViewController.h */,
+				28CC58662781DC89003B9605 /* ICMIDIInfoViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		28CC58672781DC89003B9605 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58682781DC89003B9605 /* ICRunningStatusSwitchDelegate.h */,
+				28CC58692781DC89003B9605 /* ICMaxPortsRangeDelegate.m */,
+				28CC586A2781DC89003B9605 /* ICReservedPortChoiceDelegate.h */,
+				28CC586B2781DC89003B9605 /* ICMIDIInterPortRoutingSwitchDelegate.h */,
+				28CC586C2781DC89003B9605 /* ICMIDIOutputEnabledSwitchDelegate.m */,
+				28CC586D2781DC89003B9605 /* ICMIDIInputEnabledSwitchDelegate.m */,
+				28CC586E2781DC89003B9605 /* ICMaxPortsRangeDelegate.h */,
+				28CC586F2781DC89003B9605 /* ICRunningStatusSwitchDelegate.m */,
+				28CC58702781DC89003B9605 /* ICReservedPortChoiceDelegate.m */,
+				28CC58712781DC89003B9605 /* ICMIDIOutputEnabledSwitchDelegate.h */,
+				28CC58722781DC89003B9605 /* ICMIDIInterPortRoutingSwitchDelegate.m */,
+				28CC58732781DC89003B9605 /* ICMIDIInputEnabledSwitchDelegate.h */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		28CC58742781DC89003B9605 /* ControllerFilters */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58752781DC89003B9605 /* ICControllerFilterPortSelectionProvider.m */,
+				28CC58762781DC89003B9605 /* ICControllerFilterProvider.m */,
+				28CC58772781DC89003B9605 /* ICControllerFilterIDProvider.h */,
+				28CC58782781DC89003B9605 /* ICControllerFilterPortSelectionProvider.h */,
+				28CC58792781DC89003B9605 /* ICControllerFilterProvider.h */,
+				28CC587A2781DC89003B9605 /* ICControllerFilterIDProvider.m */,
+			);
+			path = ControllerFilters;
+			sourceTree = "<group>";
+		};
+		28CC587B2781DC89003B9605 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				28CC587C2781DC89003B9605 /* ICPortSelectionProvider.m */,
+				28CC587D2781DC89003B9605 /* ICPortSelectionProvider.h */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		28CC587E2781DC89003B9605 /* RemapGeneral */ = {
+			isa = PBXGroup;
+			children = (
+				28CC587F2781DC89003B9605 /* ICRemapDestinationControllerChoiceDelegate.h */,
+				28CC58802781DC89003B9605 /* ICRemapSourceControllerChoiceDelegate.h */,
+				28CC58812781DC89003B9605 /* ICRemapDestinationControllerChoiceDelegate.m */,
+				28CC58822781DC89003B9605 /* ICRemapSourceControllerChoiceDelegate.m */,
+			);
+			path = RemapGeneral;
+			sourceTree = "<group>";
+		};
+		28CC58832781DC89003B9605 /* ControllerGeneral */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58842781DC89003B9605 /* ICControllerSelectionProvider.h */,
+				28CC58852781DC89003B9605 /* ICControllerSelectionProvider.m */,
+			);
+			path = ControllerGeneral;
+			sourceTree = "<group>";
+		};
+		28CC58862781DC89003B9605 /* ControllerRemap */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58872781DC89003B9605 /* ICControllerRemapPortSelectionProvider.h */,
+				28CC58882781DC89003B9605 /* ICControllerRemapIDProvider.m */,
+				28CC58892781DC89003B9605 /* ICControllerRemapProvider.m */,
+				28CC588A2781DC89003B9605 /* ICControllerRemapIDProvider.h */,
+				28CC588B2781DC89003B9605 /* ICControllerRemapPortSelectionProvider.m */,
+				28CC588C2781DC89003B9605 /* ICControllerRemapProvider.h */,
+			);
+			path = ControllerRemap;
+			sourceTree = "<group>";
+		};
+		28CC588D2781DC89003B9605 /* ChannelRemap */ = {
+			isa = PBXGroup;
+			children = (
+				28CC588E2781DC89003B9605 /* ICChannelRemapPortSelection.h */,
+				28CC588F2781DC89003B9605 /* Providers */,
+				28CC58942781DC89003B9605 /* ICChannelRemapPortSelection.m */,
+			);
+			path = ChannelRemap;
+			sourceTree = "<group>";
+		};
+		28CC588F2781DC89003B9605 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58902781DC89003B9605 /* ICChannelRemapSelectionProvider.m */,
+				28CC58912781DC89003B9605 /* ICChannelRemapProvider.h */,
+				28CC58922781DC89003B9605 /* ICChannelRemapProvider.m */,
+				28CC58932781DC89003B9605 /* ICChannelRemapSelectionProvider.h */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		28CC58952781DC89003B9605 /* PortRouting */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58962781DC89003B9605 /* ICPortRoutingPortSelectionProvider.h */,
+				28CC58972781DC89003B9605 /* ICPortRoutingProvider.m */,
+				28CC58982781DC89003B9605 /* ICPortRoutingPortSelectionProvider.m */,
+				28CC58992781DC89003B9605 /* ICPortRoutingProvider.h */,
+			);
+			path = PortRouting;
+			sourceTree = "<group>";
+		};
+		28CC58B42781DC93003B9605 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58B52781DC93003B9605 /* MMSideDrawerTableViewCell.m */,
+				28CC58B62781DC93003B9605 /* MMDrawerBarButtonItem.m */,
+				28CC58B72781DC93003B9605 /* MMSideDrawerSectionHeaderView.h */,
+				28CC58B82781DC93003B9605 /* MMTableViewCell.h */,
+				28CC58B92781DC93003B9605 /* UIViewController+MMDrawerController.m */,
+				28CC58BA2781DC93003B9605 /* MMDrawerController.m */,
+				28CC58BB2781DC93003B9605 /* MMDrawerController+Subclass.h */,
+				28CC58BC2781DC93003B9605 /* MMDrawerVisualState.h */,
+				28CC58BD2781DC93003B9605 /* MMSideDrawerSectionHeaderView.m */,
+				28CC58BE2781DC93003B9605 /* MMDrawerBarButtonItem.h */,
+				28CC58BF2781DC93003B9605 /* MMSideDrawerTableViewCell.h */,
+				28CC58C02781DC93003B9605 /* MMTableViewCell.m */,
+				28CC58C12781DC93003B9605 /* UIViewController+MMDrawerController.h */,
+				28CC58C22781DC93003B9605 /* MMDrawerVisualState.m */,
+				28CC58C32781DC93003B9605 /* MMDrawerController.h */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		28CC58CB2781DCA2003B9605 /* TCPServer */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58CC2781DCA2003B9605 /* ICServer.h */,
+				28CC58CD2781DCA2003B9605 /* ICServer.m */,
+			);
+			path = TCPServer;
+			sourceTree = "<group>";
+		};
+		28CC58CF2781DCAD003B9605 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58D02781DCAD003B9605 /* MyConverters.h */,
+				28CC58D12781DCAD003B9605 /* ICPollingTimer.m */,
+				28CC58D22781DCAD003B9605 /* MyConverters.cpp */,
+				28CC58D32781DCAD003B9605 /* ICPollingTimer.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		28CC58D72781DF88003B9605 /* PLists */ = {
+			isa = PBXGroup;
+			children = (
+				28CC58D82781DF88003B9605 /* iConnectivityiConfig-Info.plist */,
+				28CC58D92781DF88003B9605 /* Provider.plist */,
+			);
+			path = PLists;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2856E80D2781B325005C6D16 /* iOSiConnectivityiConfig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2856E83D2781B326005C6D16 /* Build configuration list for PBXNativeTarget "iOSiConnectivityiConfig" */;
+			buildPhases = (
+				2856E80A2781B325005C6D16 /* Sources */,
+				2856E80B2781B325005C6D16 /* Frameworks */,
+				2856E80C2781B325005C6D16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSiConnectivityiConfig;
+			productName = iOSiConnectivityiConfig;
+			productReference = 2856E80E2781B325005C6D16 /* iOSiConnectivityiConfig.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2856E8062781B325005C6D16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					2856E80D2781B325005C6D16 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 2856E8092781B325005C6D16 /* Build configuration list for PBXProject "iOSiConnectivityiConfig" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2856E8052781B325005C6D16;
+			productRefGroup = 2856E80F2781B325005C6D16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2856E80D2781B325005C6D16 /* iOSiConnectivityiConfig */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2856E80C2781B325005C6D16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CC576D2781DB57003B9605 /* MainMenuBack.png in Resources */,
+				28CC57612781DB57003B9605 /* iPodDefault@2x.png in Resources */,
+				28CC578B2781DB74003B9605 /* ICChoiceSelectionViewController.xib in Resources */,
+				28CC57572781DB57003B9605 /* Default@2x.png in Resources */,
+				28CC575B2781DB57003B9605 /* Default@2x~ipad.png in Resources */,
+				28CC57872781DB74003B9605 /* ICBaseInfoViewController.xib in Resources */,
+				28CC57722781DB57003B9605 /* 57x57.png in Resources */,
+				28CC57822781DB74003B9605 /* ICHelpViewController.xib in Resources */,
+				28CC576E2781DB57003B9605 /* Default.png in Resources */,
+				28CC58DA2781DF88003B9605 /* iConnectivityiConfig-Info.plist in Resources */,
+				28CC57542781DB57003B9605 /* Default-Landscape~ipad.png in Resources */,
+				28CC57592781DB57003B9605 /* ChannelButton@2x.png in Resources */,
+				28CC57662781DB57003B9605 /* 72x72.png in Resources */,
+				28CC57562781DB57003B9605 /* block_miodevice.png in Resources */,
+				28CC57692781DB57003B9605 /* RightArrow@2x.png in Resources */,
+				28285EFC2781C1D500030E2C /* GeneSysLib(qt4_8_6).pro in Resources */,
+				28CC57512781DB57003B9605 /* MainMenuBack@2x.png in Resources */,
+				28CC57832781DB74003B9605 /* ICRangeSelectionViewController.xib in Resources */,
+				28CC575A2781DB57003B9605 /* block_icm1device.png in Resources */,
+				28CC57652781DB57003B9605 /* Default-568h@2x.png in Resources */,
+				28CC575D2781DB57003B9605 /* RightArrow.png in Resources */,
+				28CC57602781DB57003B9605 /* block_icm2plusdevice.png in Resources */,
+				28CC576B2781DB57003B9605 /* 76x76.png in Resources */,
+				28CC58DB2781DF88003B9605 /* Provider.plist in Resources */,
+				28CC578E2781DB74003B9605 /* ICAudioPatchbayGrid_iPad.xib in Resources */,
+				28CC57582781DB57003B9605 /* 114x144.png in Resources */,
+				28CC57892781DB74003B9605 /* ICAudioPatchbayV1iPadCell.xib in Resources */,
+				28CC575F2781DB57003B9605 /* block_miodevice@2x.png in Resources */,
+				28CC57882781DB74003B9605 /* ICDeviceSelectionViewController.xib in Resources */,
+				28CC578C2781DB74003B9605 /* ICAudioPatchbayV1iPhoneCell.xib in Resources */,
+				28CC578A2781DB74003B9605 /* ICViewController_iPhone.xib in Resources */,
+				28285EFD2781C1D500030E2C /* GeneSysLib.pro in Resources */,
+				28CC57522781DB57003B9605 /* block_icm2plusdevice@2x.png in Resources */,
+				28CC57532781DB57003B9605 /* Default-Portrait@2x~ipad.png in Resources */,
+				28CC57712781DB57003B9605 /* Default~ipad.png in Resources */,
+				28CC57842781DB74003B9605 /* ICDeviceInfoViewController.xib in Resources */,
+				28CC57632781DB57003B9605 /* 144x144.png in Resources */,
+				28CC576F2781DB57003B9605 /* LeftArrow@2x.png in Resources */,
+				2856E8212781B325005C6D16 /* LaunchScreen.storyboard in Resources */,
+				28CC575C2781DB57003B9605 /* ChannelButton.png in Resources */,
+				28CC57862781DB74003B9605 /* ICFileBrowserViewController.xib in Resources */,
+				28CC57682781DB57003B9605 /* block_icm4plusdevice.png in Resources */,
+				28CC576C2781DB57003B9605 /* Background@2x.png in Resources */,
+				28CC57622781DB57003B9605 /* Background.png in Resources */,
+				28CC57642781DB57003B9605 /* Default-Landscape@2x~ipad.png in Resources */,
+				28CC57852781DB74003B9605 /* ICViewController_iPad.xib in Resources */,
+				28CC57702781DB57003B9605 /* iPod(Not Streatched)Default@2x.png in Resources */,
+				28CC57552781DB57003B9605 /* Default-Portrait~ipad.png in Resources */,
+				28CC57672781DB57003B9605 /* block_icm1device@2x.png in Resources */,
+				2856E81E2781B325005C6D16 /* Assets.xcassets in Resources */,
+				28CC576A2781DB57003B9605 /* block_icm4plusdevice@2x.png in Resources */,
+				28CC578D2781DB74003B9605 /* ICAudioPatchbayV1ViewController.xib in Resources */,
+				28CC575E2781DB57003B9605 /* LeftArrow.png in Resources */,
+				2856E81C2781B325005C6D16 /* Main.storyboard in Resources */,
+				28CC578F2781DB74003B9605 /* ICAudioPortPatchbayV1ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2856E80A2781B325005C6D16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CC58A92781DC89003B9605 /* ICRemapDestinationControllerChoiceDelegate.m in Sources */,
+				28CC58C92781DC94003B9605 /* MMTableViewCell.m in Sources */,
+				28285EF52781C1D500030E2C /* MIDIEndPoint.m in Sources */,
+				28285EF42781C1D500030E2C /* RTPMIDIConnectionDetail.cpp in Sources */,
+				28CC584E2781DC77003B9605 /* ICMainMenuProvider.m in Sources */,
+				28CC57C02781DC1A003B9605 /* ICAudioPatchbayV1InputSelection.m in Sources */,
+				28CC58A42781DC89003B9605 /* ICMIDIInterPortRoutingSwitchDelegate.m in Sources */,
+				28285F272781C1D500030E2C /* MyAlgorithms.cpp in Sources */,
+				28CC57EE2781DC30003B9605 /* ICiOSEnabledV2SwitchDelegate.m in Sources */,
+				28CC57EF2781DC30003B9605 /* ICAudioClockV2ChoiceDelegate.m in Sources */,
+				28285F0B2781C1D500030E2C /* MixerMeterValue.cpp in Sources */,
+				28285F292781C1D500030E2C /* TimerThread.cpp in Sources */,
+				28285F2B2781C1D500030E2C /* ByteCommandData.cpp in Sources */,
+				28CC58B32781DC89003B9605 /* ICPortRoutingPortSelectionProvider.m in Sources */,
+				28CC57EC2781DC30003B9605 /* ICAudioInputChannelsV2RangeDelegate.m in Sources */,
+				28285F0F2781C1D500030E2C /* MixerOutputParm.cpp in Sources */,
+				28285F192781C1D500030E2C /* AudioControlTypes.cpp in Sources */,
+				28CC589B2781DC89003B9605 /* ICPortFiltersProvider.m in Sources */,
+				28CC58572781DC77003B9605 /* ICControllerChoiceDelegate.m in Sources */,
+				28285F302781C1D500030E2C /* SysexParser.cpp in Sources */,
+				28CC58C82781DC94003B9605 /* MMSideDrawerSectionHeaderView.m in Sources */,
+				28CC581A2781DC5F003B9605 /* ICMacAddressDelegate.m in Sources */,
+				28CC58502781DC77003B9605 /* ICRangeCellProvider.m in Sources */,
+				28CC581C2781DC5F003B9605 /* ICGatewayTextEditCellDelegate.m in Sources */,
+				28CC58522781DC77003B9605 /* ICRangeSelectionViewController.m in Sources */,
+				28CC57C62781DC1A003B9605 /* ICAudioClockV1ChoiceDelegate.m in Sources */,
+				28285F142781C1D500030E2C /* AudioPortParm.cpp in Sources */,
+				28285F082781C1D500030E2C /* MixerParm.cpp in Sources */,
+				28285F012781C1D500030E2C /* AudioPortCfgInfo.cpp in Sources */,
+				28285EF22781C1D500030E2C /* MIDIPortRoute.cpp in Sources */,
+				28285F022781C1D500030E2C /* AudioCfgInfo.cpp in Sources */,
+				28CC58192781DC5F003B9605 /* ICDeviceInfoViewController.m in Sources */,
+				28285F062781C1D500030E2C /* SampleRateCode.cpp in Sources */,
+				28CC58B22781DC89003B9605 /* ICPortRoutingProvider.m in Sources */,
+				28CC58CE2781DCA2003B9605 /* ICServer.m in Sources */,
+				28285EFE2781C1D500030E2C /* BitDepthCode.cpp in Sources */,
+				28285F2F2781C1D500030E2C /* BytesCommandData.cpp in Sources */,
+				28285F002781C1D500030E2C /* AudioPortInfo.cpp in Sources */,
+				28CC584C2781DC77003B9605 /* ICSwitchCellProvider.m in Sources */,
+				28CC57BB2781DC1A003B9605 /* ICAudioPatchbayV1Delegate.m in Sources */,
+				28CC58AD2781DC89003B9605 /* ICControllerRemapProvider.m in Sources */,
+				28285F0D2781C1D500030E2C /* MixerPortParm.cpp in Sources */,
+				28CC58D52781DCAD003B9605 /* MyConverters.cpp in Sources */,
+				28CC57BE2781DC1A003B9605 /* ICAudioPatchbayV1ViewController.m in Sources */,
+				28CC57EA2781DC30003B9605 /* ICPCEnabledV2SwitchDelegate.m in Sources */,
+				28CC57C82781DC1A003B9605 /* ICAudioOutputChannelsV1RangeDelegate.m in Sources */,
+				28CC58A12781DC89003B9605 /* ICMIDIInputEnabledSwitchDelegate.m in Sources */,
+				28CC58A52781DC89003B9605 /* ICControllerFilterPortSelectionProvider.m in Sources */,
+				28285F262781C1D500030E2C /* Generator.cpp in Sources */,
+				28285F132781C1D500030E2C /* AudioDeviceParm.cpp in Sources */,
+				28CC581E2781DC5F003B9605 /* ICIPModeChoiceDelegate.m in Sources */,
+				28285F2A2781C1D500030E2C /* ACK.cpp in Sources */,
+				28CC58A62781DC89003B9605 /* ICControllerFilterProvider.m in Sources */,
+				28CC57CA2781DC1A003B9605 /* ICAudioSyncFactorV1RangeDelegate.m in Sources */,
+				28285F382781D58E00030E2C /* main.m in Sources */,
+				28285F0E2781C1D500030E2C /* MixerOutputControl.cpp in Sources */,
+				28CC57E92781DC30003B9605 /* ICAudioSetupV2ChoiceDelegate.m in Sources */,
+				28285F332781C1D500030E2C /* Lookup.cpp in Sources */,
+				28CC58A82781DC89003B9605 /* ICPortSelectionProvider.m in Sources */,
+				28CC57C52781DC1A003B9605 /* ICAudioFrameBufferV1RangeDelegate.m in Sources */,
+				28CC57ED2781DC30003B9605 /* ICAudioSyncFactorV2RangeDelegate.m in Sources */,
+				28285F1C2781C1D500030E2C /* AudioControlDetail.cpp in Sources */,
+				28285F232781C1D500030E2C /* Info.cpp in Sources */,
+				28285EF82781C1D500030E2C /* MIDIPortDetailTypes.cpp in Sources */,
+				28285EF62781C1D500030E2C /* MIDIInfo.cpp in Sources */,
+				28CC57C12781DC1A003B9605 /* ICAudioInfoViewControllerV1.m in Sources */,
+				28285F2E2781C1D500030E2C /* CommandData.cpp in Sources */,
+				28CC57BD2781DC1A003B9605 /* ICAudioPortPatchbayV1ViewController.m in Sources */,
+				28285F1F2781C1D500030E2C /* GizmoInfo.cpp in Sources */,
+				28CC57C42781DC1A003B9605 /* ICMIDIPortNameTextEditDelegate.m in Sources */,
+				28285F122781C1D500030E2C /* AudioPortParmTypes.cpp in Sources */,
+				28CC58532781DC77003B9605 /* ICChoiceSelectionViewController.m in Sources */,
+				28285F1A2781C1D500030E2C /* AudioPortMeterValue.cpp in Sources */,
+				28CC589D2781DC89003B9605 /* ICMIDIIndexTableViewController.m in Sources */,
+				28CC58AF2781DC89003B9605 /* ICChannelRemapSelectionProvider.m in Sources */,
+				28285F1E2781C1D500030E2C /* InfoList.cpp in Sources */,
+				28285F042781C1D500030E2C /* ClockSourceType.cpp in Sources */,
+				28285EF32781C1D500030E2C /* MIDIPortRemap.cpp in Sources */,
+				28CC58D42781DCAD003B9605 /* ICPollingTimer.m in Sources */,
+				28CC58B02781DC89003B9605 /* ICChannelRemapProvider.m in Sources */,
+				28CC57EB2781DC30003B9605 /* ICAudioPortNameV2TextEditCellDelegate.m in Sources */,
+				28CC58C52781DC94003B9605 /* MMDrawerBarButtonItem.m in Sources */,
+				28CC584A2781DC77003B9605 /* ICChoiceCellProvider.m in Sources */,
+				28CC58AA2781DC89003B9605 /* ICRemapSourceControllerChoiceDelegate.m in Sources */,
+				28CC58A02781DC89003B9605 /* ICMIDIOutputEnabledSwitchDelegate.m in Sources */,
+				28CC581B2781DC5F003B9605 /* ICVendorNameDelegate.m in Sources */,
+				28CC58212781DC5F003B9605 /* ICInfoTextEditCellDelegate.m in Sources */,
+				28CC57942781DC02003B9605 /* ICAudioPatchbayGridViewController.m in Sources */,
+				28CC57CB2781DC1A003B9605 /* ICAudioPortNameV1TextEditCellDelegate.m in Sources */,
+				28CC57FA2781DC3E003B9605 /* NSString+NSStringExtension.m in Sources */,
+				28285F162781C1D500030E2C /* AudioDeviceTypes.cpp in Sources */,
+				28285F182781C1D500030E2C /* AudioControlDetailTypes.cpp in Sources */,
+				28CC589A2781DC89003B9605 /* ICPortFiltersChannelProvider.m in Sources */,
+				28285F1D2781C1D500030E2C /* AudioClockParm.cpp in Sources */,
+				28CC589E2781DC89003B9605 /* ICMIDIInfoViewController.m in Sources */,
+				28CC58182781DC5F003B9605 /* ICDeviceSelectionViewController.m in Sources */,
+				28285F0C2781C1D500030E2C /* MixerInputControl.cpp in Sources */,
+				28CC58AB2781DC89003B9605 /* ICControllerSelectionProvider.m in Sources */,
+				28285EF92781C1D500030E2C /* MIDIPortDetail.cpp in Sources */,
+				28CC58C42781DC94003B9605 /* MMSideDrawerTableViewCell.m in Sources */,
+				28285F282781C1D500030E2C /* CommandList.cpp in Sources */,
+				28285EFA2781C1D500030E2C /* MIDIPortInfo.cpp in Sources */,
+				28CC58B12781DC89003B9605 /* ICChannelRemapPortSelection.m in Sources */,
+				28285F052781C1D500030E2C /* AudioClockInfo.cpp in Sources */,
+				28CC58A22781DC89003B9605 /* ICRunningStatusSwitchDelegate.m in Sources */,
+				28CC57E62781DC30003B9605 /* ICAudioPatchbayV2Delegate.m in Sources */,
+				28CC584D2781DC77003B9605 /* ICDefaultProvider.m in Sources */,
+				28CC57C72781DC1A003B9605 /* ICAudioSetupV1ChoiceDelegate.m in Sources */,
+				28285F102781C1D500030E2C /* AudioGlobalParm.cpp in Sources */,
+				28285EF72781C1D500030E2C /* MIDIPortFilter.cpp in Sources */,
+				28285F2C2781C1D500030E2C /* ICRunOnMain.m in Sources */,
+				28CC57E72781DC30003B9605 /* ICAudioInfoViewControllerV2.m in Sources */,
+				28CC589F2781DC89003B9605 /* ICMaxPortsRangeDelegate.m in Sources */,
+				28CC584F2781DC77003B9605 /* ICTextEditCellProvider.m in Sources */,
+				28CC58AC2781DC89003B9605 /* ICControllerRemapIDProvider.m in Sources */,
+				28CC58222781DC5F003B9605 /* DeviceInfo.cpp in Sources */,
+				28CC58C72781DC94003B9605 /* MMDrawerController.m in Sources */,
+				28285F072781C1D500030E2C /* MixerInputControlValue.cpp in Sources */,
+				28CC58CA2781DC94003B9605 /* MMDrawerVisualState.m in Sources */,
+				28CC584B2781DC77003B9605 /* ICNormalCellProvider.m in Sources */,
+				28CC57F02781DC30003B9605 /* ICAudioOutputChannelsV2RangeDelegate.m in Sources */,
+				28CC57E82781DC30003B9605 /* ICAudioFrameBufferV2RangeDelegate.m in Sources */,
+				28CC58A32781DC89003B9605 /* ICReservedPortChoiceDelegate.m in Sources */,
+				28CC58AE2781DC89003B9605 /* ICControllerRemapPortSelectionProvider.m in Sources */,
+				28CC58512781DC77003B9605 /* ICBaseInfoViewController.m in Sources */,
+				28285EFB2781C1D500030E2C /* USBHostMIDIDeviceDetail.cpp in Sources */,
+				28CC581F2781DC5F003B9605 /* ICProductNameDelegate.m in Sources */,
+				28CC58C62781DC94003B9605 /* UIViewController+MMDrawerController.m in Sources */,
+				28285F112781C1D500030E2C /* AudioControlDetailValue.cpp in Sources */,
+				28285F222781C1D500030E2C /* SaveRestoreList.cpp in Sources */,
+				28CC58202781DC5F003B9605 /* ICSubnetMaskTextEditCellDelegate.m in Sources */,
+				28CC58542781DC77003B9605 /* ICHelpViewController.m in Sources */,
+				28285F032781C1D500030E2C /* AudioInfo.cpp in Sources */,
+				28285F152781C1D500030E2C /* AudioPatchbayParm.cpp in Sources */,
+				28CC581D2781DC5F003B9605 /* ICIPAddressTextEditCellDelegate.m in Sources */,
+				28285F1B2781C1D500030E2C /* AudioControlDetailValueTypes.cpp in Sources */,
+				28CC57C22781DC1A003B9605 /* ICAudioInputChannelsV1RangeDelegate.m in Sources */,
+				28CC57BF2781DC1A003B9605 /* ICAudioPatchbayV1Cell.m in Sources */,
+				28CC57FE2781DC49003B9605 /* ICIndicatorButton.m in Sources */,
+				28285F092781C1D500030E2C /* MixerInputParm.cpp in Sources */,
+				28CC57BC2781DC1A003B9605 /* ICAudioPatchbayV1OutputSelection.m in Sources */,
+				28285F252781C1D500030E2C /* GizmoCount.cpp in Sources */,
+				28CC589C2781DC89003B9605 /* ICFilterPortSelection.m in Sources */,
+				28285F202781C1D500030E2C /* Device.cpp in Sources */,
+				28CC57F82781DC3E003B9605 /* NSString+RotatedDraw.m in Sources */,
+				28CC57F92781DC3E003B9605 /* UIImageTintCategory.m in Sources */,
+				28CC58A72781DC89003B9605 /* ICControllerFilterIDProvider.m in Sources */,
+				28CC57C32781DC1A003B9605 /* ICiOSEnabledV1SwitchDelegate.m in Sources */,
+				28285EFF2781C1D500030E2C /* AudioPortPatchbay.cpp in Sources */,
+				28285F172781C1D500030E2C /* AudioControlParm.cpp in Sources */,
+				28285F0A2781C1D500030E2C /* MixerOutputControlValue.cpp in Sources */,
+				28CC57C92781DC1A003B9605 /* ICPCEnabledV1SwitchDelegate.m in Sources */,
+				28285F212781C1D500030E2C /* EthernetPortInfo.cpp in Sources */,
+				28CC58582781DC77003B9605 /* ICNormalBlockDelegate.m in Sources */,
+				28285F242781C1D500030E2C /* DeviceID.cpp in Sources */,
+				28285F312781C1D500030E2C /* CommandDefines.cpp in Sources */,
+				28285F322781C1D500030E2C /* stdafx.cpp in Sources */,
+				28285F2D2781C1D500030E2C /* Communicator.cpp in Sources */,
+				28CC58D62781DCE5003B9605 /* ICAppDelegate.m in Sources */,
+				28CC58552781DC77003B9605 /* ICFileBrowserViewController.m in Sources */,
+				28CC58562781DC77003B9605 /* ICViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2856E81A2781B325005C6D16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2856E81B2781B325005C6D16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2856E81F2781B325005C6D16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2856E8202781B325005C6D16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2856E83B2781B326005C6D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = __IOS__;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/boost/1.76.0/include;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2856E83C2781B326005C6D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_NO_COMMON_BLOCKS = YES;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = __IOS__;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/boost/1.76.0/include;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2856E83E2781B326005C6D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H28D8P2T32;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devmentor.iOSiConnectivityiConfig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2856E83F2781B326005C6D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H28D8P2T32;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devmentor.iOSiConnectivityiConfig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2856E8092781B325005C6D16 /* Build configuration list for PBXProject "iOSiConnectivityiConfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2856E83B2781B326005C6D16 /* Debug */,
+				2856E83C2781B326005C6D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2856E83D2781B326005C6D16 /* Build configuration list for PBXNativeTarget "iOSiConnectivityiConfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2856E83E2781B326005C6D16 /* Debug */,
+				2856E83F2781B326005C6D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2856E8062781B325005C6D16 /* Project object */;
+}

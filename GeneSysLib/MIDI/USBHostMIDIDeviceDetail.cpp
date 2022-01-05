@@ -100,13 +100,13 @@ void USBHostMIDIDeviceDetail::parse(BytesIter& beginIter, BytesIter& endIter) {
     Byte length = nextMidiByte(beginIter, endIter);
     if (length > 0) {
       vendorName = roString(string(beginIter, (beginIter + length)));
-      advance(beginIter, length);
+      std::advance(beginIter, length);
     }
 
     length = nextMidiByte(beginIter, endIter);
     if (length > 0) {
       productName = roString(string(beginIter, (beginIter + length)));
-      advance(beginIter, length);
+      std::advance(beginIter, length);
     }
   }
 }

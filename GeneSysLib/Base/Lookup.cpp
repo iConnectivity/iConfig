@@ -7,20 +7,18 @@
 
 #include "stdafx.h"
 #include "Lookup.h"
-
+#include <unordered_map>
 #ifndef Q_MOC_RUN
-#include <boost/tr1/unordered_map.hpp>
 #include <boost/range.hpp>
 #endif
 
-using std::tr1::unordered_map;
 using namespace boost;
 
 namespace GeneSysLib {
 
 std::string cmdString(CmdEnum command) {
   std::string result = "Unknown Command";
-  static unordered_map<Byte, std::string> stringMap;
+  static std::unordered_map<Byte, std::string> stringMap;
 
   if (stringMap.size() == 0) {
     stringMap[(Byte)(Command::GetDevice) & 0x7F] = "GetDevice";

@@ -130,7 +130,7 @@ bool SysexParser::parse(Bytes sysex) const {
   if (!error) {
     Bytes header;
     copy(beginIter, beginIter + 5, std::back_inserter(header));
-    advance(beginIter, 5);
+    std::advance(beginIter, 5);
 
     Bytes expectedHeader;
     expectedHeader += 0xF0, 0x00, 0x01, 0x73, 0x7E;
@@ -159,7 +159,7 @@ bool SysexParser::parse(Bytes sysex) const {
 #else
     copy(beginIter, beginIter + 5, sn.begin());
 #endif
-    advance(beginIter, 5);
+    std::advance(beginIter, 5);
     deviceID = DeviceID(productID, sn);
 
     transID = nextMidiWord(beginIter, endIter);
