@@ -656,8 +656,8 @@ void Communicator::setCurrentOutput(unsigned int outPort) {
 void Communicator::sendSysex(const Bytes &sysex) {
 #ifdef __IOS__
   Bytes sysCopy(sysex);
-  dispatch_async(_serialQueue, ^{
-    Bytes sysex(sysCopy);
+//  dispatch_async(_serialQueue, ^{
+//    Bytes sysex(sysCopy);
   NSLog(@"sendSysex %02X%02X", sysex.at(14), sysex.at(15));
   NSMutableString *str = [[NSMutableString alloc] init];
   [str appendString:@"sysex = [ "];
@@ -703,7 +703,7 @@ void Communicator::sendSysex(const Bytes &sysex) {
     request->completionProc = &sysexCommandSentCallback;
     request->completionRefCon = request;
 
-    Communicator::startTimer();
+    //Communicator::startTimer();
     OSStatus status = MIDISendSysex(request);
     //??NSLogError( status, @"MIDISendSysex");
 
@@ -716,9 +716,9 @@ void Communicator::sendSysex(const Bytes &sysex) {
       free(request);
     }
 
-    Communicator::waitForAllTimers();
+    //Communicator::waitForAllTimers();
   }
-  });
+ // });
 
 #else  // NOT __IOS__
 

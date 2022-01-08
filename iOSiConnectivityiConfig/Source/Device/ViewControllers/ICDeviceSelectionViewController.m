@@ -260,6 +260,9 @@ using namespace GeneSysLib;
                 transID, sysex(GetCommandListCommand(deviceID, transID))));
           }
         }
+        else {
+          NSLog(@"Handler for device that is already found");
+        }
         inHandler = NO;
       };
       registeredHandlers[Command::RetDevice] =
@@ -477,6 +480,7 @@ using namespace GeneSysLib;
    
   if (!pendingSysex.empty()) {
     auto nextSysex = pendingSysex.front();
+    NSLog(@"Send next Sysex for Transaction ID:%i", nextSysex.first);
     pendingSysex.pop();
     self.comm->setCurrentOutput(nextSysex.first);
     self.comm->sendSysex(nextSysex.second);
@@ -484,9 +488,9 @@ using namespace GeneSysLib;
 }
 
 - (void)sendNextGetDevice {
-
-    if (!pendingGetDevice.empty()) {
+  if (!pendingGetDevice.empty()) {
     auto nextGetDevice = pendingGetDevice.front();
+    NSLog(@"Sending next GetDevice %i", nextGetDevice.first);
     pendingGetDevice.pop();
     self.comm->setCurrentOutput(nextGetDevice.first);
     self.comm->sendSysex(nextGetDevice.second);
