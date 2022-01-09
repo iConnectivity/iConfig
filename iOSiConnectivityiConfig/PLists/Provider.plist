@@ -6,19 +6,19 @@
 	<dict>
 		<key>buttonColors</key>
 		<array>
-			<string>78ad00</string>
-			<string>0078ad</string>
-			<string>00557A</string>
-			<string>0078ad</string>
-			<string>00557A</string>
-			<string>0078ad</string>
-			<string>00557A</string>
-			<string>0078ad</string>
-			<string>00557A</string>
-			<string>0078ad</string>
-			<string>00557A</string>
-			<string>d40091</string>
-			<string>84005a</string>
+			<string>555555</string>
+			<string>777777</string>
+			<string>777777</string>
+			<string>777777</string>
+			<string>777777</string>
+			<string>777777</string>
+			<string>777777</string>
+			<string>777777</string>
+			<string>777777</string>
+			<string>777777</string>
+			<string>777777</string>
+			<string>774466</string>
+			<string>553344</string>
 		</array>
 		<key>selectedButtonColors</key>
 		<array>
@@ -51,15 +51,15 @@
 		<key>titleBorderColor</key>
 		<string>001620</string>
 		<key>standardColor</key>
-		<string>00557a</string>
+		<string>666677</string>
 		<key>standardSelectionColor</key>
-		<string>00557a</string>
+		<string>555555</string>
 		<key>standardBorderColor</key>
 		<string>001620</string>
 		<key>alternativeColor</key>
-		<string>ad4e24</string>
+		<string>777777</string>
 		<key>alternativeSelectionColor</key>
-		<string>ad4e24</string>
+		<string>555555</string>
 	</dict>
 	<key>PortRoutingRouteSelection</key>
 	<dict>
@@ -70,15 +70,15 @@
 		<key>titleBorderColor</key>
 		<string>001620</string>
 		<key>standardColor</key>
-		<string>859399</string>
+		<string>555566</string>
 		<key>standardSelectionColor</key>
-		<string>0078ad</string>
+		<string>333344</string>
 		<key>standardBorderColor</key>
 		<string>001620</string>
 		<key>alternativeColor</key>
-		<string>997f73</string>
+		<string>666666</string>
 		<key>alternativeSelectionColor</key>
-		<string>ad3500</string>
+		<string>333333</string>
 	</dict>
 	<key>PortFiltersInputPortSelection</key>
 	<dict>
@@ -88,16 +88,16 @@
 		<string>00557a</string>
 		<key>titleBorderColor</key>
 		<string>001620</string>
-		<key>standardColor</key>
-		<string>00557a</string>
-		<key>standardSelectionColor</key>
-		<string>00557a</string>
-		<key>standardBorderColor</key>
-		<string>001620</string>
-		<key>alternativeColor</key>
-		<string>ad4e24</string>
-		<key>alternativeSelectionColor</key>
-		<string>ad4e24</string>
+    <key>standardColor</key>
+    <string>666677</string>
+    <key>standardSelectionColor</key>
+    <string>555555</string>
+    <key>standardBorderColor</key>
+    <string>001620</string>
+    <key>alternativeColor</key>
+    <string>777777</string>
+    <key>alternativeSelectionColor</key>
+    <string>555555</string>
 	</dict>
 	<key>PortFiltersInputFilterSelection</key>
 	<dict>
@@ -173,16 +173,16 @@
 		<string>00557a</string>
 		<key>titleBorderColor</key>
 		<string>001620</string>
-		<key>standardColor</key>
-		<string>00557a</string>
-		<key>standardSelectionColor</key>
-		<string>00557a</string>
-		<key>standardBorderColor</key>
-		<string>001620</string>
-		<key>alternativeColor</key>
-		<string>ad4e24</string>
-		<key>alternativeSelectionColor</key>
-		<string>ad4e24</string>
+    <key>standardColor</key>
+    <string>666677</string>
+    <key>standardSelectionColor</key>
+    <string>555555</string>
+    <key>standardBorderColor</key>
+    <string>001620</string>
+    <key>alternativeColor</key>
+    <string>777777</string>
+    <key>alternativeSelectionColor</key>
+    <string>555555</string>
 	</dict>
 	<key>PortFiltersOutputFilterSelection</key>
 	<dict>
@@ -292,16 +292,16 @@
 		<string>00557a</string>
 		<key>titleBorderColor</key>
 		<string>001620</string>
-		<key>standardColor</key>
-		<string>00557a</string>
-		<key>standardSelectionColor</key>
-		<string>00557a</string>
-		<key>standardBorderColor</key>
-		<string>001620</string>
-		<key>alternativeColor</key>
-		<string>ad4e24</string>
-		<key>alternativeSelectionColor</key>
-		<string>ad4e24</string>
+    <key>standardColor</key>
+    <string>666677</string>
+    <key>standardSelectionColor</key>
+    <string>555555</string>
+    <key>standardBorderColor</key>
+    <string>001620</string>
+    <key>alternativeColor</key>
+    <string>777777</string>
+    <key>alternativeSelectionColor</key>
+    <string>555555</string>
 	</dict>
 	<key>ChannelRemapInputChannelSelection</key>
 	<dict>
@@ -435,16 +435,16 @@
 		<string>00557a</string>
 		<key>titleBorderColor</key>
 		<string>001620</string>
-		<key>standardColor</key>
-		<string>00557a</string>
-		<key>standardSelectionColor</key>
-		<string>00557a</string>
-		<key>standardBorderColor</key>
-		<string>001620</string>
-		<key>alternativeColor</key>
-		<string>ad4e24</string>
-		<key>alternativeSelectionColor</key>
-		<string>ad4e24</string>
+    <key>standardColor</key>
+    <string>666677</string>
+    <key>standardSelectionColor</key>
+    <string>555555</string>
+    <key>standardBorderColor</key>
+    <string>001620</string>
+    <key>alternativeColor</key>
+    <string>777777</string>
+    <key>alternativeSelectionColor</key>
+    <string>555555</string>
 	</dict>
 	<key>ChannelRemapOutputChannelSelection</key>
 	<dict>
@@ -578,16 +578,16 @@
 		<string>00557a</string>
 		<key>titleBorderColor</key>
 		<string>001620</string>
-		<key>standardColor</key>
-		<string>00557a</string>
-		<key>standardSelectionColor</key>
-		<string>00557a</string>
-		<key>standardBorderColor</key>
-		<string>001620</string>
-		<key>alternativeColor</key>
-		<string>ad4e24</string>
-		<key>alternativeSelectionColor</key>
-		<string>ad4e24</string>
+    <key>standardColor</key>
+    <string>666677</string>
+    <key>standardSelectionColor</key>
+    <string>555555</string>
+    <key>standardBorderColor</key>
+    <string>001620</string>
+    <key>alternativeColor</key>
+    <string>777777</string>
+    <key>alternativeSelectionColor</key>
+    <string>555555</string>
 	</dict>
 	<key>ControllerFiltersOutputPortSelection</key>
 	<dict>
@@ -597,16 +597,16 @@
 		<string>00557a</string>
 		<key>titleBorderColor</key>
 		<string>001620</string>
-		<key>standardColor</key>
-		<string>00557a</string>
-		<key>standardSelectionColor</key>
-		<string>00557a</string>
-		<key>standardBorderColor</key>
-		<string>001620</string>
-		<key>alternativeColor</key>
-		<string>ad4e24</string>
-		<key>alternativeSelectionColor</key>
-		<string>ad4e24</string>
+    <key>standardColor</key>
+    <string>666677</string>
+    <key>standardSelectionColor</key>
+    <string>555555</string>
+    <key>standardBorderColor</key>
+    <string>001620</string>
+    <key>alternativeColor</key>
+    <string>777777</string>
+    <key>alternativeSelectionColor</key>
+    <string>555555</string>
 	</dict>
 	<key>ControllerFiltersInputIDSelection</key>
 	<dict>
@@ -746,16 +746,16 @@
 		<string>00557a</string>
 		<key>titleBorderColor</key>
 		<string>001620</string>
-		<key>standardColor</key>
-		<string>00557a</string>
-		<key>standardSelectionColor</key>
-		<string>00557a</string>
-		<key>standardBorderColor</key>
-		<string>001620</string>
-		<key>alternativeColor</key>
-		<string>ad4e24</string>
-		<key>alternativeSelectionColor</key>
-		<string>ad4e24</string>
+    <key>standardColor</key>
+    <string>666677</string>
+    <key>standardSelectionColor</key>
+    <string>555555</string>
+    <key>standardBorderColor</key>
+    <string>001620</string>
+    <key>alternativeColor</key>
+    <string>777777</string>
+    <key>alternativeSelectionColor</key>
+    <string>555555</string>
 	</dict>
 	<key>ControllerRemapOutputPortSelection</key>
 	<dict>
@@ -765,16 +765,16 @@
 		<string>00557a</string>
 		<key>titleBorderColor</key>
 		<string>001620</string>
-		<key>standardColor</key>
-		<string>00557a</string>
-		<key>standardSelectionColor</key>
-		<string>00557a</string>
-		<key>standardBorderColor</key>
-		<string>001620</string>
-		<key>alternativeColor</key>
-		<string>ad4e24</string>
-		<key>alternativeSelectionColor</key>
-		<string>ad4e24</string>
+    <key>standardColor</key>
+    <string>666677</string>
+    <key>standardSelectionColor</key>
+    <string>555555</string>
+    <key>standardBorderColor</key>
+    <string>001620</string>
+    <key>alternativeColor</key>
+    <string>777777</string>
+    <key>alternativeSelectionColor</key>
+    <string>555555</string>
 	</dict>
 	<key>ControllerRemapInputIDSelection</key>
 	<dict>

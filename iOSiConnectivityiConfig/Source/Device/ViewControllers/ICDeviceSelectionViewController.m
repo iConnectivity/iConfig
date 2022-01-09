@@ -260,6 +260,9 @@ using namespace GeneSysLib;
                 transID, sysex(GetCommandListCommand(deviceID, transID))));
           }
         }
+        else {
+          NSLog(@"Handler for device that is already found");
+        }
         inHandler = NO;
       };
       registeredHandlers[Command::RetDevice] =
@@ -447,7 +450,6 @@ using namespace GeneSysLib;
                                           otherButtonTitles:nil];
     [alert show];
 */
-  self.comm->stopTimer();
   if (inHandler)
   {
     [self startSearchTimer];
@@ -469,14 +471,13 @@ using namespace GeneSysLib;
   [self.searchingView removeFromSuperview];
   [self.myTableView reloadData];
 //*/
-   //zx, 2017-06-16
-   Communicator::cancelAllTimers();
 }
 
 - (void)sendNextSysex {
    
   if (!pendingSysex.empty()) {
     auto nextSysex = pendingSysex.front();
+    NSLog(@"Send next Sysex for Transaction ID:%i", nextSysex.first);
     pendingSysex.pop();
     self.comm->setCurrentOutput(nextSysex.first);
     self.comm->sendSysex(nextSysex.second);
@@ -484,9 +485,9 @@ using namespace GeneSysLib;
 }
 
 - (void)sendNextGetDevice {
-
-    if (!pendingGetDevice.empty()) {
+  if (!pendingGetDevice.empty()) {
     auto nextGetDevice = pendingGetDevice.front();
+    NSLog(@"Sending next GetDevice %i", nextGetDevice.first);
     pendingGetDevice.pop();
     self.comm->setCurrentOutput(nextGetDevice.first);
     self.comm->sendSysex(nextGetDevice.second);
@@ -523,12 +524,6 @@ using namespace GeneSysLib;
     [searchTimer invalidate];
     searchTimer = nil;
   }
-
-    //zx,2017-06-016
-    [Communicator::finishLock lock];
-    [Communicator::finishLock broadcast];
-    [Communicator::finishLock unlock];
-    
 }
 
 - (void)startInfoTimer {

@@ -24,7 +24,7 @@
                     <color key="tintColor" red="0.0" green="0.26274509800000001" blue="0.3803921569" alpha="1" colorSpace="deviceRGB"/>
                     <color key="barTintColor" red="0.90140282846715325" green="0.90140282846715325" blue="0.90140282846715325" alpha="1" colorSpace="deviceRGB"/>
                     <items>
-                        <navigationItem title="iConnectivity iConfig" id="23">
+                        <navigationItem title="iConfig 2" id="23">
                             <barButtonItem key="rightBarButtonItem" style="done" systemItem="refresh" id="24">
                                 <connections>
                                     <action selector="startSearch" destination="-1" id="25"/>
