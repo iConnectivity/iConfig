@@ -450,7 +450,6 @@ using namespace GeneSysLib;
                                           otherButtonTitles:nil];
     [alert show];
 */
-  self.comm->stopTimer();
   if (inHandler)
   {
     [self startSearchTimer];
@@ -472,8 +471,6 @@ using namespace GeneSysLib;
   [self.searchingView removeFromSuperview];
   [self.myTableView reloadData];
 //*/
-   //zx, 2017-06-16
-   Communicator::cancelAllTimers();
 }
 
 - (void)sendNextSysex {
@@ -527,12 +524,6 @@ using namespace GeneSysLib;
     [searchTimer invalidate];
     searchTimer = nil;
   }
-
-    //zx,2017-06-016
-    [Communicator::finishLock lock];
-    [Communicator::finishLock broadcast];
-    [Communicator::finishLock unlock];
-    
 }
 
 - (void)startInfoTimer {

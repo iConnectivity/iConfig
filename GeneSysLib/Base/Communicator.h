@@ -104,20 +104,8 @@ struct Communicator {
   std::vector<MIDIDeviceRef> inDevices;
 
  public:
-  static NSLock *sendLock;
-  static NSLock *timerLock;
-  static NSCondition *finishLock;
   static bool pendingCallback;
   static bool pendingSend;
-
-  static void startTimer();
-  static void stopTimer();
-  static bool timersEmpty();
-
-  static void waitForAllTimers();
-  static void cancelAllTimers();
-
-  static NSMutableArray *timeoutTimers;
 
   static TimeoutPoster *timePoster;
 

@@ -66,8 +66,6 @@ using namespace MyAlgorithms;
 
 - (id)initWithCommunicator:(GeneSysLib::Communicator *)comm;
 
-- (void)onTimeout;
-
 @end
 
 #pragma mark - C helper prototypes
@@ -94,42 +92,11 @@ int attemptCount;
   return self;
 }
 
-- (void)onTimeout {
-  [GeneSysLib::Communicator::finishLock lock];
-  [comm->timeoutTimers removeObjectAtIndex:0];
-  if (comm->timersEmpty()) {
-    [GeneSysLib::Communicator::finishLock signal];
-  }
-  [GeneSysLib::Communicator::finishLock unlock];
-  if (attemptCount > MAX_ATTEMPTS) {
-    attemptCount = 0;
-    runOnMain(^{
-        [[NSNotificationCenter defaultCenter]
-            postNotificationName:kCommunicationTimeout
-                          object:nil];
-    });
-  } else if (lastSent.size() > 0) {
-    attemptCount++;
-    //NSLog(@"doing this lastSent send");
-    comm->sendSysex(lastSent);
-  }
-}
-
 @end
 
 namespace GeneSysLib {
 
-bool Communicator::pendingSend = false;
-
-NSLock *Communicator::sendLock = nil;
-NSCondition *Communicator::finishLock = nil;
-NSLock *Communicator::timerLock = nil;
-
-NSMutableArray *Communicator::timeoutTimers = nil;
-
 TimeoutPoster *Communicator::timePoster = nil;
-
-dispatch_queue_t _serialQueue = dispatch_queue_create("com.iconnectivity.sendSysex", DISPATCH_QUEUE_SERIAL);
 
 #else  // !__IOS__
 #include "RtMidi.h"
@@ -193,22 +160,6 @@ Communicator::Communicator()
 
   if (timePoster == nil) {
     timePoster = [[TimeoutPoster alloc] initWithCommunicator:this];
-  }
-
-  if (sendLock == nil) {
-    sendLock = [[NSLock alloc] init];
-  }
-
-  if (finishLock == nil) {
-    finishLock = [[NSCondition alloc] init];
-  }
-
-  if (timerLock == nil) {
-    timerLock = [[NSLock alloc] init];
-  }
-
-  if (timeoutTimers == nil) {
-    timeoutTimers = [[NSMutableArray alloc] init];
   }
 
 #else   // NOT __IOS__
@@ -655,9 +606,6 @@ void Communicator::setCurrentOutput(unsigned int outPort) {
 
 void Communicator::sendSysex(const Bytes &sysex) {
 #ifdef __IOS__
-  Bytes sysCopy(sysex);
-//  dispatch_async(_serialQueue, ^{
-//    Bytes sysex(sysCopy);
   NSLog(@"sendSysex %02X%02X", sysex.at(14), sysex.at(15));
   NSMutableString *str = [[NSMutableString alloc] init];
   [str appendString:@"sysex = [ "];
@@ -667,59 +615,32 @@ void Communicator::sendSysex(const Bytes &sysex) {
   [str appendString:@"]"];
   NSLog(@"%@", str);
 
-
-  lastSent = sysex;
-
-  static Byte tempSysex[1024];
-
   if (currentOutPort < outEndPoints.size() &&
       outEndPoints[currentOutPort] != (MIDIEndpointRef)NULL) {
 
-    BOOL wait = true;
+    auto bytesToSend = new Byte[sysex.size()];
+    copy(sysex.begin(), sysex.end(), bytesToSend);
 
-    while (wait) {
-      [sendLock lock];
-      wait = pendingSend;
-      if (!wait)
-        pendingSend = true;
-      [sendLock unlock];
-      if (wait) {
-        [[NSRunLoop currentRunLoop]
-         runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.01]];
-      }
-    }
-
-    MIDISysexSendRequest *request =
-    (MIDISysexSendRequest *)malloc(sizeof(MIDISysexSendRequest));
+    MIDISysexSendRequest *request = new MIDISysexSendRequest;
     memset(request, 0, sizeof(MIDISysexSendRequest));
 
-    copy(sysex.begin(), sysex.end(), tempSysex);
     NSLog(@"Sending %ld -> Last = [%02X]", sysex.size(), sysex[sysex.size() - 1]);
 
     request->destination = outEndPoints[currentOutPort];
-    request->data = tempSysex;  //.data();
+    request->data = bytesToSend;
     request->bytesToSend = (UInt32)sysex.size();
     request->complete = NO;
     request->completionProc = &sysexCommandSentCallback;
-    request->completionRefCon = request;
+    request->completionRefCon = bytesToSend; // will be used in sysexCommandSentCallback to delete the dynamically allocated memory
 
-    //Communicator::startTimer();
     OSStatus status = MIDISendSysex(request);
     //??NSLogError( status, @"MIDISendSysex");
 
-    [[NSRunLoop currentRunLoop]
-     runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.01]];
-
     if (FAILED(status)) {
       NSLog(@"FAILED(status)");
-      pendingSend = false;
-      free(request);
+      sysexCommandSentCallback(request);
     }
-
-    //Communicator::waitForAllTimers();
   }
- // });
-
 #else  // NOT __IOS__
 
   //bugfixing:Checking timeout timer existance and stop
@@ -859,85 +780,6 @@ void Communicator::unRegisterExclusiveHandler() {
   }
 }
 
-#ifdef __IOS__
-void Communicator::startTimer() {
-  NSLog(@"starting Timer");
-  runOnMain(^{
-    [GeneSysLib::Communicator::finishLock lock];
-      NSLog(@"starting %lu timer on main", [timeoutTimers count] + 1L);
-      //zx, 2017-06-16
-/*      NSTimer *timeoutTimer = [NSTimer timerWithTimeInterval:kTimeoutTime
-                                             target:timePoster
-                                           selector:@selector(onTimeout)
-                                           userInfo:nil
-                                            repeats:NO];
-      [[NSRunLoop currentRunLoop] addTimer:timeoutTimer
-                                   forMode:NSDefaultRunLoopMode]; */
-      NSTimer *timeoutTimer = [NSTimer scheduledTimerWithTimeInterval:kTimeoutTime
-                                                      target:timePoster
-                                                    selector:@selector(onTimeout)
-                                                    userInfo:nil
-                                                     repeats:NO];
-      
-    [timeoutTimers addObject:timeoutTimer];
-    [GeneSysLib::Communicator::finishLock unlock];
-  });
-}
-#endif  // __IOS__
-
-#if __IOS__
-void Communicator::stopTimer() {
-  runOnMain(^{
-    NSLog(@"timer %lu stopping", (unsigned long)[timeoutTimers count]);
-    [Communicator::finishLock lock];
-    if ([timeoutTimers count]) {
-      NSLog(@"timer %lu stopped on main", (unsigned long)[timeoutTimers count]);
-      NSTimer *timeoutTimer = [timeoutTimers objectAtIndex:0];
-      [timeoutTimer invalidate];
-      timeoutTimer = nil;
-
-      [timeoutTimers removeObjectAtIndex:0];
-    }
-    if (![timeoutTimers count]) {
-      NSLog(@"signalling");
-      [Communicator::finishLock broadcast];
-    }
-    else {
-      NSLog(@"not signalling");
-    }
-    [Communicator::finishLock unlock];
-  });
-}
-#endif  // __IOS__
-
-#if __IOS__
-bool Communicator::timersEmpty() {
-  return ([timeoutTimers count] == 0);
-}
-#endif  // __IOS__
-
-#if __IOS__
-void Communicator::waitForAllTimers() {
-  [finishLock lock];
-  while (!timersEmpty())
-    [finishLock wait];
-  [finishLock unlock];
-}
-#endif  // __IOS__
-
-#if __IOS__
-  void Communicator::cancelAllTimers() {
-    [finishLock lock];
-    while ([timeoutTimers count]) {
-      [[timeoutTimers objectAtIndex:0] invalidate];
-      [timeoutTimers removeObjectAtIndex:0];
-    }
-
-    [finishLock signal];
-    [finishLock unlock];
-  }
-#endif  // __IOS__
-
 }  // namespace GeneSysLib
 
 #ifdef __IOS__
@@ -973,9 +815,6 @@ void ICReadProc(const MIDIPacketList *pktlist, void *readProcRefCon,
             if (pkt->data[j] == kEndOfSysexMessage) {
               inSysexMessage = NO;
 
-              // Stop the timer
-              comm->stopTimer();
-
               NSMutableString *str = [[NSMutableString alloc] init];
               [str appendString:@"currentBuffer1 (Recv) = [ "];
               for (const auto &b : currentBuffer) {
@@ -988,8 +827,6 @@ void ICReadProc(const MIDIPacketList *pktlist, void *readProcRefCon,
               if (parser->parse(currentBuffer)) {
                 NSLog(@"Parse Failed 1!!!");
 
-                // Start time timeout
-                comm->startTimer();
               } else {
                 attemptCount = 0;
               }
@@ -1003,9 +840,6 @@ void ICReadProc(const MIDIPacketList *pktlist, void *readProcRefCon,
           if (pkt->data[j] == kEndOfSysexMessage) {
             inSysexMessage = NO;
 
-            // Stop the timer
-            comm->stopTimer();
-
             NSMutableString *str = [[NSMutableString alloc] init];
             [str appendString:@"currentBuffer2 (Recv) = [ "];
             for (const auto &b : currentBuffer) {
@@ -1018,8 +852,6 @@ void ICReadProc(const MIDIPacketList *pktlist, void *readProcRefCon,
             if (parser->parse(currentBuffer)) {
               NSLog(@"Parse Failed 2!!!");
 
-              // Start time timeout
-              comm->startTimer();
             } else {
               attemptCount = 0;
             }
@@ -1038,8 +870,11 @@ void ICReadProc(const MIDIPacketList *pktlist, void *readProcRefCon,
 void sysexCommandSentCallback(MIDISysexSendRequest *request) {
   //NSLog(@"Sent complete? %@", (request->complete) ? (@"Yes") : (@"No"));
   //NSLog(@"Sent Complete");
-  GeneSysLib::Communicator::pendingSend = false;
-  free(request);
+  if (request->complete) {
+    Byte* data = reinterpret_cast<Byte*>(request->completionRefCon);
+    delete [] data;
+    delete request;
+  }
 }
 
 void midiNotifyProc(const MIDINotification *message, void *refCon) {}
