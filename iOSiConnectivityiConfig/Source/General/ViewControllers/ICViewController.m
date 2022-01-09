@@ -36,7 +36,8 @@ using namespace GeneSysLib;
 
 #define ANIMATE_OUT_TIME 0.2
 #define ANIMATE_IN_TIME 0.15
-#define BORDER_WIDTH 3.5
+#define BORDER_WIDTH 1
+#define MENU_OFFSET 10
 
 #define INDICATOR_WIDTH 24.0
 #define INDICATOR_HEIGHT 24.0
@@ -327,10 +328,10 @@ using namespace GeneSysLib;
   [self.navigationItem setTitle:[squareProvider title]];
   titleLabel.text = [squareProvider title];
 
-  auto *const imageBackground = [UIImage imageNamed:@"Background.png"];
-  self.view.backgroundColor = [UIColor colorWithPatternImage:imageBackground];
-  self.BackColorView.backgroundColor =
-      [[squareProvider titleBackgroundColor] colorWithAlphaComponent:0.8f];
+  //auto *const imageBackground = [UIImage imageNamed:@"Background.png"];
+  self.view.backgroundColor = UIColor.systemGrayColor;
+  self.BackColorView.backgroundColor = UIColor.systemGrayColor;
+//      [[squareProvider titleBackgroundColor] colorWithAlphaComponent:0.0f];
 
   if (animated) {
     titleLabel.alpha = 0;
@@ -340,7 +341,7 @@ using namespace GeneSysLib;
   auto *const font = [UIFont boldSystemFontOfSize:((isiPad) ? (20.0) : (15.0))];
 
   CGFloat totalButtonWidth = 0;
-  CGFloat xOffset = BORDER_WIDTH;
+  CGFloat xOffset = BORDER_WIDTH + MENU_OFFSET;
 
   for (int i = 0; i < [providers count] - 1; i++) {
     CGFloat currWidth =
@@ -387,7 +388,7 @@ using namespace GeneSysLib;
                  self.headerScrollView.contentSize.height);
 
   titleLabel.frame =
-      CGRectMake(BORDER_WIDTH + totalButtonWidth, titleLabel.frame.origin.y,
+      CGRectMake(MENU_OFFSET + BORDER_WIDTH + totalButtonWidth, titleLabel.frame.origin.y,
                  labelWidth, titleLabel.frame.size.height);
   [titleLabel setTextAlignment:NSTextAlignmentCenter];
 
