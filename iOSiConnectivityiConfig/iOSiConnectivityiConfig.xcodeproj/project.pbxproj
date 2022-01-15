@@ -394,7 +394,7 @@
 		28285F3C2781D66400030E2C /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		28285F3E2781D67900030E2C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		28285F402781D68000030E2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2856E80E2781B325005C6D16 /* iOSiConnectivityiConfig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSiConnectivityiConfig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2856E80E2781B325005C6D16 /* iOSiConfig2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSiConfig2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2856E81B2781B325005C6D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2856E81D2781B325005C6D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2856E8202781B325005C6D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -920,7 +920,7 @@
 		2856E80F2781B325005C6D16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2856E80E2781B325005C6D16 /* iOSiConnectivityiConfig.app */,
+				2856E80E2781B325005C6D16 /* iOSiConfig2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1482,9 +1482,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2856E80D2781B325005C6D16 /* iOSiConnectivityiConfig */ = {
+		2856E80D2781B325005C6D16 /* iOSiConfig2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2856E83D2781B326005C6D16 /* Build configuration list for PBXNativeTarget "iOSiConnectivityiConfig" */;
+			buildConfigurationList = 2856E83D2781B326005C6D16 /* Build configuration list for PBXNativeTarget "iOSiConfig2" */;
 			buildPhases = (
 				2856E80A2781B325005C6D16 /* Sources */,
 				2856E80B2781B325005C6D16 /* Frameworks */,
@@ -1494,9 +1494,9 @@
 			);
 			dependencies = (
 			);
-			name = iOSiConnectivityiConfig;
+			name = iOSiConfig2;
 			productName = iOSiConnectivityiConfig;
-			productReference = 2856E80E2781B325005C6D16 /* iOSiConnectivityiConfig.app */;
+			productReference = 2856E80E2781B325005C6D16 /* iOSiConfig2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1526,7 +1526,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2856E80D2781B325005C6D16 /* iOSiConnectivityiConfig */,
+				2856E80D2781B325005C6D16 /* iOSiConfig2 */,
 			);
 		};
 /* End PBXProject section */
@@ -1928,7 +1928,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devmentor.iOSiConnectivityiConfig;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devmentor.iOSiConfig2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1956,7 +1956,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devmentor.iOSiConnectivityiConfig;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devmentor.iOSiConfig2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1975,7 +1975,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2856E83D2781B326005C6D16 /* Build configuration list for PBXNativeTarget "iOSiConnectivityiConfig" */ = {
+		2856E83D2781B326005C6D16 /* Build configuration list for PBXNativeTarget "iOSiConfig2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2856E83E2781B326005C6D16 /* Debug */,
