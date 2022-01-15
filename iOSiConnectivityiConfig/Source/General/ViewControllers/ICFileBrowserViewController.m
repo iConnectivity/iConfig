@@ -63,11 +63,11 @@ using namespace GeneSysLib;
 
     switch (pid) {
       case DevicePID::iConnect2Plus:
-        supportedExtension = @"\\.IC2$";
+        supportedExtension = @"\\.icm2$";
         break;
 
       case DevicePID::iConnect4Plus:
-        supportedExtension = @"\\.IC4$";
+        supportedExtension = @"\\.icm4$";
         break;
     }
   }

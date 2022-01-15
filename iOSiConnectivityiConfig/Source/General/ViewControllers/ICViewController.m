@@ -1349,7 +1349,11 @@ using namespace GeneSysLib;
   auto const &data = self.device->serialize();
   NSData *const nsData = [NSData dataWithBytes:data.data() length:data.size()];
 
-  [nsData writeToFile:[self fileNameWithExtension:fileName] atomically:YES];
+  BOOL writeSuccessful = [nsData writeToFile:[self fileNameWithExtension:fileName] atomically:YES];
+  if (writeSuccessful == NO)
+  {
+    NSLog(@"Could not write %s", [fileName cStringUsingEncoding:(NSASCIIStringEncoding)]);
+  }
   [self hideOverlay];
 }
 
