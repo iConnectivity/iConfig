@@ -1,151 +1,151 @@
 {
   "images" : [
     {
-      "filename" : "iConfig2_40px.png",
+      "filename" : "reConfig_40px.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "iConfig2_60px.png",
+      "filename" : "reConfig_60px.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "iConfig2_29px.png",
+      "filename" : "reConfig_29px.png",
       "idiom" : "iphone",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "iConfig2_58px.png",
+      "filename" : "reConfig_58px.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "iConfig2_87px.png",
+      "filename" : "reConfig_87px.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "iConfig2_80px.png",
+      "filename" : "reConfig_80px.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "iConfig2_120px.png",
+      "filename" : "reConfig_120px.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "iConfig2_57px.png",
+      "filename" : "reConfig_57px.png",
       "idiom" : "iphone",
       "scale" : "1x",
       "size" : "57x57"
     },
     {
-      "filename" : "iConfig2_114px.png",
+      "filename" : "reConfig_114px.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "57x57"
     },
     {
-      "filename" : "iConfig2_120px-1.png",
+      "filename" : "reConfig_120px-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "iConfig2_180px.png",
+      "filename" : "reConfig_180px.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "filename" : "iConfig2_20px.png",
+      "filename" : "reConfig_20px.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "20x20"
     },
     {
-      "filename" : "iConfig2_40px-1.png",
+      "filename" : "reConfig_40px-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "iConfig2_29px-1.png",
+      "filename" : "reConfig_29px-1.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "iConfig2_58px-1.png",
+      "filename" : "reConfig_58px-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "iConfig2_40px-2.png",
+      "filename" : "reConfig_40px-2.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
     },
     {
-      "filename" : "iConfig2_80px-1.png",
+      "filename" : "reConfig_80px-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "iConfig2_50px.png",
+      "filename" : "reConfig_50px.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "50x50"
     },
     {
-      "filename" : "iConfig2_100px.png",
+      "filename" : "reConfig_100px.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "50x50"
     },
     {
-      "filename" : "iConfig2_72px.png",
+      "filename" : "reConfig_72px.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "72x72"
     },
     {
-      "filename" : "iConfig2_144px.png",
+      "filename" : "reConfig_144px.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "72x72"
     },
     {
-      "filename" : "iConfig2_76px.png",
+      "filename" : "reConfig_76px.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
     },
     {
-      "filename" : "iConfig2_152px.png",
+      "filename" : "reConfig_152px.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
     },
     {
-      "filename" : "iConfig2_167px.png",
+      "filename" : "reConfig_167px.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "iConfig2_1024px.png",
+      "filename" : "reConfig_1024px.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
