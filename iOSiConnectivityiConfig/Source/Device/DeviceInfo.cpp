@@ -105,16 +105,16 @@ SerialNumber DeviceInfo::getSerialNumber() { return deviceID.serialNumber(); }
 
 Word DeviceInfo::getTransID() { return transID; }
 
-bool DeviceInfo::startQuery(Screen screen, const list<CmdEnum>& query) {
+bool DeviceInfo::startQuery(Screen screen, const list<CmdEnum>& query)
+{
   bool result = false;
 
-  bool sysexEmpty;
-
   [sendLock lock];
-  sysexEmpty = sysexMessages.empty();
+  bool sysexEmpty = sysexMessages.empty();
   [sendLock unlock];
 
-  if ((currentQuery.empty()) && sysexEmpty) {
+  if ((currentQuery.empty()) && sysexEmpty)
+  {
     attemptedQueries.clear();
     queriedItems.clear();
     queryScreen = screen;
@@ -123,7 +123,9 @@ bool DeviceInfo::startQuery(Screen screen, const list<CmdEnum>& query) {
     currentQuery = query;
 
     result = sendNextSysex();
-  } else {
+  }
+  else
+  {
     pendingQueries.push(boost::make_tuple(screen, query));
   }
 
@@ -300,25 +302,22 @@ bool DeviceInfo::sendNextSysex() {
   isPendingSysexMessage = !(sysexMessages.empty());
   [sendLock unlock];
 
-  if (isPendingSysexMessage) {
-    // Create a variable to hold the next sysex message
-    Bytes message;
-
+  if (isPendingSysexMessage)
+  {
     // Lock the pending sysex queue lock
     [sendLock lock];
-
     // get the next pending sysex message
-    message = sysexMessages.front();
-
+    Bytes message = sysexMessages.front();
     // remove the pending sysex message from the queue
     sysexMessages.pop();
-
     // unlock the pending sysex queue lock
     [sendLock unlock];
 
     // send the next sysex message
     comm->sendSysex(message);
-  } else {
+  }
+  else
+  {
     // get the front iterator for the current query
     auto q = currentQuery.begin();
 
