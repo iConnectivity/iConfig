@@ -43,7 +43,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="768" height="36"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="iConnect MIDI" lineBreakMode="middleTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="reConnect MIDI" lineBreakMode="middleTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="9">
                                     <rect key="frame" x="20" y="0.0" width="728" height="36"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>

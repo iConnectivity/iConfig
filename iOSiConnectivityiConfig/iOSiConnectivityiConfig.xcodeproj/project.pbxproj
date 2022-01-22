@@ -394,10 +394,11 @@
 		28285F3C2781D66400030E2C /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		28285F3E2781D67900030E2C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		28285F402781D68000030E2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2856E80E2781B325005C6D16 /* iOSiConnectivityiConfig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSiConnectivityiConfig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2856E80E2781B325005C6D16 /* iOSiConfig2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSiConfig2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2856E81B2781B325005C6D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2856E81D2781B325005C6D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2856E8202781B325005C6D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2893B68827931EC200BE5577 /* iOSiConfig2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSiConfig2.entitlements; sourceTree = "<group>"; };
 		28CC572F2781DB57003B9605 /* MainMenuBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainMenuBack@2x.png"; sourceTree = "<group>"; };
 		28CC57302781DB57003B9605 /* block_icm2plusdevice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block_icm2plusdevice@2x.png"; sourceTree = "<group>"; };
 		28CC57312781DB57003B9605 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
@@ -903,6 +904,7 @@
 		2856E8052781B325005C6D16 = {
 			isa = PBXGroup;
 			children = (
+				2893B68827931EC200BE5577 /* iOSiConfig2.entitlements */,
 				28CC58D72781DF88003B9605 /* PLists */,
 				28CC57732781DB74003B9605 /* Nibs */,
 				28CC572E2781DB57003B9605 /* Images */,
@@ -920,7 +922,7 @@
 		2856E80F2781B325005C6D16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2856E80E2781B325005C6D16 /* iOSiConnectivityiConfig.app */,
+				2856E80E2781B325005C6D16 /* iOSiConfig2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1482,9 +1484,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2856E80D2781B325005C6D16 /* iOSiConnectivityiConfig */ = {
+		2856E80D2781B325005C6D16 /* iOSiConfig2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2856E83D2781B326005C6D16 /* Build configuration list for PBXNativeTarget "iOSiConnectivityiConfig" */;
+			buildConfigurationList = 2856E83D2781B326005C6D16 /* Build configuration list for PBXNativeTarget "iOSiConfig2" */;
 			buildPhases = (
 				2856E80A2781B325005C6D16 /* Sources */,
 				2856E80B2781B325005C6D16 /* Frameworks */,
@@ -1494,9 +1496,9 @@
 			);
 			dependencies = (
 			);
-			name = iOSiConnectivityiConfig;
+			name = iOSiConfig2;
 			productName = iOSiConnectivityiConfig;
-			productReference = 2856E80E2781B325005C6D16 /* iOSiConnectivityiConfig.app */;
+			productReference = 2856E80E2781B325005C6D16 /* iOSiConfig2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1526,7 +1528,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2856E80D2781B325005C6D16 /* iOSiConnectivityiConfig */,
+				2856E80D2781B325005C6D16 /* iOSiConfig2 */,
 			);
 		};
 /* End PBXProject section */
@@ -1842,6 +1844,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/boost/1.76.0/include;
 				INFOPLIST_KEY_CFBundleDisplayName = "iConfig 2";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1912,24 +1915,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOSiConfig2.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = H28D8P2T32;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Source/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "iConfig 2";
+				INFOPLIST_KEY_CFBundleDisplayName = reConfig;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devmentor.iOSiConnectivityiConfig;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devmentor.iOSiConfig2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1940,24 +1949,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOSiConfig2.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = H28D8P2T32;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Source/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "iConfig 2";
+				INFOPLIST_KEY_CFBundleDisplayName = reConfig;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devmentor.iOSiConnectivityiConfig;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devmentor.iOSiConfig2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1975,7 +1990,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2856E83D2781B326005C6D16 /* Build configuration list for PBXNativeTarget "iOSiConnectivityiConfig" */ = {
+		2856E83D2781B326005C6D16 /* Build configuration list for PBXNativeTarget "iOSiConfig2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2856E83E2781B326005C6D16 /* Debug */,
