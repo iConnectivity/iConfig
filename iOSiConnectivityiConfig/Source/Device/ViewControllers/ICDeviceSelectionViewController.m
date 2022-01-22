@@ -245,6 +245,8 @@ using namespace GeneSysLib;
 
         auto device = [self deviceForDeviceID:deviceID];
 
+        // was the device already found with prior calls?
+        // if not it is added to the deviceList
         if (!device) {
           foundDevice = YES;
           auto &devInfo = cmdData.get<Device>();
@@ -259,9 +261,6 @@ using namespace GeneSysLib;
             pendingSysex.push(make_pair(
                 transID, sysex(GetCommandListCommand(deviceID, transID))));
           }
-        }
-        else {
-          NSLog(@"Handler for device that is already found");
         }
         inHandler = NO;
       };
