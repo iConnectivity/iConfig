@@ -75,8 +75,6 @@ void ICReadProc(const MIDIPacketList *pktlist, void *readProcRefCon,
                 void *srcConnRefCon);
 void sysexCommandSentCallback(MIDISysexSendRequest *request);
 
-void midiNotifyProc(const MIDINotification *message, void *refCon);
-
 Bytes lastSent;
 int attemptCount;
 
@@ -785,7 +783,11 @@ void Communicator::unRegisterExclusiveHandler() {
 #ifdef __IOS__
 #pragma mark - C helper implementations
 
-void ICMIDINotifyProc(const MIDINotification *message, void *refCon) {}
+void ICMIDINotifyProc(const MIDINotification *message, void *refCon) {
+  if (message->messageID == kMIDIMsgObjectRemoved) {
+    NSLog(@"Midi object removed");
+  }
+}
 
 void ICReadProc(const MIDIPacketList *pktlist, void *readProcRefCon,
                 void *srcConnRefCon) {
@@ -876,7 +878,5 @@ void sysexCommandSentCallback(MIDISysexSendRequest *request) {
     delete request;
   }
 }
-
-void midiNotifyProc(const MIDINotification *message, void *refCon) {}
 
 #endif  // __IOS__
