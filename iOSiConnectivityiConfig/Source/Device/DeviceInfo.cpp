@@ -217,6 +217,7 @@ size_t DeviceInfo::audioPortInfoCount() const {
 
 void DeviceInfo::checkUnanswered()
 {
+  NSLog(@"Check Unanswered %i", mUnansweredMessageCount);
   if (mUnansweredMessageCount > 0)
   {
     timeout();
@@ -331,20 +332,23 @@ bool DeviceInfo::sendNextSysex()
     mSysexMessages.pop();
 
     ++mUnansweredMessageCount;
+    NSLog(@"Unanswered %i", mUnansweredMessageCount);
+
     // send the next sysex message
     comm->sendSysex(message);
-
+  }
+  else
+  {
     if (mTimeoutTimer != nil)
     {
       [mTimeoutTimer invalidate];
       mTimeoutTimer = nil;
     }
+    NSLog(@"Create Timeout Timer");
     mTimeoutTimer = [NSTimer scheduledTimerWithTimeInterval:5.0
                                                     repeats:NO
                                                       block:^(NSTimer*) { checkUnanswered(); mTimeoutTimer = nil;} ];
-  }
-  else
-  {
+
     // get the front iterator for the current query
     auto q = currentQuery.begin();
 
@@ -396,7 +400,6 @@ bool DeviceInfo::sendNextSysex()
     // if there are not pending sysex messages
     if (!isPendingSysexMessage)
     {
-      NSLog(@"Unanswered %i", mUnansweredMessageCount);
       // check to make sure that the current query is complete
       if (!currentQuery.empty())
       {
@@ -522,6 +525,7 @@ void DeviceInfo::handleCommandData(CmdEnum _command, DeviceID _deviceID,
 
     sendNextSysex();
     --mUnansweredMessageCount;
+    NSLog(@"Unanswered %i", mUnansweredMessageCount);
   }
 }
 
