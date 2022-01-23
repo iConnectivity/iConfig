@@ -68,9 +68,11 @@ DeviceInfo::DeviceInfo(CommPtr _comm)
       queryScreen(UnknownScreen),
       currentQuery(),
       pendingQueries(),
-      comm(_comm) {
+      comm(_comm),
+      mUnansweredMessageCount(0),
+      mTimeoutTimer(nil)
+{
   registerAllHandlers();
-  sendLock = [[NSLock alloc] init];
 }
 
 DeviceInfo::DeviceInfo(CommPtr _comm, DeviceID _deviceID, Word _transID)
@@ -81,19 +83,29 @@ DeviceInfo::DeviceInfo(CommPtr _comm, DeviceID _deviceID, Word _transID)
       queryScreen(UnknownScreen),
       currentQuery(),
       pendingQueries(),
-      comm(_comm) {
+      comm(_comm),
+      mUnansweredMessageCount(0),
+      mTimeoutTimer(nil)
+{
   registerAllHandlers();
-  sendLock = [[NSLock alloc] init];
 }
 
-DeviceInfo::~DeviceInfo() { closeDevice(); }
+DeviceInfo::~DeviceInfo()
+{
+  closeDevice();
+}
 
-void DeviceInfo::closeDevice() {
-  [sendLock lock];
-  while (!sysexMessages.empty()) {
-    sysexMessages.pop();
+void DeviceInfo::closeDevice()
+{
+  if (mTimeoutTimer != nil)
+  {
+    [mTimeoutTimer invalidate];
+    mTimeoutTimer = nil;
   }
-  [sendLock unlock];
+  while (!mSysexMessages.empty())
+  {
+    mSysexMessages.pop();
+  }
   unRegisterHandlerAllHandlers();
 }
 
@@ -105,16 +117,15 @@ SerialNumber DeviceInfo::getSerialNumber() { return deviceID.serialNumber(); }
 
 Word DeviceInfo::getTransID() { return transID; }
 
-bool DeviceInfo::startQuery(Screen screen, const list<CmdEnum>& query) {
+bool DeviceInfo::startQuery(Screen screen, const list<CmdEnum>& query)
+{
   bool result = false;
 
-  bool sysexEmpty;
+  bool sysexEmpty = mSysexMessages.empty();
 
-  [sendLock lock];
-  sysexEmpty = sysexMessages.empty();
-  [sendLock unlock];
-
-  if ((currentQuery.empty()) && sysexEmpty) {
+  if ((currentQuery.empty()) && sysexEmpty)
+  {
+    mUnansweredMessageCount = 0;
     attemptedQueries.clear();
     queriedItems.clear();
     queryScreen = screen;
@@ -123,7 +134,9 @@ bool DeviceInfo::startQuery(Screen screen, const list<CmdEnum>& query) {
     currentQuery = query;
 
     result = sendNextSysex();
-  } else {
+  }
+  else
+  {
     pendingQueries.push(boost::make_tuple(screen, query));
   }
 
@@ -202,10 +215,24 @@ size_t DeviceInfo::audioPortInfoCount() const {
   return typeCount<AudioPortInfo>();
 }
 
-void DeviceInfo::registerAllHandlers() {
-  auto addHandler = [this](CmdEnum command, Handler handler) {
-    this->registeredHandlerIDs[command] =
-        comm->registerHandler(command, handler);
+void DeviceInfo::checkUnanswered()
+{
+  NSLog(@"Check Unanswered %i", mUnansweredMessageCount);
+  if (mUnansweredMessageCount > 0)
+  {
+    timeout();
+  }
+  else
+  {
+    NSLog(@"All Fine");
+  }
+}
+
+void DeviceInfo::registerAllHandlers()
+{
+  auto addHandler = [this](CmdEnum command, Handler handler)
+  {
+    this->registeredHandlerIDs[command] = comm->registerHandler(command, handler);
   };
 
   const auto& commonHandler =
@@ -245,28 +272,30 @@ void DeviceInfo::registerAllHandlers() {
   addHandler(Command::RetUSBHostMIDIDeviceDetail, midiHostDeviceHandler);
 }
 
-void DeviceInfo::unRegisterHandlerAllHandlers() {
-  for (const auto& handler : registeredHandlerIDs) {
+void DeviceInfo::unRegisterHandlerAllHandlers()
+{
+  for (const auto& handler : registeredHandlerIDs)
+  {
     comm->unRegisterHandler(handler.first, handler.second);
   }
-  [sendLock lock];
-  while (!sysexMessages.empty()) {
-    sysexMessages.pop();
+  while (!mSysexMessages.empty())
+  {
+    mSysexMessages.pop();
   }
-  [sendLock unlock];
 }
 
-void DeviceInfo::timeout() {
+void DeviceInfo::timeout()
+{
   NSLog(@"Device Info timeout");
   comm->unRegisterExclusiveHandler();
-  [sendLock lock];
-  while (!sysexMessages.empty()) {
-    sysexMessages.pop();
+  while (!mSysexMessages.empty())
+  {
+    mSysexMessages.pop();
   }
-  [sendLock unlock];
 
   currentQuery.clear();
-  while (!pendingQueries.empty()) {
+  while (!pendingQueries.empty())
+  {
     pendingQueries.pop();
   }
   queriedItems.clear();
@@ -280,50 +309,52 @@ void DeviceInfo::timeout() {
   });
 }
 
-void DeviceInfo::addCommand(const Bytes& sysex) {
-  [sendLock lock];
-  sysexMessages.push(sysex);
-  [sendLock unlock];
+void DeviceInfo::addCommand(const Bytes& sysex)
+{
+  mSysexMessages.push(sysex);
 }
 
-void DeviceInfo::addCommand(const Bytes&& sysex) {
-  [sendLock lock];
-  sysexMessages.push(sysex);
-  [sendLock unlock];
+void DeviceInfo::addCommand(const Bytes&& sysex)
+{
+  mSysexMessages.push(sysex);
 }
 
-bool DeviceInfo::sendNextSysex() {
+bool DeviceInfo::sendNextSysex()
+{
   // is the sysex message queue empty?
-  bool isPendingSysexMessage;
+  bool isPendingSysexMessage = !(mSysexMessages.empty());
 
-  [sendLock lock];
-  isPendingSysexMessage = !(sysexMessages.empty());
-  [sendLock unlock];
-
-  if (isPendingSysexMessage) {
-    // Create a variable to hold the next sysex message
-    Bytes message;
-
-    // Lock the pending sysex queue lock
-    [sendLock lock];
-
+  if (isPendingSysexMessage)
+  {
     // get the next pending sysex message
-    message = sysexMessages.front();
-
+    Bytes message = mSysexMessages.front();
     // remove the pending sysex message from the queue
-    sysexMessages.pop();
+    mSysexMessages.pop();
 
-    // unlock the pending sysex queue lock
-    [sendLock unlock];
+    ++mUnansweredMessageCount;
+    NSLog(@"Unanswered %i", mUnansweredMessageCount);
 
     // send the next sysex message
     comm->sendSysex(message);
-  } else {
+  }
+  else
+  {
+    if (mTimeoutTimer != nil)
+    {
+      [mTimeoutTimer invalidate];
+      mTimeoutTimer = nil;
+    }
+    NSLog(@"Create Timeout Timer");
+    mTimeoutTimer = [NSTimer scheduledTimerWithTimeInterval:5.0
+                                                    repeats:NO
+                                                      block:^(NSTimer*) { checkUnanswered(); mTimeoutTimer = nil;} ];
+
     // get the front iterator for the current query
     auto q = currentQuery.begin();
 
     // loop through the current query
-    while (q != currentQuery.end()) {
+    while (q != currentQuery.end())
+    {
       // get a list of the dependencies for the current query
       auto D = commandDependancy(*q);
 
@@ -331,7 +362,8 @@ bool DeviceInfo::sendNextSysex() {
       if ((D.empty()) ||
           (MyAlgorithms::all_of(
               D.begin(), D.end(),
-              bind(&DeviceInfo::containsCommandData, this, _1)))) {
+              bind(&DeviceInfo::containsCommandData, this, _1))))
+      {
         // add the query sysex to the sysex buffer
         addQuerySysex(*q);
 
@@ -341,40 +373,36 @@ bool DeviceInfo::sendNextSysex() {
         // remove query from list of pending commands and increment pointer
         q = currentQuery.erase(q);
       }
-      // dependencies not met
-      else {
+      else // dependencies not met
+      {
         // foreach dependencies
-        for (auto d : D) {
+        for (auto d : D)
+        {
           // if dependancy isn't in current query and
           // dependancies is not alrealy being queried and
           // dependancies has not been attempted
           if ((!MyAlgorithms::contains(currentQuery, d)) &&
               (!containsCommandData(d)) &&
-              (!MyAlgorithms::contains(attemptedQueries, d))) {
+              (!MyAlgorithms::contains(attemptedQueries, d)))
+          {
             // add dependancy to current query
             currentQuery.push_back(d);
           }
         }
-
         // increment q iterator
         ++q;
       }
     }
 
-    // lock the pending sysex message queue lock
-    [sendLock lock];
-
     // determine if the pending sysex message queue is empty
-    isPendingSysexMessage = !sysexMessages.empty();
-
-    // unlock the pending sysex message queue lock
-    [sendLock unlock];
+    isPendingSysexMessage = !mSysexMessages.empty();
 
     // if there are not pending sysex messages
-    if (!isPendingSysexMessage) {
-
+    if (!isPendingSysexMessage)
+    {
       // check to make sure that the current query is complete
-      if (!currentQuery.empty()) {
+      if (!currentQuery.empty())
+      {
         // the current query isn't complete. There is an error
         /*
         NSLog(@"Current query isn't complete"
@@ -388,8 +416,8 @@ bool DeviceInfo::sendNextSysex() {
       }
 
       // check to see that a valid screen us waiting for a response
-      if (queryScreen != Screen::UnknownScreen) {
-
+      if (queryScreen != Screen::UnknownScreen)
+      {
         // Remove doubles form list of queried items
         {
           // create a temporary set of commands
@@ -408,14 +436,13 @@ bool DeviceInfo::sendNextSysex() {
 
         // create an objective C object to store the results of the query
         NSDictionary* result;
-
         // create an Objective C object to store the list of queried items
         {
           NSMutableArray* const nsQuery = [NSMutableArray array];
 
           // loop through all queried items
-          for (auto iter = queriedItems.begin(); iter != queriedItems.end();
-               ++iter) {
+          for (auto iter = queriedItems.begin(); iter != queriedItems.end(); ++iter)
+          {
             // add an Object C object containing the queried object to the
             // ObjC list of queried objects
             [nsQuery addObject:[NSNumber numberWithInt:*iter]];
@@ -436,8 +463,7 @@ bool DeviceInfo::sendNextSysex() {
             [[NSNotificationCenter defaultCenter]
                 postNotificationName:@"queryCompleted"
                               object:nil
-                            userInfo:result];
-        });
+                            userInfo:result];});
 
         // set the screen to the unknown screen (this prevents duplicate
         // calls to query completed)
@@ -445,7 +471,8 @@ bool DeviceInfo::sendNextSysex() {
       }
 
       // if there are pending queries then deal with them now
-      if (!pendingQueries.empty()) {
+      if (!pendingQueries.empty())
+      {
         // get next query
         auto nextQuery = pendingQueries.front();
 
@@ -466,7 +493,8 @@ bool DeviceInfo::sendNextSysex() {
       }
     }
     // there are pending sysex messages from the new query
-    else {
+    else
+    {
       // there is something to query, recursivley call this method
       isPendingSysexMessage = sendNextSysex();
     }
@@ -475,9 +503,11 @@ bool DeviceInfo::sendNextSysex() {
   return isPendingSysexMessage;
 }
 
-bool DeviceInfo::commonHandleCode(DeviceID _deviceID, Word _transID) {
+bool DeviceInfo::commonHandleCode(DeviceID _deviceID, Word _transID)
+{
   if ((deviceID.serialNumber() == SerialNumber()) ||
-      (deviceID.pid() == Word()) || (transID == Word())) {
+      (deviceID.pid() == Word()) || (transID == Word()))
+  {
     deviceID = _deviceID;
     transID = _transID;
   }
@@ -486,12 +516,16 @@ bool DeviceInfo::commonHandleCode(DeviceID _deviceID, Word _transID) {
 }
 
 void DeviceInfo::handleCommandData(CmdEnum _command, DeviceID _deviceID,
-                                   Word _transID, commandData_t _commandData) {
-  if (commonHandleCode(_deviceID, _transID)) {
+                                   Word _transID, commandData_t _commandData)
+{
+  if (commonHandleCode(_deviceID, _transID))
+  {
     storedCommandData[_commandData.key()] = _commandData;
     queriedItems.push_back(_command);
 
     sendNextSysex();
+    --mUnansweredMessageCount;
+    NSLog(@"Unanswered %i", mUnansweredMessageCount);
   }
 }
 
@@ -499,14 +533,15 @@ void DeviceInfo::handleUSBHostMIDIDeviceDetailData(CmdEnum _command,
                                                    DeviceID _deviceID,
                                                    Word _transID,
                                                    commandData_t _commandData) {
-  if (commonHandleCode(_deviceID, _transID)) {
+  if (commonHandleCode(_deviceID, _transID))
+  {
     auto& foundUSBDetails = _commandData.get<USBHostMIDIDeviceDetail>();
 
     auto foundItem = find_if(usbHostMIDIDeviceDetails,
-                             [=](USBHostMIDIDeviceDetail usbDetails) {
-      return ((usbDetails.usbHostJack() == foundUSBDetails.usbHostJack()) &&
-              (usbDetails.usbHostID() == foundUSBDetails.usbHostID()));
-    });
+                             [=](USBHostMIDIDeviceDetail usbDetails){
+        return ((usbDetails.usbHostJack() == foundUSBDetails.usbHostJack()) &&
+                (usbDetails.usbHostID() == foundUSBDetails.usbHostID()));
+      });
 
     if ((foundItem == usbHostMIDIDeviceDetails.end() &&
          ((foundUSBDetails.numMIDIIn() > 0) ||
@@ -519,33 +554,35 @@ void DeviceInfo::handleUSBHostMIDIDeviceDetailData(CmdEnum _command,
   }
 }
 
-void DeviceInfo::handleACKData(CmdEnum, DeviceID, Word, commandData_t) {
+void DeviceInfo::handleACKData(CmdEnum, DeviceID, Word, commandData_t)
+{
   bool sysexEmpty;
   size_t messageLength;
 
-  [sendLock lock];
-  sysexEmpty = sysexMessages.empty();
-  messageLength = sysexMessages.size();
-  [sendLock unlock];
+  sysexEmpty = mSysexMessages.empty();
+  messageLength = mSysexMessages.size();
 
-  if (!sysexEmpty) {
+  if (!sysexEmpty)
+  {
     runOnMain(^{
         [[NSNotificationCenter defaultCenter]
             postNotificationName:@"writingProgress"
                           object:nil
                         userInfo:@{
                                    @"progress" :
-                                   @((int)(maxWriteItems - messageLength))
+                                   @((int)(mMaxWriteItems - messageLength))
                                  }];
     });
 
     sendNextSysex();
-  } else {
+  }
+  else
+  {
     runOnMain(^{
         [[NSNotificationCenter defaultCenter]
             postNotificationName:@"writeCompleted"
                           object:nil];
-    });
+        });
     comm->unRegisterExclusiveHandler();
   }
 }
@@ -884,7 +921,8 @@ void DeviceInfo::addQuerySysex(CmdEnum command) {
   }
 }
 
-Bytes DeviceInfo::serialize() {
+Bytes DeviceInfo::serialize()
+{
   Bytes result;
 
   // Add File Prefix
@@ -909,7 +947,8 @@ Bytes DeviceInfo::serialize() {
   return result;
 }
 
-bool DeviceInfo::deserialize(Bytes data) {
+bool DeviceInfo::deserialize(Bytes data)
+{
   bool valid = true;
   auto start = data.begin();
   auto finish = data.end();
@@ -934,7 +973,8 @@ bool DeviceInfo::deserialize(Bytes data) {
   }
 
   // Verify the footer
-  if (valid) {
+  if (valid)
+  {
     BytesIter md5Iter = finish - 16;
 
     unsigned char digest[16];
@@ -949,7 +989,8 @@ bool DeviceInfo::deserialize(Bytes data) {
     }
   }
 
-  if (valid) {
+  if (valid)
+  {
     DeviceID storedDeviceID = deviceID;
     Word storedTransID = transID;
 
@@ -969,49 +1010,57 @@ bool DeviceInfo::deserialize(Bytes data) {
   return valid;
 }
 
-long DeviceInfo::registerHandler(CmdEnum commandID, Handler handler) {
+long DeviceInfo::registerHandler(CmdEnum commandID, Handler handler)
+{
   return comm->registerHandler(commandID, handler);
 }
 
-void DeviceInfo::unRegisterHandler(CmdEnum commandID) {
+void DeviceInfo::unRegisterHandler(CmdEnum commandID)
+{
   comm->unRegisterHandler(commandID);
 }
 
-void DeviceInfo::unRegisterHandler(CmdEnum commandID, long handlerID) {
+void DeviceInfo::unRegisterHandler(CmdEnum commandID, long handlerID)
+{
   comm->unRegisterHandler(commandID, handlerID);
 }
 
-void DeviceInfo::unRegisterAll() { comm->unRegisterAll(); }
+void DeviceInfo::unRegisterAll()
+{
+  comm->unRegisterAll();
+}
 
-void DeviceInfo::registerExclusiveHandler(CmdEnum commandID, Handler handler) {
+void DeviceInfo::registerExclusiveHandler(CmdEnum commandID, Handler handler)
+{
   comm->registerExclusiveHandler(commandID, handler);
 }
 
-void DeviceInfo::unRegisterExclusiveHandler() {
+void DeviceInfo::unRegisterExclusiveHandler()
+{
   comm->unRegisterExclusiveHandler();
 }
 
-void DeviceInfo::writeAll() {
-  for (const auto& cmdData : storedCommandData) {
-    addCommand(generate((CmdEnum)(WRITE_BIT | keyToCommandID(cmdData.first)),
-                        cmdData.second));
+void DeviceInfo::writeAll()
+{
+  for (const auto& cmdData : storedCommandData)
+  {
+    addCommand(generate((CmdEnum)(WRITE_BIT | keyToCommandID(cmdData.first)), cmdData.second));
   }
 
-  [sendLock lock];
-  maxWriteItems = sysexMessages.size();
-  [sendLock unlock];
+  mMaxWriteItems = mSysexMessages.size();
 
   runOnMain(^{
       [[NSNotificationCenter defaultCenter]
           postNotificationName:@"writingStarted"
                         object:nil
-                      userInfo:@{@"maxWriteItems" : @(maxWriteItems)}];
-  });
+                      userInfo:@{@"maxWriteItems" : @(mMaxWriteItems)}];
+      });
 
   sendNextSysex();
 }
 
 Bytes DeviceInfo::generate(CmdEnum command,
-                           const commandData_t& cmdData) const {
+                           const commandData_t& cmdData) const
+{
   return ::generate(deviceID, transID, command, cmdData);
 }
