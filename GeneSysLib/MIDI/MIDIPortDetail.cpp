@@ -38,7 +38,9 @@ CmdEnum MIDIPortDetail::setCommand() { return Command::SetMIDIPortDetail; }
 MIDIPortDetail::MIDIPortDetail(void) : portID(), portType(), m_portDetails() {}
 
 const commandDataKey_t MIDIPortDetail::key() const {
-  return generateKey(Command::RetMIDIPortDetail, portID());
+  auto portId = portID();
+  auto key = generateKey(Command::RetMIDIPortDetail, portId);
+  return key;
 }
 
 Bytes MIDIPortDetail::generate() const {
@@ -64,6 +66,7 @@ void MIDIPortDetail::parse(BytesIter &beginIter, BytesIter &endIter) {
 
   if (version == versionNumber()) {
     portID = roWord(nextMidiWord(beginIter, endIter));
+    NSLog(@"Port Detail for port %i", portID);
     portType = roPortTypeEnum(
         static_cast<PortTypeEnum>(nextMidiByte(beginIter, endIter)));
 

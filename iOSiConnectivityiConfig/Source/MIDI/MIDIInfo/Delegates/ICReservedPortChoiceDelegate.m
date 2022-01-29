@@ -48,7 +48,7 @@
   for (const auto& option : self.device->usbHostMIDIDeviceDetails) {
     if ((option.numMIDIIn() > 0) || (option.numMIDIOut() > 0)) {
 
-      const auto& maxPortID = MAX(option.numMIDIIn(), option.numMIDIOut());
+      const auto maxPortID = MAX(option.numMIDIIn(), option.numMIDIOut());
       for (Word portID = 1; portID <= maxPortID; ++portID) {
         NSString* portName = [NSString
             stringWithFormat:@"%s %s (Port %d)", option.vendorName().c_str(),
@@ -84,11 +84,11 @@
   MIDIPortDetail portDetail = self.device->get<MIDIPortDetail>(self.portID);
   MIDIPortDetailTypes::USBHost usbHost = portDetail.getUSBHost();
 
-  if (!usbHost.isReserved()) {
-    return 0;
-  }
-
   NSInteger value = 0;
+
+    if (usbHost.isReserved()) {
+      ++value;
+    }
 
   for (const auto& option : self.device->usbHostMIDIDeviceDetails) {
     if ((option.hostedUSBVendorID() == usbHost.hostedUSBVendorID()) &&
