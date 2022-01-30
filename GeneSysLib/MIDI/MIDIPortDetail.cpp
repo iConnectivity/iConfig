@@ -66,7 +66,6 @@ void MIDIPortDetail::parse(BytesIter &beginIter, BytesIter &endIter) {
 
   if (version == versionNumber()) {
     portID = roWord(nextMidiWord(beginIter, endIter));
-    NSLog(@"Port Detail for port %i", portID);
     portType = roPortTypeEnum(
         static_cast<PortTypeEnum>(nextMidiByte(beginIter, endIter)));
 
