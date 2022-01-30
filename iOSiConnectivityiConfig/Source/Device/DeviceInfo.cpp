@@ -404,7 +404,7 @@ bool DeviceInfo::sendNextSysex()
       mTimeoutTimer = nil;
     }
     NSLog(@"Create Timeout Timer");
-    mTimeoutTimer = [NSTimer scheduledTimerWithTimeInterval:5.0
+    mTimeoutTimer = [NSTimer scheduledTimerWithTimeInterval:10.0
                                                     repeats:NO
                                                       block:^(NSTimer*) { checkUnanswered(); mTimeoutTimer = nil;} ];
 
