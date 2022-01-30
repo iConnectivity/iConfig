@@ -391,7 +391,7 @@ bool DeviceInfo::sendNextSysex()
     mSysexMessages.pop();
 
     ++mUnansweredMessageCount;
-    NSLog(@"Unanswered %i", mUnansweredMessageCount);
+    //NSLog(@"Unanswered %i", mUnansweredMessageCount);
 
     // send the next sysex message
     comm->sendSysex(message);
@@ -515,7 +515,7 @@ void DeviceInfo::handleCommandData(CmdEnum _command, DeviceID _deviceID,
 
     sendNextSysex();
     --mUnansweredMessageCount;
-    NSLog(@"Unanswered %i", mUnansweredMessageCount);
+    //NSLog(@"Unanswered %i", mUnansweredMessageCount);
 
     bool isPendingSysexMessage = !mSysexMessages.empty();
     if (mUnansweredMessageCount == 0 && !isPendingSysexMessage)
@@ -549,7 +549,7 @@ void DeviceInfo::handleUSBHostMIDIDeviceDetailData(CmdEnum _command,
     sendNextSysex();
 
     --mUnansweredMessageCount;
-    NSLog(@"Unanswered %i", mUnansweredMessageCount);
+    //NSLog(@"Unanswered %i", mUnansweredMessageCount);
 
     bool isPendingSysexMessage = !mSysexMessages.empty();
     if (mUnansweredMessageCount == 0 && !isPendingSysexMessage)
