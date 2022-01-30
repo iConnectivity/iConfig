@@ -12,6 +12,7 @@
 
 @property(nonatomic) DeviceInfoPtr device;
 @property(nonatomic) Word portID;
+@property(nonatomic) NSInteger currentChoice;
 
 @end
 
@@ -19,6 +20,8 @@
 
 - (id)initWithDevice:(DeviceInfoPtr)device portID:(Word)portID {
   self = [super init];
+  
+  self.currentChoice = 0;
 
   if (self) {
     NSParameterAssert(device);
@@ -45,31 +48,38 @@
 
   bool reservedInList = false;
 
-  for (const auto& option : self.device->usbHostMIDIDeviceDetails) {
-    if ((option.numMIDIIn() > 0) || (option.numMIDIOut() > 0)) {
-
+  for (const auto& option : self.device->usbHostMIDIDeviceDetails)
+  {
+    if ((option.numMIDIIn() > 0) || (option.numMIDIOut() > 0))
+    {
       const auto maxPortID = MAX(option.numMIDIIn(), option.numMIDIOut());
-      for (Word portID = 1; portID <= maxPortID; ++portID) {
+      for (Word portID = 1; portID <= maxPortID; ++portID)
+      {
         NSString* portName = [NSString
             stringWithFormat:@"%s %s (Port %d)", option.vendorName().c_str(),
                              option.productName().c_str(), portID];
         [reservedOptions addObject:portName];
 
         if ((usbHost.hostedUSBProductID() == option.hostedUSBProductID()) &&
-            (usbHost.hostedUSBVendorID() == option.hostedUSBVendorID())) {
+            (usbHost.hostedUSBVendorID() == option.hostedUSBVendorID()) &&
+            (usbHost.hostedDeviceMIDIPort() == portID))
+        {
           reservedInList = true;
+          self.currentChoice = reservedOptions.count - 1;
         }
       }
     }
   }
 
-  if (usbHost.isReserved() && !reservedInList) {
+  if (usbHost.isReserved() && !reservedInList)
+  {
     NSString* option =
         [NSString stringWithFormat:@"%s %s (Port %d) [Not attached]",
                                    usbHost.vendorName().c_str(),
                                    usbHost.productName().c_str(),
                                    usbHost.hostedDeviceMIDIPort()];
     [reservedOptions addObject:option];
+    self.currentChoice = reservedOptions.count - 1;
   }
 
   return reservedOptions;
@@ -80,26 +90,7 @@
 }
 
 - (NSInteger)getChoice {
-  using namespace GeneSysLib;
-  MIDIPortDetail portDetail = self.device->get<MIDIPortDetail>(self.portID);
-  MIDIPortDetailTypes::USBHost usbHost = portDetail.getUSBHost();
-
-  NSInteger value = 0;
-
-    if (usbHost.isReserved()) {
-      ++value;
-    }
-
-  for (const auto& option : self.device->usbHostMIDIDeviceDetails) {
-    if ((option.hostedUSBVendorID() == usbHost.hostedUSBVendorID()) &&
-        (option.hostedUSBProductID() == usbHost.hostedUSBProductID())) {
-      value += usbHost.hostedDeviceMIDIPort();
-    } else {
-      value += MAX(option.numMIDIIn(), option.numMIDIOut());
-    }
-  }
-
-  return value;
+  return self.currentChoice;
 }
 
 - (void)setChoice:(NSInteger)value {
@@ -107,26 +98,32 @@
   MIDIPortDetail& portDetail = self.device->get<MIDIPortDetail>(self.portID);
   MIDIPortDetailTypes::USBHost& usbHost = portDetail.getUSBHost();
 
-  if (value <= 0) {
+  if (value <= 0)
+  {
+    // none selected
+    self.currentChoice = 0;
     usbHost.notReserved();
     self.device->send<SetMIDIPortDetailCommand>(portDetail);
-  } else {
-    auto option = self.device->usbHostMIDIDeviceDetails.begin();
-    Word portID = 0;
-    for (;
-         (option != self.device->usbHostMIDIDeviceDetails.end()) && (value > 0);
-         ++option) {
-      portID = MIN(value, MAX(option->numMIDIIn(), option->numMIDIOut()));
-      value -= MIN(value, MAX(option->numMIDIIn(), option->numMIDIOut()));
-    }
-    if (option != self.device->usbHostMIDIDeviceDetails.end()) {
-      // reserve selected port
-      usbHost.reserved(*option, portID);
-
-      self.device->send<SetMIDIPortDetailCommand>(portDetail);
-    } else {
-      usbHost.notReserved();
-      self.device->send<SetMIDIPortDetailCommand>(portDetail);
+  }
+  else
+  {
+    auto possiblePort = 1;  // to find the one in usbHostMIDIDeviceDetails the index needs to be corrected
+              // ('none' is not in the collection)
+    for (const auto& option : self.device->usbHostMIDIDeviceDetails)
+    {
+      if ((option.numMIDIIn() > 0) || (option.numMIDIOut() > 0))
+      {
+        const auto maxPortID = MAX(option.numMIDIIn(), option.numMIDIOut());
+        for (Word portID = 1; portID <= maxPortID; ++portID, ++possiblePort)
+        {
+          if (possiblePort == value)
+          {
+            usbHost.reserved(option, portID);
+            self.device->send<SetMIDIPortDetailCommand>(portDetail);
+            break;
+          }
+        }
+      }
     }
   }
 }
