@@ -60,7 +60,7 @@ using namespace std;
 
     assert(device);
 
-    const auto& isiPhone = ([[UIDevice currentDevice] userInterfaceIdiom] ==
+    const auto isiPhone = ([[UIDevice currentDevice] userInterfaceIdiom] ==
                             UIUserInterfaceIdiomPhone);
 
     if (midiInfo.versionNumber() == 0x01) {
@@ -158,11 +158,11 @@ using namespace std;
       [tempSectionArray addObject:midiInfoArray];
 
       int numPorts = device->typeCount<MIDIPortInfo>();
-      for (int portID = 1; portID <= numPorts; ++portID) {
+      for (Word portID = 1; portID <= numPorts; ++portID) {
         // title
         {
           MIDIPortInfo& port = device->get<MIDIPortInfo>(portID);
-          const auto& portInfo = port.portInfo();
+          const auto portInfo = port.portInfo();
           NSMutableString* title = [NSMutableString
               stringWithFormat:@"Port Information %d\n", portID];
 

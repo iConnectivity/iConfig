@@ -215,6 +215,65 @@ size_t DeviceInfo::audioPortInfoCount() const {
   return typeCount<AudioPortInfo>();
 }
 
+void DeviceInfo::notifyScreen()
+{
+  NSLog(@"Notify screen");
+  // check to see that a valid screen us waiting for a response
+  if (queryScreen != Screen::UnknownScreen)
+  {
+    // Remove doubles form list of queried items
+    {
+      // create a temporary set of commands
+      set<CmdEnum> tempSet;
+
+      // copy all quried items to that set
+      tempSet.insert(queriedItems.begin(), queriedItems.end());
+
+      // clear the list of quried items
+      queriedItems.clear();
+
+      // add items for the temp set to the quried items
+      queriedItems.insert(queriedItems.begin(), tempSet.begin(),
+                          tempSet.end());
+    }
+
+    // create an objective C object to store the results of the query
+    NSDictionary* result;
+    // create an Objective C object to store the list of queried items
+    {
+      NSMutableArray* const nsQuery = [NSMutableArray array];
+
+      // loop through all queried items
+      for (auto iter = queriedItems.begin(); iter != queriedItems.end(); ++iter)
+      {
+        // add an Object C object containing the queried object to the
+        // ObjC list of queried objects
+        [nsQuery addObject:[NSNumber numberWithInt:*iter]];
+      }
+
+      // create a dictionary of results
+      result = @{
+        // add the calling screen to the result
+        @"screen" : @((int)queryScreen),
+
+        // add the results to the results
+        @"query" : nsQuery
+      };
+    }
+
+    // post the query complete notification on the main thread
+    runOnMain(^{
+        [[NSNotificationCenter defaultCenter]
+            postNotificationName:@"queryCompleted"
+                          object:nil
+                        userInfo:result];});
+
+    // set the screen to the unknown screen (this prevents duplicate
+    // calls to query completed)
+    queryScreen = Screen::UnknownScreen;
+  }
+}
+
 void DeviceInfo::checkUnanswered()
 {
   NSLog(@"Check Unanswered %i", mUnansweredMessageCount);
@@ -323,7 +382,7 @@ bool DeviceInfo::sendNextSysex()
 {
   // is the sysex message queue empty?
   bool isPendingSysexMessage = !(mSysexMessages.empty());
-
+  
   if (isPendingSysexMessage)
   {
     // get the next pending sysex message
@@ -332,7 +391,7 @@ bool DeviceInfo::sendNextSysex()
     mSysexMessages.pop();
 
     ++mUnansweredMessageCount;
-    NSLog(@"Unanswered %i", mUnansweredMessageCount);
+    //NSLog(@"Unanswered %i", mUnansweredMessageCount);
 
     // send the next sysex message
     comm->sendSysex(message);
@@ -400,76 +459,6 @@ bool DeviceInfo::sendNextSysex()
     // if there are not pending sysex messages
     if (!isPendingSysexMessage)
     {
-      // check to make sure that the current query is complete
-      if (!currentQuery.empty())
-      {
-        // the current query isn't complete. There is an error
-        /*
-        NSLog(@"Current query isn't complete"
-               "but there are no pending messages.");
-        fprintf(stderr, "QUERY - [ ");
-        for (const auto& cmd : currentQuery) fprintf(stderr, "%04X ", cmd);
-        fprintf(stderr, "]\n");
-         */
-
-        timeout();
-      }
-
-      // check to see that a valid screen us waiting for a response
-      if (queryScreen != Screen::UnknownScreen)
-      {
-        // Remove doubles form list of queried items
-        {
-          // create a temporary set of commands
-          set<CmdEnum> tempSet;
-
-          // copy all quried items to that set
-          tempSet.insert(queriedItems.begin(), queriedItems.end());
-
-          // clear the list of quried items
-          queriedItems.clear();
-
-          // add items for the temp set to the quried items
-          queriedItems.insert(queriedItems.begin(), tempSet.begin(),
-                              tempSet.end());
-        }
-
-        // create an objective C object to store the results of the query
-        NSDictionary* result;
-        // create an Objective C object to store the list of queried items
-        {
-          NSMutableArray* const nsQuery = [NSMutableArray array];
-
-          // loop through all queried items
-          for (auto iter = queriedItems.begin(); iter != queriedItems.end(); ++iter)
-          {
-            // add an Object C object containing the queried object to the
-            // ObjC list of queried objects
-            [nsQuery addObject:[NSNumber numberWithInt:*iter]];
-          }
-
-          // create a dictionary of results
-          result = @{
-            // add the calling screen to the result
-            @"screen" : @((int)queryScreen),
-
-            // add the results to the results
-            @"query" : nsQuery
-          };
-        }
-
-        // post the query complete notification on the main thread
-        runOnMain(^{
-            [[NSNotificationCenter defaultCenter]
-                postNotificationName:@"queryCompleted"
-                              object:nil
-                            userInfo:result];});
-
-        // set the screen to the unknown screen (this prevents duplicate
-        // calls to query completed)
-        queryScreen = Screen::UnknownScreen;
-      }
-
       // if there are pending queries then deal with them now
       if (!pendingQueries.empty())
       {
@@ -520,12 +509,19 @@ void DeviceInfo::handleCommandData(CmdEnum _command, DeviceID _deviceID,
 {
   if (commonHandleCode(_deviceID, _transID))
   {
-    storedCommandData[_commandData.key()] = _commandData;
+    auto key = _commandData.key();
+    storedCommandData[key] = _commandData;
     queriedItems.push_back(_command);
 
     sendNextSysex();
     --mUnansweredMessageCount;
-    NSLog(@"Unanswered %i", mUnansweredMessageCount);
+    //NSLog(@"Unanswered %i", mUnansweredMessageCount);
+
+    bool isPendingSysexMessage = !mSysexMessages.empty();
+    if (mUnansweredMessageCount == 0 && !isPendingSysexMessage)
+    {
+      notifyScreen();
+    }
   }
 }
 
@@ -551,6 +547,15 @@ void DeviceInfo::handleUSBHostMIDIDeviceDetailData(CmdEnum _command,
     }
 
     sendNextSysex();
+
+    --mUnansweredMessageCount;
+    //NSLog(@"Unanswered %i", mUnansweredMessageCount);
+
+    bool isPendingSysexMessage = !mSysexMessages.empty();
+    if (mUnansweredMessageCount == 0 && !isPendingSysexMessage)
+    {
+      notifyScreen();
+    }
   }
 }
 

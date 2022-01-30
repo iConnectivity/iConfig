@@ -48,8 +48,6 @@ struct DeviceInfo
   typedef std::map<commandDataKey_t, commandData_t> CommandDataMap;
   typedef CommandDataMap::iterator CommandDataIterator;
 
-  inline void send(const Bytes &sysex) { comm->sendSysex(sysex); }
-
   template <typename DATA_T, typename... Ts> void send(Ts... vs) {
     DATA_T(deviceID, transID, vs...).send(comm);
   }
@@ -73,9 +71,10 @@ struct DeviceInfo
   // generated with the command and the variadic list of parameters
   template <typename T, typename... Ts>
   bool contains(Ts... ts) const {
+    auto key = GeneSysLib::generateKey<Ts...>(T::retCommand(), ts...);
     return MyAlgorithms::contains(
         storedCommandData,
-        GeneSysLib::generateKey<Ts...>(T::retCommand(), ts...));
+        key);
   }
 
   template <typename T>
@@ -192,6 +191,7 @@ struct DeviceInfo
 
  private:
   void checkUnanswered();
+  void notifyScreen();
   void registerAllHandlers();
   void unRegisterHandlerAllHandlers();
 
