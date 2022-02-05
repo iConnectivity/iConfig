@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2899567527AE6CA3001586F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2899567327AE6CA3001586F9 /* Main.storyboard */; };
 		2899567A27AE6CA3001586F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2899567827AE6CA3001586F9 /* LaunchScreen.storyboard */; };
 		2899567D27AE6CA3001586F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2899567C27AE6CA3001586F9 /* main.m */; };
 		28E5773A27AE813A00946D18 /* ICServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5773927AE813A00946D18 /* ICServer.m */; };
@@ -80,7 +79,6 @@
 		28E5783A27AE8E8400946D18 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E5783927AE8E8400946D18 /* CoreMIDI.framework */; };
 		28E5783C27AE8E9300946D18 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E5783B27AE8E9300946D18 /* QuartzCore.framework */; };
 		28E5783E27AE8E9D00946D18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E5783D27AE8E9D00946D18 /* UIKit.framework */; };
-		28E5784027AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28E5783F27AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist */; };
 		28E5784A27AECE3000946D18 /* ICAudioPatchbayGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5784727AECE3000946D18 /* ICAudioPatchbayGridViewController.m */; };
 		28E5786927AECE4200946D18 /* ICAudioPatchbayV1Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5784D27AECE4200946D18 /* ICAudioPatchbayV1Delegate.m */; };
 		28E5786A27AECE4200946D18 /* ICAudioPatchbayV1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5784E27AECE4200946D18 /* ICAudioPatchbayV1Cell.m */; };
@@ -251,7 +249,6 @@
 
 /* Begin PBXFileReference section */
 		2899566727AE6CA3001586F9 /* iOSiConfig4Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSiConfig4Audio.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2899567427AE6CA3001586F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2899567927AE6CA3001586F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2899567C27AE6CA3001586F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28E5773827AE813A00946D18 /* ICServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICServer.h; sourceTree = "<group>"; };
@@ -415,7 +412,6 @@
 		28E5783927AE8E8400946D18 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		28E5783B27AE8E9300946D18 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		28E5783D27AE8E9D00946D18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		28E5783F27AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iConnectivityiConfig copy-Info.plist"; sourceTree = "<group>"; };
 		28E5784727AECE3000946D18 /* ICAudioPatchbayGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPatchbayGridViewController.m; sourceTree = "<group>"; };
 		28E5784827AECE3000946D18 /* ICAudioPatchbayGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPatchbayGridViewController.h; sourceTree = "<group>"; };
 		28E5784927AECE3000946D18 /* ICPatchbayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPatchbayDelegate.h; sourceTree = "<group>"; };
@@ -710,7 +706,6 @@
 				28E579A127AECFBE00946D18 /* Images.xcassets */,
 				28E5798F27AECFBE00946D18 /* Nibs */,
 				28E5798C27AECFBE00946D18 /* PLists */,
-				28E5783F27AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist */,
 				2899566927AE6CA3001586F9 /* Source */,
 				2899566827AE6CA3001586F9 /* Products */,
 				28E5783627AE8E6700946D18 /* Frameworks */,
@@ -749,7 +744,6 @@
 				28E5783327AE8D2800946D18 /* AppDelegate.m */,
 				28E5773B27AE81DC00946D18 /* GeneSysLib */,
 				28E5773727AE813A00946D18 /* TCPServer */,
-				2899567327AE6CA3001586F9 /* Main.storyboard */,
 				2899567827AE6CA3001586F9 /* LaunchScreen.storyboard */,
 				2899567C27AE6CA3001586F9 /* main.m */,
 			);
@@ -1603,7 +1597,6 @@
 				28E57A1B27AECFBE00946D18 /* LeftArrow@2x.png in Resources */,
 				28E57A1827AECFBE00946D18 /* MainMenuBack.png in Resources */,
 				28E579E527AECFBE00946D18 /* ICChoiceSelectionViewController.xib in Resources */,
-				2899567527AE6CA3001586F9 /* Main.storyboard in Resources */,
 				28E57A0227AECFBE00946D18 /* ChannelButton.png in Resources */,
 				28E579E627AECFBE00946D18 /* ICMenuViewController.xib in Resources */,
 				28E57A0327AECFBE00946D18 /* 60x60@2x.png in Resources */,
@@ -1618,7 +1611,6 @@
 				28E579F027AECFBE00946D18 /* block_icm2plusdevice@2x.png in Resources */,
 				28E579DB27AECFBE00946D18 /* ICHelpViewController.xib in Resources */,
 				28E57A1127AECFBE00946D18 /* block_icm4plusdevice.png in Resources */,
-				28E5784027AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist in Resources */,
 				28E57A0B27AECFBE00946D18 /* 144x144.png in Resources */,
 				28E579EE27AECFBE00946D18 /* bubble@2x.png in Resources */,
 				28E579D927AECFBE00946D18 /* iConnectivityiConfig-Info.plist in Resources */,
@@ -1816,14 +1808,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2899567327AE6CA3001586F9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2899567427AE6CA3001586F9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2899567827AE6CA3001586F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1966,9 +1950,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Source/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = reConfig4Audio;
+				INFOPLIST_KEY_NSMainNibFile = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
@@ -1995,9 +1979,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Source/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = reConfig4Audio;
+				INFOPLIST_KEY_NSMainNibFile = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;

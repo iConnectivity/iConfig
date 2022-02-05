@@ -13,7 +13,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "AppDelegate.h"
+#import "ICAppDelegate.h"
 
 #ifdef DEBUG
 void eHandler(NSException *);
@@ -47,6 +47,6 @@ int main(int argc, char *argv[]) {
 #endif
   @autoreleasepool {
     return UIApplicationMain(argc, argv, nil,
-                             NSStringFromClass([AppDelegate class]));
+                             NSStringFromClass([ICAppDelegate class]));
   }
 }
