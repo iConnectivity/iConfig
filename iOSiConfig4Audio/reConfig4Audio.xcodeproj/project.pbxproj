@@ -10,7 +10,6 @@
 		2899567527AE6CA3001586F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2899567327AE6CA3001586F9 /* Main.storyboard */; };
 		2899567A27AE6CA3001586F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2899567827AE6CA3001586F9 /* LaunchScreen.storyboard */; };
 		2899567D27AE6CA3001586F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2899567C27AE6CA3001586F9 /* main.m */; };
-		2899568527AE6EFE001586F9 /* ICAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2899568427AE6EFE001586F9 /* ICAppDelegate.m */; };
 		28E5773A27AE813A00946D18 /* ICServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5773927AE813A00946D18 /* ICServer.m */; };
 		28E577F127AE81DC00946D18 /* MIDIPortRoute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5774827AE81DC00946D18 /* MIDIPortRoute.cpp */; };
 		28E577F227AE81DC00946D18 /* MIDIPortRemap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5774927AE81DC00946D18 /* MIDIPortRemap.cpp */; };
@@ -76,16 +75,19 @@
 		28E5782F27AE81DC00946D18 /* SysexParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577E127AE81DC00946D18 /* SysexParser.cpp */; };
 		28E5783027AE81DC00946D18 /* CommandDefines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577E327AE81DC00946D18 /* CommandDefines.cpp */; };
 		28E5783227AE81DC00946D18 /* Lookup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577E827AE81DC00946D18 /* Lookup.cpp */; };
+		28E5783527AE8D2800946D18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5783327AE8D2800946D18 /* AppDelegate.m */; };
+		28E5783827AE8E6700946D18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E5783727AE8E6700946D18 /* CoreGraphics.framework */; };
+		28E5783A27AE8E8400946D18 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E5783927AE8E8400946D18 /* CoreMIDI.framework */; };
+		28E5783C27AE8E9300946D18 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E5783B27AE8E9300946D18 /* QuartzCore.framework */; };
+		28E5783E27AE8E9D00946D18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E5783D27AE8E9D00946D18 /* UIKit.framework */; };
+		28E5784027AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28E5783F27AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2899566727AE6CA3001586F9 /* iOSiConfig4Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSiConfig4Audio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2899567427AE6CA3001586F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2899567927AE6CA3001586F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2899567B27AE6CA3001586F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2899567C27AE6CA3001586F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2899568327AE6EFE001586F9 /* ICAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAppDelegate.h; sourceTree = "<group>"; };
-		2899568427AE6EFE001586F9 /* ICAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAppDelegate.m; sourceTree = "<group>"; };
 		28E5773827AE813A00946D18 /* ICServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICServer.h; sourceTree = "<group>"; };
 		28E5773927AE813A00946D18 /* ICServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICServer.m; sourceTree = "<group>"; };
 		28E5774827AE81DC00946D18 /* MIDIPortRoute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIPortRoute.cpp; sourceTree = "<group>"; };
@@ -241,6 +243,13 @@
 		28E577E727AE81DC00946D18 /* CommandDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandDefines.h; sourceTree = "<group>"; };
 		28E577E827AE81DC00946D18 /* Lookup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lookup.cpp; sourceTree = "<group>"; };
 		28E577E927AE81DC00946D18 /* Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Generator.h; sourceTree = "<group>"; };
+		28E5783327AE8D2800946D18 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		28E5783427AE8D2800946D18 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		28E5783727AE8E6700946D18 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28E5783927AE8E8400946D18 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		28E5783B27AE8E9300946D18 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		28E5783D27AE8E9D00946D18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28E5783F27AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iConnectivityiConfig copy-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +257,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E5783A27AE8E8400946D18 /* CoreMIDI.framework in Frameworks */,
+				28E5783E27AE8E9D00946D18 /* UIKit.framework in Frameworks */,
+				28E5783827AE8E6700946D18 /* CoreGraphics.framework in Frameworks */,
+				28E5783C27AE8E9300946D18 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +270,10 @@
 		2899565E27AE6CA3001586F9 = {
 			isa = PBXGroup;
 			children = (
+				28E5783F27AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist */,
 				2899566927AE6CA3001586F9 /* Source */,
 				2899566827AE6CA3001586F9 /* Products */,
+				28E5783627AE8E6700946D18 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -276,13 +291,12 @@
 		2899566927AE6CA3001586F9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				28E5783427AE8D2800946D18 /* AppDelegate.h */,
+				28E5783327AE8D2800946D18 /* AppDelegate.m */,
 				28E5773B27AE81DC00946D18 /* GeneSysLib */,
 				28E5773727AE813A00946D18 /* TCPServer */,
-				2899568327AE6EFE001586F9 /* ICAppDelegate.h */,
-				2899568427AE6EFE001586F9 /* ICAppDelegate.m */,
 				2899567327AE6CA3001586F9 /* Main.storyboard */,
 				2899567827AE6CA3001586F9 /* LaunchScreen.storyboard */,
-				2899567B27AE6CA3001586F9 /* Info.plist */,
 				2899567C27AE6CA3001586F9 /* main.m */,
 			);
 			path = Source;
@@ -522,6 +536,17 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		28E5783627AE8E6700946D18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28E5783D27AE8E9D00946D18 /* UIKit.framework */,
+				28E5783B27AE8E9300946D18 /* QuartzCore.framework */,
+				28E5783927AE8E8400946D18 /* CoreMIDI.framework */,
+				28E5783727AE8E6700946D18 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -583,6 +608,7 @@
 				28E577FC27AE81DC00946D18 /* GeneSysLib.pro in Resources */,
 				2899567527AE6CA3001586F9 /* Main.storyboard in Resources */,
 				28E577FB27AE81DC00946D18 /* GeneSysLib(qt4_8_6).pro in Resources */,
+				28E5784027AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,7 +649,6 @@
 				28E5782227AE81DC00946D18 /* Info.cpp in Sources */,
 				28E5782127AE81DC00946D18 /* SaveRestoreList.cpp in Sources */,
 				28E5782927AE81DC00946D18 /* ACK.cpp in Sources */,
-				2899568527AE6EFE001586F9 /* ICAppDelegate.m in Sources */,
 				28E5781927AE81DC00946D18 /* AudioPortMeterValue.cpp in Sources */,
 				28E577FA27AE81DC00946D18 /* USBHostMIDIDeviceDetail.cpp in Sources */,
 				28E5780727AE81DC00946D18 /* MixerParm.cpp in Sources */,
@@ -637,6 +662,7 @@
 				28E5781C27AE81DC00946D18 /* AudioClockParm.cpp in Sources */,
 				28E5773A27AE813A00946D18 /* ICServer.m in Sources */,
 				28E577FE27AE81DC00946D18 /* AudioPortPatchbay.cpp in Sources */,
+				28E5783527AE8D2800946D18 /* AppDelegate.m in Sources */,
 				28E5781627AE81DC00946D18 /* AudioControlParm.cpp in Sources */,
 				28E5780A27AE81DC00946D18 /* MixerMeterValue.cpp in Sources */,
 				28E5782727AE81DC00946D18 /* CommandList.cpp in Sources */,
@@ -737,7 +763,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/boost/1.76.0/include;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				INFOPLIST_KEY_CFBundleDisplayName = "reConfig Audio";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -793,7 +820,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/boost/1.76.0/include;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				INFOPLIST_KEY_CFBundleDisplayName = "reConfig Audio";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -810,7 +838,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H28D8P2T32;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iOSiConfig4Audio/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = reConfig4Audio;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -839,7 +867,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H28D8P2T32;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iOSiConfig4Audio/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = reConfig4Audio;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
