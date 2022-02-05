@@ -11,6 +11,71 @@
 		2899567A27AE6CA3001586F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2899567827AE6CA3001586F9 /* LaunchScreen.storyboard */; };
 		2899567D27AE6CA3001586F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2899567C27AE6CA3001586F9 /* main.m */; };
 		2899568527AE6EFE001586F9 /* ICAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2899568427AE6EFE001586F9 /* ICAppDelegate.m */; };
+		28E5773A27AE813A00946D18 /* ICServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5773927AE813A00946D18 /* ICServer.m */; };
+		28E577F127AE81DC00946D18 /* MIDIPortRoute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5774827AE81DC00946D18 /* MIDIPortRoute.cpp */; };
+		28E577F227AE81DC00946D18 /* MIDIPortRemap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5774927AE81DC00946D18 /* MIDIPortRemap.cpp */; };
+		28E577F327AE81DC00946D18 /* RTPMIDIConnectionDetail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5774E27AE81DC00946D18 /* RTPMIDIConnectionDetail.cpp */; };
+		28E577F427AE81DC00946D18 /* MIDIEndPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5775027AE81DC00946D18 /* MIDIEndPoint.m */; };
+		28E577F527AE81DC00946D18 /* MIDIInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5775427AE81DC00946D18 /* MIDIInfo.cpp */; };
+		28E577F627AE81DC00946D18 /* MIDIPortFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5775827AE81DC00946D18 /* MIDIPortFilter.cpp */; };
+		28E577F727AE81DC00946D18 /* MIDIPortDetailTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5775927AE81DC00946D18 /* MIDIPortDetailTypes.cpp */; };
+		28E577F827AE81DC00946D18 /* MIDIPortDetail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5775B27AE81DC00946D18 /* MIDIPortDetail.cpp */; };
+		28E577F927AE81DC00946D18 /* MIDIPortInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5775E27AE81DC00946D18 /* MIDIPortInfo.cpp */; };
+		28E577FA27AE81DC00946D18 /* USBHostMIDIDeviceDetail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5775F27AE81DC00946D18 /* USBHostMIDIDeviceDetail.cpp */; };
+		28E577FB27AE81DC00946D18 /* GeneSysLib(qt4_8_6).pro in Resources */ = {isa = PBXBuildFile; fileRef = 28E5776127AE81DC00946D18 /* GeneSysLib(qt4_8_6).pro */; };
+		28E577FC27AE81DC00946D18 /* GeneSysLib.pro in Resources */ = {isa = PBXBuildFile; fileRef = 28E5776227AE81DC00946D18 /* GeneSysLib.pro */; };
+		28E577FD27AE81DC00946D18 /* BitDepthCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5776627AE81DC00946D18 /* BitDepthCode.cpp */; };
+		28E577FE27AE81DC00946D18 /* AudioPortPatchbay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5776927AE81DC00946D18 /* AudioPortPatchbay.cpp */; };
+		28E577FF27AE81DC00946D18 /* AudioPortInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5776B27AE81DC00946D18 /* AudioPortInfo.cpp */; };
+		28E5780027AE81DC00946D18 /* AudioPortCfgInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5776D27AE81DC00946D18 /* AudioPortCfgInfo.cpp */; };
+		28E5780127AE81DC00946D18 /* AudioCfgInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5777127AE81DC00946D18 /* AudioCfgInfo.cpp */; };
+		28E5780227AE81DC00946D18 /* AudioInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5777327AE81DC00946D18 /* AudioInfo.cpp */; };
+		28E5780327AE81DC00946D18 /* ClockSourceType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5777427AE81DC00946D18 /* ClockSourceType.cpp */; };
+		28E5780427AE81DC00946D18 /* AudioClockInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5777627AE81DC00946D18 /* AudioClockInfo.cpp */; };
+		28E5780527AE81DC00946D18 /* SampleRateCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5777A27AE81DC00946D18 /* SampleRateCode.cpp */; };
+		28E5780627AE81DC00946D18 /* MixerInputControlValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5778027AE81DC00946D18 /* MixerInputControlValue.cpp */; };
+		28E5780727AE81DC00946D18 /* MixerParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5778127AE81DC00946D18 /* MixerParm.cpp */; };
+		28E5780827AE81DC00946D18 /* MixerInputParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5778227AE81DC00946D18 /* MixerInputParm.cpp */; };
+		28E5780927AE81DC00946D18 /* MixerOutputControlValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5778527AE81DC00946D18 /* MixerOutputControlValue.cpp */; };
+		28E5780A27AE81DC00946D18 /* MixerMeterValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5778727AE81DC00946D18 /* MixerMeterValue.cpp */; };
+		28E5780B27AE81DC00946D18 /* MixerInputControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5778827AE81DC00946D18 /* MixerInputControl.cpp */; };
+		28E5780C27AE81DC00946D18 /* MixerPortParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5778927AE81DC00946D18 /* MixerPortParm.cpp */; };
+		28E5780D27AE81DC00946D18 /* MixerOutputControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5778A27AE81DC00946D18 /* MixerOutputControl.cpp */; };
+		28E5780E27AE81DC00946D18 /* MixerOutputParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5778D27AE81DC00946D18 /* MixerOutputParm.cpp */; };
+		28E5780F27AE81DC00946D18 /* AudioGlobalParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5779027AE81DC00946D18 /* AudioGlobalParm.cpp */; };
+		28E5781027AE81DC00946D18 /* AudioControlDetailValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5779127AE81DC00946D18 /* AudioControlDetailValue.cpp */; };
+		28E5781127AE81DC00946D18 /* AudioPortParmTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5779527AE81DC00946D18 /* AudioPortParmTypes.cpp */; };
+		28E5781227AE81DC00946D18 /* AudioDeviceParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5779727AE81DC00946D18 /* AudioDeviceParm.cpp */; };
+		28E5781327AE81DC00946D18 /* AudioPortParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5779827AE81DC00946D18 /* AudioPortParm.cpp */; };
+		28E5781427AE81DC00946D18 /* AudioPatchbayParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E5779E27AE81DC00946D18 /* AudioPatchbayParm.cpp */; };
+		28E5781527AE81DC00946D18 /* AudioDeviceTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577A027AE81DC00946D18 /* AudioDeviceTypes.cpp */; };
+		28E5781627AE81DC00946D18 /* AudioControlParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577A327AE81DC00946D18 /* AudioControlParm.cpp */; };
+		28E5781727AE81DC00946D18 /* AudioControlDetailTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577A527AE81DC00946D18 /* AudioControlDetailTypes.cpp */; };
+		28E5781827AE81DC00946D18 /* AudioControlTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577A627AE81DC00946D18 /* AudioControlTypes.cpp */; };
+		28E5781927AE81DC00946D18 /* AudioPortMeterValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577A727AE81DC00946D18 /* AudioPortMeterValue.cpp */; };
+		28E5781A27AE81DC00946D18 /* AudioControlDetailValueTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577A927AE81DC00946D18 /* AudioControlDetailValueTypes.cpp */; };
+		28E5781B27AE81DC00946D18 /* AudioControlDetail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577AA27AE81DC00946D18 /* AudioControlDetail.cpp */; };
+		28E5781C27AE81DC00946D18 /* AudioClockParm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577AB27AE81DC00946D18 /* AudioClockParm.cpp */; };
+		28E5781D27AE81DC00946D18 /* InfoList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577AF27AE81DC00946D18 /* InfoList.cpp */; };
+		28E5781E27AE81DC00946D18 /* GizmoInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577B127AE81DC00946D18 /* GizmoInfo.cpp */; };
+		28E5781F27AE81DC00946D18 /* Device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577B527AE81DC00946D18 /* Device.cpp */; };
+		28E5782027AE81DC00946D18 /* EthernetPortInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577BC27AE81DC00946D18 /* EthernetPortInfo.cpp */; };
+		28E5782127AE81DC00946D18 /* SaveRestoreList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577BE27AE81DC00946D18 /* SaveRestoreList.cpp */; };
+		28E5782227AE81DC00946D18 /* Info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577C027AE81DC00946D18 /* Info.cpp */; };
+		28E5782327AE81DC00946D18 /* DeviceID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577C327AE81DC00946D18 /* DeviceID.cpp */; };
+		28E5782427AE81DC00946D18 /* GizmoCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577C427AE81DC00946D18 /* GizmoCount.cpp */; };
+		28E5782527AE81DC00946D18 /* Generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577C627AE81DC00946D18 /* Generator.cpp */; };
+		28E5782627AE81DC00946D18 /* MyAlgorithms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577C927AE81DC00946D18 /* MyAlgorithms.cpp */; };
+		28E5782727AE81DC00946D18 /* CommandList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577CD27AE81DC00946D18 /* CommandList.cpp */; };
+		28E5782927AE81DC00946D18 /* ACK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577D227AE81DC00946D18 /* ACK.cpp */; };
+		28E5782A27AE81DC00946D18 /* ByteCommandData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577D627AE81DC00946D18 /* ByteCommandData.cpp */; };
+		28E5782B27AE81DC00946D18 /* ICRunOnMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E577D727AE81DC00946D18 /* ICRunOnMain.m */; };
+		28E5782C27AE81DC00946D18 /* Communicator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577D827AE81DC00946D18 /* Communicator.cpp */; };
+		28E5782D27AE81DC00946D18 /* CommandData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577D927AE81DC00946D18 /* CommandData.cpp */; };
+		28E5782E27AE81DC00946D18 /* BytesCommandData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577DA27AE81DC00946D18 /* BytesCommandData.cpp */; };
+		28E5782F27AE81DC00946D18 /* SysexParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577E127AE81DC00946D18 /* SysexParser.cpp */; };
+		28E5783027AE81DC00946D18 /* CommandDefines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577E327AE81DC00946D18 /* CommandDefines.cpp */; };
+		28E5783227AE81DC00946D18 /* Lookup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E577E827AE81DC00946D18 /* Lookup.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +86,161 @@
 		2899567C27AE6CA3001586F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2899568327AE6EFE001586F9 /* ICAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAppDelegate.h; sourceTree = "<group>"; };
 		2899568427AE6EFE001586F9 /* ICAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAppDelegate.m; sourceTree = "<group>"; };
+		28E5773827AE813A00946D18 /* ICServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICServer.h; sourceTree = "<group>"; };
+		28E5773927AE813A00946D18 /* ICServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICServer.m; sourceTree = "<group>"; };
+		28E5774827AE81DC00946D18 /* MIDIPortRoute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIPortRoute.cpp; sourceTree = "<group>"; };
+		28E5774927AE81DC00946D18 /* MIDIPortRemap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIPortRemap.cpp; sourceTree = "<group>"; };
+		28E5774A27AE81DC00946D18 /* MIDIPortDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIPortDetail.h; sourceTree = "<group>"; };
+		28E5774B27AE81DC00946D18 /* FilterStatusBit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterStatusBit.h; sourceTree = "<group>"; };
+		28E5774C27AE81DC00946D18 /* MIDIEndPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIEndPoint.h; sourceTree = "<group>"; };
+		28E5774D27AE81DC00946D18 /* USBHostMIDIDeviceDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBHostMIDIDeviceDetail.h; sourceTree = "<group>"; };
+		28E5774E27AE81DC00946D18 /* RTPMIDIConnectionDetail.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTPMIDIConnectionDetail.cpp; sourceTree = "<group>"; };
+		28E5774F27AE81DC00946D18 /* MIDIPortDetailTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIPortDetailTypes.h; sourceTree = "<group>"; };
+		28E5775027AE81DC00946D18 /* MIDIEndPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIEndPoint.m; sourceTree = "<group>"; };
+		28E5775127AE81DC00946D18 /* MIDIPortInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIPortInfo.h; sourceTree = "<group>"; };
+		28E5775227AE81DC00946D18 /* FilterID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterID.h; sourceTree = "<group>"; };
+		28E5775327AE81DC00946D18 /* PortMIDIFlags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortMIDIFlags.h; sourceTree = "<group>"; };
+		28E5775427AE81DC00946D18 /* MIDIInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIInfo.cpp; sourceTree = "<group>"; };
+		28E5775527AE81DC00946D18 /* RemapID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemapID.h; sourceTree = "<group>"; };
+		28E5775627AE81DC00946D18 /* MIDIInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIInfo.h; sourceTree = "<group>"; };
+		28E5775727AE81DC00946D18 /* MIDIPortRemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIPortRemap.h; sourceTree = "<group>"; };
+		28E5775827AE81DC00946D18 /* MIDIPortFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIPortFilter.cpp; sourceTree = "<group>"; };
+		28E5775927AE81DC00946D18 /* MIDIPortDetailTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIPortDetailTypes.cpp; sourceTree = "<group>"; };
+		28E5775A27AE81DC00946D18 /* MIDIPortRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIPortRoute.h; sourceTree = "<group>"; };
+		28E5775B27AE81DC00946D18 /* MIDIPortDetail.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIPortDetail.cpp; sourceTree = "<group>"; };
+		28E5775C27AE81DC00946D18 /* RTPMIDIConnectionDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPMIDIConnectionDetail.h; sourceTree = "<group>"; };
+		28E5775D27AE81DC00946D18 /* MIDIPortFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIPortFilter.h; sourceTree = "<group>"; };
+		28E5775E27AE81DC00946D18 /* MIDIPortInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIPortInfo.cpp; sourceTree = "<group>"; };
+		28E5775F27AE81DC00946D18 /* USBHostMIDIDeviceDetail.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USBHostMIDIDeviceDetail.cpp; sourceTree = "<group>"; };
+		28E5776127AE81DC00946D18 /* GeneSysLib(qt4_8_6).pro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GeneSysLib(qt4_8_6).pro"; sourceTree = "<group>"; };
+		28E5776227AE81DC00946D18 /* GeneSysLib.pro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GeneSysLib.pro; sourceTree = "<group>"; };
+		28E5776427AE81DC00946D18 /* ChannelFilterStatusBit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelFilterStatusBit.h; sourceTree = "<group>"; };
+		28E5776527AE81DC00946D18 /* BitDepthCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitDepthCode.h; sourceTree = "<group>"; };
+		28E5776627AE81DC00946D18 /* BitDepthCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitDepthCode.cpp; sourceTree = "<group>"; };
+		28E5776727AE81DC00946D18 /* SampleRateCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleRateCode.h; sourceTree = "<group>"; };
+		28E5776927AE81DC00946D18 /* AudioPortPatchbay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPortPatchbay.cpp; sourceTree = "<group>"; };
+		28E5776A27AE81DC00946D18 /* AudioPortPatchbay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPortPatchbay.h; sourceTree = "<group>"; };
+		28E5776B27AE81DC00946D18 /* AudioPortInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPortInfo.cpp; sourceTree = "<group>"; };
+		28E5776C27AE81DC00946D18 /* AudioClockInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioClockInfo.h; sourceTree = "<group>"; };
+		28E5776D27AE81DC00946D18 /* AudioPortCfgInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPortCfgInfo.cpp; sourceTree = "<group>"; };
+		28E5776E27AE81DC00946D18 /* AudioPortInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPortInfo.h; sourceTree = "<group>"; };
+		28E5776F27AE81DC00946D18 /* AudioInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioInfo.h; sourceTree = "<group>"; };
+		28E5777027AE81DC00946D18 /* ClockSourceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockSourceType.h; sourceTree = "<group>"; };
+		28E5777127AE81DC00946D18 /* AudioCfgInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioCfgInfo.cpp; sourceTree = "<group>"; };
+		28E5777227AE81DC00946D18 /* AudioCfgInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioCfgInfo.h; sourceTree = "<group>"; };
+		28E5777327AE81DC00946D18 /* AudioInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioInfo.cpp; sourceTree = "<group>"; };
+		28E5777427AE81DC00946D18 /* ClockSourceType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClockSourceType.cpp; sourceTree = "<group>"; };
+		28E5777527AE81DC00946D18 /* AudioPortCfgInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPortCfgInfo.h; sourceTree = "<group>"; };
+		28E5777627AE81DC00946D18 /* AudioClockInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioClockInfo.cpp; sourceTree = "<group>"; };
+		28E5777727AE81DC00946D18 /* HostType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostType.h; sourceTree = "<group>"; };
+		28E5777827AE81DC00946D18 /* ChannelBitmapBit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelBitmapBit.h; sourceTree = "<group>"; };
+		28E5777927AE81DC00946D18 /* PortSpecificOptionsBit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortSpecificOptionsBit.h; sourceTree = "<group>"; };
+		28E5777A27AE81DC00946D18 /* SampleRateCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleRateCode.cpp; sourceTree = "<group>"; };
+		28E5777C27AE81DC00946D18 /* MixerOutputControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerOutputControl.h; sourceTree = "<group>"; };
+		28E5777D27AE81DC00946D18 /* MixerInputControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerInputControl.h; sourceTree = "<group>"; };
+		28E5777E27AE81DC00946D18 /* MixerMeterValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerMeterValue.h; sourceTree = "<group>"; };
+		28E5777F27AE81DC00946D18 /* MixerOutputParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerOutputParm.h; sourceTree = "<group>"; };
+		28E5778027AE81DC00946D18 /* MixerInputControlValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerInputControlValue.cpp; sourceTree = "<group>"; };
+		28E5778127AE81DC00946D18 /* MixerParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerParm.cpp; sourceTree = "<group>"; };
+		28E5778227AE81DC00946D18 /* MixerInputParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerInputParm.cpp; sourceTree = "<group>"; };
+		28E5778327AE81DC00946D18 /* MixerInputParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerInputParm.h; sourceTree = "<group>"; };
+		28E5778427AE81DC00946D18 /* MixerParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerParm.h; sourceTree = "<group>"; };
+		28E5778527AE81DC00946D18 /* MixerOutputControlValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerOutputControlValue.cpp; sourceTree = "<group>"; };
+		28E5778627AE81DC00946D18 /* MixerOutputControlValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerOutputControlValue.h; sourceTree = "<group>"; };
+		28E5778727AE81DC00946D18 /* MixerMeterValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerMeterValue.cpp; sourceTree = "<group>"; };
+		28E5778827AE81DC00946D18 /* MixerInputControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerInputControl.cpp; sourceTree = "<group>"; };
+		28E5778927AE81DC00946D18 /* MixerPortParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerPortParm.cpp; sourceTree = "<group>"; };
+		28E5778A27AE81DC00946D18 /* MixerOutputControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerOutputControl.cpp; sourceTree = "<group>"; };
+		28E5778B27AE81DC00946D18 /* MixerInputControlValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerInputControlValue.h; sourceTree = "<group>"; };
+		28E5778C27AE81DC00946D18 /* MixerPortParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerPortParm.h; sourceTree = "<group>"; };
+		28E5778D27AE81DC00946D18 /* MixerOutputParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerOutputParm.cpp; sourceTree = "<group>"; };
+		28E5778F27AE81DC00946D18 /* ControllerType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerType.h; sourceTree = "<group>"; };
+		28E5779027AE81DC00946D18 /* AudioGlobalParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioGlobalParm.cpp; sourceTree = "<group>"; };
+		28E5779127AE81DC00946D18 /* AudioControlDetailValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioControlDetailValue.cpp; sourceTree = "<group>"; };
+		28E5779227AE81DC00946D18 /* AudioControlParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioControlParm.h; sourceTree = "<group>"; };
+		28E5779327AE81DC00946D18 /* AudioControlDetailTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioControlDetailTypes.h; sourceTree = "<group>"; };
+		28E5779427AE81DC00946D18 /* AudioControlDetailValueTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioControlDetailValueTypes.h; sourceTree = "<group>"; };
+		28E5779527AE81DC00946D18 /* AudioPortParmTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPortParmTypes.cpp; sourceTree = "<group>"; };
+		28E5779627AE81DC00946D18 /* AudioPortParmTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPortParmTypes.h; sourceTree = "<group>"; };
+		28E5779727AE81DC00946D18 /* AudioDeviceParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioDeviceParm.cpp; sourceTree = "<group>"; };
+		28E5779827AE81DC00946D18 /* AudioPortParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPortParm.cpp; sourceTree = "<group>"; };
+		28E5779927AE81DC00946D18 /* AudioPortMeterValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPortMeterValue.h; sourceTree = "<group>"; };
+		28E5779A27AE81DC00946D18 /* AudioControlDetailValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioControlDetailValue.h; sourceTree = "<group>"; };
+		28E5779B27AE81DC00946D18 /* AudioDeviceParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDeviceParm.h; sourceTree = "<group>"; };
+		28E5779C27AE81DC00946D18 /* AudioControlDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioControlDetail.h; sourceTree = "<group>"; };
+		28E5779D27AE81DC00946D18 /* AudioControlTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioControlTypes.h; sourceTree = "<group>"; };
+		28E5779E27AE81DC00946D18 /* AudioPatchbayParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPatchbayParm.cpp; sourceTree = "<group>"; };
+		28E5779F27AE81DC00946D18 /* AudioDeviceTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDeviceTypes.h; sourceTree = "<group>"; };
+		28E577A027AE81DC00946D18 /* AudioDeviceTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioDeviceTypes.cpp; sourceTree = "<group>"; };
+		28E577A127AE81DC00946D18 /* AudioPatchbayParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPatchbayParm.h; sourceTree = "<group>"; };
+		28E577A227AE81DC00946D18 /* AudioGlobalParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioGlobalParm.h; sourceTree = "<group>"; };
+		28E577A327AE81DC00946D18 /* AudioControlParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioControlParm.cpp; sourceTree = "<group>"; };
+		28E577A427AE81DC00946D18 /* AudioPortParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPortParm.h; sourceTree = "<group>"; };
+		28E577A527AE81DC00946D18 /* AudioControlDetailTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioControlDetailTypes.cpp; sourceTree = "<group>"; };
+		28E577A627AE81DC00946D18 /* AudioControlTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioControlTypes.cpp; sourceTree = "<group>"; };
+		28E577A727AE81DC00946D18 /* AudioPortMeterValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPortMeterValue.cpp; sourceTree = "<group>"; };
+		28E577A827AE81DC00946D18 /* AudioClockParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioClockParm.h; sourceTree = "<group>"; };
+		28E577A927AE81DC00946D18 /* AudioControlDetailValueTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioControlDetailValueTypes.cpp; sourceTree = "<group>"; };
+		28E577AA27AE81DC00946D18 /* AudioControlDetail.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioControlDetail.cpp; sourceTree = "<group>"; };
+		28E577AB27AE81DC00946D18 /* AudioClockParm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioClockParm.cpp; sourceTree = "<group>"; };
+		28E577AD27AE81DC00946D18 /* GizmoCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GizmoCount.h; sourceTree = "<group>"; };
+		28E577AE27AE81DC00946D18 /* SaveRestoreList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveRestoreList.h; sourceTree = "<group>"; };
+		28E577AF27AE81DC00946D18 /* InfoList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InfoList.cpp; sourceTree = "<group>"; };
+		28E577B027AE81DC00946D18 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		28E577B127AE81DC00946D18 /* GizmoInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GizmoInfo.cpp; sourceTree = "<group>"; };
+		28E577B227AE81DC00946D18 /* SaveRestoreID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveRestoreID.h; sourceTree = "<group>"; };
+		28E577B327AE81DC00946D18 /* InfoID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoID.h; sourceTree = "<group>"; };
+		28E577B427AE81DC00946D18 /* IPMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPMode.h; sourceTree = "<group>"; };
+		28E577B527AE81DC00946D18 /* Device.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Device.cpp; sourceTree = "<group>"; };
+		28E577B627AE81DC00946D18 /* BootMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootMode.h; sourceTree = "<group>"; };
+		28E577B727AE81DC00946D18 /* DevicePID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicePID.h; sourceTree = "<group>"; };
+		28E577B827AE81DC00946D18 /* DeviceID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceID.h; sourceTree = "<group>"; };
+		28E577B927AE81DC00946D18 /* SaveRestore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveRestore.h; sourceTree = "<group>"; };
+		28E577BA27AE81DC00946D18 /* ResetList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetList.h; sourceTree = "<group>"; };
+		28E577BB27AE81DC00946D18 /* EthernetPortInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EthernetPortInfo.h; sourceTree = "<group>"; };
+		28E577BC27AE81DC00946D18 /* EthernetPortInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EthernetPortInfo.cpp; sourceTree = "<group>"; };
+		28E577BD27AE81DC00946D18 /* InfoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoList.h; sourceTree = "<group>"; };
+		28E577BE27AE81DC00946D18 /* SaveRestoreList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaveRestoreList.cpp; sourceTree = "<group>"; };
+		28E577BF27AE81DC00946D18 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
+		28E577C027AE81DC00946D18 /* Info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Info.cpp; sourceTree = "<group>"; };
+		28E577C127AE81DC00946D18 /* GizmoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GizmoInfo.h; sourceTree = "<group>"; };
+		28E577C227AE81DC00946D18 /* Reset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reset.h; sourceTree = "<group>"; };
+		28E577C327AE81DC00946D18 /* DeviceID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeviceID.cpp; sourceTree = "<group>"; };
+		28E577C427AE81DC00946D18 /* GizmoCount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GizmoCount.cpp; sourceTree = "<group>"; };
+		28E577C627AE81DC00946D18 /* Generator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Generator.cpp; sourceTree = "<group>"; };
+		28E577C727AE81DC00946D18 /* ErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorCode.h; sourceTree = "<group>"; };
+		28E577C827AE81DC00946D18 /* ICRunOnMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRunOnMain.h; sourceTree = "<group>"; };
+		28E577C927AE81DC00946D18 /* MyAlgorithms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyAlgorithms.cpp; sourceTree = "<group>"; };
+		28E577CA27AE81DC00946D18 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		28E577CC27AE81DC00946D18 /* PortType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortType.h; sourceTree = "<group>"; };
+		28E577CD27AE81DC00946D18 /* CommandList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandList.cpp; sourceTree = "<group>"; };
+		28E577CE27AE81DC00946D18 /* blockNotFound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blockNotFound.h; sourceTree = "<group>"; };
+		28E577D027AE81DC00946D18 /* CommandData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandData.h; sourceTree = "<group>"; };
+		28E577D127AE81DC00946D18 /* MyAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAlgorithms.h; sourceTree = "<group>"; };
+		28E577D227AE81DC00946D18 /* ACK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACK.cpp; sourceTree = "<group>"; };
+		28E577D327AE81DC00946D18 /* LibTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibTypes.h; sourceTree = "<group>"; };
+		28E577D427AE81DC00946D18 /* ByteCommandData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteCommandData.h; sourceTree = "<group>"; };
+		28E577D527AE81DC00946D18 /* ACK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACK.h; sourceTree = "<group>"; };
+		28E577D627AE81DC00946D18 /* ByteCommandData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ByteCommandData.cpp; sourceTree = "<group>"; };
+		28E577D727AE81DC00946D18 /* ICRunOnMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICRunOnMain.m; sourceTree = "<group>"; };
+		28E577D827AE81DC00946D18 /* Communicator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Communicator.cpp; sourceTree = "<group>"; };
+		28E577D927AE81DC00946D18 /* CommandData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandData.cpp; sourceTree = "<group>"; };
+		28E577DA27AE81DC00946D18 /* BytesCommandData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BytesCommandData.cpp; sourceTree = "<group>"; };
+		28E577DB27AE81DC00946D18 /* CommandList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandList.h; sourceTree = "<group>"; };
+		28E577DC27AE81DC00946D18 /* StreamHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamHelpers.h; sourceTree = "<group>"; };
+		28E577DD27AE81DC00946D18 /* CommandDataKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandDataKey.h; sourceTree = "<group>"; };
+		28E577DE27AE81DC00946D18 /* BytesCommandData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BytesCommandData.h; sourceTree = "<group>"; };
+		28E577DF27AE81DC00946D18 /* Lookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lookup.h; sourceTree = "<group>"; };
+		28E577E027AE81DC00946D18 /* SysexCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysexCommand.h; sourceTree = "<group>"; };
+		28E577E127AE81DC00946D18 /* SysexParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SysexParser.cpp; sourceTree = "<group>"; };
+		28E577E227AE81DC00946D18 /* Communicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Communicator.h; sourceTree = "<group>"; };
+		28E577E327AE81DC00946D18 /* CommandDefines.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandDefines.cpp; sourceTree = "<group>"; };
+		28E577E427AE81DC00946D18 /* property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = property.h; sourceTree = "<group>"; };
+		28E577E527AE81DC00946D18 /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
+		28E577E627AE81DC00946D18 /* SysexParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysexParser.h; sourceTree = "<group>"; };
+		28E577E727AE81DC00946D18 /* CommandDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandDefines.h; sourceTree = "<group>"; };
+		28E577E827AE81DC00946D18 /* Lookup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lookup.cpp; sourceTree = "<group>"; };
+		28E577E927AE81DC00946D18 /* Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Generator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +260,10 @@
 				2899566927AE6CA3001586F9 /* Source */,
 				2899566827AE6CA3001586F9 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			wrapsLines = 0;
 		};
 		2899566827AE6CA3001586F9 /* Products */ = {
 			isa = PBXGroup;
@@ -53,6 +276,8 @@
 		2899566927AE6CA3001586F9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				28E5773B27AE81DC00946D18 /* GeneSysLib */,
+				28E5773727AE813A00946D18 /* TCPServer */,
 				2899568327AE6EFE001586F9 /* ICAppDelegate.h */,
 				2899568427AE6EFE001586F9 /* ICAppDelegate.m */,
 				2899567327AE6CA3001586F9 /* Main.storyboard */,
@@ -61,6 +286,240 @@
 				2899567C27AE6CA3001586F9 /* main.m */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		28E5773727AE813A00946D18 /* TCPServer */ = {
+			isa = PBXGroup;
+			children = (
+				28E5773827AE813A00946D18 /* ICServer.h */,
+				28E5773927AE813A00946D18 /* ICServer.m */,
+			);
+			path = TCPServer;
+			sourceTree = "<group>";
+		};
+		28E5773B27AE81DC00946D18 /* GeneSysLib */ = {
+			isa = PBXGroup;
+			children = (
+				28E5774727AE81DC00946D18 /* MIDI */,
+				28E5776027AE81DC00946D18 /* Qt */,
+				28E5776327AE81DC00946D18 /* Audio */,
+				28E577AC27AE81DC00946D18 /* Device */,
+				28E577C527AE81DC00946D18 /* Base */,
+			);
+			name = GeneSysLib;
+			path = ../../GeneSysLib;
+			sourceTree = "<group>";
+		};
+		28E5774727AE81DC00946D18 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				28E5774827AE81DC00946D18 /* MIDIPortRoute.cpp */,
+				28E5774927AE81DC00946D18 /* MIDIPortRemap.cpp */,
+				28E5774A27AE81DC00946D18 /* MIDIPortDetail.h */,
+				28E5774B27AE81DC00946D18 /* FilterStatusBit.h */,
+				28E5774C27AE81DC00946D18 /* MIDIEndPoint.h */,
+				28E5774D27AE81DC00946D18 /* USBHostMIDIDeviceDetail.h */,
+				28E5774E27AE81DC00946D18 /* RTPMIDIConnectionDetail.cpp */,
+				28E5774F27AE81DC00946D18 /* MIDIPortDetailTypes.h */,
+				28E5775027AE81DC00946D18 /* MIDIEndPoint.m */,
+				28E5775127AE81DC00946D18 /* MIDIPortInfo.h */,
+				28E5775227AE81DC00946D18 /* FilterID.h */,
+				28E5775327AE81DC00946D18 /* PortMIDIFlags.h */,
+				28E5775427AE81DC00946D18 /* MIDIInfo.cpp */,
+				28E5775527AE81DC00946D18 /* RemapID.h */,
+				28E5775627AE81DC00946D18 /* MIDIInfo.h */,
+				28E5775727AE81DC00946D18 /* MIDIPortRemap.h */,
+				28E5775827AE81DC00946D18 /* MIDIPortFilter.cpp */,
+				28E5775927AE81DC00946D18 /* MIDIPortDetailTypes.cpp */,
+				28E5775A27AE81DC00946D18 /* MIDIPortRoute.h */,
+				28E5775B27AE81DC00946D18 /* MIDIPortDetail.cpp */,
+				28E5775C27AE81DC00946D18 /* RTPMIDIConnectionDetail.h */,
+				28E5775D27AE81DC00946D18 /* MIDIPortFilter.h */,
+				28E5775E27AE81DC00946D18 /* MIDIPortInfo.cpp */,
+				28E5775F27AE81DC00946D18 /* USBHostMIDIDeviceDetail.cpp */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		28E5776027AE81DC00946D18 /* Qt */ = {
+			isa = PBXGroup;
+			children = (
+				28E5776127AE81DC00946D18 /* GeneSysLib(qt4_8_6).pro */,
+				28E5776227AE81DC00946D18 /* GeneSysLib.pro */,
+			);
+			path = Qt;
+			sourceTree = "<group>";
+		};
+		28E5776327AE81DC00946D18 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				28E5776427AE81DC00946D18 /* ChannelFilterStatusBit.h */,
+				28E5776527AE81DC00946D18 /* BitDepthCode.h */,
+				28E5776627AE81DC00946D18 /* BitDepthCode.cpp */,
+				28E5776727AE81DC00946D18 /* SampleRateCode.h */,
+				28E5776827AE81DC00946D18 /* AudioV1 */,
+				28E5777727AE81DC00946D18 /* HostType.h */,
+				28E5777827AE81DC00946D18 /* ChannelBitmapBit.h */,
+				28E5777927AE81DC00946D18 /* PortSpecificOptionsBit.h */,
+				28E5777A27AE81DC00946D18 /* SampleRateCode.cpp */,
+				28E5777B27AE81DC00946D18 /* Mixer */,
+				28E5778E27AE81DC00946D18 /* AudioV2 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		28E5776827AE81DC00946D18 /* AudioV1 */ = {
+			isa = PBXGroup;
+			children = (
+				28E5776927AE81DC00946D18 /* AudioPortPatchbay.cpp */,
+				28E5776A27AE81DC00946D18 /* AudioPortPatchbay.h */,
+				28E5776B27AE81DC00946D18 /* AudioPortInfo.cpp */,
+				28E5776C27AE81DC00946D18 /* AudioClockInfo.h */,
+				28E5776D27AE81DC00946D18 /* AudioPortCfgInfo.cpp */,
+				28E5776E27AE81DC00946D18 /* AudioPortInfo.h */,
+				28E5776F27AE81DC00946D18 /* AudioInfo.h */,
+				28E5777027AE81DC00946D18 /* ClockSourceType.h */,
+				28E5777127AE81DC00946D18 /* AudioCfgInfo.cpp */,
+				28E5777227AE81DC00946D18 /* AudioCfgInfo.h */,
+				28E5777327AE81DC00946D18 /* AudioInfo.cpp */,
+				28E5777427AE81DC00946D18 /* ClockSourceType.cpp */,
+				28E5777527AE81DC00946D18 /* AudioPortCfgInfo.h */,
+				28E5777627AE81DC00946D18 /* AudioClockInfo.cpp */,
+			);
+			path = AudioV1;
+			sourceTree = "<group>";
+		};
+		28E5777B27AE81DC00946D18 /* Mixer */ = {
+			isa = PBXGroup;
+			children = (
+				28E5777C27AE81DC00946D18 /* MixerOutputControl.h */,
+				28E5777D27AE81DC00946D18 /* MixerInputControl.h */,
+				28E5777E27AE81DC00946D18 /* MixerMeterValue.h */,
+				28E5777F27AE81DC00946D18 /* MixerOutputParm.h */,
+				28E5778027AE81DC00946D18 /* MixerInputControlValue.cpp */,
+				28E5778127AE81DC00946D18 /* MixerParm.cpp */,
+				28E5778227AE81DC00946D18 /* MixerInputParm.cpp */,
+				28E5778327AE81DC00946D18 /* MixerInputParm.h */,
+				28E5778427AE81DC00946D18 /* MixerParm.h */,
+				28E5778527AE81DC00946D18 /* MixerOutputControlValue.cpp */,
+				28E5778627AE81DC00946D18 /* MixerOutputControlValue.h */,
+				28E5778727AE81DC00946D18 /* MixerMeterValue.cpp */,
+				28E5778827AE81DC00946D18 /* MixerInputControl.cpp */,
+				28E5778927AE81DC00946D18 /* MixerPortParm.cpp */,
+				28E5778A27AE81DC00946D18 /* MixerOutputControl.cpp */,
+				28E5778B27AE81DC00946D18 /* MixerInputControlValue.h */,
+				28E5778C27AE81DC00946D18 /* MixerPortParm.h */,
+				28E5778D27AE81DC00946D18 /* MixerOutputParm.cpp */,
+			);
+			path = Mixer;
+			sourceTree = "<group>";
+		};
+		28E5778E27AE81DC00946D18 /* AudioV2 */ = {
+			isa = PBXGroup;
+			children = (
+				28E5778F27AE81DC00946D18 /* ControllerType.h */,
+				28E5779027AE81DC00946D18 /* AudioGlobalParm.cpp */,
+				28E5779127AE81DC00946D18 /* AudioControlDetailValue.cpp */,
+				28E5779227AE81DC00946D18 /* AudioControlParm.h */,
+				28E5779327AE81DC00946D18 /* AudioControlDetailTypes.h */,
+				28E5779427AE81DC00946D18 /* AudioControlDetailValueTypes.h */,
+				28E5779527AE81DC00946D18 /* AudioPortParmTypes.cpp */,
+				28E5779627AE81DC00946D18 /* AudioPortParmTypes.h */,
+				28E5779727AE81DC00946D18 /* AudioDeviceParm.cpp */,
+				28E5779827AE81DC00946D18 /* AudioPortParm.cpp */,
+				28E5779927AE81DC00946D18 /* AudioPortMeterValue.h */,
+				28E5779A27AE81DC00946D18 /* AudioControlDetailValue.h */,
+				28E5779B27AE81DC00946D18 /* AudioDeviceParm.h */,
+				28E5779C27AE81DC00946D18 /* AudioControlDetail.h */,
+				28E5779D27AE81DC00946D18 /* AudioControlTypes.h */,
+				28E5779E27AE81DC00946D18 /* AudioPatchbayParm.cpp */,
+				28E5779F27AE81DC00946D18 /* AudioDeviceTypes.h */,
+				28E577A027AE81DC00946D18 /* AudioDeviceTypes.cpp */,
+				28E577A127AE81DC00946D18 /* AudioPatchbayParm.h */,
+				28E577A227AE81DC00946D18 /* AudioGlobalParm.h */,
+				28E577A327AE81DC00946D18 /* AudioControlParm.cpp */,
+				28E577A427AE81DC00946D18 /* AudioPortParm.h */,
+				28E577A527AE81DC00946D18 /* AudioControlDetailTypes.cpp */,
+				28E577A627AE81DC00946D18 /* AudioControlTypes.cpp */,
+				28E577A727AE81DC00946D18 /* AudioPortMeterValue.cpp */,
+				28E577A827AE81DC00946D18 /* AudioClockParm.h */,
+				28E577A927AE81DC00946D18 /* AudioControlDetailValueTypes.cpp */,
+				28E577AA27AE81DC00946D18 /* AudioControlDetail.cpp */,
+				28E577AB27AE81DC00946D18 /* AudioClockParm.cpp */,
+			);
+			path = AudioV2;
+			sourceTree = "<group>";
+		};
+		28E577AC27AE81DC00946D18 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				28E577AD27AE81DC00946D18 /* GizmoCount.h */,
+				28E577AE27AE81DC00946D18 /* SaveRestoreList.h */,
+				28E577AF27AE81DC00946D18 /* InfoList.cpp */,
+				28E577B027AE81DC00946D18 /* Device.h */,
+				28E577B127AE81DC00946D18 /* GizmoInfo.cpp */,
+				28E577B227AE81DC00946D18 /* SaveRestoreID.h */,
+				28E577B327AE81DC00946D18 /* InfoID.h */,
+				28E577B427AE81DC00946D18 /* IPMode.h */,
+				28E577B527AE81DC00946D18 /* Device.cpp */,
+				28E577B627AE81DC00946D18 /* BootMode.h */,
+				28E577B727AE81DC00946D18 /* DevicePID.h */,
+				28E577B827AE81DC00946D18 /* DeviceID.h */,
+				28E577B927AE81DC00946D18 /* SaveRestore.h */,
+				28E577BA27AE81DC00946D18 /* ResetList.h */,
+				28E577BB27AE81DC00946D18 /* EthernetPortInfo.h */,
+				28E577BC27AE81DC00946D18 /* EthernetPortInfo.cpp */,
+				28E577BD27AE81DC00946D18 /* InfoList.h */,
+				28E577BE27AE81DC00946D18 /* SaveRestoreList.cpp */,
+				28E577BF27AE81DC00946D18 /* Info.h */,
+				28E577C027AE81DC00946D18 /* Info.cpp */,
+				28E577C127AE81DC00946D18 /* GizmoInfo.h */,
+				28E577C227AE81DC00946D18 /* Reset.h */,
+				28E577C327AE81DC00946D18 /* DeviceID.cpp */,
+				28E577C427AE81DC00946D18 /* GizmoCount.cpp */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		28E577C527AE81DC00946D18 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				28E577C627AE81DC00946D18 /* Generator.cpp */,
+				28E577C727AE81DC00946D18 /* ErrorCode.h */,
+				28E577C827AE81DC00946D18 /* ICRunOnMain.h */,
+				28E577C927AE81DC00946D18 /* MyAlgorithms.cpp */,
+				28E577CA27AE81DC00946D18 /* stdafx.h */,
+				28E577CC27AE81DC00946D18 /* PortType.h */,
+				28E577CD27AE81DC00946D18 /* CommandList.cpp */,
+				28E577CE27AE81DC00946D18 /* blockNotFound.h */,
+				28E577D027AE81DC00946D18 /* CommandData.h */,
+				28E577D127AE81DC00946D18 /* MyAlgorithms.h */,
+				28E577D227AE81DC00946D18 /* ACK.cpp */,
+				28E577D327AE81DC00946D18 /* LibTypes.h */,
+				28E577D427AE81DC00946D18 /* ByteCommandData.h */,
+				28E577D527AE81DC00946D18 /* ACK.h */,
+				28E577D627AE81DC00946D18 /* ByteCommandData.cpp */,
+				28E577D727AE81DC00946D18 /* ICRunOnMain.m */,
+				28E577D827AE81DC00946D18 /* Communicator.cpp */,
+				28E577D927AE81DC00946D18 /* CommandData.cpp */,
+				28E577DA27AE81DC00946D18 /* BytesCommandData.cpp */,
+				28E577DB27AE81DC00946D18 /* CommandList.h */,
+				28E577DC27AE81DC00946D18 /* StreamHelpers.h */,
+				28E577DD27AE81DC00946D18 /* CommandDataKey.h */,
+				28E577DE27AE81DC00946D18 /* BytesCommandData.h */,
+				28E577DF27AE81DC00946D18 /* Lookup.h */,
+				28E577E027AE81DC00946D18 /* SysexCommand.h */,
+				28E577E127AE81DC00946D18 /* SysexParser.cpp */,
+				28E577E227AE81DC00946D18 /* Communicator.h */,
+				28E577E327AE81DC00946D18 /* CommandDefines.cpp */,
+				28E577E427AE81DC00946D18 /* property.h */,
+				28E577E527AE81DC00946D18 /* stdafx.cpp */,
+				28E577E627AE81DC00946D18 /* SysexParser.h */,
+				28E577E727AE81DC00946D18 /* CommandDefines.h */,
+				28E577E827AE81DC00946D18 /* Lookup.cpp */,
+				28E577E927AE81DC00946D18 /* Generator.h */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,7 +580,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2899567A27AE6CA3001586F9 /* LaunchScreen.storyboard in Resources */,
+				28E577FC27AE81DC00946D18 /* GeneSysLib.pro in Resources */,
 				2899567527AE6CA3001586F9 /* Main.storyboard in Resources */,
+				28E577FB27AE81DC00946D18 /* GeneSysLib(qt4_8_6).pro in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +593,71 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E5781E27AE81DC00946D18 /* GizmoInfo.cpp in Sources */,
+				28E5780827AE81DC00946D18 /* MixerInputParm.cpp in Sources */,
+				28E5782A27AE81DC00946D18 /* ByteCommandData.cpp in Sources */,
+				28E577F627AE81DC00946D18 /* MIDIPortFilter.cpp in Sources */,
+				28E5781027AE81DC00946D18 /* AudioControlDetailValue.cpp in Sources */,
+				28E577F827AE81DC00946D18 /* MIDIPortDetail.cpp in Sources */,
+				28E5780327AE81DC00946D18 /* ClockSourceType.cpp in Sources */,
+				28E5781827AE81DC00946D18 /* AudioControlTypes.cpp in Sources */,
+				28E577F927AE81DC00946D18 /* MIDIPortInfo.cpp in Sources */,
+				28E5780D27AE81DC00946D18 /* MixerOutputControl.cpp in Sources */,
+				28E5781327AE81DC00946D18 /* AudioPortParm.cpp in Sources */,
+				28E5781727AE81DC00946D18 /* AudioControlDetailTypes.cpp in Sources */,
+				28E5780027AE81DC00946D18 /* AudioPortCfgInfo.cpp in Sources */,
+				28E5781127AE81DC00946D18 /* AudioPortParmTypes.cpp in Sources */,
+				28E5782327AE81DC00946D18 /* DeviceID.cpp in Sources */,
+				28E5781427AE81DC00946D18 /* AudioPatchbayParm.cpp in Sources */,
+				28E577F527AE81DC00946D18 /* MIDIInfo.cpp in Sources */,
+				28E577FD27AE81DC00946D18 /* BitDepthCode.cpp in Sources */,
+				28E5780F27AE81DC00946D18 /* AudioGlobalParm.cpp in Sources */,
+				28E577FF27AE81DC00946D18 /* AudioPortInfo.cpp in Sources */,
+				28E5782527AE81DC00946D18 /* Generator.cpp in Sources */,
+				28E577F727AE81DC00946D18 /* MIDIPortDetailTypes.cpp in Sources */,
+				28E577F127AE81DC00946D18 /* MIDIPortRoute.cpp in Sources */,
+				28E5781D27AE81DC00946D18 /* InfoList.cpp in Sources */,
+				28E5781B27AE81DC00946D18 /* AudioControlDetail.cpp in Sources */,
+				28E5781A27AE81DC00946D18 /* AudioControlDetailValueTypes.cpp in Sources */,
+				28E5781527AE81DC00946D18 /* AudioDeviceTypes.cpp in Sources */,
+				28E5782227AE81DC00946D18 /* Info.cpp in Sources */,
+				28E5782127AE81DC00946D18 /* SaveRestoreList.cpp in Sources */,
+				28E5782927AE81DC00946D18 /* ACK.cpp in Sources */,
 				2899568527AE6EFE001586F9 /* ICAppDelegate.m in Sources */,
+				28E5781927AE81DC00946D18 /* AudioPortMeterValue.cpp in Sources */,
+				28E577FA27AE81DC00946D18 /* USBHostMIDIDeviceDetail.cpp in Sources */,
+				28E5780727AE81DC00946D18 /* MixerParm.cpp in Sources */,
+				28E5780927AE81DC00946D18 /* MixerOutputControlValue.cpp in Sources */,
+				28E5780527AE81DC00946D18 /* SampleRateCode.cpp in Sources */,
+				28E5783027AE81DC00946D18 /* CommandDefines.cpp in Sources */,
+				28E5782F27AE81DC00946D18 /* SysexParser.cpp in Sources */,
+				28E5780227AE81DC00946D18 /* AudioInfo.cpp in Sources */,
+				28E5780127AE81DC00946D18 /* AudioCfgInfo.cpp in Sources */,
+				28E5782427AE81DC00946D18 /* GizmoCount.cpp in Sources */,
+				28E5781C27AE81DC00946D18 /* AudioClockParm.cpp in Sources */,
+				28E5773A27AE813A00946D18 /* ICServer.m in Sources */,
+				28E577FE27AE81DC00946D18 /* AudioPortPatchbay.cpp in Sources */,
+				28E5781627AE81DC00946D18 /* AudioControlParm.cpp in Sources */,
+				28E5780A27AE81DC00946D18 /* MixerMeterValue.cpp in Sources */,
+				28E5782727AE81DC00946D18 /* CommandList.cpp in Sources */,
+				28E5782E27AE81DC00946D18 /* BytesCommandData.cpp in Sources */,
+				28E5782D27AE81DC00946D18 /* CommandData.cpp in Sources */,
+				28E5780627AE81DC00946D18 /* MixerInputControlValue.cpp in Sources */,
+				28E5783227AE81DC00946D18 /* Lookup.cpp in Sources */,
+				28E5782C27AE81DC00946D18 /* Communicator.cpp in Sources */,
+				28E5782027AE81DC00946D18 /* EthernetPortInfo.cpp in Sources */,
+				28E5780B27AE81DC00946D18 /* MixerInputControl.cpp in Sources */,
+				28E5782B27AE81DC00946D18 /* ICRunOnMain.m in Sources */,
+				28E577F327AE81DC00946D18 /* RTPMIDIConnectionDetail.cpp in Sources */,
+				28E577F427AE81DC00946D18 /* MIDIEndPoint.m in Sources */,
+				28E5780C27AE81DC00946D18 /* MixerPortParm.cpp in Sources */,
+				28E5782627AE81DC00946D18 /* MyAlgorithms.cpp in Sources */,
+				28E5780E27AE81DC00946D18 /* MixerOutputParm.cpp in Sources */,
+				28E5780427AE81DC00946D18 /* AudioClockInfo.cpp in Sources */,
 				2899567D27AE6CA3001586F9 /* main.m in Sources */,
+				28E5781227AE81DC00946D18 /* AudioDeviceParm.cpp in Sources */,
+				28E5781F27AE81DC00946D18 /* Device.cpp in Sources */,
+				28E577F227AE81DC00946D18 /* MIDIPortRemap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +689,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -198,18 +722,21 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = __IOS__;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/boost/1.76.0/include;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -224,7 +751,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -256,13 +783,16 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_NO_COMMON_BLOCKS = YES;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = __IOS__;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/boost/1.76.0/include;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
