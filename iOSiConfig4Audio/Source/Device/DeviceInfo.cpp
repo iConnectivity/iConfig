@@ -636,14 +636,6 @@ bool DeviceInfo::sendNextSysex() {
           };
         }
 
-        [Communicator::finishLock lock];
-        while (!Communicator::timersEmpty()) {
-          NSLog(@"waiting in sendNextSysex");
-          [Communicator::finishLock wait];
-          NSLog(@"wait done. timers empty?");
-        }
-        [Communicator::finishLock unlock];
-
         // post the query complete notification on the main thread
         runOnMain(^{
           [[NSNotificationCenter defaultCenter]

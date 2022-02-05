@@ -6,6 +6,7 @@
 */
 
 #import "ICTextEditCellProvider.h"
+#import <UIKit/UIKit.h>
 
 @implementation ICTextEditCellProvider
 

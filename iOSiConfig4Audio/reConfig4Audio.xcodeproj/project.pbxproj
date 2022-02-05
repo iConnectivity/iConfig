@@ -81,6 +81,172 @@
 		28E5783C27AE8E9300946D18 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E5783B27AE8E9300946D18 /* QuartzCore.framework */; };
 		28E5783E27AE8E9D00946D18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E5783D27AE8E9D00946D18 /* UIKit.framework */; };
 		28E5784027AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28E5783F27AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist */; };
+		28E5784A27AECE3000946D18 /* ICAudioPatchbayGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5784727AECE3000946D18 /* ICAudioPatchbayGridViewController.m */; };
+		28E5786927AECE4200946D18 /* ICAudioPatchbayV1Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5784D27AECE4200946D18 /* ICAudioPatchbayV1Delegate.m */; };
+		28E5786A27AECE4200946D18 /* ICAudioPatchbayV1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5784E27AECE4200946D18 /* ICAudioPatchbayV1Cell.m */; };
+		28E5786B27AECE4200946D18 /* ICAudioInfoViewControllerV1.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5785227AECE4200946D18 /* ICAudioInfoViewControllerV1.m */; };
+		28E5786C27AECE4200946D18 /* ICAudioInputChannelsV1RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5785427AECE4200946D18 /* ICAudioInputChannelsV1RangeDelegate.m */; };
+		28E5786D27AECE4200946D18 /* ICiOSEnabledV1SwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5785727AECE4200946D18 /* ICiOSEnabledV1SwitchDelegate.m */; };
+		28E5786E27AECE4200946D18 /* ICMIDIPortNameTextEditDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5785827AECE4200946D18 /* ICMIDIPortNameTextEditDelegate.m */; };
+		28E5786F27AECE4200946D18 /* ICAudioFrameBufferV1RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5785B27AECE4200946D18 /* ICAudioFrameBufferV1RangeDelegate.m */; };
+		28E5787027AECE4200946D18 /* ICAudioClockV1ChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5785C27AECE4200946D18 /* ICAudioClockV1ChoiceDelegate.m */; };
+		28E5787127AECE4200946D18 /* ICAudioSetupV1ChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5785F27AECE4200946D18 /* ICAudioSetupV1ChoiceDelegate.m */; };
+		28E5787227AECE4200946D18 /* ICAudioOutputChannelsV1RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5786227AECE4200946D18 /* ICAudioOutputChannelsV1RangeDelegate.m */; };
+		28E5787327AECE4200946D18 /* ICPCEnabledV1SwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5786327AECE4200946D18 /* ICPCEnabledV1SwitchDelegate.m */; };
+		28E5787427AECE4200946D18 /* ICAudioSyncFactorV1RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5786527AECE4200946D18 /* ICAudioSyncFactorV1RangeDelegate.m */; };
+		28E5787527AECE4200946D18 /* ICAudioPortNameV1TextEditCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5786727AECE4200946D18 /* ICAudioPortNameV1TextEditCellDelegate.m */; };
+		28E578F627AECE5700946D18 /* ICChoiceCellProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5787827AECE5700946D18 /* ICChoiceCellProvider.m */; };
+		28E578F727AECE5700946D18 /* ICButtonCellProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5787A27AECE5700946D18 /* ICButtonCellProvider.m */; };
+		28E578F827AECE5700946D18 /* ICNormalCellProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5787B27AECE5700946D18 /* ICNormalCellProvider.m */; };
+		28E578F927AECE5700946D18 /* ICSwitchCellProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5787C27AECE5700946D18 /* ICSwitchCellProvider.m */; };
+		28E578FA27AECE5700946D18 /* ICMainMenuProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5788027AECE5700946D18 /* ICMainMenuProvider.m */; };
+		28E578FB27AECE5700946D18 /* ICTextEditCellProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5788227AECE5700946D18 /* ICTextEditCellProvider.m */; };
+		28E578FC27AECE5700946D18 /* ICRangeCellProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5788327AECE5700946D18 /* ICRangeCellProvider.m */; };
+		28E578FD27AECE5700946D18 /* ICBaseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5788827AECE5700946D18 /* ICBaseInfoViewController.m */; };
+		28E578FE27AECE5700946D18 /* ICRangeSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5788A27AECE5700946D18 /* ICRangeSelectionViewController.m */; };
+		28E578FF27AECE5700946D18 /* ICChoiceSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5788C27AECE5700946D18 /* ICChoiceSelectionViewController.m */; };
+		28E5790027AECE5700946D18 /* ICHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5788E27AECE5700946D18 /* ICHelpViewController.m */; };
+		28E5790127AECE5700946D18 /* ICFileBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5789027AECE5700946D18 /* ICFileBrowserViewController.m */; };
+		28E5790227AECE5700946D18 /* ICViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5789127AECE5700946D18 /* ICViewController.m */; };
+		28E5790327AECE5700946D18 /* ICButtonBlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5789427AECE5700946D18 /* ICButtonBlockDelegate.m */; };
+		28E5790427AECE5700946D18 /* ICControllerChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5789527AECE5700946D18 /* ICControllerChoiceDelegate.m */; };
+		28E5790527AECE5700946D18 /* ICNormalBlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5789B27AECE5700946D18 /* ICNormalBlockDelegate.m */; };
+		28E5790627AECE5700946D18 /* NSString+RotatedDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578A027AECE5700946D18 /* NSString+RotatedDraw.m */; };
+		28E5790727AECE5700946D18 /* UIImageTintCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578A127AECE5700946D18 /* UIImageTintCategory.m */; };
+		28E5790827AECE5700946D18 /* NSString+NSStringExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578A527AECE5700946D18 /* NSString+NSStringExtension.m */; };
+		28E5790927AECE5700946D18 /* ICAudioPatchbayV2Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578A927AECE5700946D18 /* ICAudioPatchbayV2Delegate.m */; };
+		28E5790A27AECE5700946D18 /* ICAudioInfoViewControllerV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578AB27AECE5700946D18 /* ICAudioInfoViewControllerV2.m */; };
+		28E5790B27AECE5700946D18 /* ICAudioMixerConfigurationV2ChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578AE27AECE5700946D18 /* ICAudioMixerConfigurationV2ChoiceDelegate.m */; };
+		28E5790C27AECE5700946D18 /* ICAudioFrameBufferV2RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578AF27AECE5700946D18 /* ICAudioFrameBufferV2RangeDelegate.m */; };
+		28E5790D27AECE5700946D18 /* ICAudioSetupV2ChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578B027AECE5700946D18 /* ICAudioSetupV2ChoiceDelegate.m */; };
+		28E5790E27AECE5700946D18 /* ICPCEnabledV2SwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578B227AECE5700946D18 /* ICPCEnabledV2SwitchDelegate.m */; };
+		28E5790F27AECE5700946D18 /* ICAudioPortNameV2TextEditCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578B427AECE5700946D18 /* ICAudioPortNameV2TextEditCellDelegate.m */; };
+		28E5791027AECE5700946D18 /* ICAudioInputChannelsV2RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578B527AECE5700946D18 /* ICAudioInputChannelsV2RangeDelegate.m */; };
+		28E5791127AECE5700946D18 /* ICAudioSyncFactorV2RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578B927AECE5700946D18 /* ICAudioSyncFactorV2RangeDelegate.m */; };
+		28E5791227AECE5700946D18 /* ICiOSEnabledV2SwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578BD27AECE5700946D18 /* ICiOSEnabledV2SwitchDelegate.m */; };
+		28E5791327AECE5700946D18 /* ICAudioMixerChannelV2ChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578BE27AECE5700946D18 /* ICAudioMixerChannelV2ChoiceDelegate.m */; };
+		28E5791427AECE5700946D18 /* ICAudioClockV2ChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578BF27AECE5700946D18 /* ICAudioClockV2ChoiceDelegate.m */; };
+		28E5791527AECE5700946D18 /* ICAudioOutputChannelsV2RangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578C227AECE5700946D18 /* ICAudioOutputChannelsV2RangeDelegate.m */; };
+		28E5791627AECE5700946D18 /* ICMixerSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578C527AECE5700946D18 /* ICMixerSelector.m */; };
+		28E5791727AECE5700946D18 /* ICMixerAnalogGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578C627AECE5700946D18 /* ICMixerAnalogGroup.m */; };
+		28E5791827AECE5700946D18 /* ICMixerMixerGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578C827AECE5700946D18 /* ICMixerMixerGroup.m */; };
+		28E5791927AECE5700946D18 /* ICMixerStrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578CD27AECE5700946D18 /* ICMixerStrip.m */; };
+		28E5791A27AECE5700946D18 /* ICMixerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578CE27AECE5700946D18 /* ICMixerViewController.m */; };
+		28E5791B27AECE5700946D18 /* ICAnalogInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E578D227AECE5700946D18 /* ICAnalogInterface.cpp */; };
+		28E5791C27AECE5700946D18 /* MixerInputInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E578D327AECE5700946D18 /* MixerInputInterface.cpp */; };
+		28E5791D27AECE5700946D18 /* MixerOutputInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E578D427AECE5700946D18 /* MixerOutputInterface.cpp */; };
+		28E5791E27AECE5700946D18 /* MixerInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E578D727AECE5700946D18 /* MixerInterface.cpp */; };
+		28E5791F27AECE5700946D18 /* ICDeviceSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578DB27AECE5700946D18 /* ICDeviceSelectionViewController.m */; };
+		28E5792027AECE5700946D18 /* ICDeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578DC27AECE5700946D18 /* ICDeviceInfoViewController.m */; };
+		28E5792127AECE5700946D18 /* ICMacAddressDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578E027AECE5700946D18 /* ICMacAddressDelegate.m */; };
+		28E5792227AECE5700946D18 /* ICVendorNameDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578E727AECE5700946D18 /* ICVendorNameDelegate.m */; };
+		28E5792327AECE5700946D18 /* ICGatewayTextEditCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578E827AECE5700946D18 /* ICGatewayTextEditCellDelegate.m */; };
+		28E5792427AECE5700946D18 /* ICIPAddressTextEditCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578EA27AECE5700946D18 /* ICIPAddressTextEditCellDelegate.m */; };
+		28E5792527AECE5700946D18 /* ICIPModeChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578EB27AECE5700946D18 /* ICIPModeChoiceDelegate.m */; };
+		28E5792627AECE5700946D18 /* ICProductNameDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578EC27AECE5700946D18 /* ICProductNameDelegate.m */; };
+		28E5792727AECE5700946D18 /* ICSubnetMaskTextEditCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578EE27AECE5700946D18 /* ICSubnetMaskTextEditCellDelegate.m */; };
+		28E5792827AECE5700946D18 /* ICInfoTextEditCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578EF27AECE5700946D18 /* ICInfoTextEditCellDelegate.m */; };
+		28E5792927AECE5700946D18 /* DeviceInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E578F027AECE5700946D18 /* DeviceInfo.cpp */; };
+		28E5792A27AECE5700946D18 /* UINavigationController+CompletionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578F327AECE5700946D18 /* UINavigationController+CompletionHandler.m */; };
+		28E5792B27AECE5700946D18 /* ICIndicatorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E578F427AECE5700946D18 /* ICIndicatorButton.m */; };
+		28E5796E27AECE7900946D18 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5792F27AECE7800946D18 /* NSLayoutConstraint+PureLayout.m */; };
+		28E5796F27AECE7900946D18 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5793227AECE7800946D18 /* ALView+PureLayout.m */; };
+		28E5797027AECE7900946D18 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5793527AECE7800946D18 /* NSArray+PureLayout.m */; };
+		28E5797127AECE7900946D18 /* ICMIDIIndexTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5793927AECE7800946D18 /* ICMIDIIndexTableViewController.m */; };
+		28E5797227AECE7900946D18 /* ICMIDIInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5793C27AECE7800946D18 /* ICMIDIInfoViewController.m */; };
+		28E5797327AECE7900946D18 /* ICMaxPortsRangeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5793F27AECE7800946D18 /* ICMaxPortsRangeDelegate.m */; };
+		28E5797427AECE7900946D18 /* ICMIDIOutputEnabledSwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5794227AECE7800946D18 /* ICMIDIOutputEnabledSwitchDelegate.m */; };
+		28E5797527AECE7900946D18 /* ICMIDIInputEnabledSwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5794327AECE7800946D18 /* ICMIDIInputEnabledSwitchDelegate.m */; };
+		28E5797627AECE7900946D18 /* ICRunningStatusSwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5794527AECE7800946D18 /* ICRunningStatusSwitchDelegate.m */; };
+		28E5797727AECE7900946D18 /* ICReservedPortChoiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5794627AECE7800946D18 /* ICReservedPortChoiceDelegate.m */; };
+		28E5797827AECE7900946D18 /* ICMIDIInterPortRoutingSwitchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5794827AECE7800946D18 /* ICMIDIInterPortRoutingSwitchDelegate.m */; };
+		28E5797927AECE7900946D18 /* ICMIDIPatchbayGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5794C27AECE7800946D18 /* ICMIDIPatchbayGridViewController.m */; };
+		28E5797A27AECE7900946D18 /* ICMIDIPatchbayDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5794E27AECE7800946D18 /* ICMIDIPatchbayDelegate.m */; };
+		28E5797B27AECE7900946D18 /* MMSideDrawerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5795027AECE7900946D18 /* MMSideDrawerTableViewCell.m */; };
+		28E5797C27AECE7900946D18 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5795127AECE7900946D18 /* MMDrawerBarButtonItem.m */; };
+		28E5797D27AECE7900946D18 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5795427AECE7900946D18 /* UIViewController+MMDrawerController.m */; };
+		28E5797E27AECE7900946D18 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5795527AECE7900946D18 /* MMDrawerController.m */; };
+		28E5797F27AECE7900946D18 /* MMSideDrawerSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5795827AECE7900946D18 /* MMSideDrawerSectionHeaderView.m */; };
+		28E5798027AECE7900946D18 /* MMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5795B27AECE7900946D18 /* MMTableViewCell.m */; };
+		28E5798127AECE7900946D18 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5795D27AECE7900946D18 /* MMDrawerVisualState.m */; };
+		28E5798527AECE7900946D18 /* IOSKnobControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5796427AECE7900946D18 /* IOSKnobControl.m */; };
+		28E579D927AECFBE00946D18 /* iConnectivityiConfig-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28E5798D27AECFBE00946D18 /* iConnectivityiConfig-Info.plist */; };
+		28E579DA27AECFBE00946D18 /* Provider.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28E5798E27AECFBE00946D18 /* Provider.plist */; };
+		28E579DB27AECFBE00946D18 /* ICHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E5799027AECFBE00946D18 /* ICHelpViewController.xib */; };
+		28E579DC27AECFBE00946D18 /* ICRangeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E5799127AECFBE00946D18 /* ICRangeSelectionViewController.xib */; };
+		28E579DD27AECFBE00946D18 /* ICDeviceInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E5799327AECFBE00946D18 /* ICDeviceInfoViewController.xib */; };
+		28E579DE27AECFBE00946D18 /* ICViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E5799427AECFBE00946D18 /* ICViewController_iPad.xib */; };
+		28E579DF27AECFBE00946D18 /* ICFileBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E5799527AECFBE00946D18 /* ICFileBrowserViewController.xib */; };
+		28E579E027AECFBE00946D18 /* ICBaseInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E5799627AECFBE00946D18 /* ICBaseInfoViewController.xib */; };
+		28E579E127AECFBE00946D18 /* ICDeviceSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E5799727AECFBE00946D18 /* ICDeviceSelectionViewController.xib */; };
+		28E579E227AECFBE00946D18 /* ICAudioPatchbayV1iPadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E5799827AECFBE00946D18 /* ICAudioPatchbayV1iPadCell.xib */; };
+		28E579E327AECFBE00946D18 /* ICMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5799927AECFBE00946D18 /* ICMenuViewController.m */; };
+		28E579E427AECFBE00946D18 /* ICMIDIPatchbayGrid_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E5799A27AECFBE00946D18 /* ICMIDIPatchbayGrid_iPad.xib */; };
+		28E579E527AECFBE00946D18 /* ICChoiceSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E5799B27AECFBE00946D18 /* ICChoiceSelectionViewController.xib */; };
+		28E579E627AECFBE00946D18 /* ICMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E5799C27AECFBE00946D18 /* ICMenuViewController.xib */; };
+		28E579E727AECFBE00946D18 /* ICAudioPatchbayV1iPhoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E5799D27AECFBE00946D18 /* ICAudioPatchbayV1iPhoneCell.xib */; };
+		28E579E827AECFBE00946D18 /* ICAudioPatchbayV1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E5799E27AECFBE00946D18 /* ICAudioPatchbayV1ViewController.xib */; };
+		28E579E927AECFBE00946D18 /* ICAudioPatchbayGrid_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E5799F27AECFBE00946D18 /* ICAudioPatchbayGrid_iPad.xib */; };
+		28E579EA27AECFBE00946D18 /* ICAudioPortPatchbayV1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E579A027AECFBE00946D18 /* ICAudioPortPatchbayV1ViewController.xib */; };
+		28E579EB27AECFBE00946D18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E579A127AECFBE00946D18 /* Images.xcassets */; };
+		28E579EC27AECFBE00946D18 /* MainMenuBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579A327AECFBE00946D18 /* MainMenuBack@2x.png */; };
+		28E579ED27AECFBE00946D18 /* 40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579A427AECFBE00946D18 /* 40x40.png */; };
+		28E579EE27AECFBE00946D18 /* bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579A527AECFBE00946D18 /* bubble@2x.png */; };
+		28E579EF27AECFBE00946D18 /* 50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579A627AECFBE00946D18 /* 50x50.png */; };
+		28E579F027AECFBE00946D18 /* block_icm2plusdevice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579A727AECFBE00946D18 /* block_icm2plusdevice@2x.png */; };
+		28E579F127AECFBE00946D18 /* block_ica2plusdevice.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579A827AECFBE00946D18 /* block_ica2plusdevice.png */; };
+		28E579F227AECFBE00946D18 /* btn_link_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579A927AECFBE00946D18 /* btn_link_off.png */; };
+		28E579F327AECFBE00946D18 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579AA27AECFBE00946D18 /* Default-Portrait@2x~ipad.png */; };
+		28E579F427AECFBE00946D18 /* btn_link_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579AB27AECFBE00946D18 /* btn_link_on.png */; };
+		28E579F527AECFBE00946D18 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579AC27AECFBE00946D18 /* Default-Landscape~ipad.png */; };
+		28E579F627AECFBE00946D18 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579AD27AECFBE00946D18 /* Default-Portrait~ipad.png */; };
+		28E579F727AECFBE00946D18 /* 1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579AE27AECFBE00946D18 /* 1024x1024.png */; };
+		28E579F827AECFBE00946D18 /* block_miodevice.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579AF27AECFBE00946D18 /* block_miodevice.png */; };
+		28E579F927AECFBE00946D18 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579B027AECFBE00946D18 /* bubble.png */; };
+		28E579FA27AECFBE00946D18 /* 40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579B127AECFBE00946D18 /* 40x40@2x.png */; };
+		28E579FB27AECFBE00946D18 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579B227AECFBE00946D18 /* Default@2x.png */; };
+		28E579FC27AECFBE00946D18 /* 114x144.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579B327AECFBE00946D18 /* 114x144.png */; };
+		28E579FD27AECFBE00946D18 /* ChannelButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579B427AECFBE00946D18 /* ChannelButton@2x.png */; };
+		28E579FE27AECFBE00946D18 /* block_icm1device.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579B527AECFBE00946D18 /* block_icm1device.png */; };
+		28E579FF27AECFBE00946D18 /* block_ica4plusdevice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579B627AECFBE00946D18 /* block_ica4plusdevice@2x.png */; };
+		28E57A0027AECFBE00946D18 /* Default@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579B727AECFBE00946D18 /* Default@2x~ipad.png */; };
+		28E57A0127AECFBE00946D18 /* 114x144old.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579B827AECFBE00946D18 /* 114x144old.png */; };
+		28E57A0227AECFBE00946D18 /* ChannelButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579B927AECFBE00946D18 /* ChannelButton.png */; };
+		28E57A0327AECFBE00946D18 /* 60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579BA27AECFBE00946D18 /* 60x60@2x.png */; };
+		28E57A0427AECFBE00946D18 /* RightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579BB27AECFBE00946D18 /* RightArrow.png */; };
+		28E57A0527AECFBE00946D18 /* LeftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579BC27AECFBE00946D18 /* LeftArrow.png */; };
+		28E57A0627AECFBE00946D18 /* 29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579BD27AECFBE00946D18 /* 29x29@2x.png */; };
+		28E57A0727AECFBE00946D18 /* block_miodevice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579BE27AECFBE00946D18 /* block_miodevice@2x.png */; };
+		28E57A0827AECFBE00946D18 /* block_icm2plusdevice.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579BF27AECFBE00946D18 /* block_icm2plusdevice.png */; };
+		28E57A0927AECFBE00946D18 /* iPodDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579C027AECFBE00946D18 /* iPodDefault@2x.png */; };
+		28E57A0A27AECFBE00946D18 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579C127AECFBE00946D18 /* Background.png */; };
+		28E57A0B27AECFBE00946D18 /* 144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579C227AECFBE00946D18 /* 144x144.png */; };
+		28E57A0C27AECFBE00946D18 /* 76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579C327AECFBE00946D18 /* 76x76@2x.png */; };
+		28E57A0D27AECFBE00946D18 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579C427AECFBE00946D18 /* Default-Landscape@2x~ipad.png */; };
+		28E57A0E27AECFBE00946D18 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579C527AECFBE00946D18 /* Default-568h@2x.png */; };
+		28E57A0F27AECFBE00946D18 /* 72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579C627AECFBE00946D18 /* 72x72.png */; };
+		28E57A1027AECFBE00946D18 /* block_icm1device@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579C727AECFBE00946D18 /* block_icm1device@2x.png */; };
+		28E57A1127AECFBE00946D18 /* block_icm4plusdevice.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579C827AECFBE00946D18 /* block_icm4plusdevice.png */; };
+		28E57A1227AECFBE00946D18 /* RightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579C927AECFBE00946D18 /* RightArrow@2x.png */; };
+		28E57A1327AECFBE00946D18 /* block_icm4plusdevice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579CA27AECFBE00946D18 /* block_icm4plusdevice@2x.png */; };
+		28E57A1427AECFBE00946D18 /* 76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579CB27AECFBE00946D18 /* 76x76.png */; };
+		28E57A1527AECFBE00946D18 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579CC27AECFBE00946D18 /* Background@2x.png */; };
+		28E57A1627AECFBE00946D18 /* 50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579CD27AECFBE00946D18 /* 50x50@2x.png */; };
+		28E57A1727AECFBE00946D18 /* 29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579CE27AECFBE00946D18 /* 29x29.png */; };
+		28E57A1827AECFBE00946D18 /* MainMenuBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579CF27AECFBE00946D18 /* MainMenuBack.png */; };
+		28E57A1927AECFBE00946D18 /* 512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579D027AECFBE00946D18 /* 512x512.png */; };
+		28E57A1A27AECFBE00946D18 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579D127AECFBE00946D18 /* Default.png */; };
+		28E57A1B27AECFBE00946D18 /* LeftArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579D227AECFBE00946D18 /* LeftArrow@2x.png */; };
+		28E57A1C27AECFBE00946D18 /* iPod(Not Streatched)Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579D327AECFBE00946D18 /* iPod(Not Streatched)Default@2x.png */; };
+		28E57A1D27AECFBE00946D18 /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579D427AECFBE00946D18 /* Default~ipad.png */; };
+		28E57A1E27AECFBE00946D18 /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579D527AECFBE00946D18 /* 57x57.png */; };
+		28E57A1F27AECFBE00946D18 /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579D627AECFBE00946D18 /* 114x114.png */; };
+		28E57A2027AECFBE00946D18 /* block_ica2plusdevice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579D727AECFBE00946D18 /* block_ica2plusdevice@2x.png */; };
+		28E57A2127AECFBE00946D18 /* block_ica4plusdevice.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E579D827AECFBE00946D18 /* block_ica4plusdevice.png */; };
+		28E57A2427AED0C400946D18 /* ICAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E57A2227AED0C400946D18 /* ICAppDelegate.m */; };
+		28E57A2A27AED2C700946D18 /* ICPollingTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E57A2727AED2C700946D18 /* ICPollingTimer.m */; };
+		28E57A2B27AED2C700946D18 /* MyConverters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E57A2827AED2C700946D18 /* MyConverters.cpp */; };
+		28E57A2D27AED44800946D18 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E57A2C27AED44800946D18 /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -250,6 +416,275 @@
 		28E5783B27AE8E9300946D18 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		28E5783D27AE8E9D00946D18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28E5783F27AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iConnectivityiConfig copy-Info.plist"; sourceTree = "<group>"; };
+		28E5784727AECE3000946D18 /* ICAudioPatchbayGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPatchbayGridViewController.m; sourceTree = "<group>"; };
+		28E5784827AECE3000946D18 /* ICAudioPatchbayGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPatchbayGridViewController.h; sourceTree = "<group>"; };
+		28E5784927AECE3000946D18 /* ICPatchbayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPatchbayDelegate.h; sourceTree = "<group>"; };
+		28E5784D27AECE4200946D18 /* ICAudioPatchbayV1Delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPatchbayV1Delegate.m; sourceTree = "<group>"; };
+		28E5784E27AECE4200946D18 /* ICAudioPatchbayV1Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPatchbayV1Cell.m; sourceTree = "<group>"; };
+		28E5784F27AECE4200946D18 /* ICAudioPatchbayV1Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPatchbayV1Delegate.h; sourceTree = "<group>"; };
+		28E5785027AECE4200946D18 /* ICAudioPatchbayV1Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPatchbayV1Cell.h; sourceTree = "<group>"; };
+		28E5785227AECE4200946D18 /* ICAudioInfoViewControllerV1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioInfoViewControllerV1.m; sourceTree = "<group>"; };
+		28E5785427AECE4200946D18 /* ICAudioInputChannelsV1RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioInputChannelsV1RangeDelegate.m; sourceTree = "<group>"; };
+		28E5785527AECE4200946D18 /* ICPCEnabledV1SwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPCEnabledV1SwitchDelegate.h; sourceTree = "<group>"; };
+		28E5785627AECE4200946D18 /* ICAudioOutputChannelsV1RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioOutputChannelsV1RangeDelegate.h; sourceTree = "<group>"; };
+		28E5785727AECE4200946D18 /* ICiOSEnabledV1SwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICiOSEnabledV1SwitchDelegate.m; sourceTree = "<group>"; };
+		28E5785827AECE4200946D18 /* ICMIDIPortNameTextEditDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMIDIPortNameTextEditDelegate.m; sourceTree = "<group>"; };
+		28E5785927AECE4200946D18 /* ICAudioSetupV1ChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioSetupV1ChoiceDelegate.h; sourceTree = "<group>"; };
+		28E5785A27AECE4200946D18 /* ICAudioSyncFactorV1RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioSyncFactorV1RangeDelegate.h; sourceTree = "<group>"; };
+		28E5785B27AECE4200946D18 /* ICAudioFrameBufferV1RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioFrameBufferV1RangeDelegate.m; sourceTree = "<group>"; };
+		28E5785C27AECE4200946D18 /* ICAudioClockV1ChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioClockV1ChoiceDelegate.m; sourceTree = "<group>"; };
+		28E5785D27AECE4200946D18 /* ICAudioPortNameV1TextEditCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPortNameV1TextEditCellDelegate.h; sourceTree = "<group>"; };
+		28E5785E27AECE4200946D18 /* ICAudioInputChannelsV1RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioInputChannelsV1RangeDelegate.h; sourceTree = "<group>"; };
+		28E5785F27AECE4200946D18 /* ICAudioSetupV1ChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioSetupV1ChoiceDelegate.m; sourceTree = "<group>"; };
+		28E5786027AECE4200946D18 /* ICMIDIPortNameTextEditDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMIDIPortNameTextEditDelegate.h; sourceTree = "<group>"; };
+		28E5786127AECE4200946D18 /* ICiOSEnabledV1SwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICiOSEnabledV1SwitchDelegate.h; sourceTree = "<group>"; };
+		28E5786227AECE4200946D18 /* ICAudioOutputChannelsV1RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioOutputChannelsV1RangeDelegate.m; sourceTree = "<group>"; };
+		28E5786327AECE4200946D18 /* ICPCEnabledV1SwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPCEnabledV1SwitchDelegate.m; sourceTree = "<group>"; };
+		28E5786427AECE4200946D18 /* ICAudioFrameBufferV1RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioFrameBufferV1RangeDelegate.h; sourceTree = "<group>"; };
+		28E5786527AECE4200946D18 /* ICAudioSyncFactorV1RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioSyncFactorV1RangeDelegate.m; sourceTree = "<group>"; };
+		28E5786627AECE4200946D18 /* ICAudioClockV1ChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioClockV1ChoiceDelegate.h; sourceTree = "<group>"; };
+		28E5786727AECE4200946D18 /* ICAudioPortNameV1TextEditCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPortNameV1TextEditCellDelegate.m; sourceTree = "<group>"; };
+		28E5786827AECE4200946D18 /* ICAudioInfoViewControllerV1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioInfoViewControllerV1.h; sourceTree = "<group>"; };
+		28E5787827AECE5700946D18 /* ICChoiceCellProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICChoiceCellProvider.m; sourceTree = "<group>"; };
+		28E5787927AECE5700946D18 /* ICMainMenuProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMainMenuProvider.h; sourceTree = "<group>"; };
+		28E5787A27AECE5700946D18 /* ICButtonCellProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICButtonCellProvider.m; sourceTree = "<group>"; };
+		28E5787B27AECE5700946D18 /* ICNormalCellProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICNormalCellProvider.m; sourceTree = "<group>"; };
+		28E5787C27AECE5700946D18 /* ICSwitchCellProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSwitchCellProvider.m; sourceTree = "<group>"; };
+		28E5787D27AECE5700946D18 /* ICRangeCellProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRangeCellProvider.h; sourceTree = "<group>"; };
+		28E5787E27AECE5700946D18 /* ICTextEditCellProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTextEditCellProvider.h; sourceTree = "<group>"; };
+		28E5787F27AECE5700946D18 /* ICChoiceCellProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICChoiceCellProvider.h; sourceTree = "<group>"; };
+		28E5788027AECE5700946D18 /* ICMainMenuProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMainMenuProvider.m; sourceTree = "<group>"; };
+		28E5788127AECE5700946D18 /* ICButtonCellProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICButtonCellProvider.h; sourceTree = "<group>"; };
+		28E5788227AECE5700946D18 /* ICTextEditCellProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICTextEditCellProvider.m; sourceTree = "<group>"; };
+		28E5788327AECE5700946D18 /* ICRangeCellProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICRangeCellProvider.m; sourceTree = "<group>"; };
+		28E5788427AECE5700946D18 /* ICSwitchCellProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSwitchCellProvider.h; sourceTree = "<group>"; };
+		28E5788527AECE5700946D18 /* ICNormalCellProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICNormalCellProvider.h; sourceTree = "<group>"; };
+		28E5788727AECE5700946D18 /* ICHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHelpViewController.h; sourceTree = "<group>"; };
+		28E5788827AECE5700946D18 /* ICBaseInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBaseInfoViewController.m; sourceTree = "<group>"; };
+		28E5788927AECE5700946D18 /* ICFileBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICFileBrowserViewController.h; sourceTree = "<group>"; };
+		28E5788A27AECE5700946D18 /* ICRangeSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICRangeSelectionViewController.m; sourceTree = "<group>"; };
+		28E5788B27AECE5700946D18 /* ICViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICViewController.h; sourceTree = "<group>"; };
+		28E5788C27AECE5700946D18 /* ICChoiceSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICChoiceSelectionViewController.m; sourceTree = "<group>"; };
+		28E5788D27AECE5700946D18 /* ICBaseInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICBaseInfoViewController.h; sourceTree = "<group>"; };
+		28E5788E27AECE5700946D18 /* ICHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHelpViewController.m; sourceTree = "<group>"; };
+		28E5788F27AECE5700946D18 /* ICRangeSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRangeSelectionViewController.h; sourceTree = "<group>"; };
+		28E5789027AECE5700946D18 /* ICFileBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICFileBrowserViewController.m; sourceTree = "<group>"; };
+		28E5789127AECE5700946D18 /* ICViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICViewController.m; sourceTree = "<group>"; };
+		28E5789227AECE5700946D18 /* ICChoiceSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICChoiceSelectionViewController.h; sourceTree = "<group>"; };
+		28E5789427AECE5700946D18 /* ICButtonBlockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICButtonBlockDelegate.m; sourceTree = "<group>"; };
+		28E5789527AECE5700946D18 /* ICControllerChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICControllerChoiceDelegate.m; sourceTree = "<group>"; };
+		28E5789627AECE5700946D18 /* ICNormalBlockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICNormalBlockDelegate.h; sourceTree = "<group>"; };
+		28E5789727AECE5700946D18 /* ICChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICChoiceDelegate.h; sourceTree = "<group>"; };
+		28E5789827AECE5700946D18 /* ICSwitchCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSwitchCellDelegate.h; sourceTree = "<group>"; };
+		28E5789927AECE5700946D18 /* ICControllerChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICControllerChoiceDelegate.h; sourceTree = "<group>"; };
+		28E5789A27AECE5700946D18 /* ICButtonBlockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICButtonBlockDelegate.h; sourceTree = "<group>"; };
+		28E5789B27AECE5700946D18 /* ICNormalBlockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICNormalBlockDelegate.m; sourceTree = "<group>"; };
+		28E5789C27AECE5700946D18 /* ICRangeChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRangeChoiceDelegate.h; sourceTree = "<group>"; };
+		28E5789D27AECE5700946D18 /* ICTextEditCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTextEditCellDelegate.h; sourceTree = "<group>"; };
+		28E5789E27AECE5700946D18 /* Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
+		28E578A027AECE5700946D18 /* NSString+RotatedDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RotatedDraw.m"; sourceTree = "<group>"; };
+		28E578A127AECE5700946D18 /* UIImageTintCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageTintCategory.m; sourceTree = "<group>"; };
+		28E578A227AECE5700946D18 /* NSString+NSStringExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSStringExtension.h"; sourceTree = "<group>"; };
+		28E578A327AECE5700946D18 /* NSString+RotatedDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RotatedDraw.h"; sourceTree = "<group>"; };
+		28E578A427AECE5700946D18 /* UIImageTintCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageTintCategory.h; sourceTree = "<group>"; };
+		28E578A527AECE5700946D18 /* NSString+NSStringExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSStringExtension.m"; sourceTree = "<group>"; };
+		28E578A827AECE5700946D18 /* ICAudioPatchbayV2Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPatchbayV2Delegate.h; sourceTree = "<group>"; };
+		28E578A927AECE5700946D18 /* ICAudioPatchbayV2Delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPatchbayV2Delegate.m; sourceTree = "<group>"; };
+		28E578AB27AECE5700946D18 /* ICAudioInfoViewControllerV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioInfoViewControllerV2.m; sourceTree = "<group>"; };
+		28E578AD27AECE5700946D18 /* ICiOSEnabledV2SwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICiOSEnabledV2SwitchDelegate.h; sourceTree = "<group>"; };
+		28E578AE27AECE5700946D18 /* ICAudioMixerConfigurationV2ChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioMixerConfigurationV2ChoiceDelegate.m; sourceTree = "<group>"; };
+		28E578AF27AECE5700946D18 /* ICAudioFrameBufferV2RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioFrameBufferV2RangeDelegate.m; sourceTree = "<group>"; };
+		28E578B027AECE5700946D18 /* ICAudioSetupV2ChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioSetupV2ChoiceDelegate.m; sourceTree = "<group>"; };
+		28E578B127AECE5700946D18 /* ICAudioSyncFactorV2RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioSyncFactorV2RangeDelegate.h; sourceTree = "<group>"; };
+		28E578B227AECE5700946D18 /* ICPCEnabledV2SwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPCEnabledV2SwitchDelegate.m; sourceTree = "<group>"; };
+		28E578B327AECE5700946D18 /* ICAudioMixerChannelV2ChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioMixerChannelV2ChoiceDelegate.h; sourceTree = "<group>"; };
+		28E578B427AECE5700946D18 /* ICAudioPortNameV2TextEditCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioPortNameV2TextEditCellDelegate.m; sourceTree = "<group>"; };
+		28E578B527AECE5700946D18 /* ICAudioInputChannelsV2RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioInputChannelsV2RangeDelegate.m; sourceTree = "<group>"; };
+		28E578B627AECE5700946D18 /* ICAudioClockV2ChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioClockV2ChoiceDelegate.h; sourceTree = "<group>"; };
+		28E578B727AECE5700946D18 /* ICAudioOutputChannelsV2RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioOutputChannelsV2RangeDelegate.h; sourceTree = "<group>"; };
+		28E578B827AECE5700946D18 /* ICPCEnabledV2SwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPCEnabledV2SwitchDelegate.h; sourceTree = "<group>"; };
+		28E578B927AECE5700946D18 /* ICAudioSyncFactorV2RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioSyncFactorV2RangeDelegate.m; sourceTree = "<group>"; };
+		28E578BA27AECE5700946D18 /* ICAudioSetupV2ChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioSetupV2ChoiceDelegate.h; sourceTree = "<group>"; };
+		28E578BB27AECE5700946D18 /* ICAudioMixerConfigurationV2ChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioMixerConfigurationV2ChoiceDelegate.h; sourceTree = "<group>"; };
+		28E578BC27AECE5700946D18 /* ICAudioFrameBufferV2RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioFrameBufferV2RangeDelegate.h; sourceTree = "<group>"; };
+		28E578BD27AECE5700946D18 /* ICiOSEnabledV2SwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICiOSEnabledV2SwitchDelegate.m; sourceTree = "<group>"; };
+		28E578BE27AECE5700946D18 /* ICAudioMixerChannelV2ChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioMixerChannelV2ChoiceDelegate.m; sourceTree = "<group>"; };
+		28E578BF27AECE5700946D18 /* ICAudioClockV2ChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioClockV2ChoiceDelegate.m; sourceTree = "<group>"; };
+		28E578C027AECE5700946D18 /* ICAudioInputChannelsV2RangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioInputChannelsV2RangeDelegate.h; sourceTree = "<group>"; };
+		28E578C127AECE5700946D18 /* ICAudioPortNameV2TextEditCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioPortNameV2TextEditCellDelegate.h; sourceTree = "<group>"; };
+		28E578C227AECE5700946D18 /* ICAudioOutputChannelsV2RangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAudioOutputChannelsV2RangeDelegate.m; sourceTree = "<group>"; };
+		28E578C327AECE5700946D18 /* ICAudioInfoViewControllerV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAudioInfoViewControllerV2.h; sourceTree = "<group>"; };
+		28E578C527AECE5700946D18 /* ICMixerSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMixerSelector.m; sourceTree = "<group>"; };
+		28E578C627AECE5700946D18 /* ICMixerAnalogGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMixerAnalogGroup.m; sourceTree = "<group>"; };
+		28E578C727AECE5700946D18 /* ICMixerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMixerViewController.h; sourceTree = "<group>"; };
+		28E578C827AECE5700946D18 /* ICMixerMixerGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMixerMixerGroup.m; sourceTree = "<group>"; };
+		28E578C927AECE5700946D18 /* ICMixerStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMixerStrip.h; sourceTree = "<group>"; };
+		28E578CA27AECE5700946D18 /* ICMixerSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMixerSelector.h; sourceTree = "<group>"; };
+		28E578CB27AECE5700946D18 /* ICMixerAnalogGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMixerAnalogGroup.h; sourceTree = "<group>"; };
+		28E578CC27AECE5700946D18 /* ICMixerMixerGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMixerMixerGroup.h; sourceTree = "<group>"; };
+		28E578CD27AECE5700946D18 /* ICMixerStrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMixerStrip.m; sourceTree = "<group>"; };
+		28E578CE27AECE5700946D18 /* ICMixerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMixerViewController.m; sourceTree = "<group>"; };
+		28E578D027AECE5700946D18 /* MixerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerInterface.h; sourceTree = "<group>"; };
+		28E578D127AECE5700946D18 /* ICAnalogInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAnalogInterface.h; sourceTree = "<group>"; };
+		28E578D227AECE5700946D18 /* ICAnalogInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ICAnalogInterface.cpp; sourceTree = "<group>"; };
+		28E578D327AECE5700946D18 /* MixerInputInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerInputInterface.cpp; sourceTree = "<group>"; };
+		28E578D427AECE5700946D18 /* MixerOutputInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerOutputInterface.cpp; sourceTree = "<group>"; };
+		28E578D527AECE5700946D18 /* MixerInputInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerInputInterface.h; sourceTree = "<group>"; };
+		28E578D627AECE5700946D18 /* MixerOutputInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerOutputInterface.h; sourceTree = "<group>"; };
+		28E578D727AECE5700946D18 /* MixerInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MixerInterface.cpp; sourceTree = "<group>"; };
+		28E578D927AECE5700946D18 /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		28E578DB27AECE5700946D18 /* ICDeviceSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDeviceSelectionViewController.m; sourceTree = "<group>"; };
+		28E578DC27AECE5700946D18 /* ICDeviceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDeviceInfoViewController.m; sourceTree = "<group>"; };
+		28E578DD27AECE5700946D18 /* ICDeviceSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDeviceSelectionViewController.h; sourceTree = "<group>"; };
+		28E578DE27AECE5700946D18 /* ICDeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDeviceInfoViewController.h; sourceTree = "<group>"; };
+		28E578E027AECE5700946D18 /* ICMacAddressDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMacAddressDelegate.m; sourceTree = "<group>"; };
+		28E578E127AECE5700946D18 /* ICGatewayTextEditCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICGatewayTextEditCellDelegate.h; sourceTree = "<group>"; };
+		28E578E227AECE5700946D18 /* ICIPAddressTextEditCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICIPAddressTextEditCellDelegate.h; sourceTree = "<group>"; };
+		28E578E327AECE5700946D18 /* ICProductNameDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICProductNameDelegate.h; sourceTree = "<group>"; };
+		28E578E427AECE5700946D18 /* ICIPModeChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICIPModeChoiceDelegate.h; sourceTree = "<group>"; };
+		28E578E527AECE5700946D18 /* ICInfoTextEditCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICInfoTextEditCellDelegate.h; sourceTree = "<group>"; };
+		28E578E627AECE5700946D18 /* ICSubnetMaskTextEditCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSubnetMaskTextEditCellDelegate.h; sourceTree = "<group>"; };
+		28E578E727AECE5700946D18 /* ICVendorNameDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICVendorNameDelegate.m; sourceTree = "<group>"; };
+		28E578E827AECE5700946D18 /* ICGatewayTextEditCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICGatewayTextEditCellDelegate.m; sourceTree = "<group>"; };
+		28E578E927AECE5700946D18 /* ICMacAddressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMacAddressDelegate.h; sourceTree = "<group>"; };
+		28E578EA27AECE5700946D18 /* ICIPAddressTextEditCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICIPAddressTextEditCellDelegate.m; sourceTree = "<group>"; };
+		28E578EB27AECE5700946D18 /* ICIPModeChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICIPModeChoiceDelegate.m; sourceTree = "<group>"; };
+		28E578EC27AECE5700946D18 /* ICProductNameDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICProductNameDelegate.m; sourceTree = "<group>"; };
+		28E578ED27AECE5700946D18 /* ICVendorNameDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICVendorNameDelegate.h; sourceTree = "<group>"; };
+		28E578EE27AECE5700946D18 /* ICSubnetMaskTextEditCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSubnetMaskTextEditCellDelegate.m; sourceTree = "<group>"; };
+		28E578EF27AECE5700946D18 /* ICInfoTextEditCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICInfoTextEditCellDelegate.m; sourceTree = "<group>"; };
+		28E578F027AECE5700946D18 /* DeviceInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeviceInfo.cpp; sourceTree = "<group>"; };
+		28E578F227AECE5700946D18 /* ICIndicatorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICIndicatorButton.h; sourceTree = "<group>"; };
+		28E578F327AECE5700946D18 /* UINavigationController+CompletionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CompletionHandler.m"; sourceTree = "<group>"; };
+		28E578F427AECE5700946D18 /* ICIndicatorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICIndicatorButton.m; sourceTree = "<group>"; };
+		28E578F527AECE5700946D18 /* UINavigationController+CompletionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CompletionHandler.h"; sourceTree = "<group>"; };
+		28E5792D27AECE7800946D18 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
+		28E5792E27AECE7800946D18 /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
+		28E5792F27AECE7800946D18 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		28E5793027AECE7800946D18 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		28E5793127AECE7800946D18 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		28E5793227AECE7800946D18 /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
+		28E5793327AECE7800946D18 /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
+		28E5793427AECE7800946D18 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
+		28E5793527AECE7800946D18 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		28E5793927AECE7800946D18 /* ICMIDIIndexTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMIDIIndexTableViewController.m; sourceTree = "<group>"; };
+		28E5793A27AECE7800946D18 /* ICMIDIInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMIDIInfoViewController.h; sourceTree = "<group>"; };
+		28E5793B27AECE7800946D18 /* ICMIDIIndexTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMIDIIndexTableViewController.h; sourceTree = "<group>"; };
+		28E5793C27AECE7800946D18 /* ICMIDIInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMIDIInfoViewController.m; sourceTree = "<group>"; };
+		28E5793E27AECE7800946D18 /* ICRunningStatusSwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRunningStatusSwitchDelegate.h; sourceTree = "<group>"; };
+		28E5793F27AECE7800946D18 /* ICMaxPortsRangeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMaxPortsRangeDelegate.m; sourceTree = "<group>"; };
+		28E5794027AECE7800946D18 /* ICReservedPortChoiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICReservedPortChoiceDelegate.h; sourceTree = "<group>"; };
+		28E5794127AECE7800946D18 /* ICMIDIInterPortRoutingSwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMIDIInterPortRoutingSwitchDelegate.h; sourceTree = "<group>"; };
+		28E5794227AECE7800946D18 /* ICMIDIOutputEnabledSwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMIDIOutputEnabledSwitchDelegate.m; sourceTree = "<group>"; };
+		28E5794327AECE7800946D18 /* ICMIDIInputEnabledSwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMIDIInputEnabledSwitchDelegate.m; sourceTree = "<group>"; };
+		28E5794427AECE7800946D18 /* ICMaxPortsRangeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMaxPortsRangeDelegate.h; sourceTree = "<group>"; };
+		28E5794527AECE7800946D18 /* ICRunningStatusSwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICRunningStatusSwitchDelegate.m; sourceTree = "<group>"; };
+		28E5794627AECE7800946D18 /* ICReservedPortChoiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICReservedPortChoiceDelegate.m; sourceTree = "<group>"; };
+		28E5794727AECE7800946D18 /* ICMIDIOutputEnabledSwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMIDIOutputEnabledSwitchDelegate.h; sourceTree = "<group>"; };
+		28E5794827AECE7800946D18 /* ICMIDIInterPortRoutingSwitchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMIDIInterPortRoutingSwitchDelegate.m; sourceTree = "<group>"; };
+		28E5794927AECE7800946D18 /* ICMIDIInputEnabledSwitchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMIDIInputEnabledSwitchDelegate.h; sourceTree = "<group>"; };
+		28E5794B27AECE7800946D18 /* ICMIDIPatchbayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMIDIPatchbayDelegate.h; sourceTree = "<group>"; };
+		28E5794C27AECE7800946D18 /* ICMIDIPatchbayGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMIDIPatchbayGridViewController.m; sourceTree = "<group>"; };
+		28E5794D27AECE7800946D18 /* ICMIDIPatchbayGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMIDIPatchbayGridViewController.h; sourceTree = "<group>"; };
+		28E5794E27AECE7800946D18 /* ICMIDIPatchbayDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMIDIPatchbayDelegate.m; sourceTree = "<group>"; };
+		28E5795027AECE7900946D18 /* MMSideDrawerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSideDrawerTableViewCell.m; sourceTree = "<group>"; };
+		28E5795127AECE7900946D18 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		28E5795227AECE7900946D18 /* MMSideDrawerSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSideDrawerSectionHeaderView.h; sourceTree = "<group>"; };
+		28E5795327AECE7900946D18 /* MMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewCell.h; sourceTree = "<group>"; };
+		28E5795427AECE7900946D18 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		28E5795527AECE7900946D18 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		28E5795627AECE7900946D18 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		28E5795727AECE7900946D18 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		28E5795827AECE7900946D18 /* MMSideDrawerSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSideDrawerSectionHeaderView.m; sourceTree = "<group>"; };
+		28E5795927AECE7900946D18 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		28E5795A27AECE7900946D18 /* MMSideDrawerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSideDrawerTableViewCell.h; sourceTree = "<group>"; };
+		28E5795B27AECE7900946D18 /* MMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTableViewCell.m; sourceTree = "<group>"; };
+		28E5795C27AECE7900946D18 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		28E5795D27AECE7900946D18 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		28E5795E27AECE7900946D18 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		28E5796427AECE7900946D18 /* IOSKnobControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSKnobControl.m; sourceTree = "<group>"; };
+		28E5796927AECE7900946D18 /* IOSKnobControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSKnobControl.h; sourceTree = "<group>"; };
+		28E5798D27AECFBE00946D18 /* iConnectivityiConfig-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iConnectivityiConfig-Info.plist"; sourceTree = "<group>"; };
+		28E5798E27AECFBE00946D18 /* Provider.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Provider.plist; sourceTree = "<group>"; };
+		28E5799027AECFBE00946D18 /* ICHelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICHelpViewController.xib; sourceTree = "<group>"; };
+		28E5799127AECFBE00946D18 /* ICRangeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICRangeSelectionViewController.xib; sourceTree = "<group>"; };
+		28E5799227AECFBE00946D18 /* ICMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMenuViewController.h; sourceTree = "<group>"; };
+		28E5799327AECFBE00946D18 /* ICDeviceInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICDeviceInfoViewController.xib; sourceTree = "<group>"; };
+		28E5799427AECFBE00946D18 /* ICViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICViewController_iPad.xib; sourceTree = "<group>"; };
+		28E5799527AECFBE00946D18 /* ICFileBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICFileBrowserViewController.xib; sourceTree = "<group>"; };
+		28E5799627AECFBE00946D18 /* ICBaseInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICBaseInfoViewController.xib; sourceTree = "<group>"; };
+		28E5799727AECFBE00946D18 /* ICDeviceSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICDeviceSelectionViewController.xib; sourceTree = "<group>"; };
+		28E5799827AECFBE00946D18 /* ICAudioPatchbayV1iPadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICAudioPatchbayV1iPadCell.xib; sourceTree = "<group>"; };
+		28E5799927AECFBE00946D18 /* ICMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICMenuViewController.m; sourceTree = "<group>"; };
+		28E5799A27AECFBE00946D18 /* ICMIDIPatchbayGrid_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICMIDIPatchbayGrid_iPad.xib; sourceTree = "<group>"; };
+		28E5799B27AECFBE00946D18 /* ICChoiceSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICChoiceSelectionViewController.xib; sourceTree = "<group>"; };
+		28E5799C27AECFBE00946D18 /* ICMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICMenuViewController.xib; sourceTree = "<group>"; };
+		28E5799D27AECFBE00946D18 /* ICAudioPatchbayV1iPhoneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICAudioPatchbayV1iPhoneCell.xib; sourceTree = "<group>"; };
+		28E5799E27AECFBE00946D18 /* ICAudioPatchbayV1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICAudioPatchbayV1ViewController.xib; sourceTree = "<group>"; };
+		28E5799F27AECFBE00946D18 /* ICAudioPatchbayGrid_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICAudioPatchbayGrid_iPad.xib; sourceTree = "<group>"; };
+		28E579A027AECFBE00946D18 /* ICAudioPortPatchbayV1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICAudioPortPatchbayV1ViewController.xib; sourceTree = "<group>"; };
+		28E579A127AECFBE00946D18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		28E579A327AECFBE00946D18 /* MainMenuBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainMenuBack@2x.png"; sourceTree = "<group>"; };
+		28E579A427AECFBE00946D18 /* 40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40x40.png; sourceTree = "<group>"; };
+		28E579A527AECFBE00946D18 /* bubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble@2x.png"; sourceTree = "<group>"; };
+		28E579A627AECFBE00946D18 /* 50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50x50.png; sourceTree = "<group>"; };
+		28E579A727AECFBE00946D18 /* block_icm2plusdevice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block_icm2plusdevice@2x.png"; sourceTree = "<group>"; };
+		28E579A827AECFBE00946D18 /* block_ica2plusdevice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_ica2plusdevice.png; sourceTree = "<group>"; };
+		28E579A927AECFBE00946D18 /* btn_link_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_link_off.png; sourceTree = "<group>"; };
+		28E579AA27AECFBE00946D18 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		28E579AB27AECFBE00946D18 /* btn_link_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_link_on.png; sourceTree = "<group>"; };
+		28E579AC27AECFBE00946D18 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		28E579AD27AECFBE00946D18 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		28E579AE27AECFBE00946D18 /* 1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024x1024.png; sourceTree = "<group>"; };
+		28E579AF27AECFBE00946D18 /* block_miodevice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_miodevice.png; sourceTree = "<group>"; };
+		28E579B027AECFBE00946D18 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		28E579B127AECFBE00946D18 /* 40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40x40@2x.png"; sourceTree = "<group>"; };
+		28E579B227AECFBE00946D18 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		28E579B327AECFBE00946D18 /* 114x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x144.png; sourceTree = "<group>"; };
+		28E579B427AECFBE00946D18 /* ChannelButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChannelButton@2x.png"; sourceTree = "<group>"; };
+		28E579B527AECFBE00946D18 /* block_icm1device.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_icm1device.png; sourceTree = "<group>"; };
+		28E579B627AECFBE00946D18 /* block_ica4plusdevice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block_ica4plusdevice@2x.png"; sourceTree = "<group>"; };
+		28E579B727AECFBE00946D18 /* Default@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~ipad.png"; sourceTree = "<group>"; };
+		28E579B827AECFBE00946D18 /* 114x144old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x144old.png; sourceTree = "<group>"; };
+		28E579B927AECFBE00946D18 /* ChannelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChannelButton.png; sourceTree = "<group>"; };
+		28E579BA27AECFBE00946D18 /* 60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60x60@2x.png"; sourceTree = "<group>"; };
+		28E579BB27AECFBE00946D18 /* RightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightArrow.png; sourceTree = "<group>"; };
+		28E579BC27AECFBE00946D18 /* LeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftArrow.png; sourceTree = "<group>"; };
+		28E579BD27AECFBE00946D18 /* 29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "29x29@2x.png"; sourceTree = "<group>"; };
+		28E579BE27AECFBE00946D18 /* block_miodevice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block_miodevice@2x.png"; sourceTree = "<group>"; };
+		28E579BF27AECFBE00946D18 /* block_icm2plusdevice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_icm2plusdevice.png; sourceTree = "<group>"; };
+		28E579C027AECFBE00946D18 /* iPodDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPodDefault@2x.png"; sourceTree = "<group>"; };
+		28E579C127AECFBE00946D18 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		28E579C227AECFBE00946D18 /* 144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 144x144.png; sourceTree = "<group>"; };
+		28E579C327AECFBE00946D18 /* 76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "76x76@2x.png"; sourceTree = "<group>"; };
+		28E579C427AECFBE00946D18 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		28E579C527AECFBE00946D18 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		28E579C627AECFBE00946D18 /* 72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72x72.png; sourceTree = "<group>"; };
+		28E579C727AECFBE00946D18 /* block_icm1device@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block_icm1device@2x.png"; sourceTree = "<group>"; };
+		28E579C827AECFBE00946D18 /* block_icm4plusdevice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_icm4plusdevice.png; sourceTree = "<group>"; };
+		28E579C927AECFBE00946D18 /* RightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RightArrow@2x.png"; sourceTree = "<group>"; };
+		28E579CA27AECFBE00946D18 /* block_icm4plusdevice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block_icm4plusdevice@2x.png"; sourceTree = "<group>"; };
+		28E579CB27AECFBE00946D18 /* 76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76x76.png; sourceTree = "<group>"; };
+		28E579CC27AECFBE00946D18 /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		28E579CD27AECFBE00946D18 /* 50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "50x50@2x.png"; sourceTree = "<group>"; };
+		28E579CE27AECFBE00946D18 /* 29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29x29.png; sourceTree = "<group>"; };
+		28E579CF27AECFBE00946D18 /* MainMenuBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuBack.png; sourceTree = "<group>"; };
+		28E579D027AECFBE00946D18 /* 512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 512x512.png; sourceTree = "<group>"; };
+		28E579D127AECFBE00946D18 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		28E579D227AECFBE00946D18 /* LeftArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LeftArrow@2x.png"; sourceTree = "<group>"; };
+		28E579D327AECFBE00946D18 /* iPod(Not Streatched)Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPod(Not Streatched)Default@2x.png"; sourceTree = "<group>"; };
+		28E579D427AECFBE00946D18 /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
+		28E579D527AECFBE00946D18 /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
+		28E579D627AECFBE00946D18 /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
+		28E579D727AECFBE00946D18 /* block_ica2plusdevice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block_ica2plusdevice@2x.png"; sourceTree = "<group>"; };
+		28E579D827AECFBE00946D18 /* block_ica4plusdevice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_ica4plusdevice.png; sourceTree = "<group>"; };
+		28E57A2227AED0C400946D18 /* ICAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAppDelegate.m; sourceTree = "<group>"; };
+		28E57A2327AED0C400946D18 /* ICAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAppDelegate.h; sourceTree = "<group>"; };
+		28E57A2627AED2C700946D18 /* MyConverters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConverters.h; sourceTree = "<group>"; };
+		28E57A2727AED2C700946D18 /* ICPollingTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPollingTimer.m; sourceTree = "<group>"; };
+		28E57A2827AED2C700946D18 /* MyConverters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyConverters.cpp; sourceTree = "<group>"; };
+		28E57A2927AED2C700946D18 /* ICPollingTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPollingTimer.h; sourceTree = "<group>"; };
+		28E57A2C27AED44800946D18 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +694,7 @@
 			files = (
 				28E5783A27AE8E8400946D18 /* CoreMIDI.framework in Frameworks */,
 				28E5783E27AE8E9D00946D18 /* UIKit.framework in Frameworks */,
+				28E57A2D27AED44800946D18 /* CoreText.framework in Frameworks */,
 				28E5783827AE8E6700946D18 /* CoreGraphics.framework in Frameworks */,
 				28E5783C27AE8E9300946D18 /* QuartzCore.framework in Frameworks */,
 			);
@@ -270,6 +706,10 @@
 		2899565E27AE6CA3001586F9 = {
 			isa = PBXGroup;
 			children = (
+				28E579A227AECFBE00946D18 /* Images */,
+				28E579A127AECFBE00946D18 /* Images.xcassets */,
+				28E5798F27AECFBE00946D18 /* Nibs */,
+				28E5798C27AECFBE00946D18 /* PLists */,
 				28E5783F27AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist */,
 				2899566927AE6CA3001586F9 /* Source */,
 				2899566827AE6CA3001586F9 /* Products */,
@@ -291,6 +731,20 @@
 		2899566927AE6CA3001586F9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				28E57A2527AED2C700946D18 /* Utilities */,
+				28E57A2327AED0C400946D18 /* ICAppDelegate.h */,
+				28E57A2227AED0C400946D18 /* ICAppDelegate.m */,
+				28E5795F27AECE7900946D18 /* IOSKnobControl */,
+				28E5793627AECE7800946D18 /* MIDI */,
+				28E5794F27AECE7900946D18 /* MMDrawerController */,
+				28E5792C27AECE7800946D18 /* PureLayout */,
+				28E578A627AECE5700946D18 /* AudioV2 */,
+				28E5789F27AECE5700946D18 /* Categories */,
+				28E578F127AECE5700946D18 /* Custom UI */,
+				28E578D827AECE5700946D18 /* Device */,
+				28E5787627AECE5700946D18 /* General */,
+				28E5784B27AECE4200946D18 /* AudioV1 */,
+				28E5784627AECE3000946D18 /* AudioCommon */,
 				28E5783427AE8D2800946D18 /* AppDelegate.h */,
 				28E5783327AE8D2800946D18 /* AppDelegate.m */,
 				28E5773B27AE81DC00946D18 /* GeneSysLib */,
@@ -539,12 +993,519 @@
 		28E5783627AE8E6700946D18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28E57A2C27AED44800946D18 /* CoreText.framework */,
 				28E5783D27AE8E9D00946D18 /* UIKit.framework */,
 				28E5783B27AE8E9300946D18 /* QuartzCore.framework */,
 				28E5783927AE8E8400946D18 /* CoreMIDI.framework */,
 				28E5783727AE8E6700946D18 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28E5784627AECE3000946D18 /* AudioCommon */ = {
+			isa = PBXGroup;
+			children = (
+				28E5784727AECE3000946D18 /* ICAudioPatchbayGridViewController.m */,
+				28E5784827AECE3000946D18 /* ICAudioPatchbayGridViewController.h */,
+				28E5784927AECE3000946D18 /* ICPatchbayDelegate.h */,
+			);
+			path = AudioCommon;
+			sourceTree = "<group>";
+		};
+		28E5784B27AECE4200946D18 /* AudioV1 */ = {
+			isa = PBXGroup;
+			children = (
+				28E5784C27AECE4200946D18 /* AudioPatchbay */,
+				28E5785127AECE4200946D18 /* AudioInfo */,
+			);
+			path = AudioV1;
+			sourceTree = "<group>";
+		};
+		28E5784C27AECE4200946D18 /* AudioPatchbay */ = {
+			isa = PBXGroup;
+			children = (
+				28E5784D27AECE4200946D18 /* ICAudioPatchbayV1Delegate.m */,
+				28E5784E27AECE4200946D18 /* ICAudioPatchbayV1Cell.m */,
+				28E5784F27AECE4200946D18 /* ICAudioPatchbayV1Delegate.h */,
+				28E5785027AECE4200946D18 /* ICAudioPatchbayV1Cell.h */,
+			);
+			path = AudioPatchbay;
+			sourceTree = "<group>";
+		};
+		28E5785127AECE4200946D18 /* AudioInfo */ = {
+			isa = PBXGroup;
+			children = (
+				28E5785227AECE4200946D18 /* ICAudioInfoViewControllerV1.m */,
+				28E5785327AECE4200946D18 /* Delegates */,
+				28E5786827AECE4200946D18 /* ICAudioInfoViewControllerV1.h */,
+			);
+			path = AudioInfo;
+			sourceTree = "<group>";
+		};
+		28E5785327AECE4200946D18 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				28E5785427AECE4200946D18 /* ICAudioInputChannelsV1RangeDelegate.m */,
+				28E5785527AECE4200946D18 /* ICPCEnabledV1SwitchDelegate.h */,
+				28E5785627AECE4200946D18 /* ICAudioOutputChannelsV1RangeDelegate.h */,
+				28E5785727AECE4200946D18 /* ICiOSEnabledV1SwitchDelegate.m */,
+				28E5785827AECE4200946D18 /* ICMIDIPortNameTextEditDelegate.m */,
+				28E5785927AECE4200946D18 /* ICAudioSetupV1ChoiceDelegate.h */,
+				28E5785A27AECE4200946D18 /* ICAudioSyncFactorV1RangeDelegate.h */,
+				28E5785B27AECE4200946D18 /* ICAudioFrameBufferV1RangeDelegate.m */,
+				28E5785C27AECE4200946D18 /* ICAudioClockV1ChoiceDelegate.m */,
+				28E5785D27AECE4200946D18 /* ICAudioPortNameV1TextEditCellDelegate.h */,
+				28E5785E27AECE4200946D18 /* ICAudioInputChannelsV1RangeDelegate.h */,
+				28E5785F27AECE4200946D18 /* ICAudioSetupV1ChoiceDelegate.m */,
+				28E5786027AECE4200946D18 /* ICMIDIPortNameTextEditDelegate.h */,
+				28E5786127AECE4200946D18 /* ICiOSEnabledV1SwitchDelegate.h */,
+				28E5786227AECE4200946D18 /* ICAudioOutputChannelsV1RangeDelegate.m */,
+				28E5786327AECE4200946D18 /* ICPCEnabledV1SwitchDelegate.m */,
+				28E5786427AECE4200946D18 /* ICAudioFrameBufferV1RangeDelegate.h */,
+				28E5786527AECE4200946D18 /* ICAudioSyncFactorV1RangeDelegate.m */,
+				28E5786627AECE4200946D18 /* ICAudioClockV1ChoiceDelegate.h */,
+				28E5786727AECE4200946D18 /* ICAudioPortNameV1TextEditCellDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		28E5787627AECE5700946D18 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				28E5787727AECE5700946D18 /* Providers */,
+				28E5788627AECE5700946D18 /* ViewControllers */,
+				28E5789327AECE5700946D18 /* Delegates */,
+				28E5789E27AECE5700946D18 /* Screen.h */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		28E5787727AECE5700946D18 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				28E5787827AECE5700946D18 /* ICChoiceCellProvider.m */,
+				28E5787927AECE5700946D18 /* ICMainMenuProvider.h */,
+				28E5787A27AECE5700946D18 /* ICButtonCellProvider.m */,
+				28E5787B27AECE5700946D18 /* ICNormalCellProvider.m */,
+				28E5787C27AECE5700946D18 /* ICSwitchCellProvider.m */,
+				28E5787D27AECE5700946D18 /* ICRangeCellProvider.h */,
+				28E5787E27AECE5700946D18 /* ICTextEditCellProvider.h */,
+				28E5787F27AECE5700946D18 /* ICChoiceCellProvider.h */,
+				28E5788027AECE5700946D18 /* ICMainMenuProvider.m */,
+				28E5788127AECE5700946D18 /* ICButtonCellProvider.h */,
+				28E5788227AECE5700946D18 /* ICTextEditCellProvider.m */,
+				28E5788327AECE5700946D18 /* ICRangeCellProvider.m */,
+				28E5788427AECE5700946D18 /* ICSwitchCellProvider.h */,
+				28E5788527AECE5700946D18 /* ICNormalCellProvider.h */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		28E5788627AECE5700946D18 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				28E5788727AECE5700946D18 /* ICHelpViewController.h */,
+				28E5788827AECE5700946D18 /* ICBaseInfoViewController.m */,
+				28E5788927AECE5700946D18 /* ICFileBrowserViewController.h */,
+				28E5788A27AECE5700946D18 /* ICRangeSelectionViewController.m */,
+				28E5788B27AECE5700946D18 /* ICViewController.h */,
+				28E5788C27AECE5700946D18 /* ICChoiceSelectionViewController.m */,
+				28E5788D27AECE5700946D18 /* ICBaseInfoViewController.h */,
+				28E5788E27AECE5700946D18 /* ICHelpViewController.m */,
+				28E5788F27AECE5700946D18 /* ICRangeSelectionViewController.h */,
+				28E5789027AECE5700946D18 /* ICFileBrowserViewController.m */,
+				28E5789127AECE5700946D18 /* ICViewController.m */,
+				28E5789227AECE5700946D18 /* ICChoiceSelectionViewController.h */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		28E5789327AECE5700946D18 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				28E5789427AECE5700946D18 /* ICButtonBlockDelegate.m */,
+				28E5789527AECE5700946D18 /* ICControllerChoiceDelegate.m */,
+				28E5789627AECE5700946D18 /* ICNormalBlockDelegate.h */,
+				28E5789727AECE5700946D18 /* ICChoiceDelegate.h */,
+				28E5789827AECE5700946D18 /* ICSwitchCellDelegate.h */,
+				28E5789927AECE5700946D18 /* ICControllerChoiceDelegate.h */,
+				28E5789A27AECE5700946D18 /* ICButtonBlockDelegate.h */,
+				28E5789B27AECE5700946D18 /* ICNormalBlockDelegate.m */,
+				28E5789C27AECE5700946D18 /* ICRangeChoiceDelegate.h */,
+				28E5789D27AECE5700946D18 /* ICTextEditCellDelegate.h */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		28E5789F27AECE5700946D18 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				28E578A027AECE5700946D18 /* NSString+RotatedDraw.m */,
+				28E578A127AECE5700946D18 /* UIImageTintCategory.m */,
+				28E578A227AECE5700946D18 /* NSString+NSStringExtension.h */,
+				28E578A327AECE5700946D18 /* NSString+RotatedDraw.h */,
+				28E578A427AECE5700946D18 /* UIImageTintCategory.h */,
+				28E578A527AECE5700946D18 /* NSString+NSStringExtension.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		28E578A627AECE5700946D18 /* AudioV2 */ = {
+			isa = PBXGroup;
+			children = (
+				28E578A727AECE5700946D18 /* AudioPatchbay */,
+				28E578AA27AECE5700946D18 /* AudioInfo */,
+				28E578C427AECE5700946D18 /* Mixer */,
+			);
+			path = AudioV2;
+			sourceTree = "<group>";
+		};
+		28E578A727AECE5700946D18 /* AudioPatchbay */ = {
+			isa = PBXGroup;
+			children = (
+				28E578A827AECE5700946D18 /* ICAudioPatchbayV2Delegate.h */,
+				28E578A927AECE5700946D18 /* ICAudioPatchbayV2Delegate.m */,
+			);
+			path = AudioPatchbay;
+			sourceTree = "<group>";
+		};
+		28E578AA27AECE5700946D18 /* AudioInfo */ = {
+			isa = PBXGroup;
+			children = (
+				28E578AB27AECE5700946D18 /* ICAudioInfoViewControllerV2.m */,
+				28E578AC27AECE5700946D18 /* Delegate */,
+				28E578C327AECE5700946D18 /* ICAudioInfoViewControllerV2.h */,
+			);
+			path = AudioInfo;
+			sourceTree = "<group>";
+		};
+		28E578AC27AECE5700946D18 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				28E578AD27AECE5700946D18 /* ICiOSEnabledV2SwitchDelegate.h */,
+				28E578AE27AECE5700946D18 /* ICAudioMixerConfigurationV2ChoiceDelegate.m */,
+				28E578AF27AECE5700946D18 /* ICAudioFrameBufferV2RangeDelegate.m */,
+				28E578B027AECE5700946D18 /* ICAudioSetupV2ChoiceDelegate.m */,
+				28E578B127AECE5700946D18 /* ICAudioSyncFactorV2RangeDelegate.h */,
+				28E578B227AECE5700946D18 /* ICPCEnabledV2SwitchDelegate.m */,
+				28E578B327AECE5700946D18 /* ICAudioMixerChannelV2ChoiceDelegate.h */,
+				28E578B427AECE5700946D18 /* ICAudioPortNameV2TextEditCellDelegate.m */,
+				28E578B527AECE5700946D18 /* ICAudioInputChannelsV2RangeDelegate.m */,
+				28E578B627AECE5700946D18 /* ICAudioClockV2ChoiceDelegate.h */,
+				28E578B727AECE5700946D18 /* ICAudioOutputChannelsV2RangeDelegate.h */,
+				28E578B827AECE5700946D18 /* ICPCEnabledV2SwitchDelegate.h */,
+				28E578B927AECE5700946D18 /* ICAudioSyncFactorV2RangeDelegate.m */,
+				28E578BA27AECE5700946D18 /* ICAudioSetupV2ChoiceDelegate.h */,
+				28E578BB27AECE5700946D18 /* ICAudioMixerConfigurationV2ChoiceDelegate.h */,
+				28E578BC27AECE5700946D18 /* ICAudioFrameBufferV2RangeDelegate.h */,
+				28E578BD27AECE5700946D18 /* ICiOSEnabledV2SwitchDelegate.m */,
+				28E578BE27AECE5700946D18 /* ICAudioMixerChannelV2ChoiceDelegate.m */,
+				28E578BF27AECE5700946D18 /* ICAudioClockV2ChoiceDelegate.m */,
+				28E578C027AECE5700946D18 /* ICAudioInputChannelsV2RangeDelegate.h */,
+				28E578C127AECE5700946D18 /* ICAudioPortNameV2TextEditCellDelegate.h */,
+				28E578C227AECE5700946D18 /* ICAudioOutputChannelsV2RangeDelegate.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		28E578C427AECE5700946D18 /* Mixer */ = {
+			isa = PBXGroup;
+			children = (
+				28E578C527AECE5700946D18 /* ICMixerSelector.m */,
+				28E578C627AECE5700946D18 /* ICMixerAnalogGroup.m */,
+				28E578C727AECE5700946D18 /* ICMixerViewController.h */,
+				28E578C827AECE5700946D18 /* ICMixerMixerGroup.m */,
+				28E578C927AECE5700946D18 /* ICMixerStrip.h */,
+				28E578CA27AECE5700946D18 /* ICMixerSelector.h */,
+				28E578CB27AECE5700946D18 /* ICMixerAnalogGroup.h */,
+				28E578CC27AECE5700946D18 /* ICMixerMixerGroup.h */,
+				28E578CD27AECE5700946D18 /* ICMixerStrip.m */,
+				28E578CE27AECE5700946D18 /* ICMixerViewController.m */,
+				28E578CF27AECE5700946D18 /* Interfaces */,
+			);
+			path = Mixer;
+			sourceTree = "<group>";
+		};
+		28E578CF27AECE5700946D18 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				28E578D027AECE5700946D18 /* MixerInterface.h */,
+				28E578D127AECE5700946D18 /* ICAnalogInterface.h */,
+				28E578D227AECE5700946D18 /* ICAnalogInterface.cpp */,
+				28E578D327AECE5700946D18 /* MixerInputInterface.cpp */,
+				28E578D427AECE5700946D18 /* MixerOutputInterface.cpp */,
+				28E578D527AECE5700946D18 /* MixerInputInterface.h */,
+				28E578D627AECE5700946D18 /* MixerOutputInterface.h */,
+				28E578D727AECE5700946D18 /* MixerInterface.cpp */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		28E578D827AECE5700946D18 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				28E578D927AECE5700946D18 /* DeviceInfo.h */,
+				28E578DA27AECE5700946D18 /* ViewControllers */,
+				28E578DF27AECE5700946D18 /* Delegates */,
+				28E578F027AECE5700946D18 /* DeviceInfo.cpp */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		28E578DA27AECE5700946D18 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				28E578DB27AECE5700946D18 /* ICDeviceSelectionViewController.m */,
+				28E578DC27AECE5700946D18 /* ICDeviceInfoViewController.m */,
+				28E578DD27AECE5700946D18 /* ICDeviceSelectionViewController.h */,
+				28E578DE27AECE5700946D18 /* ICDeviceInfoViewController.h */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		28E578DF27AECE5700946D18 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				28E578E027AECE5700946D18 /* ICMacAddressDelegate.m */,
+				28E578E127AECE5700946D18 /* ICGatewayTextEditCellDelegate.h */,
+				28E578E227AECE5700946D18 /* ICIPAddressTextEditCellDelegate.h */,
+				28E578E327AECE5700946D18 /* ICProductNameDelegate.h */,
+				28E578E427AECE5700946D18 /* ICIPModeChoiceDelegate.h */,
+				28E578E527AECE5700946D18 /* ICInfoTextEditCellDelegate.h */,
+				28E578E627AECE5700946D18 /* ICSubnetMaskTextEditCellDelegate.h */,
+				28E578E727AECE5700946D18 /* ICVendorNameDelegate.m */,
+				28E578E827AECE5700946D18 /* ICGatewayTextEditCellDelegate.m */,
+				28E578E927AECE5700946D18 /* ICMacAddressDelegate.h */,
+				28E578EA27AECE5700946D18 /* ICIPAddressTextEditCellDelegate.m */,
+				28E578EB27AECE5700946D18 /* ICIPModeChoiceDelegate.m */,
+				28E578EC27AECE5700946D18 /* ICProductNameDelegate.m */,
+				28E578ED27AECE5700946D18 /* ICVendorNameDelegate.h */,
+				28E578EE27AECE5700946D18 /* ICSubnetMaskTextEditCellDelegate.m */,
+				28E578EF27AECE5700946D18 /* ICInfoTextEditCellDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		28E578F127AECE5700946D18 /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				28E578F227AECE5700946D18 /* ICIndicatorButton.h */,
+				28E578F327AECE5700946D18 /* UINavigationController+CompletionHandler.m */,
+				28E578F427AECE5700946D18 /* ICIndicatorButton.m */,
+				28E578F527AECE5700946D18 /* UINavigationController+CompletionHandler.h */,
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
+		28E5792C27AECE7800946D18 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				28E5792D27AECE7800946D18 /* PureLayoutDefines.h */,
+				28E5792E27AECE7800946D18 /* ALView+PureLayout.h */,
+				28E5792F27AECE7800946D18 /* NSLayoutConstraint+PureLayout.m */,
+				28E5793027AECE7800946D18 /* NSArray+PureLayout.h */,
+				28E5793127AECE7800946D18 /* NSLayoutConstraint+PureLayout.h */,
+				28E5793227AECE7800946D18 /* ALView+PureLayout.m */,
+				28E5793327AECE7800946D18 /* PureLayout+Internal.h */,
+				28E5793427AECE7800946D18 /* PureLayout.h */,
+				28E5793527AECE7800946D18 /* NSArray+PureLayout.m */,
+			);
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		28E5793627AECE7800946D18 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				28E5793727AECE7800946D18 /* MIDIInfo */,
+				28E5794A27AECE7800946D18 /* Patchbay */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		28E5793727AECE7800946D18 /* MIDIInfo */ = {
+			isa = PBXGroup;
+			children = (
+				28E5793827AECE7800946D18 /* ViewControllers */,
+				28E5793D27AECE7800946D18 /* Delegates */,
+			);
+			path = MIDIInfo;
+			sourceTree = "<group>";
+		};
+		28E5793827AECE7800946D18 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				28E5793927AECE7800946D18 /* ICMIDIIndexTableViewController.m */,
+				28E5793A27AECE7800946D18 /* ICMIDIInfoViewController.h */,
+				28E5793B27AECE7800946D18 /* ICMIDIIndexTableViewController.h */,
+				28E5793C27AECE7800946D18 /* ICMIDIInfoViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		28E5793D27AECE7800946D18 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				28E5793E27AECE7800946D18 /* ICRunningStatusSwitchDelegate.h */,
+				28E5793F27AECE7800946D18 /* ICMaxPortsRangeDelegate.m */,
+				28E5794027AECE7800946D18 /* ICReservedPortChoiceDelegate.h */,
+				28E5794127AECE7800946D18 /* ICMIDIInterPortRoutingSwitchDelegate.h */,
+				28E5794227AECE7800946D18 /* ICMIDIOutputEnabledSwitchDelegate.m */,
+				28E5794327AECE7800946D18 /* ICMIDIInputEnabledSwitchDelegate.m */,
+				28E5794427AECE7800946D18 /* ICMaxPortsRangeDelegate.h */,
+				28E5794527AECE7800946D18 /* ICRunningStatusSwitchDelegate.m */,
+				28E5794627AECE7800946D18 /* ICReservedPortChoiceDelegate.m */,
+				28E5794727AECE7800946D18 /* ICMIDIOutputEnabledSwitchDelegate.h */,
+				28E5794827AECE7800946D18 /* ICMIDIInterPortRoutingSwitchDelegate.m */,
+				28E5794927AECE7800946D18 /* ICMIDIInputEnabledSwitchDelegate.h */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		28E5794A27AECE7800946D18 /* Patchbay */ = {
+			isa = PBXGroup;
+			children = (
+				28E5794B27AECE7800946D18 /* ICMIDIPatchbayDelegate.h */,
+				28E5794C27AECE7800946D18 /* ICMIDIPatchbayGridViewController.m */,
+				28E5794D27AECE7800946D18 /* ICMIDIPatchbayGridViewController.h */,
+				28E5794E27AECE7800946D18 /* ICMIDIPatchbayDelegate.m */,
+			);
+			path = Patchbay;
+			sourceTree = "<group>";
+		};
+		28E5794F27AECE7900946D18 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				28E5795027AECE7900946D18 /* MMSideDrawerTableViewCell.m */,
+				28E5795127AECE7900946D18 /* MMDrawerBarButtonItem.m */,
+				28E5795227AECE7900946D18 /* MMSideDrawerSectionHeaderView.h */,
+				28E5795327AECE7900946D18 /* MMTableViewCell.h */,
+				28E5795427AECE7900946D18 /* UIViewController+MMDrawerController.m */,
+				28E5795527AECE7900946D18 /* MMDrawerController.m */,
+				28E5795627AECE7900946D18 /* MMDrawerController+Subclass.h */,
+				28E5795727AECE7900946D18 /* MMDrawerVisualState.h */,
+				28E5795827AECE7900946D18 /* MMSideDrawerSectionHeaderView.m */,
+				28E5795927AECE7900946D18 /* MMDrawerBarButtonItem.h */,
+				28E5795A27AECE7900946D18 /* MMSideDrawerTableViewCell.h */,
+				28E5795B27AECE7900946D18 /* MMTableViewCell.m */,
+				28E5795C27AECE7900946D18 /* UIViewController+MMDrawerController.h */,
+				28E5795D27AECE7900946D18 /* MMDrawerVisualState.m */,
+				28E5795E27AECE7900946D18 /* MMDrawerController.h */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		28E5795F27AECE7900946D18 /* IOSKnobControl */ = {
+			isa = PBXGroup;
+			children = (
+				28E5796427AECE7900946D18 /* IOSKnobControl.m */,
+				28E5796927AECE7900946D18 /* IOSKnobControl.h */,
+			);
+			path = IOSKnobControl;
+			sourceTree = "<group>";
+		};
+		28E5798C27AECFBE00946D18 /* PLists */ = {
+			isa = PBXGroup;
+			children = (
+				28E5798D27AECFBE00946D18 /* iConnectivityiConfig-Info.plist */,
+				28E5798E27AECFBE00946D18 /* Provider.plist */,
+			);
+			path = PLists;
+			sourceTree = "<group>";
+		};
+		28E5798F27AECFBE00946D18 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				28E5799027AECFBE00946D18 /* ICHelpViewController.xib */,
+				28E5799127AECFBE00946D18 /* ICRangeSelectionViewController.xib */,
+				28E5799227AECFBE00946D18 /* ICMenuViewController.h */,
+				28E5799327AECFBE00946D18 /* ICDeviceInfoViewController.xib */,
+				28E5799427AECFBE00946D18 /* ICViewController_iPad.xib */,
+				28E5799527AECFBE00946D18 /* ICFileBrowserViewController.xib */,
+				28E5799627AECFBE00946D18 /* ICBaseInfoViewController.xib */,
+				28E5799727AECFBE00946D18 /* ICDeviceSelectionViewController.xib */,
+				28E5799827AECFBE00946D18 /* ICAudioPatchbayV1iPadCell.xib */,
+				28E5799927AECFBE00946D18 /* ICMenuViewController.m */,
+				28E5799A27AECFBE00946D18 /* ICMIDIPatchbayGrid_iPad.xib */,
+				28E5799B27AECFBE00946D18 /* ICChoiceSelectionViewController.xib */,
+				28E5799C27AECFBE00946D18 /* ICMenuViewController.xib */,
+				28E5799D27AECFBE00946D18 /* ICAudioPatchbayV1iPhoneCell.xib */,
+				28E5799E27AECFBE00946D18 /* ICAudioPatchbayV1ViewController.xib */,
+				28E5799F27AECFBE00946D18 /* ICAudioPatchbayGrid_iPad.xib */,
+				28E579A027AECFBE00946D18 /* ICAudioPortPatchbayV1ViewController.xib */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		28E579A227AECFBE00946D18 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				28E579A327AECFBE00946D18 /* MainMenuBack@2x.png */,
+				28E579A427AECFBE00946D18 /* 40x40.png */,
+				28E579A527AECFBE00946D18 /* bubble@2x.png */,
+				28E579A627AECFBE00946D18 /* 50x50.png */,
+				28E579A727AECFBE00946D18 /* block_icm2plusdevice@2x.png */,
+				28E579A827AECFBE00946D18 /* block_ica2plusdevice.png */,
+				28E579A927AECFBE00946D18 /* btn_link_off.png */,
+				28E579AA27AECFBE00946D18 /* Default-Portrait@2x~ipad.png */,
+				28E579AB27AECFBE00946D18 /* btn_link_on.png */,
+				28E579AC27AECFBE00946D18 /* Default-Landscape~ipad.png */,
+				28E579AD27AECFBE00946D18 /* Default-Portrait~ipad.png */,
+				28E579AE27AECFBE00946D18 /* 1024x1024.png */,
+				28E579AF27AECFBE00946D18 /* block_miodevice.png */,
+				28E579B027AECFBE00946D18 /* bubble.png */,
+				28E579B127AECFBE00946D18 /* 40x40@2x.png */,
+				28E579B227AECFBE00946D18 /* Default@2x.png */,
+				28E579B327AECFBE00946D18 /* 114x144.png */,
+				28E579B427AECFBE00946D18 /* ChannelButton@2x.png */,
+				28E579B527AECFBE00946D18 /* block_icm1device.png */,
+				28E579B627AECFBE00946D18 /* block_ica4plusdevice@2x.png */,
+				28E579B727AECFBE00946D18 /* Default@2x~ipad.png */,
+				28E579B827AECFBE00946D18 /* 114x144old.png */,
+				28E579B927AECFBE00946D18 /* ChannelButton.png */,
+				28E579BA27AECFBE00946D18 /* 60x60@2x.png */,
+				28E579BB27AECFBE00946D18 /* RightArrow.png */,
+				28E579BC27AECFBE00946D18 /* LeftArrow.png */,
+				28E579BD27AECFBE00946D18 /* 29x29@2x.png */,
+				28E579BE27AECFBE00946D18 /* block_miodevice@2x.png */,
+				28E579BF27AECFBE00946D18 /* block_icm2plusdevice.png */,
+				28E579C027AECFBE00946D18 /* iPodDefault@2x.png */,
+				28E579C127AECFBE00946D18 /* Background.png */,
+				28E579C227AECFBE00946D18 /* 144x144.png */,
+				28E579C327AECFBE00946D18 /* 76x76@2x.png */,
+				28E579C427AECFBE00946D18 /* Default-Landscape@2x~ipad.png */,
+				28E579C527AECFBE00946D18 /* Default-568h@2x.png */,
+				28E579C627AECFBE00946D18 /* 72x72.png */,
+				28E579C727AECFBE00946D18 /* block_icm1device@2x.png */,
+				28E579C827AECFBE00946D18 /* block_icm4plusdevice.png */,
+				28E579C927AECFBE00946D18 /* RightArrow@2x.png */,
+				28E579CA27AECFBE00946D18 /* block_icm4plusdevice@2x.png */,
+				28E579CB27AECFBE00946D18 /* 76x76.png */,
+				28E579CC27AECFBE00946D18 /* Background@2x.png */,
+				28E579CD27AECFBE00946D18 /* 50x50@2x.png */,
+				28E579CE27AECFBE00946D18 /* 29x29.png */,
+				28E579CF27AECFBE00946D18 /* MainMenuBack.png */,
+				28E579D027AECFBE00946D18 /* 512x512.png */,
+				28E579D127AECFBE00946D18 /* Default.png */,
+				28E579D227AECFBE00946D18 /* LeftArrow@2x.png */,
+				28E579D327AECFBE00946D18 /* iPod(Not Streatched)Default@2x.png */,
+				28E579D427AECFBE00946D18 /* Default~ipad.png */,
+				28E579D527AECFBE00946D18 /* 57x57.png */,
+				28E579D627AECFBE00946D18 /* 114x114.png */,
+				28E579D727AECFBE00946D18 /* block_ica2plusdevice@2x.png */,
+				28E579D827AECFBE00946D18 /* block_ica4plusdevice.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		28E57A2527AED2C700946D18 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				28E57A2627AED2C700946D18 /* MyConverters.h */,
+				28E57A2727AED2C700946D18 /* ICPollingTimer.m */,
+				28E57A2827AED2C700946D18 /* MyConverters.cpp */,
+				28E57A2927AED2C700946D18 /* ICPollingTimer.h */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -604,11 +1565,83 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E579FB27AECFBE00946D18 /* Default@2x.png in Resources */,
+				28E579F527AECFBE00946D18 /* Default-Landscape~ipad.png in Resources */,
+				28E57A1F27AECFBE00946D18 /* 114x114.png in Resources */,
+				28E57A1727AECFBE00946D18 /* 29x29.png in Resources */,
+				28E579E127AECFBE00946D18 /* ICDeviceSelectionViewController.xib in Resources */,
+				28E579EB27AECFBE00946D18 /* Images.xcassets in Resources */,
+				28E579F927AECFBE00946D18 /* bubble.png in Resources */,
+				28E579DD27AECFBE00946D18 /* ICDeviceInfoViewController.xib in Resources */,
+				28E57A1427AECFBE00946D18 /* 76x76.png in Resources */,
+				28E579F127AECFBE00946D18 /* block_ica2plusdevice.png in Resources */,
 				2899567A27AE6CA3001586F9 /* LaunchScreen.storyboard in Resources */,
+				28E57A2027AECFBE00946D18 /* block_ica2plusdevice@2x.png in Resources */,
+				28E57A1A27AECFBE00946D18 /* Default.png in Resources */,
+				28E57A0727AECFBE00946D18 /* block_miodevice@2x.png in Resources */,
+				28E57A0527AECFBE00946D18 /* LeftArrow.png in Resources */,
+				28E579E227AECFBE00946D18 /* ICAudioPatchbayV1iPadCell.xib in Resources */,
+				28E57A1D27AECFBE00946D18 /* Default~ipad.png in Resources */,
+				28E579DC27AECFBE00946D18 /* ICRangeSelectionViewController.xib in Resources */,
+				28E579DA27AECFBE00946D18 /* Provider.plist in Resources */,
+				28E579ED27AECFBE00946D18 /* 40x40.png in Resources */,
+				28E579FA27AECFBE00946D18 /* 40x40@2x.png in Resources */,
+				28E57A0F27AECFBE00946D18 /* 72x72.png in Resources */,
+				28E579E827AECFBE00946D18 /* ICAudioPatchbayV1ViewController.xib in Resources */,
+				28E57A0C27AECFBE00946D18 /* 76x76@2x.png in Resources */,
+				28E579F727AECFBE00946D18 /* 1024x1024.png in Resources */,
+				28E579F827AECFBE00946D18 /* block_miodevice.png in Resources */,
+				28E579FF27AECFBE00946D18 /* block_ica4plusdevice@2x.png in Resources */,
+				28E579DF27AECFBE00946D18 /* ICFileBrowserViewController.xib in Resources */,
 				28E577FC27AE81DC00946D18 /* GeneSysLib.pro in Resources */,
+				28E57A0A27AECFBE00946D18 /* Background.png in Resources */,
+				28E579FE27AECFBE00946D18 /* block_icm1device.png in Resources */,
+				28E57A1927AECFBE00946D18 /* 512x512.png in Resources */,
+				28E579F227AECFBE00946D18 /* btn_link_off.png in Resources */,
+				28E57A1527AECFBE00946D18 /* Background@2x.png in Resources */,
+				28E57A1E27AECFBE00946D18 /* 57x57.png in Resources */,
+				28E57A1B27AECFBE00946D18 /* LeftArrow@2x.png in Resources */,
+				28E57A1827AECFBE00946D18 /* MainMenuBack.png in Resources */,
+				28E579E527AECFBE00946D18 /* ICChoiceSelectionViewController.xib in Resources */,
 				2899567527AE6CA3001586F9 /* Main.storyboard in Resources */,
+				28E57A0227AECFBE00946D18 /* ChannelButton.png in Resources */,
+				28E579E627AECFBE00946D18 /* ICMenuViewController.xib in Resources */,
+				28E57A0327AECFBE00946D18 /* 60x60@2x.png in Resources */,
 				28E577FB27AE81DC00946D18 /* GeneSysLib(qt4_8_6).pro in Resources */,
+				28E57A0D27AECFBE00946D18 /* Default-Landscape@2x~ipad.png in Resources */,
+				28E57A2127AECFBE00946D18 /* block_ica4plusdevice.png in Resources */,
+				28E57A1227AECFBE00946D18 /* RightArrow@2x.png in Resources */,
+				28E579E727AECFBE00946D18 /* ICAudioPatchbayV1iPhoneCell.xib in Resources */,
+				28E579E427AECFBE00946D18 /* ICMIDIPatchbayGrid_iPad.xib in Resources */,
+				28E57A1627AECFBE00946D18 /* 50x50@2x.png in Resources */,
+				28E57A0827AECFBE00946D18 /* block_icm2plusdevice.png in Resources */,
+				28E579F027AECFBE00946D18 /* block_icm2plusdevice@2x.png in Resources */,
+				28E579DB27AECFBE00946D18 /* ICHelpViewController.xib in Resources */,
+				28E57A1127AECFBE00946D18 /* block_icm4plusdevice.png in Resources */,
 				28E5784027AE8F5D00946D18 /* iConnectivityiConfig copy-Info.plist in Resources */,
+				28E57A0B27AECFBE00946D18 /* 144x144.png in Resources */,
+				28E579EE27AECFBE00946D18 /* bubble@2x.png in Resources */,
+				28E579D927AECFBE00946D18 /* iConnectivityiConfig-Info.plist in Resources */,
+				28E579F427AECFBE00946D18 /* btn_link_on.png in Resources */,
+				28E579DE27AECFBE00946D18 /* ICViewController_iPad.xib in Resources */,
+				28E579EC27AECFBE00946D18 /* MainMenuBack@2x.png in Resources */,
+				28E57A1027AECFBE00946D18 /* block_icm1device@2x.png in Resources */,
+				28E57A0027AECFBE00946D18 /* Default@2x~ipad.png in Resources */,
+				28E57A1C27AECFBE00946D18 /* iPod(Not Streatched)Default@2x.png in Resources */,
+				28E57A0427AECFBE00946D18 /* RightArrow.png in Resources */,
+				28E57A0127AECFBE00946D18 /* 114x144old.png in Resources */,
+				28E579FC27AECFBE00946D18 /* 114x144.png in Resources */,
+				28E57A1327AECFBE00946D18 /* block_icm4plusdevice@2x.png in Resources */,
+				28E579EA27AECFBE00946D18 /* ICAudioPortPatchbayV1ViewController.xib in Resources */,
+				28E579FD27AECFBE00946D18 /* ChannelButton@2x.png in Resources */,
+				28E579E927AECFBE00946D18 /* ICAudioPatchbayGrid_iPad.xib in Resources */,
+				28E57A0927AECFBE00946D18 /* iPodDefault@2x.png in Resources */,
+				28E57A0E27AECFBE00946D18 /* Default-568h@2x.png in Resources */,
+				28E579F327AECFBE00946D18 /* Default-Portrait@2x~ipad.png in Resources */,
+				28E579EF27AECFBE00946D18 /* 50x50.png in Resources */,
+				28E57A0627AECFBE00946D18 /* 29x29@2x.png in Resources */,
+				28E579E027AECFBE00946D18 /* ICBaseInfoViewController.xib in Resources */,
+				28E579F627AECFBE00946D18 /* Default-Portrait~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,62 +1658,155 @@
 				28E577F627AE81DC00946D18 /* MIDIPortFilter.cpp in Sources */,
 				28E5781027AE81DC00946D18 /* AudioControlDetailValue.cpp in Sources */,
 				28E577F827AE81DC00946D18 /* MIDIPortDetail.cpp in Sources */,
+				28E5792A27AECE5700946D18 /* UINavigationController+CompletionHandler.m in Sources */,
 				28E5780327AE81DC00946D18 /* ClockSourceType.cpp in Sources */,
 				28E5781827AE81DC00946D18 /* AudioControlTypes.cpp in Sources */,
+				28E5790527AECE5700946D18 /* ICNormalBlockDelegate.m in Sources */,
 				28E577F927AE81DC00946D18 /* MIDIPortInfo.cpp in Sources */,
+				28E5790027AECE5700946D18 /* ICHelpViewController.m in Sources */,
 				28E5780D27AE81DC00946D18 /* MixerOutputControl.cpp in Sources */,
+				28E5792727AECE5700946D18 /* ICSubnetMaskTextEditCellDelegate.m in Sources */,
 				28E5781327AE81DC00946D18 /* AudioPortParm.cpp in Sources */,
 				28E5781727AE81DC00946D18 /* AudioControlDetailTypes.cpp in Sources */,
+				28E5797E27AECE7900946D18 /* MMDrawerController.m in Sources */,
+				28E5792827AECE5700946D18 /* ICInfoTextEditCellDelegate.m in Sources */,
 				28E5780027AE81DC00946D18 /* AudioPortCfgInfo.cpp in Sources */,
+				28E5787127AECE4200946D18 /* ICAudioSetupV1ChoiceDelegate.m in Sources */,
 				28E5781127AE81DC00946D18 /* AudioPortParmTypes.cpp in Sources */,
+				28E5787227AECE4200946D18 /* ICAudioOutputChannelsV1RangeDelegate.m in Sources */,
+				28E5791A27AECE5700946D18 /* ICMixerViewController.m in Sources */,
+				28E5797927AECE7900946D18 /* ICMIDIPatchbayGridViewController.m in Sources */,
 				28E5782327AE81DC00946D18 /* DeviceID.cpp in Sources */,
+				28E5796E27AECE7900946D18 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				28E57A2427AED0C400946D18 /* ICAppDelegate.m in Sources */,
 				28E5781427AE81DC00946D18 /* AudioPatchbayParm.cpp in Sources */,
 				28E577F527AE81DC00946D18 /* MIDIInfo.cpp in Sources */,
+				28E5792127AECE5700946D18 /* ICMacAddressDelegate.m in Sources */,
+				28E5798527AECE7900946D18 /* IOSKnobControl.m in Sources */,
+				28E578F927AECE5700946D18 /* ICSwitchCellProvider.m in Sources */,
+				28E578F627AECE5700946D18 /* ICChoiceCellProvider.m in Sources */,
 				28E577FD27AE81DC00946D18 /* BitDepthCode.cpp in Sources */,
+				28E5786D27AECE4200946D18 /* ICiOSEnabledV1SwitchDelegate.m in Sources */,
+				28E5791827AECE5700946D18 /* ICMixerMixerGroup.m in Sources */,
 				28E5780F27AE81DC00946D18 /* AudioGlobalParm.cpp in Sources */,
+				28E5787027AECE4200946D18 /* ICAudioClockV1ChoiceDelegate.m in Sources */,
 				28E577FF27AE81DC00946D18 /* AudioPortInfo.cpp in Sources */,
 				28E5782527AE81DC00946D18 /* Generator.cpp in Sources */,
+				28E5790A27AECE5700946D18 /* ICAudioInfoViewControllerV2.m in Sources */,
+				28E5797127AECE7900946D18 /* ICMIDIIndexTableViewController.m in Sources */,
+				28E5797A27AECE7900946D18 /* ICMIDIPatchbayDelegate.m in Sources */,
+				28E5798027AECE7900946D18 /* MMTableViewCell.m in Sources */,
+				28E5790227AECE5700946D18 /* ICViewController.m in Sources */,
+				28E5790C27AECE5700946D18 /* ICAudioFrameBufferV2RangeDelegate.m in Sources */,
+				28E5786C27AECE4200946D18 /* ICAudioInputChannelsV1RangeDelegate.m in Sources */,
+				28E578FC27AECE5700946D18 /* ICRangeCellProvider.m in Sources */,
+				28E5792327AECE5700946D18 /* ICGatewayTextEditCellDelegate.m in Sources */,
 				28E577F727AE81DC00946D18 /* MIDIPortDetailTypes.cpp in Sources */,
+				28E5797727AECE7900946D18 /* ICReservedPortChoiceDelegate.m in Sources */,
 				28E577F127AE81DC00946D18 /* MIDIPortRoute.cpp in Sources */,
 				28E5781D27AE81DC00946D18 /* InfoList.cpp in Sources */,
 				28E5781B27AE81DC00946D18 /* AudioControlDetail.cpp in Sources */,
 				28E5781A27AE81DC00946D18 /* AudioControlDetailValueTypes.cpp in Sources */,
 				28E5781527AE81DC00946D18 /* AudioDeviceTypes.cpp in Sources */,
+				28E5790927AECE5700946D18 /* ICAudioPatchbayV2Delegate.m in Sources */,
+				28E5784A27AECE3000946D18 /* ICAudioPatchbayGridViewController.m in Sources */,
 				28E5782227AE81DC00946D18 /* Info.cpp in Sources */,
 				28E5782127AE81DC00946D18 /* SaveRestoreList.cpp in Sources */,
 				28E5782927AE81DC00946D18 /* ACK.cpp in Sources */,
+				28E5792527AECE5700946D18 /* ICIPModeChoiceDelegate.m in Sources */,
 				28E5781927AE81DC00946D18 /* AudioPortMeterValue.cpp in Sources */,
 				28E577FA27AE81DC00946D18 /* USBHostMIDIDeviceDetail.cpp in Sources */,
+				28E5790E27AECE5700946D18 /* ICPCEnabledV2SwitchDelegate.m in Sources */,
+				28E578FB27AECE5700946D18 /* ICTextEditCellProvider.m in Sources */,
+				28E5796F27AECE7900946D18 /* ALView+PureLayout.m in Sources */,
+				28E5791D27AECE5700946D18 /* MixerOutputInterface.cpp in Sources */,
+				28E5790B27AECE5700946D18 /* ICAudioMixerConfigurationV2ChoiceDelegate.m in Sources */,
+				28E578FF27AECE5700946D18 /* ICChoiceSelectionViewController.m in Sources */,
+				28E578FE27AECE5700946D18 /* ICRangeSelectionViewController.m in Sources */,
+				28E5791227AECE5700946D18 /* ICiOSEnabledV2SwitchDelegate.m in Sources */,
+				28E5792627AECE5700946D18 /* ICProductNameDelegate.m in Sources */,
+				28E5797C27AECE7900946D18 /* MMDrawerBarButtonItem.m in Sources */,
+				28E5787427AECE4200946D18 /* ICAudioSyncFactorV1RangeDelegate.m in Sources */,
+				28E5792927AECE5700946D18 /* DeviceInfo.cpp in Sources */,
+				28E5790327AECE5700946D18 /* ICButtonBlockDelegate.m in Sources */,
 				28E5780727AE81DC00946D18 /* MixerParm.cpp in Sources */,
+				28E5791927AECE5700946D18 /* ICMixerStrip.m in Sources */,
+				28E5790127AECE5700946D18 /* ICFileBrowserViewController.m in Sources */,
+				28E5792427AECE5700946D18 /* ICIPAddressTextEditCellDelegate.m in Sources */,
+				28E5786E27AECE4200946D18 /* ICMIDIPortNameTextEditDelegate.m in Sources */,
 				28E5780927AE81DC00946D18 /* MixerOutputControlValue.cpp in Sources */,
+				28E578FA27AECE5700946D18 /* ICMainMenuProvider.m in Sources */,
+				28E5791127AECE5700946D18 /* ICAudioSyncFactorV2RangeDelegate.m in Sources */,
 				28E5780527AE81DC00946D18 /* SampleRateCode.cpp in Sources */,
+				28E5792B27AECE5700946D18 /* ICIndicatorButton.m in Sources */,
+				28E5790827AECE5700946D18 /* NSString+NSStringExtension.m in Sources */,
 				28E5783027AE81DC00946D18 /* CommandDefines.cpp in Sources */,
+				28E5786B27AECE4200946D18 /* ICAudioInfoViewControllerV1.m in Sources */,
+				28E5790F27AECE5700946D18 /* ICAudioPortNameV2TextEditCellDelegate.m in Sources */,
 				28E5782F27AE81DC00946D18 /* SysexParser.cpp in Sources */,
+				28E57A2A27AED2C700946D18 /* ICPollingTimer.m in Sources */,
+				28E5791327AECE5700946D18 /* ICAudioMixerChannelV2ChoiceDelegate.m in Sources */,
 				28E5780227AE81DC00946D18 /* AudioInfo.cpp in Sources */,
+				28E5797427AECE7900946D18 /* ICMIDIOutputEnabledSwitchDelegate.m in Sources */,
+				28E5798127AECE7900946D18 /* MMDrawerVisualState.m in Sources */,
+				28E5791527AECE5700946D18 /* ICAudioOutputChannelsV2RangeDelegate.m in Sources */,
+				28E5797D27AECE7900946D18 /* UIViewController+MMDrawerController.m in Sources */,
 				28E5780127AE81DC00946D18 /* AudioCfgInfo.cpp in Sources */,
+				28E5790427AECE5700946D18 /* ICControllerChoiceDelegate.m in Sources */,
+				28E5797227AECE7900946D18 /* ICMIDIInfoViewController.m in Sources */,
+				28E5791427AECE5700946D18 /* ICAudioClockV2ChoiceDelegate.m in Sources */,
+				28E578F727AECE5700946D18 /* ICButtonCellProvider.m in Sources */,
 				28E5782427AE81DC00946D18 /* GizmoCount.cpp in Sources */,
 				28E5781C27AE81DC00946D18 /* AudioClockParm.cpp in Sources */,
+				28E5797027AECE7900946D18 /* NSArray+PureLayout.m in Sources */,
+				28E5792027AECE5700946D18 /* ICDeviceInfoViewController.m in Sources */,
 				28E5773A27AE813A00946D18 /* ICServer.m in Sources */,
+				28E5791727AECE5700946D18 /* ICMixerAnalogGroup.m in Sources */,
+				28E5786F27AECE4200946D18 /* ICAudioFrameBufferV1RangeDelegate.m in Sources */,
+				28E5791627AECE5700946D18 /* ICMixerSelector.m in Sources */,
 				28E577FE27AE81DC00946D18 /* AudioPortPatchbay.cpp in Sources */,
 				28E5783527AE8D2800946D18 /* AppDelegate.m in Sources */,
+				28E5791F27AECE5700946D18 /* ICDeviceSelectionViewController.m in Sources */,
 				28E5781627AE81DC00946D18 /* AudioControlParm.cpp in Sources */,
+				28E5797B27AECE7900946D18 /* MMSideDrawerTableViewCell.m in Sources */,
 				28E5780A27AE81DC00946D18 /* MixerMeterValue.cpp in Sources */,
+				28E57A2B27AED2C700946D18 /* MyConverters.cpp in Sources */,
+				28E5786A27AECE4200946D18 /* ICAudioPatchbayV1Cell.m in Sources */,
+				28E5791E27AECE5700946D18 /* MixerInterface.cpp in Sources */,
+				28E5797F27AECE7900946D18 /* MMSideDrawerSectionHeaderView.m in Sources */,
+				28E5791027AECE5700946D18 /* ICAudioInputChannelsV2RangeDelegate.m in Sources */,
 				28E5782727AE81DC00946D18 /* CommandList.cpp in Sources */,
+				28E5797627AECE7900946D18 /* ICRunningStatusSwitchDelegate.m in Sources */,
+				28E5787527AECE4200946D18 /* ICAudioPortNameV1TextEditCellDelegate.m in Sources */,
 				28E5782E27AE81DC00946D18 /* BytesCommandData.cpp in Sources */,
+				28E5791C27AECE5700946D18 /* MixerInputInterface.cpp in Sources */,
+				28E5790D27AECE5700946D18 /* ICAudioSetupV2ChoiceDelegate.m in Sources */,
 				28E5782D27AE81DC00946D18 /* CommandData.cpp in Sources */,
 				28E5780627AE81DC00946D18 /* MixerInputControlValue.cpp in Sources */,
 				28E5783227AE81DC00946D18 /* Lookup.cpp in Sources */,
 				28E5782C27AE81DC00946D18 /* Communicator.cpp in Sources */,
+				28E5792227AECE5700946D18 /* ICVendorNameDelegate.m in Sources */,
 				28E5782027AE81DC00946D18 /* EthernetPortInfo.cpp in Sources */,
 				28E5780B27AE81DC00946D18 /* MixerInputControl.cpp in Sources */,
 				28E5782B27AE81DC00946D18 /* ICRunOnMain.m in Sources */,
+				28E579E327AECFBE00946D18 /* ICMenuViewController.m in Sources */,
+				28E5797827AECE7900946D18 /* ICMIDIInterPortRoutingSwitchDelegate.m in Sources */,
 				28E577F327AE81DC00946D18 /* RTPMIDIConnectionDetail.cpp in Sources */,
 				28E577F427AE81DC00946D18 /* MIDIEndPoint.m in Sources */,
+				28E578F827AECE5700946D18 /* ICNormalCellProvider.m in Sources */,
 				28E5780C27AE81DC00946D18 /* MixerPortParm.cpp in Sources */,
+				28E5790627AECE5700946D18 /* NSString+RotatedDraw.m in Sources */,
+				28E5790727AECE5700946D18 /* UIImageTintCategory.m in Sources */,
+				28E5791B27AECE5700946D18 /* ICAnalogInterface.cpp in Sources */,
 				28E5782627AE81DC00946D18 /* MyAlgorithms.cpp in Sources */,
+				28E5797327AECE7900946D18 /* ICMaxPortsRangeDelegate.m in Sources */,
 				28E5780E27AE81DC00946D18 /* MixerOutputParm.cpp in Sources */,
+				28E5797527AECE7900946D18 /* ICMIDIInputEnabledSwitchDelegate.m in Sources */,
 				28E5780427AE81DC00946D18 /* AudioClockInfo.cpp in Sources */,
 				2899567D27AE6CA3001586F9 /* main.m in Sources */,
+				28E5787327AECE4200946D18 /* ICPCEnabledV1SwitchDelegate.m in Sources */,
+				28E5786927AECE4200946D18 /* ICAudioPatchbayV1Delegate.m in Sources */,
+				28E578FD27AECE5700946D18 /* ICBaseInfoViewController.m in Sources */,
 				28E5781227AE81DC00946D18 /* AudioDeviceParm.cpp in Sources */,
 				28E5781F27AE81DC00946D18 /* Device.cpp in Sources */,
 				28E577F227AE81DC00946D18 /* MIDIPortRemap.cpp in Sources */,

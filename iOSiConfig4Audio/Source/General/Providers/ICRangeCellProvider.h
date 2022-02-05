@@ -6,6 +6,8 @@
 */
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 #import "ICRangeChoiceDelegate.h"
 
 @interface ICRangeCellProvider : NSObject

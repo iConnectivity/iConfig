@@ -7,6 +7,8 @@
 
 #import "ICNormalCellProvider.h"
 #import "ICNormalBlockDelegate.h"
+#import <UIKit/UIKit.h>
+
 
 @implementation ICNormalCellProvider
 + (ICNormalCellProvider *)providerWithTitle:(NSString *)title

@@ -6,6 +6,7 @@
 */
 
 #import "NSString+RotatedDraw.h"
+#import <UIKit/UIKit.h>
 
 @implementation NSString (RotatedDraw)
 
