@@ -444,7 +444,6 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 - (void)searchComplete {
   [self stopSearchTimer];
 
-  self.comm->stopTimer();
   if (inHandler) {
     [self startSearchTimer];
     return;
@@ -461,8 +460,6 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 
   [self.searchingView removeFromSuperview];
   [self.myTableView reloadData];
-
-  Communicator::cancelAllTimers();
 }
 
 - (void)sendNextSysex {
@@ -514,10 +511,6 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
     [searchTimer invalidate];
     searchTimer = nil;
   }
-  
-  [Communicator::finishLock lock];
-  [Communicator::finishLock broadcast];
-  [Communicator::finishLock unlock];
 }
 
 - (void)startInfoTimer {

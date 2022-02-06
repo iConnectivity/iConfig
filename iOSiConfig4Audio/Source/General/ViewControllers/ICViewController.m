@@ -1235,7 +1235,6 @@ using namespace GeneSysLib;
 }
 
 - (void)onTimeout {
-  GeneSysLib::Communicator::pendingSend = false;
   NSLog(@"timer timedout!!");
   if (updateTimer) {
     [updateTimer invalidate];
@@ -1247,10 +1246,6 @@ using namespace GeneSysLib;
   if (![communicationErrorAlert isVisible]) {
     [communicationErrorAlert show];
   }
-
-  [Communicator::finishLock lock];
-  [Communicator::finishLock broadcast];
-  [Communicator::finishLock unlock];
 }
 
 - (void)requestReset:(NSNotification *)notification {
@@ -1260,10 +1255,6 @@ using namespace GeneSysLib;
   [[NSNotificationCenter defaultCenter] removeObserver:self
                                                   name:kCommunicationTimeout
                                                 object:nil];
-
-  [Communicator::finishLock lock];
-  [Communicator::finishLock broadcast];
-  [Communicator::finishLock unlock];
 
   // 4.0 seconds is based on testing. It may need to be increased.
   runOnMainAfter(7.2, ^{

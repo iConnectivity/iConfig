@@ -6,6 +6,7 @@
 */
 
 #import "ICSwitchCellProvider.h"
+#import <UIKit/UIKit.h>
 
 @implementation ICSwitchCellProvider
 

@@ -1,143 +1,158 @@
 {
   "images" : [
     {
+      "filename" : "reConfigAudio_40px.png",
       "idiom" : "iphone",
-      "size" : "20x20",
-      "scale" : "2x"
+      "scale" : "2x",
+      "size" : "20x20"
     },
     {
+      "filename" : "reConfigAudio_60px.png",
       "idiom" : "iphone",
-      "size" : "20x20",
-      "scale" : "3x"
+      "scale" : "3x",
+      "size" : "20x20"
     },
     {
+      "filename" : "reConfigAudio_29px.png",
       "idiom" : "iphone",
-      "size" : "29x29",
-      "scale" : "1x"
+      "scale" : "1x",
+      "size" : "29x29"
     },
     {
-      "size" : "29x29",
+      "filename" : "reConfigAudio_58px.png",
       "idiom" : "iphone",
-      "filename" : "29x29@2x-1.png",
-      "scale" : "2x"
+      "scale" : "2x",
+      "size" : "29x29"
     },
     {
+      "filename" : "reConfigAudio_87px.png",
       "idiom" : "iphone",
-      "size" : "29x29",
-      "scale" : "3x"
+      "scale" : "3x",
+      "size" : "29x29"
     },
     {
-      "size" : "40x40",
+      "filename" : "reConfigAudio_80px.png",
       "idiom" : "iphone",
-      "filename" : "40x40@2x-1.png",
-      "scale" : "2x"
+      "scale" : "2x",
+      "size" : "40x40"
     },
     {
+      "filename" : "reConfigAudio_120px.png",
       "idiom" : "iphone",
-      "size" : "40x40",
-      "scale" : "3x"
+      "scale" : "3x",
+      "size" : "40x40"
     },
     {
-      "size" : "57x57",
+      "filename" : "reConfigAudio_57px.png",
       "idiom" : "iphone",
-      "filename" : "57x57.png",
-      "scale" : "1x"
+      "scale" : "1x",
+      "size" : "57x57"
     },
     {
-      "size" : "57x57",
+      "filename" : "reConfigAudio_114px.png",
       "idiom" : "iphone",
-      "filename" : "114x144.png",
-      "scale" : "2x"
+      "scale" : "2x",
+      "size" : "57x57"
     },
     {
-      "size" : "60x60",
+      "filename" : "reConfigAudio_120px-1.png",
       "idiom" : "iphone",
-      "filename" : "60x60@2x.png",
-      "scale" : "2x"
+      "scale" : "2x",
+      "size" : "60x60"
     },
     {
+      "filename" : "reConfigAudio_180px.png",
       "idiom" : "iphone",
-      "size" : "60x60",
-      "scale" : "3x"
+      "scale" : "3x",
+      "size" : "60x60"
     },
     {
+      "filename" : "reConfigAudio_20px.png",
       "idiom" : "ipad",
-      "size" : "20x20",
-      "scale" : "1x"
+      "scale" : "1x",
+      "size" : "20x20"
     },
     {
+      "filename" : "reConfigAudio_40px-1.png",
       "idiom" : "ipad",
-      "size" : "20x20",
-      "scale" : "2x"
+      "scale" : "2x",
+      "size" : "20x20"
     },
     {
-      "size" : "29x29",
+      "filename" : "reConfigAudio_29px-1.png",
       "idiom" : "ipad",
-      "filename" : "29x29.png",
-      "scale" : "1x"
+      "scale" : "1x",
+      "size" : "29x29"
     },
     {
-      "size" : "29x29",
+      "filename" : "reConfigAudio_58px-1.png",
       "idiom" : "ipad",
-      "filename" : "29x29@2x.png",
-      "scale" : "2x"
+      "scale" : "2x",
+      "size" : "29x29"
     },
     {
-      "size" : "40x40",
+      "filename" : "reConfigAudio_40px-2.png",
       "idiom" : "ipad",
-      "filename" : "40x40.png",
-      "scale" : "1x"
+      "scale" : "1x",
+      "size" : "40x40"
     },
     {
-      "size" : "40x40",
+      "filename" : "reConfigAudio_80px-1.png",
       "idiom" : "ipad",
-      "filename" : "40x40@2x.png",
-      "scale" : "2x"
+      "scale" : "2x",
+      "size" : "40x40"
     },
     {
-      "size" : "50x50",
+      "filename" : "reConfigAudio_50px.png",
       "idiom" : "ipad",
-      "filename" : "50x50.png",
-      "scale" : "1x"
+      "scale" : "1x",
+      "size" : "50x50"
     },
     {
-      "size" : "50x50",
+      "filename" : "reConfigAudio_100px.png",
       "idiom" : "ipad",
-      "filename" : "50x50@2x.png",
-      "scale" : "2x"
+      "scale" : "2x",
+      "size" : "50x50"
     },
     {
-      "size" : "72x72",
+      "filename" : "reConfigAudio_72px.png",
       "idiom" : "ipad",
-      "filename" : "72x72.png",
-      "scale" : "1x"
+      "scale" : "1x",
+      "size" : "72x72"
     },
     {
-      "size" : "72x72",
+      "filename" : "reConfigAudio_144px.png",
       "idiom" : "ipad",
-      "filename" : "144x144.png",
-      "scale" : "2x"
+      "scale" : "2x",
+      "size" : "72x72"
     },
     {
-      "size" : "76x76",
+      "filename" : "reConfigAudio_76px.png",
       "idiom" : "ipad",
-      "filename" : "76x76.png",
-      "scale" : "1x"
+      "scale" : "1x",
+      "size" : "76x76"
     },
     {
-      "size" : "76x76",
+      "filename" : "reConfigAudio_152px.png",
       "idiom" : "ipad",
-      "filename" : "76x76@2x.png",
-      "scale" : "2x"
+      "scale" : "2x",
+      "size" : "76x76"
     },
     {
+      "filename" : "reConfigAudio_167px.png",
       "idiom" : "ipad",
-      "size" : "83.5x83.5",
-      "scale" : "2x"
+      "scale" : "2x",
+      "size" : "83.5x83.5"
+    },
+    {
+      "filename" : "reConfigAudio_1024px.png",
+      "idiom" : "ios-marketing",
+      "scale" : "1x",
+      "size" : "1024x1024"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }

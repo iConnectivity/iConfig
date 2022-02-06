@@ -243,8 +243,6 @@ using namespace MyAlgorithms;
   // The query required by the "Device Info" button
   std::list<CmdEnum> query = {Command::GetInfoList, Command::GetInfo};
 
-  Communicator::waitForAllTimers();
-
   // If ethernet port information is supported then add it to the query
   if (commandList.contains(Command::GetEthernetPortInfo)) {
     query.push_back(Command::GetEthernetPortInfo);
@@ -290,8 +288,6 @@ using namespace MyAlgorithms;
     Command::RetMixerOutputControlValue,
     Command::RetMixerMeterValue};
 
-  Communicator::waitForAllTimers();
-
   // Create the action block for the button
   ActionBlock actionBlock = ^(ICViewController *sender) {
     // Create the view controller to push to
@@ -314,8 +310,6 @@ using namespace MyAlgorithms;
 - (ButtonActionBlock)createMIDIInfoAction:(CommandList)commandList {
   // The query for the "MIDI Info" button
   std::list<CmdEnum> query = {Command::RetMIDIInfo, Command::RetMIDIPortInfo};
-
-  Communicator::waitForAllTimers();
 
   // If port details are available then add them to the query
   if (commandList.contains(Command::GetMIDIPortDetail)) {
@@ -352,8 +346,6 @@ using namespace MyAlgorithms;
                               Command::RetAudioPortInfo,
                               Command::RetAudioPortCfgInfo};
 
-  Communicator::waitForAllTimers();
-
   // If the device supports getting the audio clock info then add that to the
   // query
   if (commandList.contains(Command::GetAudioClockInfo)) {
@@ -386,8 +378,6 @@ using namespace MyAlgorithms;
       Command::RetAudioDeviceParm, Command::RetAudioClockParm,
       Command::RetMixerParm, Command::RetMixerPortParm};
 
-  Communicator::waitForAllTimers();
-
   ActionBlock actionBlock = ^(ICViewController *sender) {
     // Create the audio info view controller to push to
     ICAudioInfoViewControllerV2 *viewController =
@@ -413,8 +403,6 @@ using namespace MyAlgorithms;
                               Command::RetAudioPortInfo,
                               Command::RetAudioPortCfgInfo,
                               Command::RetAudioPortPatchbay};
-
-  Communicator::waitForAllTimers();
 
   // Create the action block for the audio patchbay v1 button
   ActionBlock actionBlock = ^(ICViewController *sender) {
@@ -448,8 +436,6 @@ using namespace MyAlgorithms;
     Command::RetMixerInputParm,
     Command::RetMixerOutputParm};
 
-  Communicator::waitForAllTimers();
-
   // Create the action block for the audio patchbay V2 button
   ActionBlock actionBlock = ^(ICViewController *sender) {
     ICAudioPatchbayV2Delegate *delegate =
@@ -477,8 +463,6 @@ using namespace MyAlgorithms;
   std::list<CmdEnum> query = {Command::RetMIDIInfo, Command::RetMIDIPortInfo,
     Command::RetMIDIPortDetail, Command::RetMIDIPortFilter,
     Command::RetMIDIPortRemap, Command::RetMIDIPortRoute};
-
-  Communicator::waitForAllTimers();
 
   // Create the action block for the audio patchbay V2 button
   ActionBlock actionBlock = ^(ICViewController *sender) {

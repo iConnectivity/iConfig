@@ -254,13 +254,6 @@ struct DeviceInfo {
   Bytes generate(GeneSysLib::CmdEnum command,
                  const GeneSysLib::commandData_t &commandData) const;
 
-  // need this lock to prevent a crash
-  NSLock *sendLock;
-  NSLock *attemptedQueriesLock;
-  NSLock *currentQueriesLock;
-  NSLock *queriedItemsLock;
-  NSLock *pendingQueriesLock;
-
   // This is where everything is stored
   CommandDataMap storedCommandData;
 
