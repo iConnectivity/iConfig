@@ -100,11 +100,9 @@ DeviceInfo::DeviceInfo(CommPtr _comm, DeviceID _deviceID, Word _transID)
 DeviceInfo::~DeviceInfo() { closeDevice(); }
 
 void DeviceInfo::closeDevice() {
-  //NSLog(@"lock1");
   while (!sysexMessages.empty()) {
     sysexMessages.pop();
   }
-  //NSLog(@"lock2");
   unRegisterHandlerAllHandlers();
 }
 
@@ -180,9 +178,8 @@ bool DeviceInfo::rereadMeters() {
   query.push_back(Command::RetAudioPortMeterValue);
   query.push_back(Command::RetMixerMeterValue);
 
-  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-    startQuery(Screen::RereadMeters, query);
-  });
+  startQuery(Screen::RereadMeters, query);
+
   return true;
 }
 

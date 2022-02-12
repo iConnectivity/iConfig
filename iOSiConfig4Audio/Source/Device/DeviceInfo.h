@@ -47,10 +47,6 @@ struct DeviceInfo {
   typedef std::map<commandDataKey_t, commandData_t> CommandDataMap;
   typedef CommandDataMap::iterator CommandDataIterator;
 
-  inline void send(const Bytes &sysex) {
-    comm->sendSysex(sysex);
-  }
-
   template <typename DATA_T, typename... Ts> void send(Ts... vs) {
     DATA_T(deviceID, transID, vs...).send(comm);
   }
