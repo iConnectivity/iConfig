@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28308E0F27CBF48100A065A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28308E0D27CBF48100A065A4 /* Main.storyboard */; };
 		2899567A27AE6CA3001586F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2899567827AE6CA3001586F9 /* LaunchScreen.storyboard */; };
 		2899567D27AE6CA3001586F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2899567C27AE6CA3001586F9 /* main.m */; };
 		28E5773A27AE813A00946D18 /* ICServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5773927AE813A00946D18 /* ICServer.m */; };
@@ -248,7 +249,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2899566727AE6CA3001586F9 /* iOSiConfig4Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSiConfig4Audio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28308E0E27CBF48100A065A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2899566727AE6CA3001586F9 /* reConfig4Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reConfig4Audio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2899567927AE6CA3001586F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2899567C27AE6CA3001586F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28E5773827AE813A00946D18 /* ICServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICServer.h; sourceTree = "<group>"; };
@@ -718,7 +720,7 @@
 		2899566827AE6CA3001586F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2899566727AE6CA3001586F9 /* iOSiConfig4Audio.app */,
+				2899566727AE6CA3001586F9 /* reConfig4Audio.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -745,6 +747,7 @@
 				28E5773B27AE81DC00946D18 /* GeneSysLib */,
 				28E5773727AE813A00946D18 /* TCPServer */,
 				2899567827AE6CA3001586F9 /* LaunchScreen.storyboard */,
+				28308E0D27CBF48100A065A4 /* Main.storyboard */,
 				2899567C27AE6CA3001586F9 /* main.m */,
 			);
 			path = Source;
@@ -1505,9 +1508,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2899566627AE6CA3001586F9 /* iOSiConfig4Audio */ = {
+		2899566627AE6CA3001586F9 /* reConfig4Audio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2899568027AE6CA3001586F9 /* Build configuration list for PBXNativeTarget "iOSiConfig4Audio" */;
+			buildConfigurationList = 2899568027AE6CA3001586F9 /* Build configuration list for PBXNativeTarget "reConfig4Audio" */;
 			buildPhases = (
 				2899566327AE6CA3001586F9 /* Sources */,
 				2899566427AE6CA3001586F9 /* Frameworks */,
@@ -1517,9 +1520,9 @@
 			);
 			dependencies = (
 			);
-			name = iOSiConfig4Audio;
+			name = reConfig4Audio;
 			productName = iOSiConfig4Audio;
-			productReference = 2899566727AE6CA3001586F9 /* iOSiConfig4Audio.app */;
+			productReference = 2899566727AE6CA3001586F9 /* reConfig4Audio.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1549,7 +1552,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2899566627AE6CA3001586F9 /* iOSiConfig4Audio */,
+				2899566627AE6CA3001586F9 /* reConfig4Audio */,
 			);
 		};
 /* End PBXProject section */
@@ -1614,6 +1617,7 @@
 				28E57A0B27AECFBE00946D18 /* 144x144.png in Resources */,
 				28E579EE27AECFBE00946D18 /* bubble@2x.png in Resources */,
 				28E579D927AECFBE00946D18 /* iConnectivityiConfig-Info.plist in Resources */,
+				28308E0F27CBF48100A065A4 /* Main.storyboard in Resources */,
 				28E579F427AECFBE00946D18 /* btn_link_on.png in Resources */,
 				28E579DE27AECFBE00946D18 /* ICViewController_iPad.xib in Resources */,
 				28E579EC27AECFBE00946D18 /* MainMenuBack@2x.png in Resources */,
@@ -1808,6 +1812,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		28308E0D27CBF48100A065A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28308E0E27CBF48100A065A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		2899567827AE6CA3001586F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1950,9 +1962,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Source/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = reConfig4Audio;
-				INFOPLIST_KEY_NSMainNibFile = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
@@ -1979,9 +1991,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Source/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = reConfig4Audio;
-				INFOPLIST_KEY_NSMainNibFile = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
@@ -2009,7 +2021,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2899568027AE6CA3001586F9 /* Build configuration list for PBXNativeTarget "iOSiConfig4Audio" */ = {
+		2899568027AE6CA3001586F9 /* Build configuration list for PBXNativeTarget "reConfig4Audio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2899568127AE6CA3001586F9 /* Debug */,
