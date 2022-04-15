@@ -30,7 +30,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13">
-                            <rect key="frame" x="0.0" y="62" width="375" height="561"/>
+                            <rect key="frame" x="0.0" y="65" width="375" height="558"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <gestureRecognizers/>
                             <inset key="insetFor6xAndEarlier" minX="0.0" minY="22" maxX="0.0" maxY="-22"/>
@@ -65,7 +65,7 @@
                                     </connections>
                                 </barButtonItem>
                             </items>
-                            <color key="tintColor" red="0.020411308854818344" green="0.19977834820747375" blue="0.30682721734046936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="barTintColor" red="0.37941348552703857" green="0.37940213084220886" blue="0.3794085681438446" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                         </toolbar>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="19">
@@ -77,7 +77,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" fixedFrame="YES" text="reConnect MIDI" textAlignment="center" lineBreakMode="middleTruncation" minimumFontSize="15" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="10">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
+                                            <rect key="frame" x="0.0" y="5" width="375" height="38"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
                                             <color key="textColor" red="0.897411048412323" green="0.897411048412323" blue="0.897411048412323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -140,6 +140,7 @@
                     <rect key="frame" x="20" y="164" width="134" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Save">
+                        <color key="titleColor" red="0.90471200429999998" green="1" blue="0.99751289430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
@@ -150,6 +151,7 @@
                     <rect key="frame" x="166" y="164" width="134" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Cancel">
+                        <color key="titleColor" red="0.90471200429999998" green="1" blue="0.99751289430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
